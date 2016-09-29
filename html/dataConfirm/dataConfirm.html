@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>云数字档案管理系统</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/css/dataConfirm/dataConfirm.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="header">
+			<span class="wel">欢迎进入云数字档案管理系统</span>
+			<span class="wel" id="header_date">今天是</span>
+			<div class="flright">
+				<span class="header_control" id="header_weluser">您好，系统管理员</span>
+				<a href="#" class="header_control" id="header_notyet">代办信息</a>
+				<a href="#" class="header_control" id="quit">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<img src="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
+		<h1 class="navbar_title">云数字档案管理系统</h1>
+		<div class="flright">
+			<ul class="navbar_nav_list" id="navbar_nav_list">
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据确认</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案管理</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案检索</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">整理组卷</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">服务利用</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">资源库</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">个性化配置</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="main">
+		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
+			<!-- 项目资源树 -->
+			<div id="m_tree" data-options="region:'west',title:'项目资源树',split:true" style="width:200px">
+				<ul id="mtb_tree"></ul>
+			</div>
+			<!-- 数据表格 -->
+			<div id="m_content"  data-options="region:'center',title:'资料目录'" style="width:610px;">
+				<div id="mc_databox" class="mc_databox">
+					<table id="mcd_datagrid"></table>
+				</div>
+				<div id="mc_tb">
+					<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="save_staDir()" title="保存数据">保存</a>
+					<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="uploadFile_staDir()" title="上传一条或者多条新纪录">上传</a>
+					<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 
+						style="" title="导出">导出</a>
+					<div id="mm_exportm_staDir" style="width:50px;">
+						<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="excelExport_staDir();" title="目录导出">目录导出</div>
+						<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="exportAndEle_staDir();" title="目录加原文导出">目录加原文导出</div>
+					</div>
+					<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+	<script type="text/javascript" src="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/js/dataConfirm/dataConfirm.js"></script>
+</html>
