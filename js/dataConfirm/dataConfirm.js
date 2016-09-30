@@ -19,14 +19,111 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
-		url: rooturl + "json/dataConfirm/tree.json"
+		url: rooturl + "html/dataConfirm/tree.json"
 	});
 	// 加载datagrid数据
+	$("#mcd_datagrid").datagrid({
+		toolbar: "#mc_tb",
+		url: rooturl + "html/dataConfirm/datagrid.json",
+		fitColumns: true,
+		columns:[[
+			{
+				"field":"sjid",
+				"title":"原文",
+				"align":"left",
+				"width":30,
+				"type":"VARCHAR2(50)",
+				"sortable":true,
+				"hidden":"false"
+			},{
+				"field":"wjbh",
+				"title":"文件编号",
+				"align":"left",
+				"width":100,
+				"type":"VARCHAR2(150)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":1,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"wjmc",
+				"title":"文件名称",
+				"align":"left",
+				"width":290,
+				"type":"VARCHAR2(200)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":1,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"xcsj",
+				"title":"文件形成时间",
+				"align":"left",
+				"width":100,
+				"type":"DATE",
+				"sortable":true,
+				"editor":{"type":"my97"},
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"zzs",
+				"title":"纸张数",
+				"align":"left",
+				"width":60,
+				"type":"NUMBER",
+				"sortable":true,
+				"editor":"text",
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"fs",
+				"title":"份数",
+				"align":"left",
+				"width":60,
+				"type":"NUMBER(12)",
+				"sortable":true,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"bzh",
+				"title":"备注",
+				"align":"left",
+				"width":100,
+				"type":"VARCHAR2(300)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			}
+			]],
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		pageSize: 15,
+		pageList: [15,30,45]
+	});
 	// 宽高弹性
+	$(window).resize(function(){
+		if($(window).width() > pageminwidth){
+			$(".main").css("width",$(window).width() + "px");
+		}else{
+			$(".main").css("width",pageminwidth + "px");
+		}
+		if($(window).height() > pageminheight){
+			$(".main").css("height",$(window).height() - $(".head").height() - $(".navbar").height() - bottomheight);
+		}else{
+			$(".main").css("height",pageminheight - $(".head").height() - $(".navbar").height() - bottomheight);
+		}
+	});
+	$(window).triggerHandler("resize");
 });
 
 // 链接根目录地址
-var rooturl = "/E:/kuminson/project/8 cloud data control system/work-0-cloudDataControlSystemDemo/"
+var rooturl = "/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/"
+var bottomheight = 10;            // 预留页面底部高度
+var pageminwidth = 1000;          // 页面最小宽度
+var pageminheight = 610;          // 页面最小高度
 
 // 加载当前日期
 function getnowtime(id){
