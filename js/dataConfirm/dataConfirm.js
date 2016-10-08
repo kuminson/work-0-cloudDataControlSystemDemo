@@ -1,3 +1,4 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // 一级菜单跳转链接地址 直接修改地址即可
 
 	var fstmenuurl = [
@@ -9,6 +10,14 @@
 	"#",	//资源库
 	"#" 	//个性化配置
 	]
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+var bottomheight = 10;            // 预留页面底部高度
+var pageminwidth = 1000;          // 页面最小宽度
+var pageminheight = 610;          // 页面最小高度
+var yg_secondcache = {};          // 二级目录数据缓存
+var yg_nowrowid;                  // 当前选中的行id
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -28,13 +37,15 @@ $(function(){
 		fitColumns: true,
 		columns:[[
 			{
-				"field":"sjid",
+				"field":"",
+				"checkbox":true
+			},{
+				"field":"yw",
 				"title":"原文",
-				"align":"left",
+				"align":"center",
 				"width":30,
 				"type":"VARCHAR2(50)",
-				"sortable":true,
-				"hidden":"false"
+				"sortable":true
 			},{
 				"field":"wjbh",
 				"title":"文件编号",
@@ -100,8 +111,9 @@ $(function(){
 		loadMsg: "请稍后...",
 		pagination: true,
 		rownumbers: true,
-		pageSize: 15,
-		pageList: [15,30,45]
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60]
 	});
 	// 宽高弹性
 	$(window).resize(function(){
@@ -117,13 +129,14 @@ $(function(){
 		}
 	});
 	$(window).triggerHandler("resize");
+
+	// 绑定拖拽至图标 弹出拖拽框
+	yg_dragforicon(".f_r_b","#m_content","#mcd_datagrid",yg_cache,function(){
+		yg_nowrowid = $("#mcd_datagrid").datagrid("getChecked").sjid;
+		popuploadiframe();
+	});
 });
 
-// 链接根目录地址
-var rooturl = "/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/"
-var bottomheight = 10;            // 预留页面底部高度
-var pageminwidth = 1000;          // 页面最小宽度
-var pageminheight = 610;          // 页面最小高度
 
 // 加载当前日期
 function getnowtime(id){
@@ -172,8 +185,14 @@ function firstmenuhref(classname,hrefs){
 	}
 }
 
-// 加载树结构数据
-function yg_treedataload(){
-
+// 弹出拖拽上传页面函数
+function popuploadiframe(){
+	global_windowOpen({
+		url: "html/dropUpload/dropUpload.html",
+		title: "文档提交",
+		ifrwidth: 600,
+		ifrheight: 150,
+		idend: "lala",
+		scroll: true
+	});
 }
-// 加载表格数据

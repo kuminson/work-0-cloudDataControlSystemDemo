@@ -32,7 +32,7 @@
 		<h1 class="navbar_title">云数字档案管理系统</h1>
 		<div class="flright">
 			<ul class="navbar_nav_list" id="navbar_nav_list">
-				<li class="navbar_nav_li">
+				<li class="navbar_nav_li active">
 					<span class="navbar_nav_icon"></span>
 					<h2 class="navbar_nav_title">数据确认</h2>
 				</li>
@@ -74,13 +74,13 @@
 			<div id="m_content"  data-options="region:'center',title:'资料目录'" style="width:610px;">
 				<table id="mcd_datagrid" fit="true"></table>
 				<div id="mc_tb">
-					<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="save_staDir()" title="保存数据">保存</a>
-					<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="uploadFile_staDir()" title="上传一条或者多条新纪录">上传</a>
+					<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存数据">保存</a>
+					<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="popuploadiframe()" title="上传一条或者多条新纪录">上传</a>
 					<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 
 						style="" title="导出">导出</a>
 					<div id="mm_exportm_staDir" style="width:50px;">
-						<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="excelExport_staDir();" title="目录导出">目录导出</div>
-						<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="exportAndEle_staDir();" title="目录加原文导出">目录加原文导出</div>
+						<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录导出">目录导出</div>
+						<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录加原文导出">目录加原文导出</div>
 					</div>
 					<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
 				</div>
@@ -92,5 +92,6 @@
 
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/dataConfirm/dataConfirm.js"></script>
 </html>
