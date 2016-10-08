@@ -18,11 +18,10 @@ $(function(){
 						+'</div>',
 		init: function(){
 			this.on("addedfile",function(file){
-				// console.log(window.parent.yg_nowrowid);
+				// console.log(file.name);
 				// 名字添加到datagrid上
+				window.top.yg_secondcache[window.top.yg_nowrowid].push(file.name);
 			});
 		}
 	});
-	// console.log(window.parent.yg_nowrowid);
-	var lala = 2;
 });

@@ -132,7 +132,8 @@ $(function(){
 
 	// 绑定拖拽至图标 弹出拖拽框
 	yg_dragforicon(".f_r_b","#m_content","#mcd_datagrid",yg_cache,function(){
-		yg_nowrowid = $("#mcd_datagrid").datagrid("getChecked").sjid;
+		yg_nowrowid = $("#mcd_datagrid").datagrid("getChecked")[0].sjid;
+		yg_secondcache[yg_nowrowid] = [];
 		popuploadiframe();
 	});
 });
