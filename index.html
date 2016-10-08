@@ -8,12 +8,16 @@
 </head>
 <body>
 	<form action="#" id="lala" class="lala dropzone"></form>
+	<button type="button" id="laji">跳转至数据确认</button>
 	<script type="text/javascript" src="resource/jQuery/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="resource/dropzone/dropzone.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$("#lala").dropzone({
 				url:"#"
+			});
+			$("#laji").on("click",function(){
+				window.location.href = "https://kuminson.github.io/work-0-cloudDataControlSystemDemo/html/dataConfirm/dataConfirm.html";
 			});
 		});
 	</script>
