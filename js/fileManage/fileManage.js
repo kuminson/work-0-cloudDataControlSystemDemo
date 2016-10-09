@@ -1,4 +1,3 @@
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 var bottomheight = 10;            // 预留页面底部高度
 var pageminwidth = 1000;          // 页面最小宽度
@@ -15,10 +14,95 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
-		url: rooturl + "html/dataConfirm/tree.json"
+		url: rooturl + "html/fileManage/rollTree.json"
 	});
-	// 加载datagrid数据
-	$("#mcd_datagrid").datagrid({
+	// 加载案卷数据
+	$("#mcd_roll").datagrid({
+		toolbar: "#mc_tb",
+		url: rooturl + "html/dataConfirm/datagrid.json",
+		fitColumns: true,
+		columns:[[
+			{
+				"field":"",
+				"checkbox":true
+			},{
+				"field":"yw",
+				"title":"原文",
+				"align":"center",
+				"width":30,
+				"type":"VARCHAR2(50)",
+				"sortable":true
+			},{
+				"field":"wjbh",
+				"title":"文件编号",
+				"align":"left",
+				"width":100,
+				"type":"VARCHAR2(150)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":1,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"wjmc",
+				"title":"文件名称",
+				"align":"left",
+				"width":290,
+				"type":"VARCHAR2(200)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":1,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"xcsj",
+				"title":"文件形成时间",
+				"align":"left",
+				"width":100,
+				"type":"DATE",
+				"sortable":true,
+				"editor":{"type":"my97"},
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"zzs",
+				"title":"纸张数",
+				"align":"left",
+				"width":60,
+				"type":"NUMBER",
+				"sortable":true,
+				"editor":"text",
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"fs",
+				"title":"份数",
+				"align":"left",
+				"width":60,
+				"type":"NUMBER(12)",
+				"sortable":true,
+				"attr":{"toolTipMessage":""}
+			},{
+				"field":"bzh",
+				"title":"备注",
+				"align":"left",
+				"width":100,
+				"type":"VARCHAR2(300)",
+				"sortable":true,
+				"editor":"text",
+				"iscp":0,
+				"attr":{"toolTipMessage":""}
+			}
+			]],
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60]
+	});
+	// 加载文件数据
+	$("#mcd_file").datagrid({
 		toolbar: "#mc_tb",
 		url: rooturl + "html/dataConfirm/datagrid.json",
 		fitColumns: true,
@@ -117,38 +201,7 @@ $(function(){
 	});
 	$(window).triggerHandler("resize");
 
-	// 绑定拖拽至图标 弹出拖拽框
-	yg_dragforicon(".f_r_b","#m_content","#mcd_datagrid",yg_cache,function(){
-		yg_nowrowid = $("#mcd_datagrid").datagrid("getChecked")[0].sjid;
-		yg_secondcache[yg_nowrowid] = [];
-		popuploadiframe();
-	});
-
-	// 动态绑定文件夹图标 点击弹出二级目录
-	$("#m_content").on("click",".secindex",function(e){
-		var rowindex = $(e.target).closest("tr").attr("datagrid-row-index");
-		$("#mcd_datagrid").datagrid("clearChecked");
-		$("#mcd_datagrid").datagrid("selectRow",rowindex);
-		yg_nowrowid = $("#mcd_datagrid").datagrid("getSelected").sjid;
-		global_windowOpen({
-			url: "html/secondData/secondData.html",
-			title: "工程资料",
-			ifrwidth: 840,
-			ifrheight: 480,
-			idend: "second"
-		});
-	});
+	
 });
 
 
-// 弹出拖拽上传页面函数
-function popuploadiframe(){
-	global_windowOpen({
-		url: "html/dropUpload/dropUpload.html",
-		title: "文档提交",
-		ifrwidth: 600,
-		ifrheight: 150,
-		idend: "lala",
-		scroll: true
-	});
-}

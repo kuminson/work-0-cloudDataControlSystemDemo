@@ -7,13 +7,13 @@
 	<title>云数字档案管理系统</title>
 	<!-- 重置样式 -->
 	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/reset.css">
-	<!-- 引入通用头部样式 -->
-	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/header.css">
-	<!-- 引入样式 -->
-	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/dataConfirm/dataConfirm.css">
 	<!-- 引入easyui -->
 	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+	<!-- 引入通用头部样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/header.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/fileManage/fileManage.css">
 </head>
 <body>
 	<!-- 头部 -->
@@ -34,11 +34,11 @@
 		<h1 class="navbar_title">云数字档案管理系统</h1>
 		<div class="flright">
 			<ul class="navbar_nav_list" id="navbar_nav_list">
-				<li class="navbar_nav_li active">
+				<li class="navbar_nav_li">
 					<span class="navbar_nav_icon"></span>
 					<h2 class="navbar_nav_title">数据确认</h2>
 				</li>
-				<li class="navbar_nav_li">
+				<li class="navbar_nav_li active">
 					<span class="navbar_nav_icon"></span>
 					<h2 class="navbar_nav_title">档案管理</h2>
 				</li>
@@ -68,23 +68,17 @@
 	<!-- 主体内容 -->
 	<div class="main">
 		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
-			<!-- 项目资源树 -->
-			<div id="m_tree" data-options="region:'west',title:'项目资源树',split:true" style="width:200px">
+			<!-- 档案树 -->
+			<div id="m_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
 				<ul id="mtb_tree"></ul>
 			</div>
 			<!-- 数据表格 -->
-			<div id="m_content"  data-options="region:'center',title:'资料目录'" style="width:610px;">
-				<table id="mcd_datagrid" fit="true"></table>
-				<div id="mc_tb">
-					<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存数据">保存</a>
-					<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="popuploadiframe()" title="上传一条或者多条新纪录">上传</a>
-					<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 
-						style="" title="导出">导出</a>
-					<div id="mm_exportm_staDir" style="width:50px;">
-						<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录导出">目录导出</div>
-						<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录加原文导出">目录加原文导出</div>
-					</div>
-					<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
+			<div id="m_content"  data-options="region:'center'" style="width:610px;">
+				<div class="mc_databox">
+					<table id="mcd_roll" fit="true" data-options="title:'案卷'"></table>
+				</div>
+				<div class="mc_databox">
+					<table id="mcd_file" fit="true" data-options="title:'文件'"></table>
 				</div>
 			</div>
 		</div>
@@ -95,5 +89,5 @@
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
-	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/dataConfirm/dataConfirm.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/fileManage/fileManage.js"></script>
 </html>

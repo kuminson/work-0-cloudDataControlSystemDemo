@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="170.08px" height="170.08px" viewBox="0 0 170.08 170.08" enable-background="new 0 0 170.08 170.08" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="85.0405" y1="1.9131" x2="85.0405" y2="138.9376">
+	<stop  offset="0" style="stop-color:#C9D8E3"/>
+	<stop  offset="0.3187" style="stop-color:#90AEC6"/>
+	<stop  offset="0.7857" style="stop-color:#90AEC6"/>
+	<stop  offset="0.8736" style="stop-color:#5F7996"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M24.067,138.851H146.01c7.424,0,8.535-6.216,8.535-13.852c0-7.648-1.111-13.862-8.535-13.862H24.067
+	c-7.423,0-8.531,6.214-8.531,13.862C15.536,132.635,16.644,138.851,24.067,138.851z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="85.0049" y1="2.522" x2="85.0049" y2="136.693">
+	<stop  offset="0" style="stop-color:#C9D8E3"/>
+	<stop  offset="0.3187" style="stop-color:#90AEC6"/>
+	<stop  offset="0.7857" style="stop-color:#90AEC6"/>
+	<stop  offset="0.8736" style="stop-color:#5F7996"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M141.077,104.778c5.093,0,9.697,0.379,13.211,3.609L138.68,46.816
+	c-3.1-11.014-5.053-15.587-13.56-15.587H46.089c-10.165,0-12.159,5.141-14.744,15.587l-15.623,61.629
+	c3.526-3.263,8.155-3.667,13.277-3.667H141.077z"/>
+<path fill="#FFFFFF" d="M107.135,124.825c0,1.666-1.324,3.032-2.959,3.032H31.759c-1.637,0-2.967-1.366-2.967-3.032l0,0
+	c0-1.691,1.33-3.041,2.967-3.041h72.417C105.811,121.784,107.135,123.134,107.135,124.825L107.135,124.825z"/>
+<rect x="135.404" y="120.771" fill="#FFFFFF" width="8.098" height="8.092"/>
+<path fill="#FFFFFF" d="M126.688,124.825c0,2.509-2.036,4.541-4.56,4.541c-2.513,0-4.541-2.032-4.541-4.541
+	c0-2.523,2.028-4.563,4.541-4.563C124.651,120.263,126.688,122.302,126.688,124.825z"/>
+<rect x="77.929" y="31.229" fill="#FFFFFF" width="16.479" height="31.482"/>
+<polygon fill="#FFFFFF" points="63.484,62.001 108.851,62.001 86.301,93.26 "/>
+</svg>
