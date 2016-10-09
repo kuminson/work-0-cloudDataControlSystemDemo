@@ -138,7 +138,11 @@ $(function(){
 	});
 
 	// 动态绑定文件夹图标 点击弹出二级目录
-	$("#m_content").on("click",".secindex",function(){
+	$("#m_content").on("click",".secindex",function(e){
+		var rowindex = $(e.target).closest("tr").attr("datagrid-row-index");
+		$("#mcd_datagrid").datagrid("clearChecked");
+		$("#mcd_datagrid").datagrid("selectRow",rowindex);
+		yg_nowrowid = $("#mcd_datagrid").datagrid("getSelected").sjid;
 		global_windowOpen({
 			url: "html/secondData/secondData.html",
 			title: "工程资料",
