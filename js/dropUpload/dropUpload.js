@@ -21,6 +21,9 @@ $(function(){
 				// console.log(file.name);
 				// 名字添加到datagrid上
 				window.top.yg_secondcache[window.top.yg_nowrowid].push(file.name);
+				var col = parseInt(window.top.$("#mcd_datagrid").datagrid("getChecked")[0].columnno) -1;
+				window.top.$("tr[datagrid-row-index='"+ col +"']").eq(1).find(".f_r_b").attr("src",rooturl + "images/common/folder.png");
+				window.top.$("tr[datagrid-row-index='"+ col +"']").eq(1).find(".f_r_b").addClass('secindex');
 			});
 		}
 	});

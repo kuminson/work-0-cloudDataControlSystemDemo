@@ -136,6 +136,17 @@ $(function(){
 		yg_secondcache[yg_nowrowid] = [];
 		popuploadiframe();
 	});
+
+	// 动态绑定文件夹图标 点击弹出二级目录
+	$("#m_content").on("click",".secindex",function(){
+		global_windowOpen({
+			url: "html/secondData/secondData.html",
+			title: "工程资料",
+			ifrwidth: 840,
+			ifrheight: 480,
+			idend: "second"
+		});
+	});
 });
 
 

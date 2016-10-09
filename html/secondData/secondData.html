@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级目录</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入样式 -->
+	<!-- <link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/secondData/secondData.css"> -->
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+</head>
+<body>
+	<!-- datagrid表格 -->
+	<table id="sec_datagrid" fit="true"></table>
+	<div id="mc_tb">
+		<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存数据">保存</a>
+		<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="popuploadiframe()" title="上传一条或者多条新纪录">上传</a>
+		<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 
+			style="" title="导出">导出</a>
+		<div id="mm_exportm_staDir" style="width:50px;">
+			<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录导出">目录导出</div>
+			<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录加原文导出">目录加原文导出</div>
+		</div>
+		<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
+	</div>
+
+	<!-- 引入jQuery插件 -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<!-- 引入easyui插件 -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<!-- 引入通用js -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<!-- 引入js -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/secondData/secondData.js"></script>
+</body>
+</html>
