@@ -19,7 +19,6 @@ $(function(){
 	// 加载datagrid表格
 	$("#sec_datagrid").datagrid({
 		toolbar: "#mc_tb",
-		method: "get",
 		fitColumns: true,
 		columns:[[
 			{
