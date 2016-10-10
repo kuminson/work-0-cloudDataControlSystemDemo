@@ -9,13 +9,17 @@
 	height: 50%;
 }
 .ti_folder{
-	/*height: 300px;*/
-	/*width: 300px;*/
-	text-indent: -9999px;
-	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
-	background-size: 18px 18px;
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
 }
 .ti_file{
-	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
-	background-size: 18px 18px;
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+td[field] div{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
 }

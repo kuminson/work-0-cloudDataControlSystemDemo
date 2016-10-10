@@ -18,163 +18,164 @@ $(function(){
 	});
 	// 加载案卷数据
 	$("#mcd_roll").datagrid({
-		toolbar: "#mc_tb",
-		url: rooturl + "html/dataConfirm/datagrid.json",
+		url: rooturl + "html/fileManage/rolldata.json",
 		fitColumns: true,
 		columns:[[
 			{
 				"field":"",
-				"checkbox":true
+				"checkbox":true,
+				"width":50
 			},{
-				"field":"yw",
-				"title":"原文",
-				"align":"center",
-				"width":30,
-				"type":"VARCHAR2(50)",
-				"sortable":true
-			},{
-				"field":"wjbh",
-				"title":"文件编号",
+				"field":"allnbr",
+				"title":"全综号",
 				"align":"left",
-				"width":100,
-				"type":"VARCHAR2(150)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":1,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"wjmc",
-				"title":"文件名称",
+				"field":"fstclass",
+				"title":"一级类目",
 				"align":"left",
-				"width":290,
-				"type":"VARCHAR2(200)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":1,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"xcsj",
-				"title":"文件形成时间",
+				"field":"scdclass",
+				"title":"二级类目",
 				"align":"left",
-				"width":100,
-				"type":"DATE",
-				"sortable":true,
-				"editor":{"type":"my97"},
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"zzs",
-				"title":"纸张数",
+				"field":"indexnbr",
+				"title":"目录号",
 				"align":"left",
-				"width":60,
-				"type":"NUMBER",
-				"sortable":true,
-				"editor":"text",
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"fs",
-				"title":"份数",
+				"field":"deadline",
+				"title":"保管期限",
 				"align":"left",
-				"width":60,
-				"type":"NUMBER(12)",
-				"sortable":true,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"bzh",
-				"title":"备注",
+				"field":"order",
+				"title":"案卷序号",
 				"align":"left",
-				"width":100,
-				"type":"VARCHAR2(300)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
+			},{
+				"field":"filenbr",
+				"title":"案卷档号",
+				"align":"left",
+				"width":110
+			},{
+				"field":"user",
+				"title":"责任者",
+				"align":"left",
+				"width":110
+			},{
+				"field":"filename",
+				"title":"案卷题名",
+				"align":"left",
+				"width":220
+			},{
+				"field":"pagenbr",
+				"title":"页数",
+				"align":"left",
+				"width":50
+			},{
+				"field":"year",
+				"title":"年度",
+				"align":"left",
+				"width":50
+			},{
+				"field":"unit",
+				"title":"单位",
+				"align":"left",
+				"width":110
 			}
 			]],
+		onClickRow:function(index,row){
+			$("#mcd_file").datagrid({
+				url: rooturl + "html/fileManage/filedata"+(index%4)+".json"
+			});
+		},
 		resizeHandle: "both",
 		striped: true,
 		loadMsg: "请稍后...",
 		pagination: true,
 		rownumbers: true,
+		singleSelect: true,
 		pageNumber: 1,
 		pageSize: 20,
 		pageList: [20,40,60]
 	});
 	// 加载文件数据
 	$("#mcd_file").datagrid({
-		toolbar: "#mc_tb",
-		url: rooturl + "html/dataConfirm/datagrid.json",
+		// url: rooturl + "html/fileManage/filedata3.json",
 		fitColumns: true,
 		columns:[[
 			{
 				"field":"",
-				"checkbox":true
+				"checkbox":true,
+				"width":50
 			},{
-				"field":"yw",
-				"title":"原文",
-				"align":"center",
-				"width":30,
-				"type":"VARCHAR2(50)",
-				"sortable":true
-			},{
-				"field":"wjbh",
-				"title":"文件编号",
+				"field":"ori",
+				"title":"原件",
 				"align":"left",
-				"width":100,
-				"type":"VARCHAR2(150)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":1,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"wjmc",
-				"title":"文件名称",
+				"field":"allnbr",
+				"title":"全综号",
 				"align":"left",
-				"width":290,
-				"type":"VARCHAR2(200)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":1,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"xcsj",
-				"title":"文件形成时间",
+				"field":"fstclass",
+				"title":"一级类目",
 				"align":"left",
-				"width":100,
-				"type":"DATE",
-				"sortable":true,
-				"editor":{"type":"my97"},
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"zzs",
-				"title":"纸张数",
+				"field":"scdclass",
+				"title":"二级类目",
 				"align":"left",
-				"width":60,
-				"type":"NUMBER",
-				"sortable":true,
-				"editor":"text",
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"fs",
-				"title":"份数",
+				"field":"indexnbr",
+				"title":"目录号",
 				"align":"left",
-				"width":60,
-				"type":"NUMBER(12)",
-				"sortable":true,
-				"attr":{"toolTipMessage":""}
+				"width":50
 			},{
-				"field":"bzh",
-				"title":"备注",
+				"field":"deadline",
+				"title":"保管期限",
 				"align":"left",
-				"width":100,
-				"type":"VARCHAR2(300)",
-				"sortable":true,
-				"editor":"text",
-				"iscp":0,
-				"attr":{"toolTipMessage":""}
+				"width":50
+			},{
+				"field":"order",
+				"title":"案卷序号",
+				"align":"left",
+				"width":50
+			},{
+				"field":"orderfile",
+				"title":"文件序号",
+				"align":"left",
+				"width":50
+			},{
+				"field":"filenbr",
+				"title":"案卷档号",
+				"align":"left",
+				"width":110
+			},{
+				"field":"filename",
+				"title":"案卷题名",
+				"align":"left",
+				"width":220
+			},{
+				"field":"year",
+				"title":"年度",
+				"align":"left",
+				"width":50
+			},{
+				"field":"user",
+				"title":"责任者",
+				"align":"left",
+				"width":110
+			},{
+				"field":"essaynbr",
+				"title":"文号",
+				"align":"left",
+				"width":110
 			}
 			]],
 		resizeHandle: "both",
