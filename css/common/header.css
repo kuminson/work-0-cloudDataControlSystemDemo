@@ -75,7 +75,7 @@
 	height: 28px;
 	width: 28px;
 	margin: 6px auto 0;
-	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/yunwang_icon.png");
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/yunwang_icon.png");
 	cursor: pointer;
 }
 .navbar_nav_li:nth-of-type(1) .navbar_nav_icon{

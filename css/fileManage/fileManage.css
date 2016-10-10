@@ -9,12 +9,12 @@
 	height: 50%;
 }
 .ti_folder{
-	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/file.svg");
 	background-size: 16px 16px;
 	background-position: 0 0;
 }
 .ti_file{
-	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
 	background-size: 16px 16px;
 	background-position: 0 0;
 }

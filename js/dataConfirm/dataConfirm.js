@@ -15,10 +15,12 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
+		method: "get",
 		url: rooturl + "html/dataConfirm/tree.json"
 	});
 	// 加载datagrid数据
 	$("#mcd_datagrid").datagrid({
+		method: "get",
 		toolbar: "#mc_tb",
 		url: rooturl + "html/dataConfirm/datagrid.json",
 		fitColumns: true,

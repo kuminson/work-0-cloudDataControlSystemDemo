@@ -14,10 +14,12 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
+		method: "get",
 		url: rooturl + "html/fileManage/rollTree.json"
 	});
 	// 加载案卷数据
 	$("#mcd_roll").datagrid({
+		method: "get",
 		url: rooturl + "html/fileManage/rolldata.json",
 		fitColumns: true,
 		columns:[[
@@ -104,6 +106,7 @@ $(function(){
 	});
 	// 加载文件数据
 	$("#mcd_file").datagrid({
+		method: "get",
 		// url: rooturl + "html/fileManage/filedata3.json",
 		fitColumns: true,
 		columns:[[

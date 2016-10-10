@@ -3,7 +3,7 @@
 // 超全局变量
 
 // 通用链接根目录
-var rooturl = "/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/";
+var rooturl = "/work-0-cloudDataControlSystemDemo/";
 // 通用计时器
 var yg_cache = {};
 

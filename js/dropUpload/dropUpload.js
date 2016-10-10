@@ -1,5 +1,6 @@
 $(function(){
 	$("#drop").dropzone({
+		method: "get",
 		url:"#",
 		maxFilesize:100,
 		parallelUploads: 5,
