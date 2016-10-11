@@ -15,7 +15,7 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
-		url: rooturl + "html/dataConfirm/tree.json"
+		url: rooturl + "html/dataConfirm/rollTree.json"
 	});
 	// 加载datagrid数据
 	$("#mcd_datagrid").datagrid({
