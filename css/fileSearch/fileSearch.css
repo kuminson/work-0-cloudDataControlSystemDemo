@@ -1,0 +1,196 @@
+/*通用配置*/
+.weight{
+	font-weight: bold;
+	margin-right: 10px;
+}
+td[field] div{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.hidden{
+	display: none;
+}
+/*主体内容*/
+/*搜索栏*/
+.mc_box{
+	width: 100%;
+	background-color: #CCC;
+}
+.mc_sechbox{
+	margin: 0 auto;
+	padding: 5px 0;
+	width: 520px;
+	font-size: 0;
+	overflow: hidden;
+}
+.mcs_text{
+	display: block;
+	float: left;
+	width: 295px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+.mcs_btn{
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 0 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #FA9E00;
+}
+.mcs_btn:active{
+	background-color: #EC810F;
+}
+.mcs_rabox{
+	display: block;
+	margin-left: 10px;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	font-size: 14px;
+}
+
+/*正文检索*/
+.mc_filebox{
+	background-color: #FFF;
+	width: 100%;
+	overflow-y: auto;
+}
+.mcf_result{
+	margin: 10px 20px;
+}
+.mcfr_list{
+	width: 80%;
+	margin-bottom: 20px;
+}
+.mcfr_title{
+	display: block;
+	color: blue;
+	text-decoration: underline;
+	font-size: 16px;
+}
+.mcfr_title:hover{
+	text-decoration: underline;
+}
+.mcfr_content{
+	padding: 10px 0;
+	max-height: 48px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.mcfr_info{
+	color: green;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.mcf_bottom{
+	display: block;
+	position: relative;
+	height: 30px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.mcfb_info{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	color: #CCC;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.mcfb_box{
+	margin: 0 auto;
+	width: 400px;
+}
+.mcfbb_btn{
+	float: left;
+	height: 24px;
+	padding: 2px 5px;
+	background-color: #CCC;
+	line-height: 24px;
+	cursor: pointer;
+	border: 1px solid #999;
+	margin-left: 5px;
+}
+#mcfbbb_text{
+	width: 30px;
+	height: 24px;
+	margin: 0 5px;
+	text-indent: 3px;
+}
+
+/*文件目录*/
+#mc_dataindex{
+	display: none;
+}
+
+/*正文筛选条件*/
+.mt_boxfile{
+	width: 95%;
+	margin: 0 auto;
+}
+.mtb_info{
+	padding: 0 10px;
+}
+.mtb_form{
+	width: 100%;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.mtbf_title{
+	font-size: 14px;
+	margin-left: 10px;
+}
+.mtbf_box{
+	width: 250px;
+	margin: 0 auto;
+	padding: 5px 0;
+	overflow: hidden;
+	height: 22px;
+	line-height: 22px;
+}
+.mtbfb_title{
+	width: 70px;
+	float: left;
+}
+.mtbfb_input{
+	float: right;
+}
+.textinput{
+	border: 1px solid #95b8e7;
+	border-radius: 5px;
+	height: 22px;
+	width: 168px;
+}
+.mtbf_btn{
+	display: block;
+	height: 30px;
+	line-height: 24px;
+	padding: 2px 5px;
+	background-color: #CCC;
+	cursor: pointer;
+	border: 1px solid #999;
+	margin-left: 5px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.mtbf_reset{
+	float: left;
+	margin-left: 20%;
+}
+.mtbf_search{
+	float: right;
+	margin-right: 20%;
+}
+#mcfbbb_text{
+	background-color: #EEE;
+}
+#mt_boxindex{
+	display: none;
+}

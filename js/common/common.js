@@ -15,7 +15,7 @@ var yg_cache = {};
 	var fstmenuurl = [
 	"html/dataConfirm/dataConfirm.html",	//数据确认
 	"html/fileManage/fileManage.html",	//档案管理
-	"#",	//档案检索
+	"html/fileSearch/fileSearch.html",	//档案检索
 	"#",	//整理组卷
 	"#",	//服务利用
 	"#",	//资源库

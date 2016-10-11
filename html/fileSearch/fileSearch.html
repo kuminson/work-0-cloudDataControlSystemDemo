@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>云数字档案管理系统</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+	<!-- 引入通用头部样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/header.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/fileSearch/fileSearch.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="header">
+			<span class="wel">欢迎进入云数字档案管理系统</span>
+			<span class="wel" id="header_date">今天是</span>
+			<div class="flright">
+				<span class="header_control" id="header_weluser">您好，系统管理员</span>
+				<a href="#" class="header_control" id="header_notyet">代办信息</a>
+				<a href="#" class="header_control" id="quit">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
+		<h1 class="navbar_title">云数字档案管理系统</h1>
+		<div class="flright">
+			<ul class="navbar_nav_list" id="navbar_nav_list">
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据确认</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案管理</h2>
+				</li>
+				<li class="navbar_nav_li active">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案检索</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">整理组卷</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">服务利用</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">资源库</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">个性化配置</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="main">
+		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
+			<!-- 项目资源树 -->
+			<div id="m_tree" data-options="region:'east',title:'筛选条件',split:true" style="width:300px">
+				<!-- 正文筛选条件 -->
+				<div id="mt_boxfile" class="mt_boxfile">
+					<div id="mtb_info" class="mtb_info">共1038个检索结果、耗时1.487秒</div>
+					<fieldset id="mtb_form" class="mtb_form">
+						<legend class="mtbf_title">筛选条件</legend>
+						<div class="mtbf_box">
+							<span class="mtbfb_title">编制单位：</span>
+							<div class="mtbfb_input">
+								<select class="easyui-combobox" style="width:170px;">
+								    <option>交通部</option>
+								    <option>政治部</option>
+								    <option>组织部</option>
+								    <option>港务局</option>
+								    <option>本局</option>
+								</select>
+							</div>
+						</div>
+						<div class="mtbf_box">
+							<span class="mtbfb_title">起始时间：</span>
+							<div class="mtbfb_input">
+								<input type="text" class="easyui-datebox" style="width:170px;">
+							</div>
+						</div>
+						<div class="mtbf_box">
+							<span class="mtbfb_title">结束时间：</span>
+							<div class="mtbfb_input">
+								<input type="text" class="easyui-datebox" style="width:170px;">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<!-- 文件目录筛选条件 -->
+				<div id="mt_boxindex" class="mt_boxfile">
+					<fieldset id="mtb_form" class="mtb_form">
+						<legend class="mtbf_title">筛选条件</legend>
+						<ul>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">文件档号：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">文件序号：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">文件题名：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">文件时间：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="mtbfbl_info easyui-datebox" style="width:170px;">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">密级：</span>
+								<div class="mtbfb_input">
+									<select class="mtbfbl_info easyui-combobox"  style="width:170px;">
+									    <option>一级</option>
+									    <option>二级</option>
+									    <option>三级</option>
+									</select>
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">保管期限：</span>
+								<div class="mtbfb_input">
+									<select class="mtbfbl_info easyui-combobox"  style="width:170px;">
+									    <option>一周</option>
+									    <option>一月</option>
+									    <option>一年</option>
+									</select>
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">文件编号：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">编制单位：</span>
+								<div class="mtbfb_input">
+									<select class="mtbfbl_info easyui-combobox"  style="width:170px;">
+									    <option>交通部</option>
+									    <option>政治部</option>
+									    <option>组织部</option>
+									    <option>港务局</option>
+									</select>
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">存放位置：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">电子归档：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">全宗号：</span>
+								<div class="mtbfb_input">
+									<select class="mtbfbl_info easyui-combobox"  style="width:170px;">
+									    <option>001</option>
+									    <option>002</option>
+									    <option>022</option>
+									    <option>918</option>
+									</select>
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">类别路径：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">鉴定结果：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">案卷档号：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="textinput mtbfbl_info">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">起始时间：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="mtbfbl_info easyui-datebox" style="width:170px;">
+								</div>
+							</li>
+							<li class="mtbf_box">
+								<span class="mtbfb_title">终止时间：</span>
+								<div class="mtbfb_input">
+									<input type="text" class="mtbfbl_info easyui-datebox" style="width:170px;">
+								</div>
+							</li>
+						</ul>
+						<button id="mtbf_reset" class="mtbf_reset mtbf_btn">重置</button>
+						<button id="mtbf_search" class="mtbf_search mtbf_btn">检索</button>
+					</fieldset>
+				</div>
+			</div>
+			<!-- 数据表格 -->
+			<div id="m_content"  data-options="region:'center',title:'综合搜索'" style="width:610px;">
+				<!-- 搜索栏 -->
+				<div class="mc_box">
+					<div id="mc_sechbox" class="mc_sechbox">
+						<input type="text" id="mcs_text" class="mcs_text">
+						<button type="button" id="mcs_btn" class="mcs_btn">综合搜索</button>
+						<label class="mcs_rabox"><input id="mcsr_index" type="radio" name="mcs_radio" value="" >文件目录</label>
+						<label class="mcs_rabox"><input id="mcsr_text" type="radio" name="mcs_radio" value="" checked="checked">正文</label>
+					</div>
+				</div>
+				<!-- 正文检索 -->
+				<div id="mc_filebox" class="mc_filebox">
+					<ul id="mcf_result" class="mcf_result">
+						<!-- <li class="mcfr_list">
+							<a href="#" class="mcfr_title">关于加强</a>
+							<p class="mcfr_content">贺信广州城市职业学院：南粤福地育才俊，城市职院立功勋。在全国上下掀起深入学习贯彻党</p>
+							<span class="mcfr_info">[详细目录信息]</span>
+							<strong class="weight">编制单位：</strong>
+							<strong class="weight">文件时间：</strong>
+						</li> -->
+					</ul>
+					<div id="mcf_bottom" class="mcf_bottom">
+						<div id="mcfb_info" class="mcfb_info">第1页,共104页,共1038条,每页10条</div>
+						<ul id="mcfb_box" class="mcfb_box">
+							<li class="mcfbb_btn">首页</li>
+							<li class="mcfbb_btn">上一页</li>
+							<li class="mcfbb_btn">下一页</li>
+							<li class="mcfbb_btn">尾页</li>
+							<li class="mcfbb_btn">第<input type="text" id="mcfbbb_text">页</li>
+							<li class="mcfbb_btn">跳转</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 文件目录检索 -->
+				<div id="mc_dataindex">
+					<table id="mcd_datagrid" fit="true"></table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/fileSearch/fileSearch.js"></script>
+</html>
