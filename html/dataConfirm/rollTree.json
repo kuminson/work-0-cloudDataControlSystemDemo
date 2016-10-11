@@ -1,0 +1,1395 @@
+[
+	{
+		"id":"bala00",
+		"text":"文书按卷",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0000",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0001",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0002",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0003",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0004",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0005",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0006",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala000000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala000001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala01",
+		"text":"党群工作类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0100",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0101",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0102",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0103",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0104",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0105",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0106",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala010600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala010601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala02",
+		"text":"行政管理类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0200",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0201",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0202",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0203",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0204",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0205",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0206",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala020600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala020601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala03",
+		"text":"经营管理类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0300",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0301",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0302",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0303",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0304",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0305",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0306",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala030600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala030601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala04",
+		"text":"生产技术管理类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0400",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0401",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0402",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0403",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0404",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0405",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0406",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala040600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala040601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala05",
+		"text":"产品类",
+		"iconCls": "ti_file"
+	},{
+		"id":"bala06",
+		"text":"会计档案类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0600",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0601",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0602",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0603",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0604",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0605",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0606",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala060600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala060601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala07",
+		"text":"科学技术研究类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0700",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0701",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0702",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0703",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0704",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0705",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0706",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala070600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala070601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala08",
+		"text":"基本建设类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0800",
+				"text":"G1 生产及辅助生产性项目",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala080000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala080001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0801",
+				"text":"G2 公共福利建设项目",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0802",
+				"text":"G3 住宅建设项目",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0803",
+				"text":"G4 专用工程",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala080300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala080301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0804",
+				"text":"G5 外部工程",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala080400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala080401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0805",
+				"text":"G6 征地材料",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0806",
+				"text":"G8 地质",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0807",
+				"text":"G9 航道",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0808",
+				"text":"G10 环保",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0809",
+				"text":"G11 项目前期文件",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0810",
+				"text":"JJ1 生产及辅助生产性项目",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala081000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala081001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0811",
+				"text":"JJ2 公共福利建设项目",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0812",
+				"text":"JJ3 住宅建设项目",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0813",
+				"text":"JJ4 大宇铁路工程",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala081300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala081301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0814",
+				"text":"JJ5 外部工程",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala081400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala081401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0815",
+				"text":"JJ6 征地材料",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0816",
+				"text":"HB 环保",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0817",
+				"text":"HD1 水文、气象",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0818",
+				"text":"HD2 地质",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0819",
+				"text":"HD3 航道",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0820",
+				"text":"ZH 综合类",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala082000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala082001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0821",
+				"text":"QT 其他",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0822",
+				"text":"GG 基建类光盘",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0823",
+				"text":"JY 经营",
+				"iconCls": "ti_file"
+			}
+		]
+	},{
+		"id":"bala09",
+		"text":"设备仪器类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala0900",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0901",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0902",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0903",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0904",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0905",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala0906",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala090600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala090601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala10",
+		"text":"干部职工档案类",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala1000",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1001",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1002",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1003",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1004",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1005",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1006",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala100600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala100601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	},{
+		"id":"bala11",
+		"text":"声像档案",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala1100",
+				"text":"2010",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110000",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110001",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1101",
+				"text":"2011",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110100",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110101",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1102",
+				"text":"2012",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110200",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110201",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1103",
+				"text":"2013",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110300",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110301",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1104",
+				"text":"2014",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110400",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110401",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1105",
+				"text":"2015",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110500",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110501",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			},{
+				"id":"bala1106",
+				"text":"2016",
+				"iconCls": "ti_folder",
+				"state": "closed",
+				"children":[
+					{
+						"id":"bala110600",
+						"text":"永久",
+						"iconCls": "ti_file"
+					},{
+						"id":"bala110601",
+						"text":"定期",
+						"iconCls": "ti_file"
+					}
+				]
+			}
+		]
+	}
+]

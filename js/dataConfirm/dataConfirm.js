@@ -16,7 +16,7 @@ $(function(){
 	// 加载树数据
 	$("#mtb_tree").tree({
 		method: "get",
-		url: rooturl + "html/dataConfirm/tree.json"
+		url: rooturl + "html/dataConfirm/rollTree.json"
 	});
 	// 加载datagrid数据
 	$("#mcd_datagrid").datagrid({
