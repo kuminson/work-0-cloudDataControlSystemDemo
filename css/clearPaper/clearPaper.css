@@ -1,0 +1,25 @@
+/*主体内容*/
+.main{
+	height: 495px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.mc_databox{
+	width: 100%;
+	height: 50%;
+}
+.ti_folder{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+.ti_file{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+td[field] div{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

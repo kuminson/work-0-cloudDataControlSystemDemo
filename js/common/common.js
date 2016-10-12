@@ -16,7 +16,7 @@ var yg_cache = {};
 	"html/dataConfirm/dataConfirm.html",	//数据确认
 	"html/fileManage/fileManage.html",	//档案管理
 	"html/fileSearch/fileSearch.html",	//档案检索
-	"#",	//整理组卷
+	"html/clearPaper/clearPaper.html",	//整理组卷
 	"#",	//服务利用
 	"#",	//资源库
 	"#" 	//个性化配置

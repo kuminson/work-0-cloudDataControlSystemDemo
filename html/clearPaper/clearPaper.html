@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>云数字档案管理系统</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+	<!-- 引入通用头部样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/header.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/clearPaper/clearPaper.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="header">
+			<span class="wel">欢迎进入云数字档案管理系统</span>
+			<span class="wel" id="header_date">今天是</span>
+			<div class="flright">
+				<span class="header_control" id="header_weluser">您好，系统管理员</span>
+				<a href="#" class="header_control" id="header_notyet">代办信息</a>
+				<a href="#" class="header_control" id="quit">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
+		<h1 class="navbar_title">云数字档案管理系统</h1>
+		<div class="flright">
+			<ul class="navbar_nav_list" id="navbar_nav_list">
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据确认</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案管理</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案检索</h2>
+				</li>
+				<li class="navbar_nav_li active">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">整理组卷</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">服务利用</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">资源库</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">个性化配置</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="main">
+		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
+			<!-- 档案树 -->
+			<div id="m_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
+				<ul id="mtb_tree"></ul>
+			</div>
+			<!-- 数据表格 -->
+			<div id="m_content"  data-options="region:'center',title:'管理平台'" style="width:610px;">
+				<div class="mc_databox">
+					<table id="mcd_roll" fit="true"></table>
+					<div id="mcdr_tb">
+						<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
+						<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="打散">打散</a>
+						<a id="mcdrt_audit" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="提交审核">提交审核</a>
+						<a id="mcdrt_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
+						<a id="mcdrt_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
+						<a id="mcdrt_gzpz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-gzpz" onclick="" title="打印模板配置">打印模板配置</a>
+						<a id="mcdrt_print" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-print'" 
+							style="" title="打印">打印</a>
+						<div id="mm_exportm_staDir" style="width:50px;">
+							<div id="excelExport_staDir" data-options="iconCls:'icon-print'" onclick="" title="文件交接清单">文件交接清单</div>
+							<div id="exportAndEle_staDir" data-options="iconCls:'icon-print'" onclick="" title="卷内目录">卷内目录</div>
+						</div>
+					</div>
+				</div>
+				<div class="mc_databox">
+					<table id="mcd_file" fit="true"></table>
+					<div id="mcdf_tb">
+						<a id="mcdft_jrj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_jrj" onclick="" title="加入卷">加入卷</a>
+						<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="手动组卷">手动组卷</a>
+						<a id="mcdft_zdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_zdzj" onclick="yg_consistroll();" title="自动组卷">自动组卷</a>
+						<a id="mcdft_gzpz" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-gzpz" onclick="" title="规则配置">规则配置</a>
+						<a id="mcdft_wjz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_wjz" onclick="" title="未组卷">未组卷</a>
+						<a id="mcdft_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="拆卷">拆卷</a>
+						<a id="mcdft_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
+						<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
+						<select id="mcdft_ply" class="easyui-combobox" name="mcdft_ply" >
+						    <option value="1CM">1CM</option>
+						    <option value="2CM">2CM</option>
+						    <option value="3CM">3CM</option>
+						    <option value="4CM">4CM</option>
+						    <option value="5CM">5CM</option>
+						    <option value="6CM">6CM</option>
+						</select>
+						<select id="mcdft_print" class="easyui-combobox" name="mcdft_print">
+						    <option value="aa">单面打印</option>
+						    <option>双面打印</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/clearPaper/clearPaper.js"></script>
+</html>
