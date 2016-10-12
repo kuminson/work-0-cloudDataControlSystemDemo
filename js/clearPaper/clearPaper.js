@@ -16,13 +16,14 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
+		method: "get",
 		url: rooturl + "html/clearPaper/rollTree.json"
 	});
 
 	// 加载组卷列标题
 	$.ajax({
 		url: rooturl + "html/clearPaper/groupCol.json",
-		type: "POST",
+		type: "GET",
 		dataType: "json",
 		success:function(data){
 			// 加载案卷数据
@@ -31,11 +32,6 @@ $(function(){
 				// url: rooturl + "html/fileManage/rolldata.json",
 				fitColumns: true,
 				columns:data.columns,
-				onClickRow:function(index,row){
-					// $("#mcd_file").datagrid({
-					// 	url: rooturl + "html/fileManage/filedata"+(index%4)+".json"
-					// });
-				},
 				resizeHandle: "both",
 				striped: true,
 				loadMsg: "请稍后...",
@@ -54,11 +50,12 @@ $(function(){
 	// 加载卷列标题
 	$.ajax({
 		url: rooturl + "html/clearPaper/rollCol.json",
-		type: "POST",
+		type: "GET",
 		dataType: "json",
 		success:function(data){
 			// 加载文件数据
 			$("#mcd_file").datagrid({
+				method: "get",
 				toolbar:"#mcdf_tb",
 				columns:data.columns,
 				url: rooturl + "html/clearPaper/rollData.json",
