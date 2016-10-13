@@ -59,6 +59,9 @@ $(function(){
 				var paneltitle = $("#m_content").panel("header").children(".panel-title");
 				paneltitle.html(paneltitle.html() +'<span class="p_title" easyid="'+titleid.pop()+'">&gt;'+titlenames.pop()+'</span>');
 			}
+			// 展开树结构
+			$("#mtb_tree").tree("expandTo",node.target);
+			$("#mtb_tree").tree("expand",node.target);
 		}
 	});
 
