@@ -104,13 +104,15 @@ function yg_consistroll(){
 		return false;
 	}
 	// 生成组卷
+	var radom = Math.round(Math.random()*1000)%(checkroll.length-1);
+	var radoms = [radom,(checkroll.length - radom)];
 	groupdata = [];
 	for(var i=0; i<2; i++){
 		var alonedata = {};
 		alonedata.ajdh = "G.000.12-000" + (i+1);
 		alonedata.ajtm = "惠州炼化二期项目 第"+(i+1)+"卷";
 		alonedata.ysh = Math.round(Math.random()*1000);
-		alonedata.zfs = Math.round(Math.random()*10)%5+1;
+		alonedata.zfs = radoms[i];
 		alonedata.bzdw = "其他部门";
 		alonedata.ajqsrq = yg_timenow();
 		alonedata.shbz = "待审核";
@@ -122,7 +124,6 @@ function yg_consistroll(){
 	// 刷新数据
 	$("#mcd_roll").datagrid("loadData",groupdata);
 	// 缓存文件数据
-	var radom = Math.round(Math.random()*1000)%(checkroll.length-1);
 	grouprolldata[groupdata[0].ajdh] = [];
 	grouprolldata[groupdata[1].ajdh] = [];
 	for(var i=0; i<checkroll.length; i++){

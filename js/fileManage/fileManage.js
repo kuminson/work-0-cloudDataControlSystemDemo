@@ -161,7 +161,7 @@ $(function(){
 				"width":110
 			},{
 				"field":"filename",
-				"title":"案卷题名",
+				"title":"文件题名",
 				"align":"left",
 				"width":220
 			},{
