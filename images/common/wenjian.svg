@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="170.08px" height="170.08px" viewBox="0 0 170.08 170.08" enable-background="new 0 0 170.08 170.08" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="96.7715" y1="55.751" x2="122.079" y2="30.4435">
+	<stop  offset="0" style="stop-color:#8DABC3"/>
+	<stop  offset="0.3333" style="stop-color:#92B2CB"/>
+	<stop  offset="1" style="stop-color:#92B2CB"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M100.493,56.308h14.985h32.465L93.005,7.785v26.69V49.03C93.005,53.049,96.355,56.308,100.493,56.308
+	z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-5.4678" y1="52.1968" x2="109.4796" y2="179.8588">
+	<stop  offset="0" style="stop-color:#5E7796"/>
+	<stop  offset="0.8736" style="stop-color:#617C9B"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M105.487,155.553H58.042h-7.07h-5.419c-8.272,0-14.98-6.509-14.98-14.532v-12.1V44.186V22.395
+	c-4.137,0-7.491,3.251-7.491,7.264v118.63c0,8.019,6.708,14.522,14.98,14.522h87.404c4.138,0,7.491-3.242,7.491-7.258h-14.985
+	H105.487z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="38.0664" y1="78.0781" x2="147.9434" y2="78.0781">
+	<stop  offset="0" style="stop-color:#8DABC3"/>
+	<stop  offset="0.3333" style="stop-color:#92B2CB"/>
+	<stop  offset="1" style="stop-color:#92B2CB"/>
+</linearGradient>
+<path fill="url(#SVGID_3_)" d="M115.479,63.583h-14.985c-8.276,0-14.981-6.515-14.981-14.558V34.471V7.868H45.557
+	c-4.137,0-7.49,3.251-7.49,7.263v125.89c0,4.016,3.354,7.268,7.49,7.268h94.892c4.141,0,7.495-3.252,7.495-7.271v-19.363V63.583
+	H115.479z M126.709,123.652H58.032v-10.707h68.677V123.652z M126.858,90.65H58.181V79.944h68.678V90.65z"/>
+</svg>

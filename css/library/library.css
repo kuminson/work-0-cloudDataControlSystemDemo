@@ -1,0 +1,61 @@
+/*主体内容*/
+.main{
+	height: 495px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.ti_folder{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+.ti_file{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+.mc_box{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.p_title{
+	cursor: pointer;
+}
+.mcb_list{
+	width: 120px;
+	height: 150px;
+	float: left;
+	/*background-color: green;*/
+}
+.mcb_list.active{
+	background-color: #E0ECFF;
+}
+.mcbl_icon{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 10px auto;
+	background-position: 0 0;
+	background-size: 100px 100px;
+	/*background-color: red;*/
+}
+.mcbl_file{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/wenjian.svg");
+}
+.mcbl_folder{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/wenjianjia.svg");
+}
+.mcbl_name{
+	height: 20px;
+	width: 100px;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	margin: 5px auto;
+	/*background-color: yellow;*/
+}
