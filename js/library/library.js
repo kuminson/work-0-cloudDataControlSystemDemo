@@ -71,8 +71,9 @@ $(function(){
 			$(treenode.target).trigger("click");
 			// 收敛所有树结构
 			$("#mtb_tree").tree("collapseAll");
-			// 展开点击树结构
+			// 展开树结构
 			$("#mtb_tree").tree("expandTo",treenode.target);
+			$("#mtb_tree").tree("expand",treenode.target);
 		}
 	});
 
@@ -97,8 +98,9 @@ $(function(){
 				$(treenode.target).trigger("click");
 				// 收敛所有树结构
 				$("#mtb_tree").tree("collapseAll");
-				// 展开点击树结构
+				// 展开树结构
 				$("#mtb_tree").tree("expandTo",treenode.target);
+				$("#mtb_tree").tree("expand",treenode.target);
 			}
 		}
 	});
