@@ -138,6 +138,76 @@ $(function(){
 		$("#mtfi_name").val("系统管理员");
 		$("#mtfi_time").val(yg_timenow());
 	});
+
+	// 加载组织机构树
+	$("#mt_unit").tree({
+		url:rooturl + "html/serviceUse/unit.json",
+		checkbox: true
+	});
+
+	// 绑定选择按钮事件
+	$("body").on("click","#mcgb_select",function(){
+		var seldata = $("#fcg_grid").datagrid("getChecked");
+		// 判断选择是否为空
+		if(seldata.length == 0){
+			alert("请至少选择一条数据");
+			return 0;
+		}
+		// 加载文件数据
+		for(var i=0; i<seldata.length; i++){
+			$("#mcd_files").append('<li class="mcb_list" easyid="'+seldata[i].wjbh+'">'
+							+'<span class="mcbl_icon mcbl_file"></span>'
+							+'<h3 class="mcbl_name">' + seldata[i].wjmc + '</h3>'
+						+'</li>');
+		}
+		// 关闭悬浮框
+		$("#frame").window("close");
+		// 隐藏属性栏
+		$("#datagrid_content").layout("collapse","east");
+	});
+
+	// 绑定点击文件 显示配置流程事件
+	$("#m_content").on("click",".mcbl_file",function(){
+		$("#mc_box").layout("expand","south");
+	});
+
+	// 绑定选择专题文件时间
+	$("#mc_box").on("click","#mcdrt_ok",function(){
+		// 显示悬浮窗
+		$("#frame").window("open");
+		$("#frame").window("maximize");
+		// 加载树
+		$("#fct_tree").tree({
+			url:rooturl + "html/serviceUse/tree.json",
+			onClick: function(){
+				// 加载卷列标题
+				$.ajax({
+					url: rooturl + "html/serviceUse/rollCol.json",
+					type: "POST",
+					dataType: "json",
+					success:function(data){
+						// 加载文件数据
+						$("#fcg_grid").datagrid({
+							columns:data.columns,
+							url: rooturl + "html/serviceUse/rollData.json",
+							fitColumns: true,
+							resizeHandle: "both",
+							striped: true,
+							loadMsg: "请稍后...",
+							pagination: true,
+							rownumbers: true,
+							pageNumber: 1,
+							pageSize: 20,
+							pageList: [20,40,60]
+						});
+					},
+					error:function(){
+						alert("链接服务器失败");
+					}
+				});
+			}
+		});
+	});
 });
 
 // 当前日期

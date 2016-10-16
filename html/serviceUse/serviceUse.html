@@ -90,7 +90,8 @@
 						<ul id="mcd_files" class="mcd_files"></ul>
 					</div>
 					<!-- 审核信息 -->
-					<div id="mc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:100px">
+					<div id="mc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:120px">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/flowImg.png" alt="flowimg" id="mct_flowimg" class="mct_flowimg">
 					</div>
 				</div>
 			</div>
@@ -135,10 +136,27 @@
 						</div>
 					</li>
 				</ul>
+				<!-- 组织机构树 -->
+				<ul id="mt_unit" class="mt_unit"></ul>
 			</div>
 		</div>
 	</div>
-	
+	<!-- 悬浮窗口内容 -->
+	<div id="frame" class="easyui-window" data-options="title:'选择专题文件',closed:true">
+		<div id="f_content" class="easyui-layout" data-options="fit:true">
+			<div id="fc_tree" data-options="region:'west',title:'资源树列表',split:true" style="width:200px">
+				<ul id="fct_tree"></ul>
+			</div>
+			<div id="fc_grid"  data-options="region:'center'">
+				<table id="fcg_grid" class="easyui-datagrid" data-options="toolbar:'#mcg_tb'"></table>
+				<!-- 按钮栏 -->
+				<div id="mcg_tb" class="datagrid-toolbar">
+					<a id="mcgb_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
+					<a id="mcgb_search" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-search" onclick="" title="删除专题">高级检索</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>

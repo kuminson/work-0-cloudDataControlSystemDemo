@@ -90,3 +90,18 @@
 	height: 22px;
 	width: 118px;
 }
+.mt_unit{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+}
+.mct_flowimg{
+	display: block;
+	height: 87px;
+	width: 757px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*悬浮窗口*/
