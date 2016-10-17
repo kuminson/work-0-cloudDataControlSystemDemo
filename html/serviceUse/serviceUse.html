@@ -97,47 +97,53 @@
 			</div>
 			<!-- 属性 -->
 			<div id="m_tree" data-options="region:'east',title:'属性',split:true,collapsed:true" style="width:220px">
-				<ul>
-					<li class="mt_form">
-						<span class="mtf_title">专题名称：</span>
-						<div class="mtf_input">
-							<input type="text" class="textinput mtf_info">
-						</div>
-					</li>
-					<li class="mt_form">
-						<span class="mtf_title">发布类型：</span>
-						<div class="mtf_input">
-							<label><input type="radio" checked="checked" name="subject">公共专题</label>
-							<label><input type="radio" name="subject">定向专题</label>
-						</div>
-					</li>
-					<li class="mt_form">
-						<span class="mtf_title">制作人：</span>
-						<div class="mtf_input">
-							<input id="mtfi_name" type="text" disabled="disabled" class="textinput mtf_info">
-						</div>
-					</li>
-					<li class="mt_form">
-						<span class="mtf_title">制作时间：</span>
-						<div class="mtf_input">
-							<input id="mtfi_time" type="text" disabled="disabled" class="textinput mtf_info">
-						</div>
-					</li>
-					<li class="mt_form">
-						<span class="mtf_title">有效期：</span>
-						<div class="mtf_input">
-							<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
-						</div>
-						<div class="mtf_input">
-							<span class="mtfi_font">至</span>
-						</div>
-						<div class="mtf_input">
-							<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
-						</div>
-					</li>
-				</ul>
-				<!-- 组织机构树 -->
-				<ul id="mt_unit" class="mt_unit"></ul>
+				<div class="easyui-layout" data-options="fit:'true'">
+					<div id="m_tree" data-options="region:'center'" >
+						<ul id="mt_prop">
+							<li class="mt_form">
+								<span class="mtf_title">专题名称：</span>
+								<div class="mtf_input">
+									<input type="text" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">发布类型：</span>
+								<div class="mtf_input">
+									<label><input type="radio" checked="checked" name="subject">公共专题</label>
+									<label><input type="radio" name="subject">定向专题</label>
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">制作人：</span>
+								<div class="mtf_input">
+									<input id="mtfi_name" type="text" disabled="disabled" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">制作时间：</span>
+								<div class="mtf_input">
+									<input id="mtfi_time" type="text" disabled="disabled" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">有效期：</span>
+								<div class="mtf_input">
+									<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+								</div>
+								<div class="mtf_input">
+									<span class="mtfi_font">至</span>
+								</div>
+								<div class="mtf_input">
+									<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="m_tree" data-options="region:'south',title:'组织机构树'" style="height:300px">
+						<!-- 组织机构树 -->
+						<ul id="mt_unit" class="mt_unit"></ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
