@@ -81,18 +81,10 @@
 						<div id="mcbc_tb" class="datagrid-toolbar">
 							<a id="mcdrt_add" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">制作专题</a>
 							<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除专题">删除专题</a>
-							<!-- <a id="mcdrt_ok" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-ok" onclick="" title="选择专题文件">选择专题文件</a>
-							<a id="mcdrt_delete" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-remove" onclick="" title="删除">删除</a>
-							<a id="mcdrt_zxcj" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-zxcj" onclick="" title="在线创建">在线创建</a>
-							<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a> -->
 						</div>
 						<!-- 文件列表 -->
 						<ul id="mcd_files" class="mcd_files"></ul>
 					</div>
-					<!-- 审核信息 -->
-					<!-- <div id="mc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:120px">
-						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/flowImg.png" alt="flowimg" id="mct_flowimg" class="mct_flowimg">
-					</div> -->
 				</div>
 			</div>
 			<!-- 属性 -->
@@ -165,20 +157,73 @@
 	</div>
 	<!-- 专题详情窗口内容 -->
 	<div id="detailswin" class="easyui-window" data-options="title:'专题详情',closed:true,height:'90%',width:'90%'">
-		<div id="d_content" class="easyui-layout" data-options="fit:true">
-			<div id="dc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:120px">
-				<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/flowImg.png" alt="flowImg" class="dct_img">
-			</div>
-			<div id="dc_files"  data-options="region:'center'">
-				<!-- 按钮栏 -->
-				<div id="dcf_tb" class="datagrid-toolbar">
-					<a id="mcdrt_ok" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-ok" onclick="" title="选择专题文件">选择专题文件</a>
-					<a id="mcdrt_delete" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除">删除</a>
-					<a id="mcdrt_zxcj" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-zxcj" onclick="" title="在线创建">在线创建</a>
-					<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
+		<div id="detabox" class="easyui-layout" data-options="fit:true">
+			<div id="detacenter" data-options="region:'center'">
+				<div id="d_content" class="easyui-layout" data-options="fit:true">
+					<div id="dc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:120px">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/flowImg.png" alt="flowImg" class="dct_img">
+					</div>
+					<div id="dc_files"  data-options="region:'center'">
+						<!-- 按钮栏 -->
+						<div id="dcf_tb" class="datagrid-toolbar">
+							<a id="mcdrt_ok" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-ok" onclick="" title="选择专题文件">选择专题文件</a>
+							<a id="mcdrt_delete" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除">删除</a>
+							<a id="mcdrt_zxcj" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-zxcj" onclick="" title="在线创建">在线创建</a>
+							<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
+						</div>
+						<!-- 文件列表 -->
+						<ul id="dcf_files" class="dcf_files"></ul>
+					</div>
 				</div>
-				<!-- 文件列表 -->
-				<ul id="dcf_files" class="dcf_files"></ul>
+			</div>
+			<div id="detaattr" data-options="region:'east',title:'属性',split:true,collapsed:true" style="width:220px">
+				<div id="d_attr" class="easyui-layout" data-options="fit:'true'">
+					<div data-options="region:'center'" >
+						<ul>
+							<li class="mt_form">
+								<span class="mtf_title">专题名称：</span>
+								<div class="mtf_input">
+									<input id="dafi_title" type="text" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">发布类型：</span>
+								<div class="mtf_input">
+									<label><input id="dafi_common" type="radio" checked="checked" name="subject">公共专题</label>
+									<label><input id="dafi_person" type="radio" name="subject">定向专题</label>
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">制作人：</span>
+								<div class="mtf_input">
+									<input id="dafi_name" type="text" disabled="disabled" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">制作时间：</span>
+								<div class="mtf_input">
+									<input id="dafi_time" type="text" disabled="disabled" class="textinput mtf_info">
+								</div>
+							</li>
+							<li class="mt_form">
+								<span class="mtf_title">有效期：</span>
+								<div class="mtf_input">
+									<input id="dafi_start" type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+								</div>
+								<div class="mtf_input">
+									<span class="mtfi_font">至</span>
+								</div>
+								<div class="mtf_input">
+									<input id="dafi_over" type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div data-options="region:'south',title:'组织机构树'" style="height:50%;">
+						<!-- 组织机构树 -->
+						<ul id="da_unit" class="mt_unit"></ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

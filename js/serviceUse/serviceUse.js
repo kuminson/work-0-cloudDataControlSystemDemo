@@ -36,23 +36,6 @@ $(function(){
 		onClick: function(node){
 			// 加载文件列表
 			if(node.children == undefined){
-				// $.ajax({
-				// 	url: rooturl + "html/serviceUse/filedata1.json",
-				// 	type: "POST",
-				// 	dataType: "json",
-				// 	success:function(data){
-				// 		for(var i=0; i<data.rows.length; i++){
-				// 			$("#mcd_files").append('<li class="mcb_list">'
-				// 							+'<span class="mcbl_icon mcbl_file"></span>'
-				// 							+'<h3 class="mcbl_name">' + data.rows[i].filename + '</h3>'
-				// 						+'</li>');
-				// 		}
-				// 	},
-				// 	error:function(){
-				// 		alert("服务器链接失败！")
-				// 	}
-				// });
-
 				// 显示属性栏
 				$("#datagrid_content").layout("expand","east");
 				// 属性栏内容加载
@@ -130,6 +113,15 @@ $(function(){
 						alert("服务器链接失败！")
 					}
 				});
+				// 复制属性数据
+				$("#dafi_title").val($("#mtfi_title").val());
+				$("#dafi_common").prop("checked",$("#mtfi_common").prop("checked"))
+				$("#dafi_person").prop("checked",$("#mtfi_person").prop("checked"))
+				if($("#dafi_common").prop("checked") == true){
+					$("#d_attr").layout("collapse","south");
+				}else{
+					$("#d_attr").layout("expand","south");
+				}
 			}else{
 				// 触发点击事件
 				$(treenode.target).trigger("click");
@@ -192,7 +184,7 @@ $(function(){
 	});
 
 	// 加载组织机构树
-	$("#mt_unit").tree({
+	$(".mt_unit").tree({
 		url:rooturl + "html/serviceUse/unit.json",
 		checkbox: true
 	});
@@ -216,8 +208,9 @@ $(function(){
 		$("#frame").window("close");
 	});
 
-	// 绑定点击文件 显示配置流程事件
+	// 绑定点击文件
 	$("#m_content").on("click",".mcbl_file",function(){
+		// 显示配置流程事件
 		$("#mc_box").layout("expand","south");
 	});
 
@@ -246,7 +239,7 @@ $(function(){
 		$("#frame").window("open");
 		// 加载树
 		$("#fct_tree").tree({
-			url:rooturl + "html/serviceUse/tree.json",
+			url:rooturl + "html/serviceUse/rollTree.json",
 			onClick: function(){
 				// 加载卷列标题
 				$.ajax({
