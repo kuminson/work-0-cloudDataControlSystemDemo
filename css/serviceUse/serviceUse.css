@@ -103,4 +103,14 @@
 	margin-right: auto;
 }
 
-/*悬浮窗口*/
+/*专题详情窗口内容*/
+.dct_img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 757px;
+}
+.dcf_files{
+	width: 100%;
+	overflow: hidden;
+}

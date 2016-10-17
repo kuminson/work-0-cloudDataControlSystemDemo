@@ -25,6 +25,43 @@
 					"qzh":"18",
 					"isSys":"true"
 				},
+				"children":[
+					{
+						"id":"200101",
+						"text":"杨宝怀",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"200102",
+						"text":"范保林",
+						"checked":"true",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"200103",
+						"text":"鞠长海",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					}
+				],
 				"iconCls":"icon-tree-dept"
 			},{
 				"id":"1463365171916302",
@@ -47,6 +84,67 @@
 					"qzh":"zl",
 					"isSys":"true"
 				},
+				"children":[
+					{
+						"id":"300101",
+						"text":"梅苍华",
+						"checked":"true",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"300102",
+						"text":"徐德彪",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"300103",
+						"text":"梅长豆",
+						"checked":"true",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"300104",
+						"text":"刘飞海",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					},{
+						"id":"300105",
+						"text":"王梦林",
+						"checked":"true",
+						"attributes":{
+							"isTree":"true",
+							"del":"false",
+							"leafNode":"true",
+							"qzh":"zl",
+							"isSys":"true"
+						},
+						"iconCls":"icon-tree-dept"
+					}
+				],
 				"iconCls":"icon-tree-dept"
 			},{
 				"id":"210100",
