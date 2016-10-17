@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>云数字档案管理系统</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+	<!-- 引入通用头部样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/header.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/serviceUse/serviceUse.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="header">
+			<span class="wel">欢迎进入云数字档案管理系统</span>
+			<span class="wel" id="header_date">今天是</span>
+			<div class="flright">
+				<span class="header_control" id="header_weluser">您好，系统管理员</span>
+				<a href="#" class="header_control" id="header_notyet">代办信息</a>
+				<a href="#" class="header_control" id="quit">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<img src="/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
+		<h1 class="navbar_title">云数字档案管理系统</h1>
+		<div class="flright">
+			<ul class="navbar_nav_list" id="navbar_nav_list">
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据确认</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案管理</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">档案检索</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">整理组卷</h2>
+				</li>
+				<li class="navbar_nav_li active">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">服务利用</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">资源库</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">个性化配置</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="main">
+		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
+			<!-- 专题树 -->
+			<div id="m_tree" data-options="region:'west',title:'专题树',split:true" style="width:200px">
+				<ul id="mtb_tree"></ul>
+			</div>
+			<!-- 主体内容 -->
+			<div id="m_content"  data-options="region:'center',title:'专题文件'" style="width:610px;">
+				<div id="mc_box" class="easyui-layout" data-options="fit:'true'">
+					<!-- 专题文件 -->
+					<div class="mcb_centerbox" data-options="region:'center'">
+						<!-- 按钮栏 -->
+						<div id="mcbc_tb" class="datagrid-toolbar">
+							<a id="mcdrt_add" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">制作专题</a>
+							<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除专题">删除专题</a>
+							<a id="mcdrt_ok" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-ok" onclick="" title="选择专题文件">选择专题文件</a>
+							<a id="mcdrt_delete" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-remove" onclick="" title="删除">删除</a>
+							<a id="mcdrt_zxcj" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-zxcj" onclick="" title="在线创建">在线创建</a>
+							<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip hide" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
+						</div>
+						<!-- 文件列表 -->
+						<ul id="mcd_files" class="mcd_files"></ul>
+					</div>
+					<!-- 审核信息 -->
+					<div id="mc_tree" data-options="region:'south',title:'审核信息',collapsed:true" style="height:120px">
+						<img src="/work-0-cloudDataControlSystemDemo/images/common/flowImg.png" alt="flowimg" id="mct_flowimg" class="mct_flowimg">
+					</div>
+				</div>
+			</div>
+			<!-- 属性 -->
+			<div id="m_tree" data-options="region:'east',title:'属性',split:true,collapsed:true" style="width:220px">
+				<ul>
+					<li class="mt_form">
+						<span class="mtf_title">专题名称：</span>
+						<div class="mtf_input">
+							<input type="text" class="textinput mtf_info">
+						</div>
+					</li>
+					<li class="mt_form">
+						<span class="mtf_title">发布类型：</span>
+						<div class="mtf_input">
+							<label><input type="radio" checked="checked" name="subject">公共专题</label>
+							<label><input type="radio" name="subject">定向专题</label>
+						</div>
+					</li>
+					<li class="mt_form">
+						<span class="mtf_title">制作人：</span>
+						<div class="mtf_input">
+							<input id="mtfi_name" type="text" disabled="disabled" class="textinput mtf_info">
+						</div>
+					</li>
+					<li class="mt_form">
+						<span class="mtf_title">制作时间：</span>
+						<div class="mtf_input">
+							<input id="mtfi_time" type="text" disabled="disabled" class="textinput mtf_info">
+						</div>
+					</li>
+					<li class="mt_form">
+						<span class="mtf_title">有效期：</span>
+						<div class="mtf_input">
+							<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+						</div>
+						<div class="mtf_input">
+							<span class="mtfi_font">至</span>
+						</div>
+						<div class="mtf_input">
+							<input type="text" class="mtbfbl_info easyui-datebox" style="width:120px;">
+						</div>
+					</li>
+				</ul>
+				<!-- 组织机构树 -->
+				<ul id="mt_unit" class="mt_unit"></ul>
+			</div>
+		</div>
+	</div>
+	<!-- 悬浮窗口内容 -->
+	<div id="frame" class="easyui-window" data-options="title:'选择专题文件',closed:true">
+		<div id="f_content" class="easyui-layout" data-options="fit:true">
+			<div id="fc_tree" data-options="region:'west',title:'资源树列表',split:true" style="width:200px">
+				<ul id="fct_tree"></ul>
+			</div>
+			<div id="fc_grid"  data-options="region:'center'">
+				<table id="fcg_grid" class="easyui-datagrid" data-options="toolbar:'#mcg_tb'"></table>
+				<!-- 按钮栏 -->
+				<div id="mcg_tb" class="datagrid-toolbar">
+					<a id="mcgb_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
+					<a id="mcgb_search" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-search" onclick="" title="删除专题">高级检索</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/serviceUse/serviceUse.js"></script>
+</html>
