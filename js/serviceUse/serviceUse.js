@@ -259,6 +259,7 @@ $(function(){
 					success:function(data){
 						// 加载文件数据
 						$("#fcg_grid").datagrid({
+							method: "get",
 							columns:data.columns,
 							url: rooturl + "html/serviceUse/rollData.json",
 							fitColumns: true,
