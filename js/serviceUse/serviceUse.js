@@ -37,23 +37,6 @@ $(function(){
 		onClick: function(node){
 			// 加载文件列表
 			if(node.children == undefined){
-				// $.ajax({
-				// 	url: rooturl + "html/serviceUse/filedata1.json",
-				// 	type: "POST",
-				// 	dataType: "json",
-				// 	success:function(data){
-				// 		for(var i=0; i<data.rows.length; i++){
-				// 			$("#mcd_files").append('<li class="mcb_list">'
-				// 							+'<span class="mcbl_icon mcbl_file"></span>'
-				// 							+'<h3 class="mcbl_name">' + data.rows[i].filename + '</h3>'
-				// 						+'</li>');
-				// 		}
-				// 	},
-				// 	error:function(){
-				// 		alert("服务器链接失败！")
-				// 	}
-				// });
-
 				// 显示属性栏
 				$("#datagrid_content").layout("expand","east");
 				// 属性栏内容加载
@@ -80,8 +63,6 @@ $(function(){
 				$(".mcb_list").remove();
 				// 加载文件列表
 				addfilelist(node.children);
-				// 隐藏属性栏
-				$("#datagrid_content").layout("collapse","east");
 			}
 			// 初始化面包屑title
 			$("#m_content").panel("header").children(".panel-title").html('<span class="p_title" easyid="">专题文件</span>');
@@ -130,6 +111,16 @@ $(function(){
 					error:function(){
 						alert("服务器链接失败！")
 					}
+				});
+				// 复制属性数据
+				setframeattr({
+					title: $("#mtfi_title").val(),
+					common: $("#mtfi_common").prop("checked"),
+					person: $("#mtfi_person").prop("checked"),
+					name: $("#mtfi_name").val(),
+					time: $("#mtfi_time").val(),
+					start: $("#mtfi_start").datebox("getValue"),
+					over: "1/1/2017"
 				});
 			}else{
 				// 触发点击事件
@@ -181,7 +172,6 @@ $(function(){
 	$("#dcf_files").on("click",".mcb_list",function(e){
 		$("#dcf_files .mcb_list").removeClass("active");
 		$(this).addClass("active");
-		$("#d_content").layout("expand","south");
 	});
 
 	// 绑定制作专题事件
@@ -190,10 +180,20 @@ $(function(){
 		$("#detailswin").window("open");
 		// 清空文件列表
 		$("#dcf_files .mcb_list").remove();
+		// 清空属性
+		setframeattr({
+			title: "新建专题",
+			common: true,
+			person: false,
+			name: $("#mtfi_name").val(),
+			time: $("#mtfi_time").val(),
+			start: "",
+			over: ""
+		});
 	});
 
 	// 加载组织机构树
-	$("#mt_unit").tree({
+	$(".mt_unit").tree({
 		method: "get",
 		url:rooturl + "html/serviceUse/unit.json",
 		checkbox: true
@@ -218,18 +218,39 @@ $(function(){
 		$("#frame").window("close");
 	});
 
-	// 绑定点击文件 显示配置流程事件
+	// 绑定保存按钮事件
+	$("#d_content").on("click","#mcdrt_save",function(){
+		// 判定专题名称是否为空
+		if($("#dafi_title").val() == ""){
+			// 弹出警告
+			alert("专题名称不能为空");
+		}else{
+			// 关闭弹出框
+			$("#detailswin").window("close");
+			// 生成新文件夹
+			addfilelist([{id:"new001",text:$("#dafi_title").val()}]);
+			// 新建文件选中效果
+			$(".mcb_list").removeClass("active");
+			$(".mcb_list[easyid='new001']").addClass("active");
+		}
+	});
+
+	// 绑定点击文件
 	$("#m_content").on("click",".mcbl_file",function(){
+		// 显示配置流程事件
 		$("#mc_box").layout("expand","south");
 	});
 
 	// 发布类型改变时触发事件
-	$('[name="subject"]').change(function(){
-		if($("#mtfi_common").prop("checked") === true){
-			$("#mt_box").layout("collapse","south");
-		}else{
-			$("#mt_box").layout("expand","south");
-		}
+	radiochange({
+		name:'[name="subject"]',
+		indiv:"#mtfi_common",
+		layout:"#mt_box"
+	});
+	radiochange({
+		name:'[name="asubject"]',
+		indiv:"#dafi_common",
+		layout:"#d_attr"
 	});
 
 	// 设置datebox参数
@@ -249,7 +270,7 @@ $(function(){
 		// 加载树
 		$("#fct_tree").tree({
 			method: "get",
-			url:rooturl + "html/serviceUse/tree.json",
+			url:rooturl + "html/serviceUse/rollTree.json",
 			onClick: function(){
 				// 加载卷列标题
 				$.ajax({
@@ -320,4 +341,31 @@ $.fn.datebox.defaults.formatter = function(date){
 	var m = date.getMonth()+1;
 	var d = date.getDate();
 	return y+'-'+m+'-'+d;
+}
+
+// 单选改变事件绑定
+function radiochange(obj){
+	$(obj.name).change(function(){
+		if($(obj.indiv).prop("checked") === true){
+			$(obj.layout).layout("collapse","south");
+		}else{
+			$(obj.layout).layout("expand","south");
+		}
+	});
+}
+
+// 设置弹出框属性值
+function setframeattr(obj){
+	$("#dafi_title").val(obj.title);
+	$("#dafi_common").prop("checked",obj.common)
+	$("#dafi_person").prop("checked",obj.person)
+	if($("#dafi_common").prop("checked") == true){
+		$("#d_attr").layout("collapse","south");
+	}else{
+		$("#d_attr").layout("expand","south");
+	}
+	$("#dafi_name").val(obj.name);
+	$("#dafi_time").val(obj.time);
+	$("#dafi_start").datebox("setValue",obj.start);
+	$("#dafi_over").datebox("setValue",obj.over);
 }
