@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -56,10 +56,6 @@
 				</li>
 				<li class="navbar_nav_li">
 					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">资源库</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
 					<h2 class="navbar_nav_title">个性化配置</h2>
 				</li>
 			</ul>
@@ -69,25 +65,110 @@
 	<div class="main">
 		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
 			<!-- 档案树 -->
-			<div id="m_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
-				<ul id="mtb_tree"></ul>
+			<div id="m_tree" data-options="region:'west',split:true" style="width:200px">
+				<div id="mt_accor" class="easyui-accordion" fit="true">
+					<!-- 元数据树 -->
+				    <div title="元数据" data-options="selected:true" >
+						<ul id="mta_otree"></ul>
+				    </div>
+				    <!-- 资源库树 -->
+				    <div title="资源库" data-options="" >
+						<ul id="mta_ltree"></ul>
+				    </div>
+				    <!-- 人名库 -->
+				    <div title="权限人名库">
+				        
+				    </div>
+				</div>
 			</div>
 			<!-- 数据表格 -->
 			<div id="m_content"  data-options="region:'center'" style="width:610px;">
-				<div class="mc_databox">
-					<table id="mcd_roll" fit="true" data-options="title:'案卷'"></table>
+				<!-- 元数据tabs -->
+				<div id="mc_original" class="easyui-tabs mc_tab" fit="true">
+					<div title="数据">
+						<div class="mc_databox">
+							<table id="mcd_roll" fit="true" data-options="title:'案卷'"></table>
+						</div>
+						<div class="mc_databox">
+							<table id="mcd_file" fit="true" data-options="title:'文件'"></table>
+						</div>
+					</div>
+					<div title="统计" data-options="">
+						<div id="mco_today" class="mco_today easyui-panel" title="今日" style="height:100px;">
+							<ul class="mcot_list">
+								<li class="mcotl_item">
+									<span class="mcotli_content">0</span>
+									<span class="mcotli_title">新注册会员</span>
+								</li>
+								<li class="mcotl_item">
+									<span class="mcotli_content">989</span>
+									<span class="mcotli_title">浏览量</span>
+								</li>
+								<li class="mcotl_item">
+									<span class="mcotli_content">￥0</span>
+									<span class="mcotli_title">成交额</span>
+								</li>
+								<li class="mcotl_item">
+									<span class="mcotli_content">￥0</span>
+									<span class="mcotli_title">融资额</span>
+								</li>
+								<li class="mcotl_item">
+									<span class="mcotli_content">0吨</span>
+									<span class="mcotli_title">新增产品</span>
+								</li>
+							</ul>
+						</div>
+						<div id="mco_browse" class="mco_browse easyui-panel" title="浏览量" style="height:300px;">
+							<div id="mcob_area" class="mcob_area"></div>
+						</div>
+						<div id="mco_chartbox" class="easyui-layout" style="height:300px;">
+							<div id="mco_bargain" data-options="region:'west',title:'产品成交量',collapsible:false" style="width:40%;">
+								<div id="mcob_fufure" class="mcob_fufure"></div>
+								<div id="mcob_cash" class="mcob_cash"></div>
+								<ul class="mcob_ul">
+									<li class="mcob_list"><span>期货成交量：191.00吨</span></li>
+									<li class="mcob_list"><span>现货成交量：2,701.00吨</span></li>
+									<li class="mcob_list"><span>合计成交量：2,892.00吨</span></li>
+								</ul>
+							</div>
+							<div id="mco_stock" data-options="region:'center',title:'产品库存量'">
+								<div id="mcos_bar" class="mcos_bar"></div>
+							</div>
+						</div>
+					</div>
+					<div title="备份" data-options="">
+					</div>
 				</div>
-				<div class="mc_databox">
-					<table id="mcd_file" fit="true" data-options="title:'文件'"></table>
+				<!-- 资源库tabs -->
+				<div id="mc_library" class="easyui-tabs mc_tab hide" fit="true">
+					<div title="资源">
+						<div id="mcl_filebox" class="easyui-panel" title="资源库" fit="true">
+							<ul id="mco_fimana" class="mco_fimana"></ul>
+						</div>
+					</div>
+					<div title="统计" data-options="">
+					</div>
+					<div title="备份" data-options="">
+					</div>
+				</div>
+				<!-- 权限人名库tabs -->
+				<div id="mc_name" class="easyui-tabs mc_tab hide" fit="true">
+					<div title="日志">
+					</div>
+					<div title="备份" data-options="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-</body>
-
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts-more.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/exporting.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/solid-gauge.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/fileManage/fileManage.js"></script>
+</body>
 </html>
