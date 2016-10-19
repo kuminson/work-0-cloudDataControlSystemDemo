@@ -18,7 +18,6 @@ var yg_cache = {};
 	"html/fileSearch/fileSearch.html",	//档案检索
 	"html/clearPaper/clearPaper.html",	//整理组卷
 	"html/serviceUse/serviceUse.html",	//服务利用
-	"html/library/library.html",	//资源库
 	"#" 	//个性化配置
 	]
 

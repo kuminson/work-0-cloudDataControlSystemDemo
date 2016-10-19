@@ -1,4 +1,4 @@
-
+﻿
 var bottomheight = 10;            // 预留页面底部高度
 var pageminwidth = 1000;          // 页面最小宽度
 var pageminheight = 610;          // 页面最小高度
@@ -13,8 +13,61 @@ $(function(){
 	// 绑定一级菜单跳转
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
-	$("#mtb_tree").tree({
+	$("#mta_otree").tree({
 		url: rooturl + "html/fileManage/rollTree.json"
+	});
+	$("#mta_ltree").tree({
+		url: rooturl + "html/fileManage/rollTree.json",
+		onLoadSuccess: function(){
+			// 初始化文件列表
+			initfilelist();
+		},
+		onClick: function(node){
+			// 清除列表
+			$(".mcb_list").remove();
+			// 加载文件列表
+			if(node.children == undefined){
+				$.ajax({
+					url: rooturl + "html/fileManage/filerootdata.json",
+					type: "POST",
+					dataType: "json",
+					success:function(data){
+						for(var i=0; i<data.rows.length; i++){
+							$("#mco_fimana").append('<li class="mcb_list">'
+											+'<span class="mcbl_icon mcbl_file"></span>'
+											+'<h3 class="mcbl_name">' + data.rows[i].filename + '</h3>'
+										+'</li>');
+						}
+					},
+					error:function(){
+						alert("服务器链接失败！")
+					}
+				});
+			}else{
+				// 加载文件列表
+				addfilelist(node.children);
+			}
+			// 初始化面包屑title
+			$("#mcl_filebox").panel("header").children(".panel-title").html('<span class="p_title" easyid="">资源库</span>');
+			// 加载面包屑title
+			var titlenames = [];
+			var titleid = [];
+			var parentnode = $("#mta_ltree").tree("getParent",node.target);
+			titlenames.push(node.text);
+			while(parentnode != null){
+				titlenames.push(parentnode.text);
+				titleid.push(parentnode.id);
+				parentnode = $("#mta_ltree").tree("getParent",parentnode.target);
+			}
+			var titlenamenbr = titlenames.length;
+			for(var i=0; i<titlenamenbr; i++){
+				var paneltitle = $("#mcl_filebox").panel("header").children(".panel-title");
+				paneltitle.html(paneltitle.html() +'<span class="p_title" easyid="'+titleid.pop()+'">&gt;'+titlenames.pop()+'</span>');
+			}
+			// 展开树结构
+			$("#mta_ltree").tree("expandTo",node.target);
+			$("#mta_ltree").tree("expand",node.target);
+		}
 	});
 	// 加载案卷数据
 	$("#mcd_roll").datagrid({
@@ -202,7 +255,361 @@ $(function(){
 	});
 	$(window).triggerHandler("resize");
 
+	// 绑定accordion点击事件
+	$("#mt_accor").accordion({
+		onSelect:function(title,index){
+			// 隐藏所有tabs
+			$(".mc_tab").addClass("hide");
+			// 显示选中tabs
+			switch(index){
+				case 0:
+					$("#mc_original").removeClass("hide");
+					break;
+				case 1:
+					$("#mc_library").removeClass("hide");
+					break;
+				case 2:
+					$("#mc_name").removeClass("hide");
+					break;
+			}
+			// 主动触发resize事件 修复显示问题
+			$(window).triggerHandler("resize");
+		}
+	});
+
+	// 绑定tabs点击事件
+	$("#mc_original").tabs({
+		onSelect:function(title,index){
+			if(index == 1){
+				// 加载area表格
+				addhighchart();
+				// 加载gauges表格
+				addgaugesleft();
+				addgaugesright();
+				// 加载bar表格
+				addhighchartbar();
+			}
+		}
+	});
+
+	// 绑定双击文件夹进入事件
+	$("#mco_fimana").on("dblclick",".mcb_list",function(e){
+		if($(this).attr("easyid") != undefined){
+			var treenode = $("#mta_ltree").tree("find",$(this).attr("easyid"));
+			// 触发点击事件
+			$(treenode.target).trigger("click");
+			// 收敛所有树结构
+			$("#mta_ltree").tree("collapseAll");
+			// 展开树结构
+			$("#mta_ltree").tree("expandTo",treenode.target);
+			$("#mta_ltree").tree("expand",treenode.target);
+		}
+	});
+
+	// 绑定单击文件列表 触发选中状态
+	$("#mco_fimana").on("click",".mcb_list",function(e){
+		$(".mcb_list").removeClass("active");
+		$(this).addClass("active");
+	});
+
+	// 绑定点击penal title跳转事件
+	$("#datagrid_content").on("click",".p_title",function(){
+		var easyid = $(this).attr("easyid");
+		if(easyid != "undefined"){
+			if(easyid == ""){
+				// 初始化文件列表
+				initfilelist();
+				// 收敛所有树结构
+				$("#mta_ltree").tree("collapseAll");
+			}else{
+				var treenode = $("#mta_ltree").tree("find",easyid);
+				// 触发点击事件
+				$(treenode.target).trigger("click");
+				// 收敛所有树结构
+				$("#mta_ltree").tree("collapseAll");
+				// 展开树结构
+				$("#mta_ltree").tree("expandTo",treenode.target);
+				$("#mta_ltree").tree("expand",treenode.target);
+			}
+		}
+	});
+
 	
 });
 
 
+// 初始化文件列表
+function initfilelist(){
+	// 清除文件列表
+	$(".mcb_list").remove();
+	// 初始化面包屑title
+	$("#mcl_filebox").panel("header").children(".panel-title").html('<span class="p_title" easyid="">资源库</span>');
+	// 加载文件列表
+	var treeroot = $("#mta_ltree").tree("getRoots");
+	addfilelist(treeroot);
+}
+
+// 加载文件列表
+function addfilelist(data){
+	for(var i=0; i<data.length; i++){
+		$("#mco_fimana").append('<li class="mcb_list" easyid="'+data[i].id+'">'
+						+'<span class="mcbl_icon mcbl_folder"></span>'
+						+'<h3 class="mcbl_name">' + data[i].text + '</h3>'
+					+'</li>');
+	}
+}
+
+function addDate(dadd) {
+	var a = new Date()
+	a = a.valueOf()
+	a = a + dadd * 24 * 60 * 60 * 1000
+	a = new Date(a)
+	return a;
+}
+
+// 加载area表格
+function addhighchart(){
+	var now = addDate(-60);
+	var year = now.getFullYear();
+	var month = now.getMonth();
+	var date = now.getDate();
+	$("#mcob_area").highcharts({
+		chart: {
+            type: 'area'
+        },
+        credits: {
+            enabled: false
+        },
+        title: {
+            text: '<p style="font-size:12px;font-family: \'微软雅黑\'">注册用户及浏览量统计曲线</p>'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            type: 'datetime',
+            labels: {
+                step: 1,
+                formatter: function () {
+                    return Highcharts.dateFormat('%Y-%m-%d', this.value);
+                }
+            }
+        },
+        yAxis: {
+            title: {
+                text: null
+            },
+            tickPositions: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] // 指定竖轴坐标点的值
+        },
+        tooltip: {
+            pointFormat: '{series.name} 为 <b>{point.y:,.0f}</b>'
+        },
+        plotOptions: {
+            area: {
+                pointStart: Date.UTC(year, month, date),
+                pointInterval: 24 * 3600 * 1000, // one day
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: '访问量*100',
+            data: [0, 0, 0,
+                0, 1, 1, 1.20, 1.50, 2.00, 4.26, 6.60, 8.69, 10.60, 14.05, 14.71, 13.22,
+                12.38, 12.21, 11.29, 10.89, 13.39, 13.99, 12.38, 13.43, 13.92, 14.78,
+                16.15, 17.85, 19.55, 21.05, 22.44, 23.93, 23.35, 23.62, 24.49,
+                23.52, 25.84, 27.31, 31.97, 32.10, 30.67, 30.99, 32.11, 32.20,
+                33.10, 33.45, 32.99, 31.90, 32.30, 33.12, 34.45, 33.68, 34.09,
+                33.90, 33.12, 74.55, 85.78, 86.19, 97.20, 98.10]
+        }, {
+            name: '总注册量',
+            data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,
+            1,2,1,0,0,0,0,1,0,0,0,1,0,1,2,0,1,0,0,0,1,0,
+            0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,2,0,0,0,0,0,0]
+        }]
+	});
+}
+
+// 加载bar表格
+function addhighchartbar(){
+	$("#mcos_bar").highcharts({
+		chart: {
+	        type: 'bar'
+	    },
+	    title: {
+	        text: null
+	    },
+	    xAxis: {
+	        categories: ['猪产品', '牛产品', '羊产品', '鸡产品']
+	    },
+	    yAxis: {
+	        min: 0,
+	        title: {
+	            text: null
+	        }
+	    },
+	    tooltip: {
+	        valueSuffix: ' 吨'
+	    },
+	    legend: {
+	        enabled: false
+	    },
+	    credits: {
+	        enabled: false
+	    },
+	    plotOptions: {
+	        bar: {
+	            dataLabels: {
+	                enabled: true
+	            }
+	        },
+	        series: {
+	            stacking: 'normal'
+	        }
+	    },
+	    series: [{
+	        name: '库存量',
+	        data: [571321,269822,164415,19645]
+	    }]
+	});
+}
+
+// 加载gauges left 表格
+function addgaugesleft(){
+	$("#mcob_fufure").highcharts({
+		chart:{
+			type:"solidgauge"
+		},
+		title:{
+			text:"文档收集",
+			y:200,
+			margin:-40
+		},
+		pane:{
+			startAngle: 0,
+			endAngle: 360,
+			background:{
+				backgroundColor:"#EFEFEF",
+				innerRadius: 0,
+				outerRadius: "100%",
+				shape:"arc",
+				borderWidth:0
+			}
+		},
+		tooltip:{
+			enabled: false
+		},
+		yAxis:{
+			stops:[
+				[0.1,"#0FE4AA"]
+			],
+			min:0,
+			max:100,
+			title:{
+				text:"期货成交量",
+				y: 110
+			},
+			tickAmount:0,
+			tickPositions: []
+		},
+		credits:{
+			enabled:false
+		},
+		plotOptions:{
+			solidgauge:{
+				dataLabels:{
+					y: -12,
+					borderWidth:0,
+
+				}
+			}
+		},
+		series:[{
+			data:[{
+				y:7,
+				radius: '100%',
+				innerRadius: '80%'
+			}],
+			useHTML:true,
+			dataLabels:{
+				format:'<div style="text-align:center"><span style="font-size:24px;color:#5E5E5E'
+						+ '">{point.y}%</span>'
+						+'</div>'
+			}
+		}]
+	});
+}
+
+// 加载gauges right 表格
+function addgaugesright(){
+	$("#mcob_cash").highcharts({
+		chart:{
+			type:"solidgauge"
+		},
+		title:{
+			text:"错误率",
+			y:200,
+			margin:-40
+		},
+		pane:{
+			startAngle: 0,
+			endAngle: 360,
+			background:{
+				backgroundColor:"#EFEFEF",
+				innerRadius: 0,
+				outerRadius: "100%",
+				shape:"arc",
+				borderWidth:0
+			}
+		},
+		tooltip:{
+			enabled: false
+		},
+		yAxis:{
+			stops:[
+				[0.1,"#60A9DD"]
+			],
+			min:0,
+			max:100,
+			title:{
+				text:"现货成交量",
+				y:110
+			},
+			tickAmount:0,
+			tickPositions: []
+		},
+		credits:{
+			enabled:false
+		},
+		plotOptions:{
+			solidgauge:{
+				dataLabels:{
+					y: -12,
+					borderWidth:0,
+
+				}
+			}
+		},
+		series:[{
+			data:[{
+				y:93,
+				radius: '100%',
+				innerRadius: '80%'
+			}],
+			useHTML:true,
+			dataLabels:{
+				format:'<div style="text-align:center"><span style="font-size:24px;color:#5E5E5E'
+						+ '">{point.y}%</span>'
+						+'</div>'
+			}
+		}]
+	});
+}
