@@ -376,6 +376,29 @@ $(function(){
 			{field:"bpresult",title:"备份结果",width:100}
 		]]
 	});
+
+	// 加载权限人名库日志列表
+	$("#mcn_log").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/usernamelog.json",
+		toolbar:"#mcn_ltb",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"usid",title:"用户ID",width:50},
+			{field:"usname",title:"用户名",width:50},
+			{field:"optime",title:"操作时间",width:100},
+			{field:"address",title:"IP地址",width:100},
+			{field:"opmode",title:"操作类型",width:100},
+			{field:"opresult",title:"操作结果",width:50},
+			{field:"opdescribe",title:"操作描述",width:200}
+		]]
+	});
 });
 
 
