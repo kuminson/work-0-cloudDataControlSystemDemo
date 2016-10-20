@@ -338,7 +338,44 @@ $(function(){
 		}
 	});
 
-	
+	// 加载元数据备份列表
+	$("#mco_backup").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/metadatabackup.json",
+		toolbar:"#mco_tb",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"bptime",title:"备份时间",width:100},
+			{field:"bpmode",title:"备份方式",width:100},
+			{field:"bpuser",title:"备份人",width:100},
+			{field:"bpresult",title:"备份结果",width:100}
+		]]
+	});
+	// 加载权限人名库备份列表
+	$("#mcn_backup").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/usernamebackup.json",
+		toolbar:"#mcn_tb",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"bptime",title:"备份时间",width:100},
+			{field:"bpmode",title:"备份方式",width:100},
+			{field:"bpuser",title:"备份人",width:100},
+			{field:"bpresult",title:"备份结果",width:100}
+		]]
+	});
 });
 
 
