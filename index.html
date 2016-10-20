@@ -1,25 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<title>test</title>
-	<link rel="stylesheet" type="text/css" href="resource/dropzone/dropzone.css">
-	<link rel="stylesheet" type="text/css" href="resource/dropzone/style.css">
+	<title>项目信息资源管控系统首页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- html5标签兼容IE678 -->
+	<!--[if lt IE 9]>
+	<script src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/IE9.js" type="text/javascript"></script>
+	<![endif]-->
+	<!-- 样式重置 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/index/index.css">
 </head>
 <body>
-	<form action="#" id="lala" class="lala dropzone"></form>
-	<button type="button" id="laji">跳转至数据确认</button>
-	<script type="text/javascript" src="resource/jQuery/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="resource/dropzone/dropzone.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$("#lala").dropzone({
-				url:"#"
-			});
-			$("#laji").on("click",function(){
-				window.location.href = "/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/html/dataConfirm/dataConfirm.html";
-			});
-		});
-	</script>
+	<div class="header">
+		<div class="h_infobox">
+			<div class="h_info">
+				<div class="hi_left">
+					<span class="hil_welcome">欢迎进入项目信息资源管控系统</span>
+					<span class="hil_time" id="hil_time"></span>
+				</div>
+				<div class="hi_right">
+					<div class="hir_user" id="hir_user">您好 请先登录</div>
+					<a href="#" class="hir_btn">站内信(<span class="hirb_nbr">5</span>)</a>
+					<a href="#" class="hir_btn" id="hir_btnexit">退出</a>
+					<a href="#" class="hir_btn" id="hir_btn">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="h_contentbox">
+			<div class="h_content">
+			<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/logo.png" alt="logo" class="hc_logo">
+				<h2 class="hc_title">项目信息资源管控系统</h2>
+				<div class="hc_search">
+					<input type="text" class="hcs_frame">
+					<button class="hcs_btn">搜索</button>
+				</div>
+				<a class="hc_btn" id="hc_btn">工作平台&gt;&gt;</a>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="m_banner">
+			<ul class="mb_imgs">
+				<li class="mbi_img"></li>
+				<li class="mbi_img"></li>
+				<li class="mbi_img"></li>
+				<li class="mbi_img"></li>
+				<li class="mbi_img"></li>
+				<li class="mbi_img"></li>
+			</ul>
+			<ul class="mb_btns">
+				<li class="mbb_btn active">1</li>
+				<li class="mbb_btn">2</li>
+				<li class="mbb_btn">3</li>
+				<li class="mbb_btn">4</li>
+				<li class="mbb_btn">5</li>
+			</ul>
+		</div>
+		<div class="m_newimg">
+			<div class="mn_title">
+				<div class="mnt_text">新闻演示:备份好你的网站数据库</div>
+				<div class="mnt_date">2016.07.29</div>
+				<button class="mnt_more">更多新闻</button>
+			</div>
+			<ul class="mn_imgboxs">
+				<li class="mni_imgbox">
+					<div class="mnii_title">"复兴之路"建党95周年主题展</div>
+				</li>
+				<li class="mni_imgbox">
+					<div class="mnii_title">P67船体缓缓停靠码头</div>
+				</li>
+				<li class="mni_imgbox">
+					<div class="mnii_title">抢滩"一带一路"建设市场</div>
+				</li>
+				<li class="mni_imgbox">
+					<div class="mnii_title">海油工程建造公司革新工艺提效率</div>
+				</li>
+			</ul>
+		</div>
+		<div class="m_chart">
+			<div class="mc_evaluate">
+				<h3 class="mce_title">文档收集总体评价</h3>
+				<div class="mce_chart" id="mce_chart">
+					<div class="mcec_top" id="mcec_left"></div>
+					<div class="mcec_top" id="mcec_right"></div>
+					<ul class="mcec_bottom" id="mcec_bottom">
+						<li class="mcecb_list"><span class="mcecbl_text">文档收集量：15637份</span></li>
+						<li class="mcecb_list"><span class="mcecbl_text">总页数：20839页</span></li>
+						<li class="mcecb_list"><span class="mcecbl_text">正确率：95%</span></li>
+					</ul>
+				</div>
+			</div>
+			 <div class="mc_situation">
+			 	<h3 class="mce_title">文档收集情况</h3>
+			 	<div class="mcs_chart" id="mcs_chart"></div>
+			 </div>
+		</div>
+		<div class="m_newtext">
+			<div class="mn_news">
+				<div class="mnc_title">
+					<h4 class="mnct_title">新闻速递</h4>
+					<a href="#" class="more">更多&gt;&gt;</a>
+				</div>
+				<div class="mnc_minutenew mnn_minutenew">
+					<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/newsquick.jpg" alt="海油走世界" class="mncm_img">
+					<div class="mncm_text mnnm_text">
+						<h5 class="mncmt_title">海油走世界 艰辛并快乐</h5>
+						<p class="mncmt_content">在世界的许多角落，都曾留下中国海油的足迹。然而灵山秀水从来不是他们的目的地，越是艰苦卓绝的地方，海油人越要去闯。非洲、赤道、北极，蛇虫、酷暑、极寒，跟着海油，去看一个别样的世界，去感受一场“石油精神”的环球之旅。</p>
+						<div class="mncmt_date">2016/09/07</div>
+					</div>
+				</div>
+				<ul class="mnc_newmenu mnn_newmenu">
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">有限公司天津分公司成葫芦岛海域救援中坚力量</a>
+						<div class="mncnt_date">2016/09/07</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">蓝色国土上的标杆“堡垒”</a>
+						<div class="mncnt_date">2016/09/07</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">为“海上石油工厂”插上隐形的翅膀</a>
+						<div class="mncnt_date">2016/09/07</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">南海西部石油管理局党委召开首次党代会</a>
+						<div class="mncnt_date">2016/09/05</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">辽东湾海上油田防风保安全</a>
+						<div class="mncnt_date">2016/09/02</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">降低桶油综合成本是塑造低成本优势的关键</a>
+						<div class="mncnt_date">2016/09/02</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">海油圆满完成国家科技重大专项“十二五”任务</a>
+						<div class="mncnt_date">2016/08/31</div>
+					</li>
+				</ul>
+			</div>
+			<div class="mn_inform">
+				<div class="mnc_title">
+					<h4 class="mnct_title">通知公告</h4>
+					<a href="#" class="more">更多&gt;&gt;</a>
+				</div>
+				<div class="mnc_minutenew mni_minutenew">
+					<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/newscall.jpg" alt="2016年中国海上开放区块招商公告" class="mncm_img">
+					<div class="mncm_text mnim_text">
+						<h5 class="mncmt_title">2016年中国海上开放区块招商公告</h5>
+						<p class="mncmt_content">中国海上2016年推出18个开放区块与外国石油公司合作，总面积52,257km2，各区块基本信息见附件1-3，请点击下载...</p>
+						<div class="mncmt_date">2016/08/25</div>
+					</div>
+				</div>
+				<ul class="mnc_newmenu mni_newmenu">
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中海油完成2015年度20-F年报备案</a>
+						<div class="mncnt_date">2016/04/22</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中海油垦利10-4油田投产</a>
+						<div class="mncnt_date">2016/01/27</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中海油公布2016年经营策略和发展计划</a>
+						<div class="mncnt_date">2016/01/19</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中国海油与哈斯基签订产品分成合同</a>
+						<div class="mncnt_date">2015/12/03</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中海油公布2015年三季度主要经营指标</a>
+						<div class="mncnt_date">2015/10/28</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">2015年上半年降本增效成果显著 各项业务稳健发展</a>
+						<div class="mncnt_date">2015/08/26</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">中海油宣布旅大10-1油田综合调整项目投产</a>
+						<div class="mncnt_date">2015/07/21</div>
+					</li>
+				</ul>
+			</div>
+			<div class="mn_data">
+				<div class="mnc_title">
+					<h4 class="mnct_title">资料动态</h4>
+					<a href="#" class="more">更多&gt;&gt;</a>
+				</div>
+				<ul class="mnc_newmenu mnd_newmenu">
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织集团档案人员开展工作交流会</a>
+						<div class="mncnt_date">2016/08/25</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆多措并举开展国际档案日宣传活动</a>
+						<div class="mncnt_date">2016/08/28</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织安全培训学习</a>
+						<div class="mncnt_date">2016/08/28</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">日照市档案局长肖梅来信息中心进行考察调研</a>
+						<div class="mncnt_date">2016/08/29</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织学习电子档案相关标准办法</a>
+						<div class="mncnt_date">2016/09/02</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆完成"日照港石臼港区南区航道工程"验收</a>
+						<div class="mncnt_date">2016/09/03</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆进行《归档文件整理规则》法规培训</a>
+						<div class="mncnt_date">2016/09/05</div>
+					</li>
+				</ul>
+			</div>
+			<div class="mn_guide">
+				<div class="mnc_title">
+					<h4 class="mnct_title">服务指南</h4>
+					<a href="#" class="more">更多&gt;&gt;</a>
+				</div>
+				<ul class="mnc_newmenu mng_newmenu">
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织集团档案人员开展工作交流会</a>
+						<div class="mncnt_date">2016/08/25</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆多措并举开展国际档案日宣传活动</a>
+						<div class="mncnt_date">2016/08/28</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织安全培训学习</a>
+						<div class="mncnt_date">2016/08/28</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">日照市档案局长肖梅来信息中心档进行考察调研</a>
+						<div class="mncnt_date">2016/08/29</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆组织学习电子档案相关标准办法</a>
+						<div class="mncnt_date">2016/09/02</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆完成"日照港石臼港区南区航道工程"验收</a>
+						<div class="mncnt_date">2016/09/03</div>
+					</li>
+					<li class="mncn_title">
+						<a href="#" class="mncnt_name">档案馆进行《归档文件整理规则》法规培训</a>
+						<div class="mncnt_date">2016/09/05</div>
+					</li>
+				</ul>
+			</div>
+			<div class="mn_advanced">
+				<div class="mnc_title">
+					<h4 class="mnct_title">先进个人</h4>
+					<a href="#" class="more">更多&gt;&gt;</a>
+				</div>
+				<ul class="mna_peps">
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="孙卫东" class="mnapp_img">
+						<span class="mnapp_name">孙卫东</span>
+					</li>
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="韩建军" class="mnapp_img">
+						<span class="mnapp_name">韩建军</span>
+					</li>
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="郭强" class="mnapp_img">
+						<span class="mnapp_name">郭强</span>
+					</li>
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="段鹏" class="mnapp_img">
+						<span class="mnapp_name">段鹏</span>
+					</li>
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="崔晓明" class="mnapp_img">
+						<span class="mnapp_name">崔晓明</span>
+					</li>
+					<li class="mnap_pep">
+						<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/index/xianjingeren.jpg" alt="李德新" class="mnapp_img">
+						<span class="mnapp_name">李德新</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="f_info">
+			<p class="fi_date">档案局（馆）版权所有 Copyright © 2010-2016</p>
+			<p class="fi_date">鲁ICP备12345678号  鲁公网安备 37110202</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/jQuery/jQuery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts-more.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/exporting.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/solid-gauge.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/index/index.js"></script>
 </body>
 </html>
