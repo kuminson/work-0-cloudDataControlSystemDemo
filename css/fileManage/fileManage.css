@@ -188,3 +188,11 @@ td[field] div{
 .yg_grid tr:nth-of-type(even) td{
 	background-color: #fafafa;
 }
+.alink{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.alink:active{
+	color: red;
+}
