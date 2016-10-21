@@ -288,6 +288,8 @@ $(function(){
 				addgaugesright();
 				// 加载bar表格
 				addhighchartbar();
+				// 主动触发resize事件 修复显示问题
+				$(window).triggerHandler("resize");
 			}
 		}
 	});
@@ -392,6 +394,66 @@ $(function(){
 			{field:"opdescribe",title:"操作描述",width:200}
 		]]
 	});
+
+	// 加载列表格
+	var dirdata = {
+		title:[
+			"项目",
+			"数量"
+		],
+		content:[
+			{
+				header:"案卷级目录数：",
+				body:[8241]
+			},{
+				header:"文件级目录数：",
+				body:[29121]
+			},{
+				header:"有电子原文的目录总数：",
+				body:[10666]
+			},{
+				header:"无电子原文的目录总数：",
+				body:[18455]
+			},{
+				header:"有原文目录文件总页数：",
+				body:[43849]
+			},{
+				header:"日照港档案案卷级目录总数：",
+				body:[139235]
+			},{
+				header:"日照港档案文件级目录总数：",
+				body:[583187]
+			}
+		]
+	};
+	coldatagrid("#mcod_grid",dirdata,2);
+	var stodata = {
+		title:[
+			"项目",
+			"数量"
+		],
+		content:[
+			{
+				header:"库存档案总数量：",
+				body:[8241]
+			},{
+				header:"按卷管理数量：",
+				body:[8241]
+			},{
+				header:"按件管理数量：",
+				body:[0]
+			},{
+				header:"盒数：",
+				body:[0]
+			},{
+				header:"文字总页数：",
+				body:[43849]
+			}
+		]
+	};
+	coldatagrid("#mcos_grid",stodata,2);
+
+
 });
 
 
@@ -438,7 +500,7 @@ function addhighchart(){
             enabled: false
         },
         title: {
-            text: '<p style="font-size:12px;font-family: \'微软雅黑\'">注册用户及浏览量统计曲线</p>'
+            text: '<p style="font-size:12px;font-family: \'微软雅黑\'">档案数据目录增长曲线</p>'
         },
         subtitle: {
             text: null
@@ -478,7 +540,7 @@ function addhighchart(){
             }
         },
         series: [{
-            name: '访问量*100',
+            name: '档案数据目录量*100',
             data: [0, 0, 0,
                 0, 1, 1, 1.20, 1.50, 2.00, 4.26, 6.60, 8.69, 10.60, 14.05, 14.71, 13.22,
                 12.38, 12.21, 11.29, 10.89, 13.39, 13.99, 12.38, 13.43, 13.92, 14.78,
@@ -486,11 +548,6 @@ function addhighchart(){
                 23.52, 25.84, 27.31, 31.97, 32.10, 30.67, 30.99, 32.11, 32.20,
                 33.10, 33.45, 32.99, 31.90, 32.30, 33.12, 34.45, 33.68, 34.09,
                 33.90, 33.12, 74.55, 85.78, 86.19, 97.20, 98.10]
-        }, {
-            name: '总注册量',
-            data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,
-            1,2,1,0,0,0,0,1,0,0,0,1,0,1,2,0,1,0,0,0,1,0,
-            0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,2,0,0,0,0,0,0]
         }]
 	});
 }
@@ -498,44 +555,49 @@ function addhighchart(){
 // 加载bar表格
 function addhighchartbar(){
 	$("#mcos_bar").highcharts({
-		chart: {
-	        type: 'bar'
-	    },
-	    title: {
-	        text: null
-	    },
-	    xAxis: {
-	        categories: ['猪产品', '牛产品', '羊产品', '鸡产品']
-	    },
-	    yAxis: {
-	        min: 0,
-	        title: {
-	            text: null
-	        }
-	    },
-	    tooltip: {
-	        valueSuffix: ' 吨'
-	    },
-	    legend: {
-	        enabled: false
-	    },
-	    credits: {
-	        enabled: false
-	    },
-	    plotOptions: {
-	        bar: {
-	            dataLabels: {
-	                enabled: true
-	            }
-	        },
-	        series: {
-	            stacking: 'normal'
-	        }
-	    },
-	    series: [{
-	        name: '库存量',
-	        data: [571321,269822,164415,19645]
-	    }]
+		chart:{
+			type:"bar"
+		},
+		title:{
+			text:null
+		},
+		xAxis:{
+			categories:["文书","基建","设备"],
+			title:{
+				text:null
+			}
+		},
+		yAxis:{
+			min:0,
+			title:{
+				text:null
+			},
+			labels:{
+				enabled:false
+			}
+		},
+		tooltip:{
+			valueSuffix:"份"
+		},
+		plotOptions:{
+			bar:{
+				dataLabels:{
+					enabled:true
+				}
+			}
+		},
+		credits:{
+			enabled:false
+		},
+		series:[{
+			name:"标准目录",
+			color:"#7CB5ED",
+			data:[12321,3761,7866]
+		},{
+			name:"已收集",
+			color:"#3FD0D5",
+			data:[8637,2560,6332]
+		}]
 	});
 }
 
@@ -566,13 +628,13 @@ function addgaugesleft(){
 		},
 		yAxis:{
 			stops:[
-				[0.1,"#0FE4AA"]
+				[0.1,"#11E6AC"]
 			],
 			min:0,
 			max:100,
 			title:{
-				text:"期货成交量",
-				y: 110
+				text:"文档收集",
+				y:110
 			},
 			tickAmount:0,
 			tickPositions: []
@@ -591,7 +653,7 @@ function addgaugesleft(){
 		},
 		series:[{
 			data:[{
-				y:7,
+				y:60,
 				radius: '100%',
 				innerRadius: '80%'
 			}],
@@ -637,7 +699,7 @@ function addgaugesright(){
 			min:0,
 			max:100,
 			title:{
-				text:"现货成交量",
+				text:"错误率",
 				y:110
 			},
 			tickAmount:0,
@@ -657,7 +719,7 @@ function addgaugesright(){
 		},
 		series:[{
 			data:[{
-				y:93,
+				y:5,
 				radius: '100%',
 				innerRadius: '80%'
 			}],
@@ -669,4 +731,47 @@ function addgaugesright(){
 			}
 		}]
 	});
+}
+
+// 加载列表格函数
+function coldatagrid(id,data,colnbr){
+	// 加载标题行
+	$(id).append('<tr></tr>');
+	for(var i=0; i<colnbr; i++){
+		for(var j=0; j<data.title.length; j++){
+			$(id+" tr:last").append('<th>'+ data.title[j] +'</th>');
+		}
+	}
+	// 加载内容
+	var mum = 0;
+	for(var i=0; i<Math.ceil(data.content.length/colnbr); i++){
+		$(id).append('<tr></tr>');
+		for(var l=0; l<colnbr; l++){
+			// 判定最后一行有空余
+			if(data.content.length % colnbr != 0){
+				// 判定是最后一行
+				if(i == Math.ceil(data.content.length/colnbr)-1){
+					// 判定是空余列
+					if(l >= (data.content.length % colnbr)){
+						// 加载空列
+						$(id+" tr:last").append('<th></th>');
+						for(var j=0; j<data.content[i].body.length; j++){
+							$(id+" tr:last").append('<td></td>');
+						}
+						// 跳过此次循环
+						continue;
+					}
+				}
+			}
+			// 加载数据列
+			$(id+" tr:last").append('<th>'+ data.content[mum].header +'</th>');
+			for(var j=0; j<data.content[mum].body.length; j++){
+				$(id+" tr:last").append('<td>'+ data.content[mum].body[j] +'</td>');
+			}
+			mum ++;
+		}
+	}
+	// 计算列宽
+	var colw = Math.floor(100/(colnbr*(1+data.content[i].body.length)));
+	$(id+" tr").css("width",colw+"%");
 }

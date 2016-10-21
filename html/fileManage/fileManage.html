@@ -36,6 +36,10 @@
 			<ul class="navbar_nav_list" id="navbar_nav_list">
 				<li class="navbar_nav_li">
 					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">首页</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
 					<h2 class="navbar_nav_title">数据确认</h2>
 				</li>
 				<li class="navbar_nav_li active">
@@ -94,44 +98,26 @@
 						</div>
 					</div>
 					<div title="统计" data-options="">
-						<div id="mco_today" class="mco_today easyui-panel" title="今日" style="height:100px;">
-							<ul class="mcot_list">
-								<li class="mcotl_item">
-									<span class="mcotli_content">0</span>
-									<span class="mcotli_title">新注册会员</span>
-								</li>
-								<li class="mcotl_item">
-									<span class="mcotli_content">989</span>
-									<span class="mcotli_title">浏览量</span>
-								</li>
-								<li class="mcotl_item">
-									<span class="mcotli_content">￥0</span>
-									<span class="mcotli_title">成交额</span>
-								</li>
-								<li class="mcotl_item">
-									<span class="mcotli_content">￥0</span>
-									<span class="mcotli_title">融资额</span>
-								</li>
-								<li class="mcotl_item">
-									<span class="mcotli_content">0吨</span>
-									<span class="mcotli_title">新增产品</span>
-								</li>
-							</ul>
+						<div id="mco_dir" class="mco_dir easyui-panel" title="目录数据统计" >
+							<table id="mcod_grid" class="mcod_grid yg_grid"></table>
+						</div>
+						<div id="mco_sto" class="mco_sto easyui-panel" title="库存量统计" >
+							<table id="mcos_grid" class="mcos_grid yg_grid"></table>
 						</div>
 						<div id="mco_browse" class="mco_browse easyui-panel" title="浏览量" style="height:300px;">
 							<div id="mcob_area" class="mcob_area"></div>
 						</div>
 						<div id="mco_chartbox" class="easyui-layout" style="height:300px;">
-							<div id="mco_bargain" data-options="region:'west',title:'产品成交量',collapsible:false" style="width:40%;">
+							<div id="mco_bargain" data-options="region:'west',title:'文档收集总体评价',collapsible:false" style="width:400px;">
 								<div id="mcob_fufure" class="mcob_fufure"></div>
 								<div id="mcob_cash" class="mcob_cash"></div>
 								<ul class="mcob_ul">
-									<li class="mcob_list"><span>期货成交量：191.00吨</span></li>
-									<li class="mcob_list"><span>现货成交量：2,701.00吨</span></li>
-									<li class="mcob_list"><span>合计成交量：2,892.00吨</span></li>
+									<li class="mcob_list"><span>文档收集量：15637份</span></li>
+									<li class="mcob_list"><span>总页数：20839页</span></li>
+									<li class="mcob_list"><span>正确率：95%</span></li>
 								</ul>
 							</div>
-							<div id="mco_stock" data-options="region:'center',title:'产品库存量'">
+							<div id="mco_stock" data-options="region:'center',title:'文档收集情况'">
 								<div id="mcos_bar" class="mcos_bar"></div>
 							</div>
 						</div>

@@ -13,6 +13,7 @@ var yg_cache = {};
 // 一级菜单跳转链接地址 直接修改地址即可
 
 	var fstmenuurl = [
+	"index.html",	//首页
 	"html/dataConfirm/dataConfirm.html",	//数据确认
 	"html/fileManage/fileManage.html",	//档案管理
 	"html/fileSearch/fileSearch.html",	//档案检索
