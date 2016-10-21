@@ -460,6 +460,92 @@ $(function(){
 	};
 	coldatagrid("#mcos_grid",stodata,2);
 
+	// 绑定点击弹出窗口事件
+	$("#m_content").on("click",".alink",function(){
+		$("#frame_details").window("open");
+	});
+	// 绑定表格数据
+	$("#fd_grid").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/rolldata.json",
+		fitColumns: true,
+		columns:[[
+			{
+				"field":"",
+				"checkbox":true,
+				"width":50
+			},{
+				"field":"allnbr",
+				"title":"全综号",
+				"align":"left",
+				"width":50
+			},{
+				"field":"fstclass",
+				"title":"一级类目",
+				"align":"left",
+				"width":50
+			},{
+				"field":"scdclass",
+				"title":"二级类目",
+				"align":"left",
+				"width":50
+			},{
+				"field":"indexnbr",
+				"title":"目录号",
+				"align":"left",
+				"width":50
+			},{
+				"field":"deadline",
+				"title":"保管期限",
+				"align":"left",
+				"width":50
+			},{
+				"field":"order",
+				"title":"案卷序号",
+				"align":"left",
+				"width":50
+			},{
+				"field":"filenbr",
+				"title":"案卷档号",
+				"align":"left",
+				"width":110
+			},{
+				"field":"user",
+				"title":"责任者",
+				"align":"left",
+				"width":110
+			},{
+				"field":"filename",
+				"title":"案卷题名",
+				"align":"left",
+				"width":220
+			},{
+				"field":"pagenbr",
+				"title":"页数",
+				"align":"left",
+				"width":50
+			},{
+				"field":"year",
+				"title":"年度",
+				"align":"left",
+				"width":50
+			},{
+				"field":"unit",
+				"title":"单位",
+				"align":"left",
+				"width":110
+			}
+			]],
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60]
+	});
 
 });
 
@@ -773,7 +859,7 @@ function coldatagrid(id,data,colnbr){
 			// 加载数据列
 			$(id+" tr:last").append('<th>'+ data.content[mum].header +'</th>');
 			for(var j=0; j<data.content[mum].body.length; j++){
-				$(id+" tr:last").append('<td>'+ data.content[mum].body[j] +'</td>');
+				$(id+" tr:last").append('<td class="alink">'+ data.content[mum].body[j] +'</td>');
 			}
 			mum ++;
 		}

@@ -26,7 +26,7 @@ $(function(){
 			bannerleft = 0;
 			$(".mb_imgs").animate({marginLeft:bannerleft+"px"},0);
 		}
-	},5000);
+	},10000);
 	// 手动选播
 	$(".mbb_btn").on("click",function(){
 		bannerleft = - $(this).index() * 1349;
