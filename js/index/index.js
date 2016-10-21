@@ -26,7 +26,7 @@ $(function(){
 			bannerleft = 0;
 			$(".mb_imgs").animate({marginLeft:bannerleft+"px"},0);
 		}
-	},2000);
+	},5000);
 	// 手动选播
 	$(".mbb_btn").on("click",function(){
 		bannerleft = - $(this).index() * 1349;
@@ -52,7 +52,7 @@ $(function(){
 			text:null
 		},
 		xAxis:{
-			categories:["交工","图纸","随机"],
+			categories:["文书","基建","设备"],
 			title:{
 				text:null
 			}
@@ -82,11 +82,11 @@ $(function(){
 		series:[{
 			name:"标准目录",
 			color:"#7CB5ED",
-			data:[71321,3761,7866]
+			data:[12321,3761,7866]
 		},{
 			name:"已收集",
 			color:"#3FD0D5",
-			data:[15637,NaN,NaN]
+			data:[8637,2560,6332]
 		}]
 	});
 

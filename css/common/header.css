@@ -94,7 +94,10 @@
 	background-position: 0 -120px;
 }
 .navbar_nav_li:nth-of-type(6) .navbar_nav_icon{
-	background-position: 0 -180px;
+	background-position: 0 -150px;
+}
+.navbar_nav_li:nth-of-type(7) .navbar_nav_icon{
+	background-position: 0 -210px;
 }
 .navbar_nav_title{
 	color: #FFF;

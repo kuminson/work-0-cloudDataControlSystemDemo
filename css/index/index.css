@@ -61,10 +61,10 @@
 }
 .hc_title{
 	float: left;
-	width: 120px;
+	width: 110px;
 	height: 60px;
 	margin: 20px 0 0 10px;
-	font-size: 18px;
+	font-size: 20px;
 	color: #FFF;
 	font-weight: bold;
 	text-align: center;
@@ -115,10 +115,12 @@
 }
 /*banner*/
 .m_banner{
-	widows: 1350px;
+	width: 1350px;
 	height: 408px;
 	overflow: hidden;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 .mb_imgs{
 	height: 408px;
