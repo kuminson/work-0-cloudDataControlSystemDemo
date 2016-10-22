@@ -1,0 +1,105 @@
+/*主体内容*/
+.main{
+	height: 495px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.mc_databox{
+	width: 100%;
+	height: 50%;
+}
+.ti_folder{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/file.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+.ti_file{
+	background-image: url("/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/folder.svg");
+	background-size: 16px 16px;
+	background-position: 0 0;
+}
+td[field] div{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*主体内容*/
+.mds_nav{
+	width: 100%;
+	float: left;
+}
+.mdsn_menu{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	text-indent: 5px;
+	overflow: hidden;
+	margin: 0;
+	float: left;
+	background: -webkit-linear-gradient(#F5F5F5,#DCDCDC);
+	background: -o-linear-gradient(#F5F5F5,#DCDCDC);
+	background: -moz-linear-gradient(#F5F5F5,#DCDCDC);
+	background: linear-gradient(#F5F5F5,#DCDCDC);
+}
+.mdsn_list{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	text-indent: 5px;
+	border-bottom: 1px solid #D9E6ED;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0;
+	float: left;
+}
+.mdsn_list.active{
+	background-color: #277CC5;
+	color: #FFF;
+}
+.mdsn_list:hover{
+	background-color: #275CC5;
+	color: #FFF;
+}
+.mdsnl_icon{
+	display: block;
+	float: left;
+	height: 20px;
+	width: 20px;
+	background-image: url(/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/system/icon.png);
+	margin: 10px 0 0 20px;
+	cursor: pointer;
+}
+.mdsn_menu .mdsnl_icon{
+	background-position: -30px 0;
+}
+.mdsn_list:nth-of-type(2) .mdsnl_icon{
+	background-position: -30px -22px;
+}
+.mdsn_list:nth-of-type(3) .mdsnl_icon{
+	background-position: -30px -44px;
+}
+.mdsn_list:nth-of-type(4) .mdsnl_icon{
+	background-position: -30px -66px;
+}
+.mdsn_list:nth-of-type(5) .mdsnl_icon{
+	background-position: -30px -88px;
+}
+.mdsn_list:nth-of-type(2):hover .mdsnl_icon,.mdsn_list:nth-of-type(2).active .mdsnl_icon{
+	background-position: -52px -22px;
+}
+.mdsn_list:nth-of-type(3):hover .mdsnl_icon,.mdsn_list:nth-of-type(3).active .mdsnl_icon{
+	background-position: -52px -44px;
+}
+.mdsn_list:nth-of-type(4):hover .mdsnl_icon,.mdsn_list:nth-of-type(4).active .mdsnl_icon{
+	background-position: -52px -66px;
+}
+.mdsn_list:nth-of-type(5):hover .mdsnl_icon,.mdsn_list:nth-of-type(5).active .mdsnl_icon{
+	background-position: -52px -88px;
+}
+.mdsnl_title{
+	float: left;
+	cursor: pointer;
+	font-family: "微软雅黑",Microsoft YaHei;
+	font-size: 14px;
+}
