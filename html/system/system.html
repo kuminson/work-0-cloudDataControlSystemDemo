@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>云数字档案管理系统</title>
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
+	<!-- 引入通用头部样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/header.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/system/system.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="header">
+			<span class="wel">欢迎进入云数字档案管理系统</span>
+			<span class="wel" id="header_date">今天是</span>
+			<div class="flright">
+				<span class="header_control" id="header_weluser">您好，系统管理员</span>
+				<a href="#" class="header_control" id="header_notyet">待办信息</a>
+				<a href="#" class="header_control" id="quit">安全退出</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<img src="/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
+		<h1 class="navbar_title">云数字档案管理系统</h1>
+		<div class="flright">
+			<ul class="navbar_nav_list" id="navbar_nav_list">
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">首页</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据采集</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据管理</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">浏览查询</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">整理组卷</h2>
+				</li>
+				<li class="navbar_nav_li">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">数据应用服务</h2>
+				</li>
+				<li class="navbar_nav_li active">
+					<span class="navbar_nav_icon"></span>
+					<h2 class="navbar_nav_title">系统管理</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="main">
+		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
+			<!-- 档案树 -->
+			<div id="md_secmenu" data-options="region:'west'" style="width:200px;background-color:#CDD9E5;">
+				<ul class="mds_nav">
+					<li class="mdsn_menu">
+						<span class="mdsnl_icon"></span>
+						<h3 class="mdsnl_title">功能菜单栏</h3>
+					</li>
+					<li class="mdsn_list active">
+						<span class="mdsnl_icon"></span>
+						<h4 class="mdsnl_title">档案树维护</h4>
+					</li>
+					<li class="mdsn_list">
+						<span class="mdsnl_icon"></span>
+						<h4 class="mdsnl_title">组织机构维护</h4>
+					</li>
+					<li class="mdsn_list">
+						<span class="mdsnl_icon"></span>
+						<h4 class="mdsnl_title">角色与权限维护</h4>
+					</li>
+					<li class="mdsn_list">
+						<span class="mdsnl_icon"></span>
+						<h4 class="mdsnl_title">报表维护</h4>
+					</li>
+				</ul>
+			</div>
+			<!-- 数据表格 -->
+			<div id="md_content"  data-options="region:'center'" style="width:610px;">
+				<div id="mdc_treebox" class="easyui-panel mdc_secpanel" fit="true">
+					<table id="mdc_tree" fit="true" data-options="title:'档案树维护'"></table>
+				</div>
+				<div id="mdc_unitbox" class="easyui-panel mdc_secpanel" fit="true" closed="true">
+					<div id="mdc_unitlay" class="easyui-layout" fit="true">
+						<div data-options="region:'west',split:true,title:'组织机构'" style="width:200px">
+							<input class="easyui-searchbox" data-options="prompt:'请输入公司名称'" style="width:100%"></input>
+							<ul id="mdcu_tree"></ul>
+						</div>
+						<div data-options="region:'center'">
+							<table id="mdcu_grid" fit="true" class="easyui-datagrid" data-options="title:'用户列表',toolbar:'#mdcu_tb'"></table>
+							<div id="mdcu_tb">
+						        <a id="btn_addRow_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-add" plain="true" style="" >新建</a>
+						        <a id="btn_del_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-remove" plain="true" style="" >删除</a>
+						        <a id="btn_save_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-save" plain="true" style="" >保存</a>
+						        <a id="btn_rest_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-reload" plain="true" style="" >重置密码</a>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/system/system.js"></script>
+</html>

@@ -19,7 +19,7 @@ var yg_cache = {};
 	"html/fileSearch/fileSearch.html",	//档案检索
 	"html/clearPaper/clearPaper.html",	//整理组卷
 	"html/serviceUse/serviceUse.html",	//服务利用
-	"#" 	//个性化配置
+	"html/system/system.html" 	//个性化配置
 	]
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>> over  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
