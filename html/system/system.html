@@ -95,9 +95,11 @@
 			</div>
 			<!-- 数据表格 -->
 			<div id="md_content"  data-options="region:'center'" style="width:610px;">
+				<!-- 档案树维护 -->
 				<div id="mdc_treebox" class="easyui-panel mdc_secpanel" fit="true">
 					<table id="mdc_tree" fit="true" data-options="title:'档案树维护'"></table>
 				</div>
+				<!-- 组织机构维护 -->
 				<div id="mdc_unitbox" class="easyui-panel mdc_secpanel" fit="true" closed="true">
 					<div id="mdc_unitlay" class="easyui-layout" fit="true">
 						<div data-options="region:'west',split:true,title:'组织机构'" style="width:200px">
@@ -112,6 +114,30 @@
 						        <a id="btn_save_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-save" plain="true" style="" >保存</a>
 						        <a id="btn_rest_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-reload" plain="true" style="" >重置密码</a>
 						    </div>
+						</div>
+					</div>
+				</div>
+				<!-- 角色与权限维护 -->
+				<div id="mdc_rolebox" class="easyui-panel mdc_secpanel" fit="true" closed="true">
+					<div id="mdc_rolelay" class="easyui-layout" fit="true">
+						<div data-options="region:'west',split:true,title:'角色'" style="width:200px">
+							<ul id="mdcr_role"></ul>
+						</div>
+						<div data-options="region:'center'">
+							<div class="easyui-tabs" fit="true">
+								<div title="模块权限">
+									<table id="mdcr_mode" fit="true" class="easyui-treegrid" data-options="toolbar:'#mdcr_modetb'"></table>
+									<div id="mdcr_modetb">
+								        <a id="mdcr_modetb_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-save" plain="true" style="" >保存</a>
+								    </div>
+								</div>
+								<div title="数据权限">
+									<table id="mdcr_data" fit="true" class="easyui-treegrid" data-options="toolbar:'#mdcr_datatb'"></table>
+									<div id="mdcr_datatb">
+								        <a id="mdcr_datatb_user" href="#" class="easyui-linkbutton easyui_btn" iconcls="icon-save" plain="true" style="" >保存</a>
+								    </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

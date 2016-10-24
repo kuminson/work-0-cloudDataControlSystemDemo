@@ -47,6 +47,13 @@ $(function(){
 		$(".mdsn_list").eq(1).addClass("active");
 		$(window).triggerHandler("resize");
 	});
+	$(".mdsn_list").eq(2).on("click",function(){
+		$(".mdc_secpanel").panel("close");
+		$("#mdc_rolebox").panel("open");
+		$(".mdsn_list").removeClass("active");
+		$(".mdsn_list").eq(2).addClass("active");
+		$(window).triggerHandler("resize");
+	});
 
 	// 加载档案树表格
 	$("#mdc_tree").treegrid({
@@ -112,6 +119,101 @@ $(function(){
 			}
 		}
 	});
+
+	// 加载角色树
+	$("#mdcr_role").tree({
+		method: "get",
+		url: rooturl + "html/system/role.json"
+	});
+	// 加载模块权限treegrid
+	$("#mdcr_mode").treegrid({
+		method: "get",
+		url:rooturl +"html/system/modetreegrid.json",
+		idField:"id",
+		treeField: "text",
+		fitColumns: true,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60],
+		checkbox: true,
+		columns:[[
+		    {field:'text',title:'按钮名',width:200},
+		    {field:'btnid',title:'按钮ID',width:100},
+		    {field:'order',title:'按钮排序',width:100},
+		    {field:'address',title:'html名称',width:200}
+		]]
+	});
+	// 加载数据权限treegrid
+	$("#mdcr_data").treegrid({
+		method: "get",
+		url:rooturl +"html/system/rollTree.json",
+		idField:"id",
+		treeField: "text",
+		fitColumns: true,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60],
+		checkbox: true,
+		columns:[[
+		    {field:'text',title:'按钮名',width:200},
+		    {field:'ope',title:'操作类型',width:100}
+		]],
+		// onLoadSuccess:function(){
+		// 	$(".treegrid_ope").html("文件查看");
+		// }
+		onClickCell:function(field,row){
+			console.log(row);
+			// 判定行是选中状态
+			if(row.checkState == "checked"){
+				// 判定该行没有多选框
+				var newtext = row[field];
+				var conbox =$("tr[node-id='"+row.id+"']").children("td[field='"+field+"']").children(".datagrid-cell");
+				if(conbox.attr("yg_iscom") == undefined){
+					// 判定其他行有多选框
+					if($(".datagrid-cell[yg_iscom]").attr("yg_iscom") == undefined){
+						// 没有不操作
+					}else{
+						// 删除多选框并缓存数据
+						$(".datagrid-cell[yg_iscom]").html($("#mdcr_combo").combobox("getValue"));
+						// 清除标记
+						$(".datagrid-cell[yg_iscom]").removeAttr("yg_iscom");
+					}
+					// 添加标记
+					conbox.attr("yg_iscom","1");
+					// 添加多选框
+					$("tr[node-id='"+row.id+"']").children("td[field='"+field+"']").children(".datagrid-cell").html('<input id="mdcr_combo" name="perm" value="'+newtext+'" style="width:100%;">')
+					$("#mdcr_combo").combobox({
+						valueField:"val",
+						textField:"text",
+						data:[
+							{
+								val:"文件查看",
+								text:"文件查看"
+							},{
+								val:"文件管理",
+								text:"文件管理"
+							}
+						]
+					});
+				}
+			}else{
+				alert("请先勾选该行！");
+			}
+		}
+	});
+	
 });
 
 
