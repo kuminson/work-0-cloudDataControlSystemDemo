@@ -1,6 +1,7 @@
 [
 	{
 		"id":"file000",
+		"ope":"文件查看",
 		"text":"文书按卷",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -10,6 +11,7 @@
 		"children":[
 			{
 				"id":"file000000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -19,6 +21,7 @@
 				"children":[
 					{
 						"id":"file000000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000000000",
@@ -26,6 +29,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000000001",
@@ -36,6 +40,7 @@
 			},
 			{
 				"id":"file000001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -45,6 +50,7 @@
 				"children":[
 					{
 						"id":"file000001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000001000",
@@ -52,6 +58,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000001001",
@@ -62,6 +69,7 @@
 			},
 			{
 				"id":"file000002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -71,6 +79,7 @@
 				"children":[
 					{
 						"id":"file000002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000002000",
@@ -78,6 +87,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000002001",
@@ -88,6 +98,7 @@
 			},
 			{
 				"id":"file000003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -97,6 +108,7 @@
 				"children":[
 					{
 						"id":"file000003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000003000",
@@ -104,6 +116,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000003001",
@@ -114,6 +127,7 @@
 			},
 			{
 				"id":"file000004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -123,6 +137,7 @@
 				"children":[
 					{
 						"id":"file000004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000004000",
@@ -130,6 +145,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000004001",
@@ -140,6 +156,7 @@
 			},
 			{
 				"id":"file000005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -149,6 +166,7 @@
 				"children":[
 					{
 						"id":"file000005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000005000",
@@ -156,6 +174,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000005001",
@@ -166,6 +185,7 @@
 			},
 			{
 				"id":"file000006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -175,6 +195,7 @@
 				"children":[
 					{
 						"id":"file000006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000006000",
@@ -182,6 +203,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000006001",
@@ -192,6 +214,7 @@
 			},
 			{
 				"id":"file000007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -201,6 +224,7 @@
 				"children":[
 					{
 						"id":"file000007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000007000",
@@ -208,6 +232,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000007001",
@@ -218,6 +243,7 @@
 			},
 			{
 				"id":"file000008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -227,6 +253,7 @@
 				"children":[
 					{
 						"id":"file000008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000008000",
@@ -234,6 +261,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000008001",
@@ -244,6 +272,7 @@
 			},
 			{
 				"id":"file000009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -253,6 +282,7 @@
 				"children":[
 					{
 						"id":"file000009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000009000",
@@ -260,6 +290,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000009001",
@@ -270,6 +301,7 @@
 			},
 			{
 				"id":"file000010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -279,6 +311,7 @@
 				"children":[
 					{
 						"id":"file000010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000010000",
@@ -286,6 +319,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000010001",
@@ -296,6 +330,7 @@
 			},
 			{
 				"id":"file000011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -305,6 +340,7 @@
 				"children":[
 					{
 						"id":"file000011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000011000",
@@ -312,6 +348,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000011001",
@@ -322,6 +359,7 @@
 			},
 			{
 				"id":"file000012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -331,6 +369,7 @@
 				"children":[
 					{
 						"id":"file000012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000012000",
@@ -338,6 +377,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000012001",
@@ -348,6 +388,7 @@
 			},
 			{
 				"id":"file000013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -357,6 +398,7 @@
 				"children":[
 					{
 						"id":"file000013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000013000",
@@ -364,6 +406,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000013001",
@@ -374,6 +417,7 @@
 			},
 			{
 				"id":"file000014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -383,6 +427,7 @@
 				"children":[
 					{
 						"id":"file000014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000014000",
@@ -390,6 +435,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000014001",
@@ -400,6 +446,7 @@
 			},
 			{
 				"id":"file000015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -409,6 +456,7 @@
 				"children":[
 					{
 						"id":"file000015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000015000",
@@ -416,6 +464,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000015001",
@@ -426,6 +475,7 @@
 			},
 			{
 				"id":"file000016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -435,6 +485,7 @@
 				"children":[
 					{
 						"id":"file000016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000016000",
@@ -442,6 +493,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000016001",
@@ -452,6 +504,7 @@
 			},
 			{
 				"id":"file000017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -461,6 +514,7 @@
 				"children":[
 					{
 						"id":"file000017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000017000",
@@ -468,6 +522,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000017001",
@@ -478,6 +533,7 @@
 			},
 			{
 				"id":"file000018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -487,6 +543,7 @@
 				"children":[
 					{
 						"id":"file000018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000018000",
@@ -494,6 +551,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000018001",
@@ -504,6 +562,7 @@
 			},
 			{
 				"id":"file000019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -513,6 +572,7 @@
 				"children":[
 					{
 						"id":"file000019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000019000",
@@ -520,6 +580,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000019001",
@@ -530,6 +591,7 @@
 			},
 			{
 				"id":"file000020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -539,6 +601,7 @@
 				"children":[
 					{
 						"id":"file000020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000020000",
@@ -546,6 +609,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000020001",
@@ -556,6 +620,7 @@
 			},
 			{
 				"id":"file000021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -565,6 +630,7 @@
 				"children":[
 					{
 						"id":"file000021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000021000",
@@ -572,6 +638,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000021001",
@@ -582,6 +649,7 @@
 			},
 			{
 				"id":"file000022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -591,6 +659,7 @@
 				"children":[
 					{
 						"id":"file000022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000022000",
@@ -598,6 +667,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000022001",
@@ -608,6 +678,7 @@
 			},
 			{
 				"id":"file000023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -617,6 +688,7 @@
 				"children":[
 					{
 						"id":"file000023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"000023000",
@@ -624,6 +696,7 @@
 						"nodeodr":0
 					},{
 						"id":"file000023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"000023001",
@@ -634,6 +707,7 @@
 			}]
 	},{
 		"id":"file001",
+		"ope":"文件查看",
 		"text":"党群工作类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -643,6 +717,7 @@
 		"children":[
 			{
 				"id":"file001000",
+				"ope":"文件查看",
 				"text":"2010",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -652,6 +727,7 @@
 				"children":[
 					{
 						"id":"file001000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001000000",
@@ -659,6 +735,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001000001",
@@ -669,6 +746,7 @@
 			},
 			{
 				"id":"file001001",
+				"ope":"文件查看",
 				"text":"2011",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -678,6 +756,7 @@
 				"children":[
 					{
 						"id":"file001001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001001000",
@@ -685,6 +764,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001001001",
@@ -695,6 +775,7 @@
 			},
 			{
 				"id":"file001002",
+				"ope":"文件查看",
 				"text":"2012",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -704,6 +785,7 @@
 				"children":[
 					{
 						"id":"file001002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001002000",
@@ -711,6 +793,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001002001",
@@ -721,6 +804,7 @@
 			},
 			{
 				"id":"file001003",
+				"ope":"文件查看",
 				"text":"2013",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -730,6 +814,7 @@
 				"children":[
 					{
 						"id":"file001003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001003000",
@@ -737,6 +822,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001003001",
@@ -747,6 +833,7 @@
 			},
 			{
 				"id":"file001004",
+				"ope":"文件查看",
 				"text":"2014",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -756,6 +843,7 @@
 				"children":[
 					{
 						"id":"file001004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001004000",
@@ -763,6 +851,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001004001",
@@ -773,6 +862,7 @@
 			},
 			{
 				"id":"file001005",
+				"ope":"文件查看",
 				"text":"2015",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -782,6 +872,7 @@
 				"children":[
 					{
 						"id":"file001005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001005000",
@@ -789,6 +880,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001005001",
@@ -799,6 +891,7 @@
 			},
 			{
 				"id":"file001006",
+				"ope":"文件查看",
 				"text":"2016",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -808,6 +901,7 @@
 				"children":[
 					{
 						"id":"file001006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"001006000",
@@ -815,6 +909,7 @@
 						"nodeodr":0
 					},{
 						"id":"file001006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"001006001",
@@ -825,6 +920,7 @@
 			}]
 	},{
 		"id":"file002",
+		"ope":"文件查看",
 		"text":"行政管理类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -834,6 +930,7 @@
 		"children":[
 			{
 				"id":"file002000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -843,6 +940,7 @@
 				"children":[
 					{
 						"id":"file002000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002000000",
@@ -850,6 +948,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002000001",
@@ -860,6 +959,7 @@
 			},
 			{
 				"id":"file002001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -869,6 +969,7 @@
 				"children":[
 					{
 						"id":"file002001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002001000",
@@ -876,6 +977,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002001001",
@@ -886,6 +988,7 @@
 			},
 			{
 				"id":"file002002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -895,6 +998,7 @@
 				"children":[
 					{
 						"id":"file002002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002002000",
@@ -902,6 +1006,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002002001",
@@ -912,6 +1017,7 @@
 			},
 			{
 				"id":"file002003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -921,6 +1027,7 @@
 				"children":[
 					{
 						"id":"file002003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002003000",
@@ -928,6 +1035,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002003001",
@@ -938,6 +1046,7 @@
 			},
 			{
 				"id":"file002004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -947,6 +1056,7 @@
 				"children":[
 					{
 						"id":"file002004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002004000",
@@ -954,6 +1064,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002004001",
@@ -964,6 +1075,7 @@
 			},
 			{
 				"id":"file002005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -973,6 +1085,7 @@
 				"children":[
 					{
 						"id":"file002005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002005000",
@@ -980,6 +1093,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002005001",
@@ -990,6 +1104,7 @@
 			},
 			{
 				"id":"file002006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -999,6 +1114,7 @@
 				"children":[
 					{
 						"id":"file002006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002006000",
@@ -1006,6 +1122,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002006001",
@@ -1016,6 +1133,7 @@
 			},
 			{
 				"id":"file002007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1025,6 +1143,7 @@
 				"children":[
 					{
 						"id":"file002007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002007000",
@@ -1032,6 +1151,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002007001",
@@ -1042,6 +1162,7 @@
 			},
 			{
 				"id":"file002008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1051,6 +1172,7 @@
 				"children":[
 					{
 						"id":"file002008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002008000",
@@ -1058,6 +1180,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002008001",
@@ -1068,6 +1191,7 @@
 			},
 			{
 				"id":"file002009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1077,6 +1201,7 @@
 				"children":[
 					{
 						"id":"file002009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002009000",
@@ -1084,6 +1209,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002009001",
@@ -1094,6 +1220,7 @@
 			},
 			{
 				"id":"file002010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1103,6 +1230,7 @@
 				"children":[
 					{
 						"id":"file002010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002010000",
@@ -1110,6 +1238,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002010001",
@@ -1120,6 +1249,7 @@
 			},
 			{
 				"id":"file002011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1129,6 +1259,7 @@
 				"children":[
 					{
 						"id":"file002011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002011000",
@@ -1136,6 +1267,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002011001",
@@ -1146,6 +1278,7 @@
 			},
 			{
 				"id":"file002012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1155,6 +1288,7 @@
 				"children":[
 					{
 						"id":"file002012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002012000",
@@ -1162,6 +1296,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002012001",
@@ -1172,6 +1307,7 @@
 			},
 			{
 				"id":"file002013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1181,6 +1317,7 @@
 				"children":[
 					{
 						"id":"file002013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002013000",
@@ -1188,6 +1325,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002013001",
@@ -1198,6 +1336,7 @@
 			},
 			{
 				"id":"file002014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1207,6 +1346,7 @@
 				"children":[
 					{
 						"id":"file002014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002014000",
@@ -1214,6 +1354,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002014001",
@@ -1224,6 +1365,7 @@
 			},
 			{
 				"id":"file002015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1233,6 +1375,7 @@
 				"children":[
 					{
 						"id":"file002015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002015000",
@@ -1240,6 +1383,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002015001",
@@ -1250,6 +1394,7 @@
 			},
 			{
 				"id":"file002016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1259,6 +1404,7 @@
 				"children":[
 					{
 						"id":"file002016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002016000",
@@ -1266,6 +1412,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002016001",
@@ -1276,6 +1423,7 @@
 			},
 			{
 				"id":"file002017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1285,6 +1433,7 @@
 				"children":[
 					{
 						"id":"file002017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002017000",
@@ -1292,6 +1441,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002017001",
@@ -1302,6 +1452,7 @@
 			},
 			{
 				"id":"file002018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1311,6 +1462,7 @@
 				"children":[
 					{
 						"id":"file002018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002018000",
@@ -1318,6 +1470,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002018001",
@@ -1328,6 +1481,7 @@
 			},
 			{
 				"id":"file002019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1337,6 +1491,7 @@
 				"children":[
 					{
 						"id":"file002019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002019000",
@@ -1344,6 +1499,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002019001",
@@ -1354,6 +1510,7 @@
 			},
 			{
 				"id":"file002020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1363,6 +1520,7 @@
 				"children":[
 					{
 						"id":"file002020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002020000",
@@ -1370,6 +1528,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002020001",
@@ -1380,6 +1539,7 @@
 			},
 			{
 				"id":"file002021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1389,6 +1549,7 @@
 				"children":[
 					{
 						"id":"file002021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002021000",
@@ -1396,6 +1557,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002021001",
@@ -1406,6 +1568,7 @@
 			},
 			{
 				"id":"file002022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1415,6 +1578,7 @@
 				"children":[
 					{
 						"id":"file002022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002022000",
@@ -1422,6 +1586,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002022001",
@@ -1432,6 +1597,7 @@
 			},
 			{
 				"id":"file002023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1441,6 +1607,7 @@
 				"children":[
 					{
 						"id":"file002023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"002023000",
@@ -1448,6 +1615,7 @@
 						"nodeodr":0
 					},{
 						"id":"file002023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"002023001",
@@ -1458,6 +1626,7 @@
 			}]
 	},{
 		"id":"file003",
+		"ope":"文件查看",
 		"text":"经营管理类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -1467,6 +1636,7 @@
 		"children":[
 			{
 				"id":"file003000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1476,6 +1646,7 @@
 				"children":[
 					{
 						"id":"file003000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003000000",
@@ -1483,6 +1654,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003000001",
@@ -1493,6 +1665,7 @@
 			},
 			{
 				"id":"file003001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1502,6 +1675,7 @@
 				"children":[
 					{
 						"id":"file003001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003001000",
@@ -1509,6 +1683,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003001001",
@@ -1519,6 +1694,7 @@
 			},
 			{
 				"id":"file003002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1528,6 +1704,7 @@
 				"children":[
 					{
 						"id":"file003002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003002000",
@@ -1535,6 +1712,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003002001",
@@ -1545,6 +1723,7 @@
 			},
 			{
 				"id":"file003003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1554,6 +1733,7 @@
 				"children":[
 					{
 						"id":"file003003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003003000",
@@ -1561,6 +1741,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003003001",
@@ -1571,6 +1752,7 @@
 			},
 			{
 				"id":"file003004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1580,6 +1762,7 @@
 				"children":[
 					{
 						"id":"file003004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003004000",
@@ -1587,6 +1770,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003004001",
@@ -1597,6 +1781,7 @@
 			},
 			{
 				"id":"file003005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1606,6 +1791,7 @@
 				"children":[
 					{
 						"id":"file003005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003005000",
@@ -1613,6 +1799,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003005001",
@@ -1623,6 +1810,7 @@
 			},
 			{
 				"id":"file003006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1632,6 +1820,7 @@
 				"children":[
 					{
 						"id":"file003006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003006000",
@@ -1639,6 +1828,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003006001",
@@ -1649,6 +1839,7 @@
 			},
 			{
 				"id":"file003007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1658,6 +1849,7 @@
 				"children":[
 					{
 						"id":"file003007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003007000",
@@ -1665,6 +1857,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003007001",
@@ -1675,6 +1868,7 @@
 			},
 			{
 				"id":"file003008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1684,6 +1878,7 @@
 				"children":[
 					{
 						"id":"file003008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003008000",
@@ -1691,6 +1886,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003008001",
@@ -1701,6 +1897,7 @@
 			},
 			{
 				"id":"file003009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1710,6 +1907,7 @@
 				"children":[
 					{
 						"id":"file003009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003009000",
@@ -1717,6 +1915,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003009001",
@@ -1727,6 +1926,7 @@
 			},
 			{
 				"id":"file003010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1736,6 +1936,7 @@
 				"children":[
 					{
 						"id":"file003010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003010000",
@@ -1743,6 +1944,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003010001",
@@ -1753,6 +1955,7 @@
 			},
 			{
 				"id":"file003011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1762,6 +1965,7 @@
 				"children":[
 					{
 						"id":"file003011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003011000",
@@ -1769,6 +1973,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003011001",
@@ -1779,6 +1984,7 @@
 			},
 			{
 				"id":"file003012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1788,6 +1994,7 @@
 				"children":[
 					{
 						"id":"file003012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003012000",
@@ -1795,6 +2002,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003012001",
@@ -1805,6 +2013,7 @@
 			},
 			{
 				"id":"file003013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1814,6 +2023,7 @@
 				"children":[
 					{
 						"id":"file003013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003013000",
@@ -1821,6 +2031,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003013001",
@@ -1831,6 +2042,7 @@
 			},
 			{
 				"id":"file003014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1840,6 +2052,7 @@
 				"children":[
 					{
 						"id":"file003014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003014000",
@@ -1847,6 +2060,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003014001",
@@ -1857,6 +2071,7 @@
 			},
 			{
 				"id":"file003015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1866,6 +2081,7 @@
 				"children":[
 					{
 						"id":"file003015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003015000",
@@ -1873,6 +2089,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003015001",
@@ -1883,6 +2100,7 @@
 			},
 			{
 				"id":"file003016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1892,6 +2110,7 @@
 				"children":[
 					{
 						"id":"file003016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003016000",
@@ -1899,6 +2118,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003016001",
@@ -1909,6 +2129,7 @@
 			},
 			{
 				"id":"file003017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1918,6 +2139,7 @@
 				"children":[
 					{
 						"id":"file003017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003017000",
@@ -1925,6 +2147,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003017001",
@@ -1935,6 +2158,7 @@
 			},
 			{
 				"id":"file003018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1944,6 +2168,7 @@
 				"children":[
 					{
 						"id":"file003018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003018000",
@@ -1951,6 +2176,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003018001",
@@ -1961,6 +2187,7 @@
 			},
 			{
 				"id":"file003019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1970,6 +2197,7 @@
 				"children":[
 					{
 						"id":"file003019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003019000",
@@ -1977,6 +2205,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003019001",
@@ -1987,6 +2216,7 @@
 			},
 			{
 				"id":"file003020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -1996,6 +2226,7 @@
 				"children":[
 					{
 						"id":"file003020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003020000",
@@ -2003,6 +2234,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003020001",
@@ -2013,6 +2245,7 @@
 			},
 			{
 				"id":"file003021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2022,6 +2255,7 @@
 				"children":[
 					{
 						"id":"file003021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003021000",
@@ -2029,6 +2263,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003021001",
@@ -2039,6 +2274,7 @@
 			},
 			{
 				"id":"file003022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2048,6 +2284,7 @@
 				"children":[
 					{
 						"id":"file003022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003022000",
@@ -2055,6 +2292,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003022001",
@@ -2065,6 +2303,7 @@
 			},
 			{
 				"id":"file003023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2074,6 +2313,7 @@
 				"children":[
 					{
 						"id":"file003023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"003023000",
@@ -2081,6 +2321,7 @@
 						"nodeodr":0
 					},{
 						"id":"file003023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"003023001",
@@ -2091,6 +2332,7 @@
 			}]
 	},{
 		"id":"file004",
+		"ope":"文件查看",
 		"text":"生产技术管理类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -2100,6 +2342,7 @@
 		"children":[
 			{
 				"id":"file004000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2109,6 +2352,7 @@
 				"children":[
 					{
 						"id":"file004000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004000000",
@@ -2116,6 +2360,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004000001",
@@ -2126,6 +2371,7 @@
 			},
 			{
 				"id":"file004001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2135,6 +2381,7 @@
 				"children":[
 					{
 						"id":"file004001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004001000",
@@ -2142,6 +2389,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004001001",
@@ -2152,6 +2400,7 @@
 			},
 			{
 				"id":"file004002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2161,6 +2410,7 @@
 				"children":[
 					{
 						"id":"file004002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004002000",
@@ -2168,6 +2418,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004002001",
@@ -2178,6 +2429,7 @@
 			},
 			{
 				"id":"file004003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2187,6 +2439,7 @@
 				"children":[
 					{
 						"id":"file004003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004003000",
@@ -2194,6 +2447,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004003001",
@@ -2204,6 +2458,7 @@
 			},
 			{
 				"id":"file004004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2213,6 +2468,7 @@
 				"children":[
 					{
 						"id":"file004004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004004000",
@@ -2220,6 +2476,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004004001",
@@ -2230,6 +2487,7 @@
 			},
 			{
 				"id":"file004005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2239,6 +2497,7 @@
 				"children":[
 					{
 						"id":"file004005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004005000",
@@ -2246,6 +2505,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004005001",
@@ -2256,6 +2516,7 @@
 			},
 			{
 				"id":"file004006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2265,6 +2526,7 @@
 				"children":[
 					{
 						"id":"file004006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004006000",
@@ -2272,6 +2534,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004006001",
@@ -2282,6 +2545,7 @@
 			},
 			{
 				"id":"file004007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2291,6 +2555,7 @@
 				"children":[
 					{
 						"id":"file004007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004007000",
@@ -2298,6 +2563,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004007001",
@@ -2308,6 +2574,7 @@
 			},
 			{
 				"id":"file004008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2317,6 +2584,7 @@
 				"children":[
 					{
 						"id":"file004008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004008000",
@@ -2324,6 +2592,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004008001",
@@ -2334,6 +2603,7 @@
 			},
 			{
 				"id":"file004009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2343,6 +2613,7 @@
 				"children":[
 					{
 						"id":"file004009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004009000",
@@ -2350,6 +2621,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004009001",
@@ -2360,6 +2632,7 @@
 			},
 			{
 				"id":"file004010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2369,6 +2642,7 @@
 				"children":[
 					{
 						"id":"file004010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004010000",
@@ -2376,6 +2650,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004010001",
@@ -2386,6 +2661,7 @@
 			},
 			{
 				"id":"file004011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2395,6 +2671,7 @@
 				"children":[
 					{
 						"id":"file004011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004011000",
@@ -2402,6 +2679,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004011001",
@@ -2412,6 +2690,7 @@
 			},
 			{
 				"id":"file004012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2421,6 +2700,7 @@
 				"children":[
 					{
 						"id":"file004012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004012000",
@@ -2428,6 +2708,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004012001",
@@ -2438,6 +2719,7 @@
 			},
 			{
 				"id":"file004013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2447,6 +2729,7 @@
 				"children":[
 					{
 						"id":"file004013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004013000",
@@ -2454,6 +2737,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004013001",
@@ -2464,6 +2748,7 @@
 			},
 			{
 				"id":"file004014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2473,6 +2758,7 @@
 				"children":[
 					{
 						"id":"file004014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004014000",
@@ -2480,6 +2766,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004014001",
@@ -2490,6 +2777,7 @@
 			},
 			{
 				"id":"file004015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2499,6 +2787,7 @@
 				"children":[
 					{
 						"id":"file004015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004015000",
@@ -2506,6 +2795,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004015001",
@@ -2516,6 +2806,7 @@
 			},
 			{
 				"id":"file004016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2525,6 +2816,7 @@
 				"children":[
 					{
 						"id":"file004016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004016000",
@@ -2532,6 +2824,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004016001",
@@ -2542,6 +2835,7 @@
 			},
 			{
 				"id":"file004017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2551,6 +2845,7 @@
 				"children":[
 					{
 						"id":"file004017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004017000",
@@ -2558,6 +2853,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004017001",
@@ -2568,6 +2864,7 @@
 			},
 			{
 				"id":"file004018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2577,6 +2874,7 @@
 				"children":[
 					{
 						"id":"file004018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004018000",
@@ -2584,6 +2882,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004018001",
@@ -2594,6 +2893,7 @@
 			},
 			{
 				"id":"file004019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2603,6 +2903,7 @@
 				"children":[
 					{
 						"id":"file004019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004019000",
@@ -2610,6 +2911,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004019001",
@@ -2620,6 +2922,7 @@
 			},
 			{
 				"id":"file004020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2629,6 +2932,7 @@
 				"children":[
 					{
 						"id":"file004020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004020000",
@@ -2636,6 +2940,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004020001",
@@ -2646,6 +2951,7 @@
 			},
 			{
 				"id":"file004021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2655,6 +2961,7 @@
 				"children":[
 					{
 						"id":"file004021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004021000",
@@ -2662,6 +2969,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004021001",
@@ -2672,6 +2980,7 @@
 			},
 			{
 				"id":"file004022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2681,6 +2990,7 @@
 				"children":[
 					{
 						"id":"file004022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004022000",
@@ -2688,6 +2998,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004022001",
@@ -2698,6 +3009,7 @@
 			},
 			{
 				"id":"file004023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2707,6 +3019,7 @@
 				"children":[
 					{
 						"id":"file004023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"004023000",
@@ -2714,6 +3027,7 @@
 						"nodeodr":0
 					},{
 						"id":"file004023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"004023001",
@@ -2724,6 +3038,7 @@
 			}]
 	},{
 		"id":"file005",
+		"ope":"文件查看",
 		"text":"产品类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -2733,6 +3048,7 @@
 		"children":[
 			{
 				"id":"file005000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2742,6 +3058,7 @@
 				"children":[
 					{
 						"id":"file005000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005000000",
@@ -2749,6 +3066,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005000001",
@@ -2759,6 +3077,7 @@
 			},
 			{
 				"id":"file005001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2768,6 +3087,7 @@
 				"children":[
 					{
 						"id":"file005001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005001000",
@@ -2775,6 +3095,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005001001",
@@ -2785,6 +3106,7 @@
 			},
 			{
 				"id":"file005002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2794,6 +3116,7 @@
 				"children":[
 					{
 						"id":"file005002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005002000",
@@ -2801,6 +3124,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005002001",
@@ -2811,6 +3135,7 @@
 			},
 			{
 				"id":"file005003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2820,6 +3145,7 @@
 				"children":[
 					{
 						"id":"file005003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005003000",
@@ -2827,6 +3153,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005003001",
@@ -2837,6 +3164,7 @@
 			},
 			{
 				"id":"file005004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2846,6 +3174,7 @@
 				"children":[
 					{
 						"id":"file005004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005004000",
@@ -2853,6 +3182,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005004001",
@@ -2863,6 +3193,7 @@
 			},
 			{
 				"id":"file005005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2872,6 +3203,7 @@
 				"children":[
 					{
 						"id":"file005005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005005000",
@@ -2879,6 +3211,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005005001",
@@ -2889,6 +3222,7 @@
 			},
 			{
 				"id":"file005006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2898,6 +3232,7 @@
 				"children":[
 					{
 						"id":"file005006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005006000",
@@ -2905,6 +3240,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005006001",
@@ -2915,6 +3251,7 @@
 			},
 			{
 				"id":"file005007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2924,6 +3261,7 @@
 				"children":[
 					{
 						"id":"file005007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005007000",
@@ -2931,6 +3269,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005007001",
@@ -2941,6 +3280,7 @@
 			},
 			{
 				"id":"file005008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2950,6 +3290,7 @@
 				"children":[
 					{
 						"id":"file005008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005008000",
@@ -2957,6 +3298,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005008001",
@@ -2967,6 +3309,7 @@
 			},
 			{
 				"id":"file005009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -2976,6 +3319,7 @@
 				"children":[
 					{
 						"id":"file005009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005009000",
@@ -2983,6 +3327,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005009001",
@@ -2993,6 +3338,7 @@
 			},
 			{
 				"id":"file005010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3002,6 +3348,7 @@
 				"children":[
 					{
 						"id":"file005010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005010000",
@@ -3009,6 +3356,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005010001",
@@ -3019,6 +3367,7 @@
 			},
 			{
 				"id":"file005011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3028,6 +3377,7 @@
 				"children":[
 					{
 						"id":"file005011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005011000",
@@ -3035,6 +3385,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005011001",
@@ -3045,6 +3396,7 @@
 			},
 			{
 				"id":"file005012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3054,6 +3406,7 @@
 				"children":[
 					{
 						"id":"file005012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005012000",
@@ -3061,6 +3414,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005012001",
@@ -3071,6 +3425,7 @@
 			},
 			{
 				"id":"file005013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3080,6 +3435,7 @@
 				"children":[
 					{
 						"id":"file005013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005013000",
@@ -3087,6 +3443,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005013001",
@@ -3097,6 +3454,7 @@
 			},
 			{
 				"id":"file005014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3106,6 +3464,7 @@
 				"children":[
 					{
 						"id":"file005014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005014000",
@@ -3113,6 +3472,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005014001",
@@ -3123,6 +3483,7 @@
 			},
 			{
 				"id":"file005015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3132,6 +3493,7 @@
 				"children":[
 					{
 						"id":"file005015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005015000",
@@ -3139,6 +3501,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005015001",
@@ -3149,6 +3512,7 @@
 			},
 			{
 				"id":"file005016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3158,6 +3522,7 @@
 				"children":[
 					{
 						"id":"file005016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005016000",
@@ -3165,6 +3530,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005016001",
@@ -3175,6 +3541,7 @@
 			},
 			{
 				"id":"file005017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3184,6 +3551,7 @@
 				"children":[
 					{
 						"id":"file005017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005017000",
@@ -3191,6 +3559,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005017001",
@@ -3201,6 +3570,7 @@
 			},
 			{
 				"id":"file005018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3210,6 +3580,7 @@
 				"children":[
 					{
 						"id":"file005018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005018000",
@@ -3217,6 +3588,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005018001",
@@ -3227,6 +3599,7 @@
 			},
 			{
 				"id":"file005019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3236,6 +3609,7 @@
 				"children":[
 					{
 						"id":"file005019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005019000",
@@ -3243,6 +3617,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005019001",
@@ -3253,6 +3628,7 @@
 			},
 			{
 				"id":"file005020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3262,6 +3638,7 @@
 				"children":[
 					{
 						"id":"file005020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005020000",
@@ -3269,6 +3646,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005020001",
@@ -3279,6 +3657,7 @@
 			},
 			{
 				"id":"file005021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3288,6 +3667,7 @@
 				"children":[
 					{
 						"id":"file005021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005021000",
@@ -3295,6 +3675,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005021001",
@@ -3305,6 +3686,7 @@
 			},
 			{
 				"id":"file005022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3314,6 +3696,7 @@
 				"children":[
 					{
 						"id":"file005022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005022000",
@@ -3321,6 +3704,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005022001",
@@ -3331,6 +3715,7 @@
 			},
 			{
 				"id":"file005023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3340,6 +3725,7 @@
 				"children":[
 					{
 						"id":"file005023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"005023000",
@@ -3347,6 +3733,7 @@
 						"nodeodr":0
 					},{
 						"id":"file005023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"005023001",
@@ -3357,6 +3744,7 @@
 			}]
 	},{
 		"id":"file006",
+		"ope":"文件查看",
 		"text":"产品类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -3366,6 +3754,7 @@
 		"children":[
 			{
 				"id":"file006000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3375,6 +3764,7 @@
 				"children":[
 					{
 						"id":"file006000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006000000",
@@ -3382,6 +3772,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006000001",
@@ -3392,6 +3783,7 @@
 			},
 			{
 				"id":"file006001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3401,6 +3793,7 @@
 				"children":[
 					{
 						"id":"file006001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006001000",
@@ -3408,6 +3801,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006001001",
@@ -3418,6 +3812,7 @@
 			},
 			{
 				"id":"file006002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3427,6 +3822,7 @@
 				"children":[
 					{
 						"id":"file006002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006002000",
@@ -3434,6 +3830,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006002001",
@@ -3444,6 +3841,7 @@
 			},
 			{
 				"id":"file006003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3453,6 +3851,7 @@
 				"children":[
 					{
 						"id":"file006003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006003000",
@@ -3460,6 +3859,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006003001",
@@ -3470,6 +3870,7 @@
 			},
 			{
 				"id":"file006004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3479,6 +3880,7 @@
 				"children":[
 					{
 						"id":"file006004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006004000",
@@ -3486,6 +3888,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006004001",
@@ -3496,6 +3899,7 @@
 			},
 			{
 				"id":"file006005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3505,6 +3909,7 @@
 				"children":[
 					{
 						"id":"file006005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006005000",
@@ -3512,6 +3917,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006005001",
@@ -3522,6 +3928,7 @@
 			},
 			{
 				"id":"file006006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3531,6 +3938,7 @@
 				"children":[
 					{
 						"id":"file006006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006006000",
@@ -3538,6 +3946,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006006001",
@@ -3548,6 +3957,7 @@
 			},
 			{
 				"id":"file006007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3557,6 +3967,7 @@
 				"children":[
 					{
 						"id":"file006007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006007000",
@@ -3564,6 +3975,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006007001",
@@ -3574,6 +3986,7 @@
 			},
 			{
 				"id":"file006008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3583,6 +3996,7 @@
 				"children":[
 					{
 						"id":"file006008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006008000",
@@ -3590,6 +4004,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006008001",
@@ -3600,6 +4015,7 @@
 			},
 			{
 				"id":"file006009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3609,6 +4025,7 @@
 				"children":[
 					{
 						"id":"file006009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006009000",
@@ -3616,6 +4033,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006009001",
@@ -3626,6 +4044,7 @@
 			},
 			{
 				"id":"file006010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3635,6 +4054,7 @@
 				"children":[
 					{
 						"id":"file006010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006010000",
@@ -3642,6 +4062,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006010001",
@@ -3652,6 +4073,7 @@
 			},
 			{
 				"id":"file006011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3661,6 +4083,7 @@
 				"children":[
 					{
 						"id":"file006011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006011000",
@@ -3668,6 +4091,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006011001",
@@ -3678,6 +4102,7 @@
 			},
 			{
 				"id":"file006012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3687,6 +4112,7 @@
 				"children":[
 					{
 						"id":"file006012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006012000",
@@ -3694,6 +4120,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006012001",
@@ -3704,6 +4131,7 @@
 			},
 			{
 				"id":"file006013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3713,6 +4141,7 @@
 				"children":[
 					{
 						"id":"file006013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006013000",
@@ -3720,6 +4149,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006013001",
@@ -3730,6 +4160,7 @@
 			},
 			{
 				"id":"file006014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3739,6 +4170,7 @@
 				"children":[
 					{
 						"id":"file006014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006014000",
@@ -3746,6 +4178,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006014001",
@@ -3756,6 +4189,7 @@
 			},
 			{
 				"id":"file006015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3765,6 +4199,7 @@
 				"children":[
 					{
 						"id":"file006015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006015000",
@@ -3772,6 +4207,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006015001",
@@ -3782,6 +4218,7 @@
 			},
 			{
 				"id":"file006016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3791,6 +4228,7 @@
 				"children":[
 					{
 						"id":"file006016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006016000",
@@ -3798,6 +4236,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006016001",
@@ -3808,6 +4247,7 @@
 			},
 			{
 				"id":"file006017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3817,6 +4257,7 @@
 				"children":[
 					{
 						"id":"file006017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006017000",
@@ -3824,6 +4265,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006017001",
@@ -3834,6 +4276,7 @@
 			},
 			{
 				"id":"file006018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3843,6 +4286,7 @@
 				"children":[
 					{
 						"id":"file006018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006018000",
@@ -3850,6 +4294,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006018001",
@@ -3860,6 +4305,7 @@
 			},
 			{
 				"id":"file006019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3869,6 +4315,7 @@
 				"children":[
 					{
 						"id":"file006019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006019000",
@@ -3876,6 +4323,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006019001",
@@ -3886,6 +4334,7 @@
 			},
 			{
 				"id":"file006020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3895,6 +4344,7 @@
 				"children":[
 					{
 						"id":"file006020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006020000",
@@ -3902,6 +4352,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006020001",
@@ -3912,6 +4363,7 @@
 			},
 			{
 				"id":"file006021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3921,6 +4373,7 @@
 				"children":[
 					{
 						"id":"file006021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006021000",
@@ -3928,6 +4381,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006021001",
@@ -3938,6 +4392,7 @@
 			},
 			{
 				"id":"file006022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3947,6 +4402,7 @@
 				"children":[
 					{
 						"id":"file006022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006022000",
@@ -3954,6 +4410,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006022001",
@@ -3964,6 +4421,7 @@
 			},
 			{
 				"id":"file006023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -3973,6 +4431,7 @@
 				"children":[
 					{
 						"id":"file006023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"006023000",
@@ -3980,6 +4439,7 @@
 						"nodeodr":0
 					},{
 						"id":"file006023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"006023001",
@@ -3990,6 +4450,7 @@
 			}]
 	},{
 		"id":"file007",
+		"ope":"文件查看",
 		"text":"科学技术研究类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -3999,6 +4460,7 @@
 		"children":[
 			{
 				"id":"file007000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4008,6 +4470,7 @@
 				"children":[
 					{
 						"id":"file007000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007000000",
@@ -4015,6 +4478,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007000001",
@@ -4025,6 +4489,7 @@
 			},
 			{
 				"id":"file007001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4034,6 +4499,7 @@
 				"children":[
 					{
 						"id":"file007001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007001000",
@@ -4041,6 +4507,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007001001",
@@ -4051,6 +4518,7 @@
 			},
 			{
 				"id":"file007002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4060,6 +4528,7 @@
 				"children":[
 					{
 						"id":"file007002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007002000",
@@ -4067,6 +4536,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007002001",
@@ -4077,6 +4547,7 @@
 			},
 			{
 				"id":"file007003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4086,6 +4557,7 @@
 				"children":[
 					{
 						"id":"file007003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007003000",
@@ -4093,6 +4565,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007003001",
@@ -4103,6 +4576,7 @@
 			},
 			{
 				"id":"file007004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4112,6 +4586,7 @@
 				"children":[
 					{
 						"id":"file007004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007004000",
@@ -4119,6 +4594,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007004001",
@@ -4129,6 +4605,7 @@
 			},
 			{
 				"id":"file007005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4138,6 +4615,7 @@
 				"children":[
 					{
 						"id":"file007005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007005000",
@@ -4145,6 +4623,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007005001",
@@ -4155,6 +4634,7 @@
 			},
 			{
 				"id":"file007006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4164,6 +4644,7 @@
 				"children":[
 					{
 						"id":"file007006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007006000",
@@ -4171,6 +4652,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007006001",
@@ -4181,6 +4663,7 @@
 			},
 			{
 				"id":"file007007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4190,6 +4673,7 @@
 				"children":[
 					{
 						"id":"file007007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007007000",
@@ -4197,6 +4681,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007007001",
@@ -4207,6 +4692,7 @@
 			},
 			{
 				"id":"file007008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4216,6 +4702,7 @@
 				"children":[
 					{
 						"id":"file007008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007008000",
@@ -4223,6 +4710,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007008001",
@@ -4233,6 +4721,7 @@
 			},
 			{
 				"id":"file007009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4242,6 +4731,7 @@
 				"children":[
 					{
 						"id":"file007009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007009000",
@@ -4249,6 +4739,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007009001",
@@ -4259,6 +4750,7 @@
 			},
 			{
 				"id":"file007010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4268,6 +4760,7 @@
 				"children":[
 					{
 						"id":"file007010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007010000",
@@ -4275,6 +4768,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007010001",
@@ -4285,6 +4779,7 @@
 			},
 			{
 				"id":"file007011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4294,6 +4789,7 @@
 				"children":[
 					{
 						"id":"file007011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007011000",
@@ -4301,6 +4797,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007011001",
@@ -4311,6 +4808,7 @@
 			},
 			{
 				"id":"file007012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4320,6 +4818,7 @@
 				"children":[
 					{
 						"id":"file007012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007012000",
@@ -4327,6 +4826,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007012001",
@@ -4337,6 +4837,7 @@
 			},
 			{
 				"id":"file007013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4346,6 +4847,7 @@
 				"children":[
 					{
 						"id":"file007013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007013000",
@@ -4353,6 +4855,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007013001",
@@ -4363,6 +4866,7 @@
 			},
 			{
 				"id":"file007014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4372,6 +4876,7 @@
 				"children":[
 					{
 						"id":"file007014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007014000",
@@ -4379,6 +4884,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007014001",
@@ -4389,6 +4895,7 @@
 			},
 			{
 				"id":"file007015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4398,6 +4905,7 @@
 				"children":[
 					{
 						"id":"file007015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007015000",
@@ -4405,6 +4913,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007015001",
@@ -4415,6 +4924,7 @@
 			},
 			{
 				"id":"file007016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4424,6 +4934,7 @@
 				"children":[
 					{
 						"id":"file007016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007016000",
@@ -4431,6 +4942,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007016001",
@@ -4441,6 +4953,7 @@
 			},
 			{
 				"id":"file007017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4450,6 +4963,7 @@
 				"children":[
 					{
 						"id":"file007017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007017000",
@@ -4457,6 +4971,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007017001",
@@ -4467,6 +4982,7 @@
 			},
 			{
 				"id":"file007018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4476,6 +4992,7 @@
 				"children":[
 					{
 						"id":"file007018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007018000",
@@ -4483,6 +5000,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007018001",
@@ -4493,6 +5011,7 @@
 			},
 			{
 				"id":"file007019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4502,6 +5021,7 @@
 				"children":[
 					{
 						"id":"file007019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007019000",
@@ -4509,6 +5029,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007019001",
@@ -4519,6 +5040,7 @@
 			},
 			{
 				"id":"file007020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4528,6 +5050,7 @@
 				"children":[
 					{
 						"id":"file007020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007020000",
@@ -4535,6 +5058,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007020001",
@@ -4545,6 +5069,7 @@
 			},
 			{
 				"id":"file007021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4554,6 +5079,7 @@
 				"children":[
 					{
 						"id":"file007021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007021000",
@@ -4561,6 +5087,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007021001",
@@ -4571,6 +5098,7 @@
 			},
 			{
 				"id":"file007022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4580,6 +5108,7 @@
 				"children":[
 					{
 						"id":"file007022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007022000",
@@ -4587,6 +5116,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007022001",
@@ -4597,6 +5127,7 @@
 			},
 			{
 				"id":"file007023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4606,6 +5137,7 @@
 				"children":[
 					{
 						"id":"file007023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"007023000",
@@ -4613,6 +5145,7 @@
 						"nodeodr":0
 					},{
 						"id":"file007023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"007023001",
@@ -4623,6 +5156,7 @@
 			}]
 	},{
 		"id":"file008",
+		"ope":"文件查看",
 		"text":"基本建设类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -4632,6 +5166,7 @@
 		"children":[
 			{
 				"id":"file008000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4641,6 +5176,7 @@
 				"children":[
 					{
 						"id":"file008000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008000000",
@@ -4648,6 +5184,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008000001",
@@ -4658,6 +5195,7 @@
 			},
 			{
 				"id":"file008001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4667,6 +5205,7 @@
 				"children":[
 					{
 						"id":"file008001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008001000",
@@ -4674,6 +5213,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008001001",
@@ -4684,6 +5224,7 @@
 			},
 			{
 				"id":"file008002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4693,6 +5234,7 @@
 				"children":[
 					{
 						"id":"file008002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008002000",
@@ -4700,6 +5242,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008002001",
@@ -4710,6 +5253,7 @@
 			},
 			{
 				"id":"file008003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4719,6 +5263,7 @@
 				"children":[
 					{
 						"id":"file008003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008003000",
@@ -4726,6 +5271,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008003001",
@@ -4736,6 +5282,7 @@
 			},
 			{
 				"id":"file008004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4745,6 +5292,7 @@
 				"children":[
 					{
 						"id":"file008004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008004000",
@@ -4752,6 +5300,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008004001",
@@ -4762,6 +5311,7 @@
 			},
 			{
 				"id":"file008005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4771,6 +5321,7 @@
 				"children":[
 					{
 						"id":"file008005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008005000",
@@ -4778,6 +5329,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008005001",
@@ -4788,6 +5340,7 @@
 			},
 			{
 				"id":"file008006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4797,6 +5350,7 @@
 				"children":[
 					{
 						"id":"file008006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008006000",
@@ -4804,6 +5358,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008006001",
@@ -4814,6 +5369,7 @@
 			},
 			{
 				"id":"file008007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4823,6 +5379,7 @@
 				"children":[
 					{
 						"id":"file008007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008007000",
@@ -4830,6 +5387,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008007001",
@@ -4840,6 +5398,7 @@
 			},
 			{
 				"id":"file008008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4849,6 +5408,7 @@
 				"children":[
 					{
 						"id":"file008008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008008000",
@@ -4856,6 +5416,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008008001",
@@ -4866,6 +5427,7 @@
 			},
 			{
 				"id":"file008009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4875,6 +5437,7 @@
 				"children":[
 					{
 						"id":"file008009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008009000",
@@ -4882,6 +5445,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008009001",
@@ -4892,6 +5456,7 @@
 			},
 			{
 				"id":"file008010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4901,6 +5466,7 @@
 				"children":[
 					{
 						"id":"file008010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008010000",
@@ -4908,6 +5474,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008010001",
@@ -4918,6 +5485,7 @@
 			},
 			{
 				"id":"file008011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4927,6 +5495,7 @@
 				"children":[
 					{
 						"id":"file008011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008011000",
@@ -4934,6 +5503,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008011001",
@@ -4944,6 +5514,7 @@
 			},
 			{
 				"id":"file008012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4953,6 +5524,7 @@
 				"children":[
 					{
 						"id":"file008012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008012000",
@@ -4960,6 +5532,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008012001",
@@ -4970,6 +5543,7 @@
 			},
 			{
 				"id":"file008013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -4979,6 +5553,7 @@
 				"children":[
 					{
 						"id":"file008013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008013000",
@@ -4986,6 +5561,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008013001",
@@ -4996,6 +5572,7 @@
 			},
 			{
 				"id":"file008014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5005,6 +5582,7 @@
 				"children":[
 					{
 						"id":"file008014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008014000",
@@ -5012,6 +5590,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008014001",
@@ -5022,6 +5601,7 @@
 			},
 			{
 				"id":"file008015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5031,6 +5611,7 @@
 				"children":[
 					{
 						"id":"file008015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008015000",
@@ -5038,6 +5619,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008015001",
@@ -5048,6 +5630,7 @@
 			},
 			{
 				"id":"file008016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5057,6 +5640,7 @@
 				"children":[
 					{
 						"id":"file008016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008016000",
@@ -5064,6 +5648,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008016001",
@@ -5074,6 +5659,7 @@
 			},
 			{
 				"id":"file008017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5083,6 +5669,7 @@
 				"children":[
 					{
 						"id":"file008017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008017000",
@@ -5090,6 +5677,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008017001",
@@ -5100,6 +5688,7 @@
 			},
 			{
 				"id":"file008018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5109,6 +5698,7 @@
 				"children":[
 					{
 						"id":"file008018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008018000",
@@ -5116,6 +5706,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008018001",
@@ -5126,6 +5717,7 @@
 			},
 			{
 				"id":"file008019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5135,6 +5727,7 @@
 				"children":[
 					{
 						"id":"file008019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008019000",
@@ -5142,6 +5735,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008019001",
@@ -5152,6 +5746,7 @@
 			},
 			{
 				"id":"file008020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5161,6 +5756,7 @@
 				"children":[
 					{
 						"id":"file008020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008020000",
@@ -5168,6 +5764,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008020001",
@@ -5178,6 +5775,7 @@
 			},
 			{
 				"id":"file008021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5187,6 +5785,7 @@
 				"children":[
 					{
 						"id":"file008021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008021000",
@@ -5194,6 +5793,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008021001",
@@ -5204,6 +5804,7 @@
 			},
 			{
 				"id":"file008022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5213,6 +5814,7 @@
 				"children":[
 					{
 						"id":"file008022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008022000",
@@ -5220,6 +5822,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008022001",
@@ -5230,6 +5833,7 @@
 			},
 			{
 				"id":"file008023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5239,6 +5843,7 @@
 				"children":[
 					{
 						"id":"file008023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"008023000",
@@ -5246,6 +5851,7 @@
 						"nodeodr":0
 					},{
 						"id":"file008023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"008023001",
@@ -5256,6 +5862,7 @@
 			}]
 	},{
 		"id":"file009",
+		"ope":"文件查看",
 		"text":"设备仪器类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -5265,6 +5872,7 @@
 		"children":[
 			{
 				"id":"file009000",
+				"ope":"文件查看",
 				"text":"G1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5274,6 +5882,7 @@
 				"children":[
 					{
 						"id":"file009000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009000000",
@@ -5281,6 +5890,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009000001",
@@ -5291,6 +5901,7 @@
 			},
 			{
 				"id":"file009001",
+				"ope":"文件查看",
 				"text":"G2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5300,6 +5911,7 @@
 				"children":[
 					{
 						"id":"file009001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009001000",
@@ -5307,6 +5919,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009001001",
@@ -5317,6 +5930,7 @@
 			},
 			{
 				"id":"file009002",
+				"ope":"文件查看",
 				"text":"G3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5326,6 +5940,7 @@
 				"children":[
 					{
 						"id":"file009002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009002000",
@@ -5333,6 +5948,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009002001",
@@ -5343,6 +5959,7 @@
 			},
 			{
 				"id":"file009003",
+				"ope":"文件查看",
 				"text":"G4 专用工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5352,6 +5969,7 @@
 				"children":[
 					{
 						"id":"file009003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009003000",
@@ -5359,6 +5977,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009003001",
@@ -5369,6 +5988,7 @@
 			},
 			{
 				"id":"file009004",
+				"ope":"文件查看",
 				"text":"G5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5378,6 +5998,7 @@
 				"children":[
 					{
 						"id":"file009004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009004000",
@@ -5385,6 +6006,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009004001",
@@ -5395,6 +6017,7 @@
 			},
 			{
 				"id":"file009005",
+				"ope":"文件查看",
 				"text":"G6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5404,6 +6027,7 @@
 				"children":[
 					{
 						"id":"file009005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009005000",
@@ -5411,6 +6035,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009005001",
@@ -5421,6 +6046,7 @@
 			},
 			{
 				"id":"file009006",
+				"ope":"文件查看",
 				"text":"G8 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5430,6 +6056,7 @@
 				"children":[
 					{
 						"id":"file009006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009006000",
@@ -5437,6 +6064,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009006001",
@@ -5447,6 +6075,7 @@
 			},
 			{
 				"id":"file009007",
+				"ope":"文件查看",
 				"text":"G9 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5456,6 +6085,7 @@
 				"children":[
 					{
 						"id":"file009007000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009007000",
@@ -5463,6 +6093,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009007001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009007001",
@@ -5473,6 +6104,7 @@
 			},
 			{
 				"id":"file009008",
+				"ope":"文件查看",
 				"text":"G10 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5482,6 +6114,7 @@
 				"children":[
 					{
 						"id":"file009008000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009008000",
@@ -5489,6 +6122,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009008001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009008001",
@@ -5499,6 +6133,7 @@
 			},
 			{
 				"id":"file009009",
+				"ope":"文件查看",
 				"text":"G11 项目前期文件",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5508,6 +6143,7 @@
 				"children":[
 					{
 						"id":"file009009000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009009000",
@@ -5515,6 +6151,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009009001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009009001",
@@ -5525,6 +6162,7 @@
 			},
 			{
 				"id":"file009010",
+				"ope":"文件查看",
 				"text":"JJ1 生产及辅助生产性项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5534,6 +6172,7 @@
 				"children":[
 					{
 						"id":"file009010000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009010000",
@@ -5541,6 +6180,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009010001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009010001",
@@ -5551,6 +6191,7 @@
 			},
 			{
 				"id":"file009011",
+				"ope":"文件查看",
 				"text":"JJ2 公共福利建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5560,6 +6201,7 @@
 				"children":[
 					{
 						"id":"file009011000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009011000",
@@ -5567,6 +6209,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009011001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009011001",
@@ -5577,6 +6220,7 @@
 			},
 			{
 				"id":"file009012",
+				"ope":"文件查看",
 				"text":"JJ3 住宅建设项目",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5586,6 +6230,7 @@
 				"children":[
 					{
 						"id":"file009012000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009012000",
@@ -5593,6 +6238,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009012001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009012001",
@@ -5603,6 +6249,7 @@
 			},
 			{
 				"id":"file009013",
+				"ope":"文件查看",
 				"text":"JJ4 大宇铁路工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5612,6 +6259,7 @@
 				"children":[
 					{
 						"id":"file009013000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009013000",
@@ -5619,6 +6267,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009013001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009013001",
@@ -5629,6 +6278,7 @@
 			},
 			{
 				"id":"file009014",
+				"ope":"文件查看",
 				"text":"JJ5 外部工程",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5638,6 +6288,7 @@
 				"children":[
 					{
 						"id":"file009014000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009014000",
@@ -5645,6 +6296,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009014001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009014001",
@@ -5655,6 +6307,7 @@
 			},
 			{
 				"id":"file009015",
+				"ope":"文件查看",
 				"text":"JJ6 征地材料",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5664,6 +6317,7 @@
 				"children":[
 					{
 						"id":"file009015000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009015000",
@@ -5671,6 +6325,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009015001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009015001",
@@ -5681,6 +6336,7 @@
 			},
 			{
 				"id":"file009016",
+				"ope":"文件查看",
 				"text":"HB 环保",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5690,6 +6346,7 @@
 				"children":[
 					{
 						"id":"file009016000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009016000",
@@ -5697,6 +6354,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009016001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009016001",
@@ -5707,6 +6365,7 @@
 			},
 			{
 				"id":"file009017",
+				"ope":"文件查看",
 				"text":"HD1 水文、气象",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5716,6 +6375,7 @@
 				"children":[
 					{
 						"id":"file009017000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009017000",
@@ -5723,6 +6383,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009017001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009017001",
@@ -5733,6 +6394,7 @@
 			},
 			{
 				"id":"file009018",
+				"ope":"文件查看",
 				"text":"HD2 地质",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5742,6 +6404,7 @@
 				"children":[
 					{
 						"id":"file009018000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009018000",
@@ -5749,6 +6412,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009018001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009018001",
@@ -5759,6 +6423,7 @@
 			},
 			{
 				"id":"file009019",
+				"ope":"文件查看",
 				"text":"HD3 航道",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5768,6 +6433,7 @@
 				"children":[
 					{
 						"id":"file009019000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009019000",
@@ -5775,6 +6441,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009019001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009019001",
@@ -5785,6 +6452,7 @@
 			},
 			{
 				"id":"file009020",
+				"ope":"文件查看",
 				"text":"ZH 综合类",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5794,6 +6462,7 @@
 				"children":[
 					{
 						"id":"file009020000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009020000",
@@ -5801,6 +6470,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009020001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009020001",
@@ -5811,6 +6481,7 @@
 			},
 			{
 				"id":"file009021",
+				"ope":"文件查看",
 				"text":"QT 其他",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5820,6 +6491,7 @@
 				"children":[
 					{
 						"id":"file009021000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009021000",
@@ -5827,6 +6499,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009021001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009021001",
@@ -5837,6 +6510,7 @@
 			},
 			{
 				"id":"file009022",
+				"ope":"文件查看",
 				"text":"GG 基建类光盘",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5846,6 +6520,7 @@
 				"children":[
 					{
 						"id":"file009022000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009022000",
@@ -5853,6 +6528,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009022001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009022001",
@@ -5863,6 +6539,7 @@
 			},
 			{
 				"id":"file009023",
+				"ope":"文件查看",
 				"text":"JY 经营",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5872,6 +6549,7 @@
 				"children":[
 					{
 						"id":"file009023000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"009023000",
@@ -5879,6 +6557,7 @@
 						"nodeodr":0
 					},{
 						"id":"file009023001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"009023001",
@@ -5889,6 +6568,7 @@
 			}]
 	},{
 		"id":"file010",
+		"ope":"文件查看",
 		"text":"干部职工档案类",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -5898,6 +6578,7 @@
 		"children":[
 			{
 				"id":"file010000",
+				"ope":"文件查看",
 				"text":"2010",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5907,6 +6588,7 @@
 				"children":[
 					{
 						"id":"file010000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010000000",
@@ -5914,6 +6596,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010000001",
@@ -5924,6 +6607,7 @@
 			},
 			{
 				"id":"file010001",
+				"ope":"文件查看",
 				"text":"2011",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5933,6 +6617,7 @@
 				"children":[
 					{
 						"id":"file010001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010001000",
@@ -5940,6 +6625,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010001001",
@@ -5950,6 +6636,7 @@
 			},
 			{
 				"id":"file010002",
+				"ope":"文件查看",
 				"text":"2012",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5959,6 +6646,7 @@
 				"children":[
 					{
 						"id":"file010002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010002000",
@@ -5966,6 +6654,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010002001",
@@ -5976,6 +6665,7 @@
 			},
 			{
 				"id":"file010003",
+				"ope":"文件查看",
 				"text":"2013",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -5985,6 +6675,7 @@
 				"children":[
 					{
 						"id":"file010003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010003000",
@@ -5992,6 +6683,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010003001",
@@ -6002,6 +6694,7 @@
 			},
 			{
 				"id":"file010004",
+				"ope":"文件查看",
 				"text":"2014",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6011,6 +6704,7 @@
 				"children":[
 					{
 						"id":"file010004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010004000",
@@ -6018,6 +6712,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010004001",
@@ -6028,6 +6723,7 @@
 			},
 			{
 				"id":"file010005",
+				"ope":"文件查看",
 				"text":"2015",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6037,6 +6733,7 @@
 				"children":[
 					{
 						"id":"file010005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010005000",
@@ -6044,6 +6741,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010005001",
@@ -6054,6 +6752,7 @@
 			},
 			{
 				"id":"file010006",
+				"ope":"文件查看",
 				"text":"2016",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6063,6 +6762,7 @@
 				"children":[
 					{
 						"id":"file010006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"010006000",
@@ -6070,6 +6770,7 @@
 						"nodeodr":0
 					},{
 						"id":"file010006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"010006001",
@@ -6080,6 +6781,7 @@
 			}]
 	},{
 		"id":"file011",
+		"ope":"文件查看",
 		"text":"声像档案",
 		"iconCls":"ti_folder",
 		"state":"closed",
@@ -6089,6 +6791,7 @@
 		"children":[
 			{
 				"id":"file011000",
+				"ope":"文件查看",
 				"text":"2010",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6098,6 +6801,7 @@
 				"children":[
 					{
 						"id":"file011000000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011000000",
@@ -6105,6 +6809,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011000001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011000001",
@@ -6115,6 +6820,7 @@
 			},
 			{
 				"id":"file011001",
+				"ope":"文件查看",
 				"text":"2011",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6124,6 +6830,7 @@
 				"children":[
 					{
 						"id":"file011001000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011001000",
@@ -6131,6 +6838,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011001001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011001001",
@@ -6141,6 +6849,7 @@
 			},
 			{
 				"id":"file011002",
+				"ope":"文件查看",
 				"text":"2012",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6150,6 +6859,7 @@
 				"children":[
 					{
 						"id":"file011002000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011002000",
@@ -6157,6 +6867,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011002001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011002001",
@@ -6167,6 +6878,7 @@
 			},
 			{
 				"id":"file011003",
+				"ope":"文件查看",
 				"text":"2013",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6176,6 +6888,7 @@
 				"children":[
 					{
 						"id":"file011003000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011003000",
@@ -6183,6 +6896,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011003001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011003001",
@@ -6193,6 +6907,7 @@
 			},
 			{
 				"id":"file011004",
+				"ope":"文件查看",
 				"text":"2014",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6202,6 +6917,7 @@
 				"children":[
 					{
 						"id":"file011004000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011004000",
@@ -6209,6 +6925,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011004001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011004001",
@@ -6219,6 +6936,7 @@
 			},
 			{
 				"id":"file011005",
+				"ope":"文件查看",
 				"text":"2015",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6228,6 +6946,7 @@
 				"children":[
 					{
 						"id":"file011005000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011005000",
@@ -6235,6 +6954,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011005001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011005001",
@@ -6245,6 +6965,7 @@
 			},
 			{
 				"id":"file011006",
+				"ope":"文件查看",
 				"text":"2016",
 				"iconCls":"ti_folder",
 				"state":"closed",
@@ -6254,6 +6975,7 @@
 				"children":[
 					{
 						"id":"file011006000",
+						"ope":"文件查看",
 						"text":"永久",
 						"iconCls":"ti_file",
 						"node":"011006000",
@@ -6261,6 +6983,7 @@
 						"nodeodr":0
 					},{
 						"id":"file011006001",
+						"ope":"文件查看",
 						"text":"定期",
 						"iconCls":"ti_file",
 						"node":"011006001",
