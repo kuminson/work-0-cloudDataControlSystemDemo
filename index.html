@@ -11,6 +11,9 @@
 	<![endif]-->
 	<!-- 样式重置 -->
 	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/common/reset.css">
+	<!-- 引入easyui -->
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/resource/easyui/themes/icon.css">
 	<!-- 引入样式 -->
 	<link rel="stylesheet" type="text/css" href="/work-0-cloudDataControlSystemDemo/css/index/index.css">
 </head>
@@ -33,12 +36,13 @@
 		<div class="h_contentbox">
 			<div class="h_content">
 			<img src="/work-0-cloudDataControlSystemDemo/images/index/logo.png" alt="logo" class="hc_logo">
-				<h2 class="hc_title">云数字档案管理系统</h2>
+				<h2 class="hc_title">CDAS<span>云数字档案馆管理系统</span></h2>
 				<div class="hc_search">
 					<input type="text" class="hcs_frame">
 					<button class="hcs_btn">搜索</button>
 				</div>
 				<a class="hc_btn" id="hc_btn">工作平台&gt;&gt;</a>
+				<a class="hc_btn" id="hc_btnframe">需求预案</a>
 			</div>
 		</div>
 	</div>
@@ -301,12 +305,50 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/jQuery/jquery-1.11.3.min.js"></script>
+	<div id="o_frame" class="easyui-window" title="需求预案" data-options="closed:true" style="height:380px;width:400px;">
+		<div class="of_form">
+			<ul class="off_left">
+				<li class="offl_info">申请人：</li>
+				<li class="offl_info">申请时间：</li>
+				<li class="offl_info">用途：</li>
+				<li class="offl_info"></li>
+				<li class="offl_info">描述：</li>
+			</ul>
+			<ul class="off_right">
+				<li class="offl_info">
+					 <input class="easyui-textbox" style="width:100%;">
+				</li>
+				<li class="offl_info">
+					 <input class="easyui-textbox" style="width:100%;">
+				</li>
+				<li class="offl_info">
+					<label><input type="radio" name="offri_use" value="">数据需求</label>
+					<label><input type="radio" name="offri_use" value="">资料上交</label>
+				</li>
+				<li class="offl_info">
+					<label><input type="radio" name="offri_use" value="">随机资料</label>
+					<label><input type="radio" name="offri_use" value="">数据加工</label>
+				</li>
+				<li class="offl_info offl_mulinfo">
+					 <input class="easyui-textbox" multiline="true" style="width:100%;height:120px;">
+				</li>
+			</ul>
+			<a id="off_submit" href="#" class="easyui-linkbutton off_submit" style="width:120px">提交</a>
+		</div>
+	</div>
+
+	<!-- 引入jQuery -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/jQuery/jQuery-1.11.3.min.js"></script>
+	<!-- 引入easyui -->
+	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
+	<!-- 引入通用js -->
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<!-- 引入highchart -->
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/highcharts-more.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/exporting.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/Highcharts-4.2.6/js/modules/solid-gauge.js"></script>
+	<!-- 引入本页面js -->
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/index/index.js"></script>
 </body>
 </html>

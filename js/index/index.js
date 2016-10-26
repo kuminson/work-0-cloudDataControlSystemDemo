@@ -39,6 +39,14 @@ $(function(){
 	$("#hc_btn").on("click",function(){
 		window.location.href = rooturl + "html/dataConfirm/dataConfirm.html";
 	});
+	// 绑定需求预案按钮事件
+	$("#hc_btnframe").on("click",function(){
+		$("#o_frame").window("open");
+	});
+	// 绑定需求预案提交事件
+	$("#off_submit").on("click",function(){
+		$("#o_frame").window("close");
+	});
 	// 绑定登录页面跳转
 	$("#hir_btn").on("click",function(){
 		// window.location.href = "/cxy-web/login.jsp";
@@ -215,6 +223,7 @@ $(function(){
 			}
 		}]
 	});
+
 });
 
 // 加载当前日期
