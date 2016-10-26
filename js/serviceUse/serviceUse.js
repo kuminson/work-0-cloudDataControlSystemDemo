@@ -191,6 +191,16 @@ $(function(){
 		});
 	});
 
+	// 绑定需求预案按钮事件
+	$("#mcdrt_need").on("click",function(){
+		$("#o_frame").window("open");
+	});
+
+	// 绑定需求预案制作专题按钮
+	$("body").on("click","#off_submit",function(){
+		$("#mcdrt_add").triggerHandler("click");
+	});
+
 	// 加载组织机构树
 	$(".mt_unit").tree({
 		url:rooturl + "html/serviceUse/unit.json",
