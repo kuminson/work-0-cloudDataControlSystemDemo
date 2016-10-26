@@ -81,6 +81,7 @@
 						<div id="mcbc_tb" class="datagrid-toolbar">
 							<a id="mcdrt_add" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">制作专题</a>
 							<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除专题">删除专题</a>
+							<a id="mcdrt_need" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="需求预案">需求预案</a>
 						</div>
 						<!-- 文件列表 -->
 						<ul id="mcd_files" class="mcd_files"></ul>
@@ -155,8 +156,42 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 需求预案弹出框 -->
+	<div id="o_frame" class="easyui-window" title="需求预案" data-options="closed:true" style="height:380px;width:400px;left:50px;">
+		<div class="of_form">
+			<ul class="off_left">
+				<li class="offl_info">申请人：</li>
+				<li class="offl_info">申请时间：</li>
+				<li class="offl_info">用途：</li>
+				<li class="offl_info"></li>
+				<li class="offl_info">描述：</li>
+			</ul>
+			<ul class="off_right">
+				<li class="offl_info">
+					 <input class="easyui-textbox" value="彭祖高" style="width:100%;">
+				</li>
+				<li class="offl_info">
+					 <input class="easyui-textbox" value="2016-10-22" style="width:100%;">
+				</li>
+				<li class="offl_info">
+					<label><input type="radio" name="offri_use" value="">数据需求</label>
+					<label><input type="radio" name="offri_use" value="">资料上交</label>
+				</li>
+				<li class="offl_info">
+					<label><input type="radio" name="offri_use" checked="checked" value="">随机资料</label>
+					<label><input type="radio" name="offri_use" value="">数据加工</label>
+				</li>
+				<li class="offl_info offl_mulinfo">
+					 <input class="easyui-textbox" multiline="true" style="width:100%;height:120px;" value="按数据加工需要，需海港吊装装置施工、监理文件一套，望推送。">
+				</li>
+			</ul>
+			<a id="off_submit" href="#" iconcls="icon-add" class="easyui-linkbutton off_submit" style="width:120px">制作专题</a>
+		</div>
+	</div>
+
 	<!-- 专题详情窗口内容 -->
-	<div id="detailswin" class="easyui-window" data-options="title:'专题详情',closed:true,height:'90%',width:'90%'">
+	<div id="detailswin" class="easyui-window" data-options="title:'专题详情',closed:true,height:'90%',width:'80%'">
 		<div id="detabox" class="easyui-layout" data-options="fit:true">
 			<div id="detacenter" data-options="region:'center'">
 				<div id="d_content" class="easyui-layout" data-options="fit:true">
@@ -227,10 +262,12 @@
 			</div>
 		</div>
 	</div>
-</body>
+
+	
 
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/js/serviceUse/serviceUse.js"></script>
+</body>
 </html>

@@ -114,3 +114,31 @@
 	width: 100%;
 	overflow: hidden;
 }
+
+/*弹出框*/
+.of_form{
+	width: 100%;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.off_left{
+	width: 20%;
+	text-align: right;
+	float: left;
+}
+.offl_info{
+	height: 24px;
+	margin-bottom: 10px;
+}
+.offl_mulinfo{
+	height: auto;
+}
+.off_right{
+	width: 70%;
+	margin-left: 5%;
+	float: left;
+}
+.off_submit{
+	margin-top: 10px;
+	margin-left: 60%;
+}
