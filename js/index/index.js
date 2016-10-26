@@ -42,6 +42,7 @@ $(function(){
 	// 绑定需求预案按钮事件
 	$("#hc_btnframe").on("click",function(){
 		$("#o_frame").window("open");
+		$("#offli_time").textbox("setText",getnowtime("","1"));
 	});
 	// 绑定需求预案提交事件
 	$("#off_submit").on("click",function(){
@@ -227,7 +228,7 @@ $(function(){
 });
 
 // 加载当前日期
-function getnowtime(id){
+function getnowtime(id,mode){
 	var timedate = {};
 	timedate.now = new Date;
 	timedate.year = timedate.now.getFullYear();
@@ -258,5 +259,10 @@ function getnowtime(id){
 		timedate.week = "星期六";
 		break;
 	}
-	$("#"+id).html("今天是 "+ timedate.year +"年"+ timedate.month +"月"+ timedate.date +"日 "+ timedate.week);
+	if(mode == undefined){
+		$("#"+id).html("今天是 "+ timedate.year +"年"+ timedate.month +"月"+ timedate.date +"日 "+ timedate.week);
+	}else{
+		var modetime = timedate.year +"-"+ timedate.month +"-"+ timedate.date;
+		return  modetime;
+	}
 }
