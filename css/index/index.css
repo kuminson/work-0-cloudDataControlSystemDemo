@@ -61,24 +61,26 @@
 }
 .hc_title{
 	float: left;
-	width: 110px;
+	width: 140px;
 	height: 60px;
-	margin: 14px 0 0 10px;
+	margin: 20px 0 0 10px;
 	font-size: 30px;
 	color: #FFF;
 	font-weight: bold;
 	text-align: center;
 	line-height: 30px;
-	letter-spacing: 0px;
+	letter-spacing: 5px;
+	font-family: "微软雅黑";
 }
 .hc_title span{
 	line-height: 20px;
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
+	letter-spacing: 0px;
 }
 .hc_search{
 	float: left;
-	margin-left: 160px;
+	margin-left: 100px;
 	margin-top: 32px;
 }
 .hcs_frame{
