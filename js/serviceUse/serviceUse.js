@@ -193,7 +193,14 @@ $(function(){
 
 	// 绑定需求预案按钮事件
 	$("#mcdrt_need").on("click",function(){
+		$("#l_frame").window("open");
+	});
+
+	// 绑定需求预案列表点击事件
+	$("body").on("click",".lfln_text",function(){
 		$("#o_frame").window("open");
+		$("#l_frame").window("close");
+		$("#offli_user").textbox("setText",$(this).html().split(" ")[0]);
 	});
 
 	// 绑定需求预案制作专题按钮

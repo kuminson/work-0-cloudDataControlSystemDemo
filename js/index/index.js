@@ -35,6 +35,12 @@ $(function(){
 		$(".mbb_btn").eq(btnnbr).addClass("active");
 		$(".mb_imgs").animate({marginLeft:bannerleft+"px"},0);
 	});
+
+	// 加载comboTree
+	$("#offli_unit").combotree({
+		url: rooturl + "unit.json",
+		multiple:true
+	});
 	// 绑定工作平台跳转
 	$("#hc_btn").on("click",function(){
 		window.location.href = rooturl + "html/dataConfirm/dataConfirm.html";

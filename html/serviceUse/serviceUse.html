@@ -141,22 +141,37 @@
 		</div>
 	</div>
 
+	<!-- 专题文件列表 -->
+	<div id="l_frame" class="easyui-window" title="需求预案列表" data-options="closed:true" style="width:400px;height:380px;">
+		<ul class="lf_list">
+			<li class="lfl_need"><a href="#" class="lfln_text">王明翠 需求预案 2016-10-22</a></li>
+			<li class="lfl_need"><a href="#" class="lfln_text">刘紫嫣 需求预案 2016-10-18</a></li>
+			<li class="lfl_need"><a href="#" class="lfln_text">于虎飞 需求预案 2016-10-11</a></li>
+			<li class="lfl_need"><a href="#" class="lfln_text">孟彩丽 需求预案 2016-10-07</a></li>
+			<li class="lfl_need"><a href="#" class="lfln_text">冯子明 需求预案 2016-10-04</a></li>
+		</ul>
+	</div>
+
 	<!-- 需求预案弹出框 -->
-	<div id="o_frame" class="easyui-window" title="需求预案" data-options="closed:true" style="height:380px;width:400px;left:50px;">
+	<div id="o_frame" class="easyui-window" title="需求预案" data-options="closed:true" style="height:420px;width:400px;left:50px;">
 		<div class="of_form">
 			<ul class="off_left">
 				<li class="offl_info">申请人：</li>
 				<li class="offl_info">申请时间：</li>
+				<li class="offl_info">使用人：</li>
 				<li class="offl_info">用途：</li>
 				<li class="offl_info"></li>
 				<li class="offl_info">描述：</li>
 			</ul>
 			<ul class="off_right">
 				<li class="offl_info">
-					 <input class="easyui-textbox" value="彭祖高" style="width:100%;">
+					 <input id="offli_user" class="easyui-textbox" value="彭祖高" style="width:100%;">
 				</li>
 				<li class="offl_info">
 					 <input class="easyui-textbox" value="2016-10-22" style="width:100%;">
+				</li>
+				<li class="offl_info">
+					 <input class="easyui-textbox" value="范保林,梅苍华,梅长豆,王梦林" style="width:100%;" data-options="disabled:true">
 				</li>
 				<li class="offl_info">
 					<label><input type="radio" name="offri_use" value="">数据需求</label>
