@@ -192,9 +192,23 @@ $(function(){
 	});
 
 	// 绑定需求预案按钮事件
-	$("#mcdrt_need").on("click",function(){
-		$("#l_frame").window("open");
+	$("#mcdrt_need").menubutton({
+		duration:10000,
+		menu:"#mcdrt_menu"
 	});
+	var needplan = ["王明翠 需求预案 2016-10-22","刘紫嫣 需求预案 2016-10-18",
+					"于虎飞 需求预案 2016-10-11","孟彩丽 需求预案 2016-10-07",
+					"冯子明 需求预案 2016-10-04"];
+	// 绑定需求预案二级菜单
+	for(var i=0; i<needplan.length; i++){
+		$("#mcdrt_menu").menu("appendItem",{
+			text: needplan[i],
+			onclick: function(item){
+				$("#o_frame").window("open");
+				$("#offli_user").textbox("setText",$(item.target).html().split(" ")[0]);
+			}
+		});
+	}
 
 	// 绑定需求预案列表点击事件
 	$("body").on("click",".lfln_text",function(){
