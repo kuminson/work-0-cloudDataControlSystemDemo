@@ -176,7 +176,7 @@
 					<label><input type="radio" name="offri_use" value="">数据加工</label>
 				</li>
 				<li class="offl_info offl_mulinfo">
-					 <input class="easyui-textbox" multiline="true" style="width:100%;height:120px;" value="按数据加工需要，需海港吊装装置施工、监理文件一套，望推送。">
+					 <input id="offli_text" class="easyui-textbox" multiline="true" style="width:100%;height:120px;" value="">
 				</li>
 			</ul>
 			<a id="off_submit" href="#" iconcls="icon-add" class="easyui-linkbutton off_submit" style="width:120px">制作专题</a>
@@ -185,16 +185,42 @@
 	
 	<!-- 选择专题文件窗口内容 -->
 	<div id="frame" class="easyui-window" data-options="title:'选择专题文件',closed:true,height:'80%',width:'80%'">
-		<div id="f_content" class="easyui-layout" data-options="fit:true">
-			<div id="fc_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
-				<ul id="fct_tree"></ul>
+		<div id="frametabs" class="easyui-tabs" fit="true">
+			<div title="档案数据">
+				<div id="f_content" class="easyui-layout" data-options="fit:true">
+					<div id="fc_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
+						<ul id="fct_tree"></ul>
+					</div>
+					<div id="fc_grid"  data-options="region:'center'">
+						<table id="fcg_grid" class="easyui-datagrid" data-options="toolbar:'#mcg_tb'" fit="true"></table>
+						<!-- 按钮栏 -->
+						<div id="mcg_tb" class="datagrid-toolbar">
+							<a id="mcgb_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
+							<a id="mcgb_search" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-search" onclick="" title="删除专题">高级检索</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div id="fc_grid"  data-options="region:'center'">
-				<table id="fcg_grid" class="easyui-datagrid" data-options="toolbar:'#mcg_tb'" fit="true"></table>
-				<!-- 按钮栏 -->
-				<div id="mcg_tb" class="datagrid-toolbar">
-					<a id="mcgb_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
-					<a id="mcgb_search" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-search" onclick="" title="删除专题">高级检索</a>
+			<div title="业务系统数据">
+				<div id="f_business" class="easyui-layout" data-options="fit:true">
+					<div id="fb_tree" data-options="region:'west',title:'业务数据',split:true" style="width:200px">
+						<ul id="fbt_tree"></ul>
+					</div>
+					<div id="fb_grid"  data-options="region:'center'">
+						<table id="fbg_grid" class="easyui-datagrid" data-options="toolbar:'#fbg_tb'" fit="true"></table>
+						<!-- 按钮栏 -->
+						<div id="fbg_tb" class="datagrid-toolbar">
+							<a id="fbgt_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
+							<a id="fbgt_search" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-search" onclick="" title="删除专题">高级检索</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div title="权限人名库">
+				<table id="f_permname" class="easyui-datagrid" data-options="toolbar:'#fp_tb'" fit="true"></table>
+				<div id="fp_tb" class="datagrid-toolbar">
+					<a id="fpt_select" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-add" title="制作专题">选择</a>
+					<input id="fpt_search" class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
 				</div>
 			</div>
 		</div>

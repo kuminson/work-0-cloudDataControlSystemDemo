@@ -233,23 +233,38 @@ $(function(){
 		data:[
 			{
 				name:"王明翠" ,
-				obj:"需求预案",
+				use:1,
+				obj:"数据加工需求预案",
+				mode:1,
+				describe:"按数据加工需要，需海港吊装装置施工、监理文件一套，望推送。",
 				time:"2016-10-22"
 			},{
 				name:"刘紫嫣" ,
-				obj:"需求预案",
+				use:1,
+				obj:"ERP成本数据需求预案",
+				mode:1,
+				describe:"需2005年至2010年，成本中心数据一套。",
 				time:"2016-10-18"
 			},{
 				name:"于虎飞" ,
-				obj:"需求预案",
+				use:1,
+				obj:"ERP权限人名库需求预案",
+				mode:1,
+				describe:"需ERP权限人名表中，徐亮在2010年9月份至2012年12月份，操作记录一份。",
 				time:"2016-10-11"
 			},{
 				name:"孟彩丽" ,
-				obj:"需求预案",
+				use:1,
+				obj:"CDAS操作日志审计需求预案",
+				mode:1,
+				describe:"需CDAS操作系统中，王磊在2013年1月份至2014年9月份，操作记录一份。用于审计。",
 				time:"2016-10-07"
 			},{
 				name:"冯子明" ,
-				obj:"需求预案",
+				use:1,
+				obj:"数据追加需求预案",
+				mode:0,
+				describe:"",
 				time:"2016-10-04"
 			}
 		],
@@ -259,9 +274,13 @@ $(function(){
 		loadMsg: "请稍后...",
 		singleSelect:true,
 		onClickRow:function(index,row){
-			$("#o_frame").window("open");
-			$("#l_frame").addClass("hide");
-			$("#offli_user").textbox("setText",row.name);
+			if(row.mode == 1){
+				$("#o_frame").window("open");
+				$("#l_frame").addClass("hide");
+				$("#offli_user").textbox("setText",row.name);
+				$("#offli_text").textbox("setText",row.describe);
+				$("input[name='offri_use']").eq(row.use).prop("checked","true");
+			}
 		}
 	});
 
@@ -277,23 +296,7 @@ $(function(){
 	});
 
 	// 绑定选择按钮事件
-	$("body").on("click","#mcgb_select",function(){
-		var seldata = $("#fcg_grid").datagrid("getChecked");
-		// 判断选择是否为空
-		if(seldata.length == 0){
-			alert("请至少选择一条数据");
-			return 0;
-		}
-		// 加载文件数据
-		for(var i=0; i<seldata.length; i++){
-			$("#dcf_files").append('<li class="mcb_list" easyid="'+seldata[i].wjbh+'">'
-							+'<span class="mcbl_icon mcbl_file"></span>'
-							+'<h3 class="mcbl_name">' + seldata[i].wjmc + '</h3>'
-						+'</li>');
-		}
-		// 关闭悬浮框
-		$("#frame").window("close");
-	});
+	selectbutton("#mcgb_select","#fcg_grid","wjbh","wjmc");
 
 	// 绑定保存按钮事件
 	$("#d_content").on("click","#mcdrt_save",function(){
@@ -376,6 +379,68 @@ $(function(){
 			}
 		});
 	});
+
+	// 加载业务系统数据 树
+	$("#fbt_tree").tree({
+		url: rooturl + "html/serviceUse/busnessTree.json",
+		onClick:function(node){
+			// 加载表格数据
+			$("#fbg_grid").datagrid({
+				url: rooturl + "html/serviceUse/busnessdata.json",
+				fitColumns: true,
+				striped: true,
+				pagination: true,
+				rownumbers: true,
+				pageSize:20,
+				pageList:[20,40,60],
+				columns:[[
+					{field:"",checkbox:"true"},
+					{field:"center",title:"成本中心",width:100},
+					{field:"name",title:"成本中心名",width:100},
+					{field:"sum",title:"实际成本名",width:100},
+					{field:"dfr",title:"绝对差异和",width:100},
+					{field:"total",title:"货币总值和",width:100}
+				]]
+			});
+		}
+	});
+
+	// 绑定业务数据选择按钮事件
+	selectbutton("#fbgt_select","#fbg_grid","center","name");
+
+	// 加载权限人名库 datagrid数据
+	$("#f_permname").datagrid({
+		url: rooturl + "html/serviceUse/usernamelog.json",
+		toolbar:"#fp_tb",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"",checkbox:"true"},
+			{field:"usid",title:"用户ID",width:50},
+			{field:"usname",title:"用户名",width:50},
+			{field:"optime",title:"操作时间",width:100},
+			{field:"address",title:"IP地址",width:100},
+			{field:"opmode",title:"操作类型",width:100},
+			{field:"opresult",title:"操作结果",width:50},
+			{field:"opdescribe",title:"操作描述",width:200}
+		]]
+	});
+
+	// 绑定权限人名 选择按钮事件
+	selectbutton("#fpt_select","#f_permname","usid","usname");
+
+	// 绑定权限人名 搜索按钮事件
+	$("#fpt_search").searchbox({
+		searcher:function(val,name){
+			$("#f_permname").datagrid({
+				url: rooturl + "html/serviceUse/userwangleilog.json"
+			});
+		}
+	});
 });
 
 // 当前日期
@@ -443,4 +508,25 @@ function setframeattr(obj){
 	$("#dafi_time").val(obj.time);
 	$("#dafi_start").datebox("setValue",obj.start);
 	$("#dafi_over").datebox("setValue",obj.over);
+}
+
+// 绑定选择按钮事件
+function selectbutton(btn,grid,kid,kname){
+	$("body").on("click",btn,function(){
+		var seldata = $(grid).datagrid("getChecked");
+		// 判断选择是否为空
+		if(seldata.length == 0){
+			alert("请至少选择一条数据");
+			return 0;
+		}
+		// 加载文件数据
+		for(var i=0; i<seldata.length; i++){
+			$("#dcf_files").append('<li class="mcb_list" easyid="'+seldata[i][kid]+'">'
+							+'<span class="mcbl_icon mcbl_file"></span>'
+							+'<h3 class="mcbl_name">' + seldata[i][kname] + '</h3>'
+						+'</li>');
+		}
+		// 关闭悬浮框
+		$("#frame").window("close");
+	});
 }
