@@ -1,0 +1,11 @@
+[
+	{
+		"id":"bsn001",
+		"text":"ERP成本表",
+		"iconCls": "ti_folder"
+	},{
+		"id":"bsn002",
+		"text":"ERP权限人名表",
+		"iconCls": "ti_folder"
+	}
+]
