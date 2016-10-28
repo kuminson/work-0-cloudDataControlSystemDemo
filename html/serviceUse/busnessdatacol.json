@@ -1,0 +1,10 @@
+{
+	"columns":[[
+		{"field":"","checkbox":"true"},
+		{"field":"center","title":"成本中心","width":80},
+		{"field":"name","title":"成本中心名","width":150},
+		{"field":"sum","title":"实际成本名","width":80},
+		{"field":"dfr","title":"绝对差异和","width":80},
+		{"field":"total","title":"货币总值和","width":80}
+	]]
+}

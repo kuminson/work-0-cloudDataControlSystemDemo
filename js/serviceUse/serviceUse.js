@@ -23,6 +23,7 @@ $(function(){
 		}else{
 			$(".main").css("height",pageminheight - $(".head").height() - $(".navbar").height() - bottomheight);
 		}
+		$("#dcf_databox").height($("#dc_files").height() - 28 -1 + "px");
 	});
 	$(window).triggerHandler("resize");
 
@@ -180,6 +181,8 @@ $(function(){
 		$("#detailswin").window("open");
 		// 清空文件列表
 		$("#dcf_files .mcb_list").remove();
+		// 隐藏表格列表
+		$("#dcf_databox").addClass('hide');
 		// 清空属性
 		setframeattr({
 			title: "新建专题",
@@ -390,55 +393,63 @@ $(function(){
 		url: rooturl + "html/serviceUse/busnessTree.json",
 		onClick:function(node){
 			// 加载表格数据
-			$("#fbg_grid").datagrid({
+			$.ajax({
+				url: rooturl + "html/serviceUse/busnessdatacol.json",
+				type: "GET",
+				dataType: "json",
+				success:function(data){
+					$("#fbg_grid").datagrid({
 		method: "get",
-				url: rooturl + "html/serviceUse/busnessdata.json",
+						url: rooturl + "html/serviceUse/busnessdata.json",
+						fitColumns: true,
+						striped: true,
+						pagination: true,
+						rownumbers: true,
+						pageSize:20,
+						pageList:[20,40,60],
+						columns:data.columns
+					});
+
+				},
+				error:function(){
+					alert("服务器链接失败！");
+				}
+			});
+		}
+	});
+
+	// 绑定业务数据选择按钮事件
+	// selectbutton("#fbgt_select","#fbg_grid","center","name");
+	selectbuttontogrid("#fbgt_select","#fbg_grid","html/serviceUse/busnessdatacol.json");
+
+	// 加载权限人名库 datagrid数据
+	$.ajax({
+		url: rooturl + "html/serviceUse/usernamelogcol.json",
+		type: "GET",
+		dataType: "json",
+		success:function(data){
+			$("#f_permname").datagrid({
+		method: "get",
+				url: rooturl + "html/serviceUse/usernamelog.json",
+				toolbar:"#fp_tb",
 				fitColumns: true,
 				striped: true,
 				pagination: true,
 				rownumbers: true,
 				pageSize:20,
 				pageList:[20,40,60],
-				columns:[[
-					{field:"",checkbox:"true"},
-					{field:"center",title:"成本中心",width:100},
-					{field:"name",title:"成本中心名",width:100},
-					{field:"sum",title:"实际成本名",width:100},
-					{field:"dfr",title:"绝对差异和",width:100},
-					{field:"total",title:"货币总值和",width:100}
-				]]
+				columns:data.columns
 			});
+
+		},
+		error:function(){
+			alert("服务器链接失败！");
 		}
 	});
-
-	// 绑定业务数据选择按钮事件
-	selectbutton("#fbgt_select","#fbg_grid","center","name");
-
-	// 加载权限人名库 datagrid数据
-	$("#f_permname").datagrid({
-		method: "get",
-		url: rooturl + "html/serviceUse/usernamelog.json",
-		toolbar:"#fp_tb",
-		fitColumns: true,
-		striped: true,
-		pagination: true,
-		rownumbers: true,
-		pageSize:20,
-		pageList:[20,40,60],
-		columns:[[
-			{field:"",checkbox:"true"},
-			{field:"usid",title:"用户ID",width:50},
-			{field:"usname",title:"用户名",width:50},
-			{field:"optime",title:"操作时间",width:100},
-			{field:"address",title:"IP地址",width:100},
-			{field:"opmode",title:"操作类型",width:100},
-			{field:"opresult",title:"操作结果",width:50},
-			{field:"opdescribe",title:"操作描述",width:200}
-		]]
-	});
-
+	
 	// 绑定权限人名 选择按钮事件
-	selectbutton("#fpt_select","#f_permname","usid","usname");
+	// selectbutton("#fpt_select","#f_permname","usid","usname");
+	selectbuttontogrid("#fpt_select","#f_permname","html/serviceUse/usernamelogcol.json");
 
 	// 绑定权限人名 搜索按钮事件
 	$("#fpt_search").searchbox({
@@ -518,7 +529,7 @@ function setframeattr(obj){
 	$("#dafi_over").datebox("setValue",obj.over);
 }
 
-// 绑定选择按钮事件
+// 绑定选择按钮显示文件事件
 function selectbutton(btn,grid,kid,kname){
 	$("body").on("click",btn,function(){
 		var seldata = $(grid).datagrid("getChecked");
@@ -534,6 +545,51 @@ function selectbutton(btn,grid,kid,kname){
 							+'<h3 class="mcbl_name">' + seldata[i][kname] + '</h3>'
 						+'</li>');
 		}
+		// 关闭悬浮框
+		$("#frame").window("close");
+	});
+}
+
+// 绑定选择按钮显示表格事件
+function selectbuttontogrid(btn,grid,col){
+	$("body").on("click",btn,function(){
+		var seldata = $(grid).datagrid("getChecked");
+		// 判断选择是否为空
+		if(seldata.length == 0){
+			alert("请至少选择一条数据");
+			return 0;
+		}
+		// 清除文件数据
+		$("#dcf_files .mcb_list").remove();
+		// 显示表格
+		$("#dcf_databox").removeClass('hide');
+		$("#dcf_databox").triggerHandler("resize");
+
+		// 加载表格数据
+		$.ajax({
+			url: rooturl + col,
+			type: "GET",
+			dataType: "json",
+			success:function(col){
+				$("#dcf_datagrid").datagrid({
+					fitColumns: true,
+					striped: true,
+					pagination: true,
+					rownumbers: true,
+					pageSize:20,
+					pageList:[20,40,60],
+					columns:col.columns
+				});
+				$("#dcf_datagrid").datagrid("loadData",seldata);
+
+			},
+			error:function(){
+				alert("服务器链接失败！");
+			}
+		});
+		// 触发resize调整尺寸
+		// $(window).triggerHandler("resize");
+		// 点开专题详情时 清空文件数据和表格数据
 		// 关闭悬浮框
 		$("#frame").window("close");
 	});

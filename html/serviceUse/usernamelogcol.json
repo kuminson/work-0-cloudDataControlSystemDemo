@@ -1,0 +1,12 @@
+{
+	"columns":[[
+		{"field":"","checkbox":"true"},
+		{"field":"usid","title":"用户ID","width":50},
+		{"field":"usname","title":"用户名","width":50},
+		{"field":"optime","title":"操作时间","width":100},
+		{"field":"address","title":"IP地址","width":100},
+		{"field":"opmode","title":"操作类型","width":100},
+		{"field":"opresult","title":"操作结果","width":50},
+		{"field":"opdescribe","title":"操作描述","width":200}
+	]]
+}
