@@ -98,7 +98,7 @@ $(function(){
 				// 加载文件列表
 				$.ajax({
 					url: rooturl + "html/serviceUse/filedata1.json",
-					type: "POST",
+					type: "GET",
 					dataType: "json",
 					success:function(data){
 						for(var i=0; i<data.rows.length; i++){
@@ -192,30 +192,78 @@ $(function(){
 		});
 	});
 
-	// 绑定需求预案按钮事件
-	$("#mcdrt_need").menubutton({
-		duration:10000,
-		menu:"#mcdrt_menu"
-	});
-	var needplan = ["王明翠 需求预案 2016-10-22","刘紫嫣 需求预案 2016-10-18",
-					"于虎飞 需求预案 2016-10-11","孟彩丽 需求预案 2016-10-07",
-					"冯子明 需求预案 2016-10-04"];
-	// 绑定需求预案二级菜单
-	for(var i=0; i<needplan.length; i++){
-		$("#mcdrt_menu").menu("appendItem",{
-			text: needplan[i],
-			onclick: function(item){
-				$("#o_frame").window("open");
-				$("#offli_user").textbox("setText",$(item.target).html().split(" ")[0]);
+	// 绑定非表格点击事件
+	$("body").on("click",function(e){
+		if($(e.target).closest("#mcdrt_need").length == 0){
+			if(!($("#l_frame").hasClass("hide"))){
+				$("#l_frame").addClass("hide");
 			}
-		});
-	}
+		}
+	});
 
-	// 绑定需求预案列表点击事件
-	$("body").on("click",".lfln_text",function(){
-		$("#o_frame").window("open");
-		$("#l_frame").window("close");
-		$("#offli_user").textbox("setText",$(this).html().split(" ")[0]);
+	// 绑定需求预案按钮点击事件
+	$("#mcdrt_need").on("click",function(){
+		if($("#l_frame").hasClass("hide")){
+			$("#l_frame").removeClass("hide");
+			$("#l_frame").css("top",$(this).offset().top + 26 + "px")
+						 .css("left",$(this).offset().left + "px");
+			$(window).triggerHandler("resize");
+		}else{
+			$("#l_frame").addClass("hide");
+		}
+	});
+
+
+	// 加载datagrid数据
+	$("#lf_grid").datagrid({
+		columns:[[
+			{
+				field:"name",
+				title:"姓名",
+				width:100
+			},{
+				field:"obj",
+				title:"项目",
+				width:100
+			},{
+				field:"time",
+				title:"时间",
+				width:100
+			}
+		]],
+		data:[
+			{
+				name:"王明翠" ,
+				obj:"需求预案",
+				time:"2016-10-22"
+			},{
+				name:"刘紫嫣" ,
+				obj:"需求预案",
+				time:"2016-10-18"
+			},{
+				name:"于虎飞" ,
+				obj:"需求预案",
+				time:"2016-10-11"
+			},{
+				name:"孟彩丽" ,
+				obj:"需求预案",
+				time:"2016-10-07"
+			},{
+				name:"冯子明" ,
+				obj:"需求预案",
+				time:"2016-10-04"
+			}
+		],
+		fitColumns: true,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		singleSelect:true,
+		onClickRow:function(index,row){
+			$("#o_frame").window("open");
+			$("#l_frame").addClass("hide");
+			$("#offli_user").textbox("setText",row.name);
+		}
 	});
 
 	// 绑定需求预案制作专题按钮
@@ -300,7 +348,7 @@ $(function(){
 		$("#frame").window("open");
 		// 加载树
 		$("#fct_tree").tree({
-			method: "get",
+		method: "get",
 			url:rooturl + "html/serviceUse/rollTree.json",
 			onClick: function(){
 				// 加载卷列标题
