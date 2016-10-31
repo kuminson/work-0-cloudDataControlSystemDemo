@@ -1,0 +1,5807 @@
+[
+	{
+		"id":"file000",
+		"text":"文书按卷",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"000",
+		"nodep":0,
+		"nodeodr":0,
+		"elecop":"<a class='alink'>3935</a>",
+		"elebit":"<a class='alink'>6689.5G</a>",
+		"pepcop":"<a class='alink'>7476</a>",
+		"peppeg":"<a class='alink'>14204</a>",
+		"children":[
+			{
+				"id":"file000000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000000",
+				"nodep":"000",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>224</a>",
+				"elebit":"<a class='alink'>291.2G</a>",
+				"pepcop":"<a class='alink'>313</a>",
+				"peppeg":"<a class='alink'>438</a>",
+				"children":[
+					{
+						"id":"file000000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000000000",
+						"nodep":"000000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>42</a>",
+						"elebit":"<a class='alink'>79.8G</a>",
+						"pepcop":"<a class='alink'>46</a>",
+						"peppeg":"<a class='alink'>59</a>"
+					},{
+						"id":"file000000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000000001",
+						"nodep":"000000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>15</a>",
+						"elebit":"<a class='alink'>16.5G</a>",
+						"pepcop":"<a class='alink'>15</a>",
+						"peppeg":"<a class='alink'>28</a>"
+					}
+				]
+			},{
+				"id":"file000001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000001",
+				"nodep":"000",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>604</a>",
+				"elebit":"<a class='alink'>604G</a>",
+				"pepcop":"<a class='alink'>1087</a>",
+				"peppeg":"<a class='alink'>1956</a>",
+				"children":[
+					{
+						"id":"file000001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000001000",
+						"nodep":"000001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>79</a>",
+						"elebit":"<a class='alink'>86.9G</a>",
+						"pepcop":"<a class='alink'>110</a>",
+						"peppeg":"<a class='alink'>121</a>"
+					},{
+						"id":"file000001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000001001",
+						"nodep":"000001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>42</a>",
+						"elebit":"<a class='alink'>42G</a>",
+						"pepcop":"<a class='alink'>54</a>",
+						"peppeg":"<a class='alink'>54</a>"
+					}
+				]
+			},{
+				"id":"file000002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000002",
+				"nodep":"000",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>417</a>",
+				"elebit":"<a class='alink'>500.4G</a>",
+				"pepcop":"<a class='alink'>583</a>",
+				"peppeg":"<a class='alink'>583</a>",
+				"children":[
+					{
+						"id":"file000002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000002000",
+						"nodep":"000002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>72</a>",
+						"elebit":"<a class='alink'>136.7G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>108</a>"
+					},{
+						"id":"file000002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000002001",
+						"nodep":"000002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>60G</a>",
+						"pepcop":"<a class='alink'>60</a>",
+						"peppeg":"<a class='alink'>96</a>"
+					}
+				]
+			},{
+				"id":"file000003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000003",
+				"nodep":"000",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>9</a>",
+				"elebit":"<a class='alink'>10.7G</a>",
+				"pepcop":"<a class='alink'>17</a>",
+				"peppeg":"<a class='alink'>28</a>",
+				"children":[
+					{
+						"id":"file000003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000003000",
+						"nodep":"000003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>74</a>",
+						"elebit":"<a class='alink'>111G</a>",
+						"pepcop":"<a class='alink'>133</a>",
+						"peppeg":"<a class='alink'>212</a>"
+					},{
+						"id":"file000003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000003001",
+						"nodep":"000003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>44</a>",
+						"elebit":"<a class='alink'>44G</a>",
+						"pepcop":"<a class='alink'>61</a>",
+						"peppeg":"<a class='alink'>85</a>"
+					}
+				]
+			},{
+				"id":"file000004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000004",
+				"nodep":"000",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>629</a>",
+				"elebit":"<a class='alink'>754.8G</a>",
+				"pepcop":"<a class='alink'>629</a>",
+				"peppeg":"<a class='alink'>880</a>",
+				"children":[
+					{
+						"id":"file000004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000004000",
+						"nodep":"000004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>73</a>",
+						"elebit":"<a class='alink'>94.9G</a>",
+						"pepcop":"<a class='alink'>94</a>",
+						"peppeg":"<a class='alink'>178</a>"
+					},{
+						"id":"file000004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000004001",
+						"nodep":"000004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>62</a>",
+						"elebit":"<a class='alink'>99.2G</a>",
+						"pepcop":"<a class='alink'>93</a>",
+						"peppeg":"<a class='alink'>158</a>"
+					}
+				]
+			},{
+				"id":"file000005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000005",
+				"nodep":"000",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>167</a>",
+				"elebit":"<a class='alink'>200.4G</a>",
+				"pepcop":"<a class='alink'>317</a>",
+				"peppeg":"<a class='alink'>538</a>",
+				"children":[
+					{
+						"id":"file000005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000005000",
+						"nodep":"000005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>45</a>",
+						"elebit":"<a class='alink'>62.9G</a>",
+						"pepcop":"<a class='alink'>58</a>",
+						"peppeg":"<a class='alink'>98</a>"
+					},{
+						"id":"file000005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000005001",
+						"nodep":"000005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>72G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>93</a>"
+					}
+				]
+			},{
+				"id":"file000006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"000006",
+				"nodep":"000",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>925</a>",
+				"elebit":"<a class='alink'>1387.5G</a>",
+				"pepcop":"<a class='alink'>1017</a>",
+				"peppeg":"<a class='alink'>1627</a>",
+				"children":[
+					{
+						"id":"file000006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"000006000",
+						"nodep":"000006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>64</a>",
+						"elebit":"<a class='alink'>121.6G</a>",
+						"pepcop":"<a class='alink'>96</a>",
+						"peppeg":"<a class='alink'>134</a>"
+					},{
+						"id":"file000006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"000006001",
+						"nodep":"000006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>17</a>",
+						"elebit":"<a class='alink'>23.7G</a>",
+						"pepcop":"<a class='alink'>28</a>",
+						"peppeg":"<a class='alink'>39</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file001",
+		"text":"党群工作类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"001",
+		"nodep":0,
+		"nodeodr":1,
+		"elecop":"<a class='alink'>404</a>",
+		"elebit":"<a class='alink'>606G</a>",
+		"pepcop":"<a class='alink'>565</a>",
+		"peppeg":"<a class='alink'>1073</a>",
+		"children":[
+			{
+				"id":"file001000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001000",
+				"nodep":"001",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>239</a>",
+				"elebit":"<a class='alink'>334.5G</a>",
+				"pepcop":"<a class='alink'>358</a>",
+				"peppeg":"<a class='alink'>358</a>",
+				"children":[
+					{
+						"id":"file001000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001000000",
+						"nodep":"001000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>28</a>",
+						"elebit":"<a class='alink'>39.1G</a>",
+						"pepcop":"<a class='alink'>44</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					},{
+						"id":"file001000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001000001",
+						"nodep":"001000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>31</a>",
+						"elebit":"<a class='alink'>34.1G</a>",
+						"pepcop":"<a class='alink'>55</a>",
+						"peppeg":"<a class='alink'>82</a>"
+					}
+				]
+			},{
+				"id":"file001001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001001",
+				"nodep":"001",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>782</a>",
+				"elebit":"<a class='alink'>1173G</a>",
+				"pepcop":"<a class='alink'>1329</a>",
+				"peppeg":"<a class='alink'>2392</a>",
+				"children":[
+					{
+						"id":"file001001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001001000",
+						"nodep":"001001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>37</a>",
+						"elebit":"<a class='alink'>51.8G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>56</a>"
+					},{
+						"id":"file001001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001001001",
+						"nodep":"001001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>97</a>",
+						"elebit":"<a class='alink'>184.2G</a>",
+						"pepcop":"<a class='alink'>155</a>",
+						"peppeg":"<a class='alink'>186</a>"
+					}
+				]
+			},{
+				"id":"file001002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001002",
+				"nodep":"001",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>94</a>",
+				"elebit":"<a class='alink'>122.2G</a>",
+				"pepcop":"<a class='alink'>178</a>",
+				"peppeg":"<a class='alink'>284</a>",
+				"children":[
+					{
+						"id":"file001002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001002000",
+						"nodep":"001002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>70G</a>",
+						"pepcop":"<a class='alink'>90</a>",
+						"peppeg":"<a class='alink'>99</a>"
+					},{
+						"id":"file001002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001002001",
+						"nodep":"001002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>46G</a>",
+						"pepcop":"<a class='alink'>59</a>",
+						"peppeg":"<a class='alink'>100</a>"
+					}
+				]
+			},{
+				"id":"file001003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001003",
+				"nodep":"001",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>215</a>",
+				"elebit":"<a class='alink'>387G</a>",
+				"pepcop":"<a class='alink'>365</a>",
+				"peppeg":"<a class='alink'>365</a>",
+				"children":[
+					{
+						"id":"file001003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001003000",
+						"nodep":"001003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>69</a>",
+						"elebit":"<a class='alink'>103.5G</a>",
+						"pepcop":"<a class='alink'>124</a>",
+						"peppeg":"<a class='alink'>148</a>"
+					},{
+						"id":"file001003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001003001",
+						"nodep":"001003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>22</a>",
+						"elebit":"<a class='alink'>33G</a>",
+						"pepcop":"<a class='alink'>22</a>",
+						"peppeg":"<a class='alink'>39</a>"
+					}
+				]
+			},{
+				"id":"file001004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001004",
+				"nodep":"001",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>398</a>",
+				"elebit":"<a class='alink'>597G</a>",
+				"pepcop":"<a class='alink'>676</a>",
+				"peppeg":"<a class='alink'>743</a>",
+				"children":[
+					{
+						"id":"file001004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001004000",
+						"nodep":"001004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>67</a>",
+						"elebit":"<a class='alink'>113.9G</a>",
+						"pepcop":"<a class='alink'>87</a>",
+						"peppeg":"<a class='alink'>113</a>"
+					},{
+						"id":"file001004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001004001",
+						"nodep":"001004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>18</a>",
+						"elebit":"<a class='alink'>18G</a>",
+						"pepcop":"<a class='alink'>21</a>",
+						"peppeg":"<a class='alink'>31</a>"
+					}
+				]
+			},{
+				"id":"file001005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001005",
+				"nodep":"001",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>657</a>",
+				"elebit":"<a class='alink'>1116.8G</a>",
+				"pepcop":"<a class='alink'>985</a>",
+				"peppeg":"<a class='alink'>1182</a>",
+				"children":[
+					{
+						"id":"file001005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001005000",
+						"nodep":"001005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>72</a>",
+						"elebit":"<a class='alink'>79.2G</a>",
+						"pepcop":"<a class='alink'>122</a>",
+						"peppeg":"<a class='alink'>146</a>"
+					},{
+						"id":"file001005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001005001",
+						"nodep":"001005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>62</a>",
+						"elebit":"<a class='alink'>117.8G</a>",
+						"pepcop":"<a class='alink'>74</a>",
+						"peppeg":"<a class='alink'>74</a>"
+					}
+				]
+			},{
+				"id":"file001006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"001006",
+				"nodep":"001",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>395</a>",
+				"elebit":"<a class='alink'>711G</a>",
+				"pepcop":"<a class='alink'>671</a>",
+				"peppeg":"<a class='alink'>1140</a>",
+				"children":[
+					{
+						"id":"file001006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"001006000",
+						"nodep":"001006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>84</a>",
+						"elebit":"<a class='alink'>159.6G</a>",
+						"pepcop":"<a class='alink'>151</a>",
+						"peppeg":"<a class='alink'>226</a>"
+					},{
+						"id":"file001006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"001006001",
+						"nodep":"001006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>24</a>",
+						"elebit":"<a class='alink'>43.2G</a>",
+						"pepcop":"<a class='alink'>36</a>",
+						"peppeg":"<a class='alink'>57</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file002",
+		"text":"行政管理类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"002",
+		"nodep":0,
+		"nodeodr":2,
+		"elecop":"<a class='alink'>4739</a>",
+		"elebit":"<a class='alink'>9004.1G</a>",
+		"pepcop":"<a class='alink'>4739</a>",
+		"peppeg":"<a class='alink'>4739</a>",
+		"children":[
+			{
+				"id":"file002000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002000",
+				"nodep":"002",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>896</a>",
+				"elebit":"<a class='alink'>1433.6G</a>",
+				"pepcop":"<a class='alink'>1702</a>",
+				"peppeg":"<a class='alink'>2553</a>",
+				"children":[
+					{
+						"id":"file002000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002000000",
+						"nodep":"002000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>19</a>",
+						"elebit":"<a class='alink'>22.8G</a>",
+						"pepcop":"<a class='alink'>26</a>",
+						"peppeg":"<a class='alink'>26</a>"
+					},{
+						"id":"file002000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002000001",
+						"nodep":"002000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>52</a>",
+						"elebit":"<a class='alink'>67.6G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>99</a>"
+					}
+				]
+			},{
+				"id":"file002001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002001",
+				"nodep":"002",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>675</a>",
+				"elebit":"<a class='alink'>810G</a>",
+				"pepcop":"<a class='alink'>810</a>",
+				"peppeg":"<a class='alink'>1377</a>",
+				"children":[
+					{
+						"id":"file002001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002001000",
+						"nodep":"002001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>94</a>",
+						"elebit":"<a class='alink'>150.4G</a>",
+						"pepcop":"<a class='alink'>169</a>",
+						"peppeg":"<a class='alink'>270</a>"
+					},{
+						"id":"file002001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002001001",
+						"nodep":"002001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>85G</a>",
+						"pepcop":"<a class='alink'>75</a>",
+						"peppeg":"<a class='alink'>120</a>"
+					}
+				]
+			},{
+				"id":"file002002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002002",
+				"nodep":"002",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>807</a>",
+				"elebit":"<a class='alink'>1049.1G</a>",
+				"pepcop":"<a class='alink'>1452</a>",
+				"peppeg":"<a class='alink'>2613</a>",
+				"children":[
+					{
+						"id":"file002002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002002000",
+						"nodep":"002002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>99</a>",
+						"elebit":"<a class='alink'>99G</a>",
+						"pepcop":"<a class='alink'>118</a>",
+						"peppeg":"<a class='alink'>188</a>"
+					},{
+						"id":"file002002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002002001",
+						"nodep":"002002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>75.2G</a>",
+						"pepcop":"<a class='alink'>84</a>",
+						"peppeg":"<a class='alink'>84</a>"
+					}
+				]
+			},{
+				"id":"file002003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002003",
+				"nodep":"002",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>984</a>",
+				"elebit":"<a class='alink'>984G</a>",
+				"pepcop":"<a class='alink'>1476</a>",
+				"peppeg":"<a class='alink'>2361</a>",
+				"children":[
+					{
+						"id":"file002003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002003000",
+						"nodep":"002003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>68</a>",
+						"elebit":"<a class='alink'>95.1G</a>",
+						"pepcop":"<a class='alink'>74</a>",
+						"peppeg":"<a class='alink'>118</a>"
+					},{
+						"id":"file002003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002003001",
+						"nodep":"002003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>58</a>",
+						"elebit":"<a class='alink'>75.4G</a>",
+						"pepcop":"<a class='alink'>75</a>",
+						"peppeg":"<a class='alink'>120</a>"
+					}
+				]
+			},{
+				"id":"file002004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002004",
+				"nodep":"002",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>384</a>",
+				"elebit":"<a class='alink'>384G</a>",
+				"pepcop":"<a class='alink'>691</a>",
+				"peppeg":"<a class='alink'>898</a>",
+				"children":[
+					{
+						"id":"file002004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002004000",
+						"nodep":"002004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>57</a>",
+						"elebit":"<a class='alink'>96.8G</a>",
+						"pepcop":"<a class='alink'>57</a>",
+						"peppeg":"<a class='alink'>74</a>"
+					},{
+						"id":"file002004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002004001",
+						"nodep":"002004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>96</a>",
+						"elebit":"<a class='alink'>96G</a>",
+						"pepcop":"<a class='alink'>163</a>",
+						"peppeg":"<a class='alink'>195</a>"
+					}
+				]
+			},{
+				"id":"file002005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002005",
+				"nodep":"002",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>605</a>",
+				"elebit":"<a class='alink'>726G</a>",
+				"pepcop":"<a class='alink'>907</a>",
+				"peppeg":"<a class='alink'>1541</a>",
+				"children":[
+					{
+						"id":"file002005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002005000",
+						"nodep":"002005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>93</a>",
+						"elebit":"<a class='alink'>139.5G</a>",
+						"pepcop":"<a class='alink'>176</a>",
+						"peppeg":"<a class='alink'>246</a>"
+					},{
+						"id":"file002005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002005001",
+						"nodep":"002005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>49</a>",
+						"elebit":"<a class='alink'>49G</a>",
+						"pepcop":"<a class='alink'>78</a>",
+						"peppeg":"<a class='alink'>132</a>"
+					}
+				]
+			},{
+				"id":"file002006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"002006",
+				"nodep":"002",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>330</a>",
+				"elebit":"<a class='alink'>461.9G</a>",
+				"pepcop":"<a class='alink'>594</a>",
+				"peppeg":"<a class='alink'>1009</a>",
+				"children":[
+					{
+						"id":"file002006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"002006000",
+						"nodep":"002006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>10</a>",
+						"elebit":"<a class='alink'>12G</a>",
+						"pepcop":"<a class='alink'>17</a>",
+						"peppeg":"<a class='alink'>27</a>"
+					},{
+						"id":"file002006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"002006001",
+						"nodep":"002006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>43</a>",
+						"elebit":"<a class='alink'>64.5G</a>",
+						"pepcop":"<a class='alink'>43</a>",
+						"peppeg":"<a class='alink'>73</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file003",
+		"text":"经营管理类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"003",
+		"nodep":0,
+		"nodeodr":3,
+		"elecop":"<a class='alink'>4168</a>",
+		"elebit":"<a class='alink'>6668.8G</a>",
+		"pepcop":"<a class='alink'>5418</a>",
+		"peppeg":"<a class='alink'>10294</a>",
+		"children":[
+			{
+				"id":"file003000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003000",
+				"nodep":"003",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>350</a>",
+				"elebit":"<a class='alink'>350G</a>",
+				"pepcop":"<a class='alink'>455</a>",
+				"peppeg":"<a class='alink'>728</a>",
+				"children":[
+					{
+						"id":"file003000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003000000",
+						"nodep":"003000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>96</a>",
+						"elebit":"<a class='alink'>115.2G</a>",
+						"pepcop":"<a class='alink'>105</a>",
+						"peppeg":"<a class='alink'>189</a>"
+					},{
+						"id":"file003000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003000001",
+						"nodep":"003000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>72</a>",
+						"elebit":"<a class='alink'>129.6G</a>",
+						"pepcop":"<a class='alink'>86</a>",
+						"peppeg":"<a class='alink'>103</a>"
+					}
+				]
+			},{
+				"id":"file003001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003001",
+				"nodep":"003",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>697</a>",
+				"elebit":"<a class='alink'>836.4G</a>",
+				"pepcop":"<a class='alink'>1254</a>",
+				"peppeg":"<a class='alink'>2382</a>",
+				"children":[
+					{
+						"id":"file003001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003001000",
+						"nodep":"003001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>57</a>",
+						"elebit":"<a class='alink'>96.8G</a>",
+						"pepcop":"<a class='alink'>96</a>",
+						"peppeg":"<a class='alink'>96</a>"
+					},{
+						"id":"file003001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003001001",
+						"nodep":"003001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>25G</a>",
+						"pepcop":"<a class='alink'>30</a>",
+						"peppeg":"<a class='alink'>33</a>"
+					}
+				]
+			},{
+				"id":"file003002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003002",
+				"nodep":"003",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>909</a>",
+				"elebit":"<a class='alink'>1090.8G</a>",
+				"pepcop":"<a class='alink'>909</a>",
+				"peppeg":"<a class='alink'>1181</a>",
+				"children":[
+					{
+						"id":"file003002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003002000",
+						"nodep":"003002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>27</a>",
+						"elebit":"<a class='alink'>29.7G</a>",
+						"pepcop":"<a class='alink'>40</a>",
+						"peppeg":"<a class='alink'>48</a>"
+					},{
+						"id":"file003002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003002001",
+						"nodep":"003002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>43</a>",
+						"elebit":"<a class='alink'>81.7G</a>",
+						"pepcop":"<a class='alink'>64</a>",
+						"peppeg":"<a class='alink'>102</a>"
+					}
+				]
+			},{
+				"id":"file003003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003003",
+				"nodep":"003",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>613</a>",
+				"elebit":"<a class='alink'>674.3G</a>",
+				"pepcop":"<a class='alink'>1103</a>",
+				"peppeg":"<a class='alink'>1764</a>",
+				"children":[
+					{
+						"id":"file003003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003003000",
+						"nodep":"003003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>40</a>",
+						"elebit":"<a class='alink'>40G</a>",
+						"pepcop":"<a class='alink'>64</a>",
+						"peppeg":"<a class='alink'>108</a>"
+					},{
+						"id":"file003003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003003001",
+						"nodep":"003003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>11</a>",
+						"elebit":"<a class='alink'>17.6G</a>",
+						"pepcop":"<a class='alink'>13</a>",
+						"peppeg":"<a class='alink'>16</a>"
+					}
+				]
+			},{
+				"id":"file003004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003004",
+				"nodep":"003",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>414</a>",
+				"elebit":"<a class='alink'>745.2G</a>",
+				"pepcop":"<a class='alink'>703</a>",
+				"peppeg":"<a class='alink'>1124</a>",
+				"children":[
+					{
+						"id":"file003004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003004000",
+						"nodep":"003004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>64</a>",
+						"elebit":"<a class='alink'>108.8G</a>",
+						"pepcop":"<a class='alink'>108</a>",
+						"peppeg":"<a class='alink'>129</a>"
+					},{
+						"id":"file003004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003004001",
+						"nodep":"003004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>30</a>",
+						"elebit":"<a class='alink'>57G</a>",
+						"pepcop":"<a class='alink'>39</a>",
+						"peppeg":"<a class='alink'>70</a>"
+					}
+				]
+			},{
+				"id":"file003005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003005",
+				"nodep":"003",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>878</a>",
+				"elebit":"<a class='alink'>1229.1G</a>",
+				"pepcop":"<a class='alink'>1317</a>",
+				"peppeg":"<a class='alink'>2107</a>",
+				"children":[
+					{
+						"id":"file003005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003005000",
+						"nodep":"003005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>61</a>",
+						"elebit":"<a class='alink'>61G</a>",
+						"pepcop":"<a class='alink'>61</a>",
+						"peppeg":"<a class='alink'>91</a>"
+					},{
+						"id":"file003005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003005001",
+						"nodep":"003005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>85</a>",
+						"elebit":"<a class='alink'>93.5G</a>",
+						"pepcop":"<a class='alink'>118</a>",
+						"peppeg":"<a class='alink'>118</a>"
+					}
+				]
+			},{
+				"id":"file003006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"003006",
+				"nodep":"003",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>44</a>",
+				"elebit":"<a class='alink'>61.6G</a>",
+				"pepcop":"<a class='alink'>70</a>",
+				"peppeg":"<a class='alink'>126</a>",
+				"children":[
+					{
+						"id":"file003006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"003006000",
+						"nodep":"003006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>79.8G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>51</a>"
+					},{
+						"id":"file003006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"003006001",
+						"nodep":"003006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>42</a>",
+						"elebit":"<a class='alink'>58.8G</a>",
+						"pepcop":"<a class='alink'>54</a>",
+						"peppeg":"<a class='alink'>81</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file004",
+		"text":"生产技术管理类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"004",
+		"nodep":0,
+		"nodeodr":4,
+		"elecop":"<a class='alink'>1184</a>",
+		"elebit":"<a class='alink'>1776G</a>",
+		"pepcop":"<a class='alink'>2249</a>",
+		"peppeg":"<a class='alink'>4048</a>",
+		"children":[
+			{
+				"id":"file004000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004000",
+				"nodep":"004",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>706</a>",
+				"elebit":"<a class='alink'>1341.3G</a>",
+				"pepcop":"<a class='alink'>1200</a>",
+				"peppeg":"<a class='alink'>1320</a>",
+				"children":[
+					{
+						"id":"file004000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004000000",
+						"nodep":"004000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>62</a>",
+						"elebit":"<a class='alink'>86.8G</a>",
+						"pepcop":"<a class='alink'>80</a>",
+						"peppeg":"<a class='alink'>112</a>"
+					},{
+						"id":"file004000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004000001",
+						"nodep":"004000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>92</a>",
+						"elebit":"<a class='alink'>174.7G</a>",
+						"pepcop":"<a class='alink'>110</a>",
+						"peppeg":"<a class='alink'>132</a>"
+					}
+				]
+			},{
+				"id":"file004001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004001",
+				"nodep":"004",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>732</a>",
+				"elebit":"<a class='alink'>1024.8G</a>",
+				"pepcop":"<a class='alink'>1171</a>",
+				"peppeg":"<a class='alink'>1171</a>",
+				"children":[
+					{
+						"id":"file004001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004001000",
+						"nodep":"004001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>16</a>",
+						"elebit":"<a class='alink'>19.2G</a>",
+						"pepcop":"<a class='alink'>22</a>",
+						"peppeg":"<a class='alink'>24</a>"
+					},{
+						"id":"file004001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004001001",
+						"nodep":"004001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>49</a>",
+						"elebit":"<a class='alink'>58.8G</a>",
+						"pepcop":"<a class='alink'>83</a>",
+						"peppeg":"<a class='alink'>124</a>"
+					}
+				]
+			},{
+				"id":"file004002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004002",
+				"nodep":"004",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>681</a>",
+				"elebit":"<a class='alink'>817.1G</a>",
+				"pepcop":"<a class='alink'>885</a>",
+				"peppeg":"<a class='alink'>1504</a>",
+				"children":[
+					{
+						"id":"file004002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004002000",
+						"nodep":"004002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>2</a>",
+						"elebit":"<a class='alink'>3G</a>",
+						"pepcop":"<a class='alink'>3</a>",
+						"peppeg":"<a class='alink'>3</a>"
+					},{
+						"id":"file004002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004002001",
+						"nodep":"004002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>63</a>",
+						"elebit":"<a class='alink'>107.1G</a>",
+						"pepcop":"<a class='alink'>69</a>",
+						"peppeg":"<a class='alink'>103</a>"
+					}
+				]
+			},{
+				"id":"file004003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004003",
+				"nodep":"004",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>659</a>",
+				"elebit":"<a class='alink'>1186.2G</a>",
+				"pepcop":"<a class='alink'>988</a>",
+				"peppeg":"<a class='alink'>1580</a>",
+				"children":[
+					{
+						"id":"file004003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004003000",
+						"nodep":"004003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>1</a>",
+						"elebit":"<a class='alink'>1.8G</a>",
+						"pepcop":"<a class='alink'>1</a>",
+						"peppeg":"<a class='alink'>1</a>"
+					},{
+						"id":"file004003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004003001",
+						"nodep":"004003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>59</a>",
+						"elebit":"<a class='alink'>94.4G</a>",
+						"pepcop":"<a class='alink'>59</a>",
+						"peppeg":"<a class='alink'>94</a>"
+					}
+				]
+			},{
+				"id":"file004004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004004",
+				"nodep":"004",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>677</a>",
+				"elebit":"<a class='alink'>812.4G</a>",
+				"pepcop":"<a class='alink'>1083</a>",
+				"peppeg":"<a class='alink'>1299</a>",
+				"children":[
+					{
+						"id":"file004004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004004000",
+						"nodep":"004004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>84.5G</a>",
+						"pepcop":"<a class='alink'>104</a>",
+						"peppeg":"<a class='alink'>135</a>"
+					},{
+						"id":"file004004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004004001",
+						"nodep":"004004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>95</a>",
+						"elebit":"<a class='alink'>152G</a>",
+						"pepcop":"<a class='alink'>104</a>",
+						"peppeg":"<a class='alink'>166</a>"
+					}
+				]
+			},{
+				"id":"file004005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004005",
+				"nodep":"004",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>919</a>",
+				"elebit":"<a class='alink'>1654.2G</a>",
+				"pepcop":"<a class='alink'>1102</a>",
+				"peppeg":"<a class='alink'>1212</a>",
+				"children":[
+					{
+						"id":"file004005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004005000",
+						"nodep":"004005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>85</a>",
+						"elebit":"<a class='alink'>110.5G</a>",
+						"pepcop":"<a class='alink'>127</a>",
+						"peppeg":"<a class='alink'>165</a>"
+					},{
+						"id":"file004005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004005001",
+						"nodep":"004005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>46.8G</a>",
+						"pepcop":"<a class='alink'>39</a>",
+						"peppeg":"<a class='alink'>58</a>"
+					}
+				]
+			},{
+				"id":"file004006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"004006",
+				"nodep":"004",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>275</a>",
+				"elebit":"<a class='alink'>330G</a>",
+				"pepcop":"<a class='alink'>302</a>",
+				"peppeg":"<a class='alink'>483</a>",
+				"children":[
+					{
+						"id":"file004006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"004006000",
+						"nodep":"004006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>89.3G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>56</a>"
+					},{
+						"id":"file004006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"004006001",
+						"nodep":"004006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>88</a>",
+						"elebit":"<a class='alink'>114.4G</a>",
+						"pepcop":"<a class='alink'>132</a>",
+						"peppeg":"<a class='alink'>184</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file005",
+		"text":"产品类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"005",
+		"nodep":0,
+		"nodeodr":5,
+		"elecop":"<a class='alink'>1914</a>",
+		"elebit":"<a class='alink'>3062.4G</a>",
+		"pepcop":"<a class='alink'>3445</a>",
+		"peppeg":"<a class='alink'>5167</a>",
+		"children":[
+			{
+				"id":"file005000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005000",
+				"nodep":"005",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>795</a>",
+				"elebit":"<a class='alink'>1272G</a>",
+				"pepcop":"<a class='alink'>1192</a>",
+				"peppeg":"<a class='alink'>1668</a>",
+				"children":[
+					{
+						"id":"file005000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005000000",
+						"nodep":"005000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>134.9G</a>",
+						"pepcop":"<a class='alink'>120</a>",
+						"peppeg":"<a class='alink'>180</a>"
+					},{
+						"id":"file005000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005000001",
+						"nodep":"005000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>37</a>",
+						"elebit":"<a class='alink'>37G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>96</a>"
+					}
+				]
+			},{
+				"id":"file005001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005001",
+				"nodep":"005",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>546</a>",
+				"elebit":"<a class='alink'>873.6G</a>",
+				"pepcop":"<a class='alink'>928</a>",
+				"peppeg":"<a class='alink'>928</a>",
+				"children":[
+					{
+						"id":"file005001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005001000",
+						"nodep":"005001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>107.8G</a>",
+						"pepcop":"<a class='alink'>100</a>",
+						"peppeg":"<a class='alink'>130</a>"
+					},{
+						"id":"file005001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005001001",
+						"nodep":"005001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>99</a>",
+						"elebit":"<a class='alink'>138.6G</a>",
+						"pepcop":"<a class='alink'>128</a>",
+						"peppeg":"<a class='alink'>192</a>"
+					}
+				]
+			},{
+				"id":"file005002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005002",
+				"nodep":"005",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>746</a>",
+				"elebit":"<a class='alink'>895.2G</a>",
+				"pepcop":"<a class='alink'>1268</a>",
+				"peppeg":"<a class='alink'>1902</a>",
+				"children":[
+					{
+						"id":"file005002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005002000",
+						"nodep":"005002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>10</a>",
+						"elebit":"<a class='alink'>17G</a>",
+						"pepcop":"<a class='alink'>14</a>",
+						"peppeg":"<a class='alink'>26</a>"
+					},{
+						"id":"file005002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005002001",
+						"nodep":"005002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>60</a>",
+						"elebit":"<a class='alink'>60G</a>",
+						"pepcop":"<a class='alink'>66</a>",
+						"peppeg":"<a class='alink'>72</a>"
+					}
+				]
+			},{
+				"id":"file005003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005003",
+				"nodep":"005",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>889</a>",
+				"elebit":"<a class='alink'>977.9G</a>",
+				"pepcop":"<a class='alink'>889</a>",
+				"peppeg":"<a class='alink'>1689</a>",
+				"children":[
+					{
+						"id":"file005003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005003000",
+						"nodep":"005003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>30</a>",
+						"elebit":"<a class='alink'>39G</a>",
+						"pepcop":"<a class='alink'>30</a>",
+						"peppeg":"<a class='alink'>33</a>"
+					},{
+						"id":"file005003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005003001",
+						"nodep":"005003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>75</a>",
+						"elebit":"<a class='alink'>90G</a>",
+						"pepcop":"<a class='alink'>142</a>",
+						"peppeg":"<a class='alink'>156</a>"
+					}
+				]
+			},{
+				"id":"file005004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005004",
+				"nodep":"005",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>101</a>",
+				"elebit":"<a class='alink'>121.2G</a>",
+				"pepcop":"<a class='alink'>131</a>",
+				"peppeg":"<a class='alink'>209</a>",
+				"children":[
+					{
+						"id":"file005004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005004000",
+						"nodep":"005004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>7</a>",
+						"elebit":"<a class='alink'>7G</a>",
+						"pepcop":"<a class='alink'>13</a>",
+						"peppeg":"<a class='alink'>16</a>"
+					},{
+						"id":"file005004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005004001",
+						"nodep":"005004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>62.4G</a>",
+						"pepcop":"<a class='alink'>39</a>",
+						"peppeg":"<a class='alink'>66</a>"
+					}
+				]
+			},{
+				"id":"file005005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005005",
+				"nodep":"005",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>359</a>",
+				"elebit":"<a class='alink'>359G</a>",
+				"pepcop":"<a class='alink'>359</a>",
+				"peppeg":"<a class='alink'>574</a>",
+				"children":[
+					{
+						"id":"file005005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005005000",
+						"nodep":"005005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>70G</a>",
+						"pepcop":"<a class='alink'>75</a>",
+						"peppeg":"<a class='alink'>135</a>"
+					},{
+						"id":"file005005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005005001",
+						"nodep":"005005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>79</a>",
+						"elebit":"<a class='alink'>126.4G</a>",
+						"pepcop":"<a class='alink'>94</a>",
+						"peppeg":"<a class='alink'>178</a>"
+					}
+				]
+			},{
+				"id":"file005006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"005006",
+				"nodep":"005",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>222</a>",
+				"elebit":"<a class='alink'>310.7G</a>",
+				"pepcop":"<a class='alink'>266</a>",
+				"peppeg":"<a class='alink'>478</a>",
+				"children":[
+					{
+						"id":"file005006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"005006000",
+						"nodep":"005006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>19</a>",
+						"elebit":"<a class='alink'>24.7G</a>",
+						"pepcop":"<a class='alink'>19</a>",
+						"peppeg":"<a class='alink'>24</a>"
+					},{
+						"id":"file005006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"005006001",
+						"nodep":"005006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>63</a>",
+						"elebit":"<a class='alink'>94.5G</a>",
+						"pepcop":"<a class='alink'>107</a>",
+						"peppeg":"<a class='alink'>117</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file006",
+		"text":"产品类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"006",
+		"nodep":0,
+		"nodeodr":6,
+		"elecop":"<a class='alink'>7448</a>",
+		"elebit":"<a class='alink'>8192.8G</a>",
+		"pepcop":"<a class='alink'>9682</a>",
+		"peppeg":"<a class='alink'>9682</a>",
+		"children":[
+			{
+				"id":"file006000",
+				"text":"G1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006000",
+				"nodep":"006",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>808</a>",
+				"elebit":"<a class='alink'>1131.1G</a>",
+				"pepcop":"<a class='alink'>888</a>",
+				"peppeg":"<a class='alink'>1332</a>",
+				"children":[
+					{
+						"id":"file006000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006000000",
+						"nodep":"006000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>60</a>",
+						"elebit":"<a class='alink'>96G</a>",
+						"pepcop":"<a class='alink'>90</a>",
+						"peppeg":"<a class='alink'>171</a>"
+					},{
+						"id":"file006000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006000001",
+						"nodep":"006000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>65G</a>",
+						"pepcop":"<a class='alink'>78</a>",
+						"peppeg":"<a class='alink'>93</a>"
+					}
+				]
+			},{
+				"id":"file006001",
+				"text":"G2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006001",
+				"nodep":"006",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>818</a>",
+				"elebit":"<a class='alink'>1554.1G</a>",
+				"pepcop":"<a class='alink'>899</a>",
+				"peppeg":"<a class='alink'>1438</a>",
+				"children":[
+					{
+						"id":"file006001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006001000",
+						"nodep":"006001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>6</a>",
+						"elebit":"<a class='alink'>7.2G</a>",
+						"pepcop":"<a class='alink'>9</a>",
+						"peppeg":"<a class='alink'>13</a>"
+					},{
+						"id":"file006001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006001001",
+						"nodep":"006001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>69</a>",
+						"elebit":"<a class='alink'>110.4G</a>",
+						"pepcop":"<a class='alink'>89</a>",
+						"peppeg":"<a class='alink'>97</a>"
+					}
+				]
+			},{
+				"id":"file006002",
+				"text":"G3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006002",
+				"nodep":"006",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>480</a>",
+				"elebit":"<a class='alink'>768G</a>",
+				"pepcop":"<a class='alink'>864</a>",
+				"peppeg":"<a class='alink'>1123</a>",
+				"children":[
+					{
+						"id":"file006002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006002000",
+						"nodep":"006002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>14</a>",
+						"elebit":"<a class='alink'>19.5G</a>",
+						"pepcop":"<a class='alink'>16</a>",
+						"peppeg":"<a class='alink'>27</a>"
+					},{
+						"id":"file006002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006002001",
+						"nodep":"006002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>2</a>",
+						"elebit":"<a class='alink'>3G</a>",
+						"pepcop":"<a class='alink'>2</a>",
+						"peppeg":"<a class='alink'>2</a>"
+					}
+				]
+			},{
+				"id":"file006003",
+				"text":"G4 专用工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006003",
+				"nodep":"006",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>172</a>",
+				"elebit":"<a class='alink'>326.8G</a>",
+				"pepcop":"<a class='alink'>240</a>",
+				"peppeg":"<a class='alink'>432</a>",
+				"children":[
+					{
+						"id":"file006003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006003000",
+						"nodep":"006003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>55</a>",
+						"elebit":"<a class='alink'>99G</a>",
+						"pepcop":"<a class='alink'>66</a>",
+						"peppeg":"<a class='alink'>112</a>"
+					},{
+						"id":"file006003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006003001",
+						"nodep":"006003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>34</a>",
+						"elebit":"<a class='alink'>51G</a>",
+						"pepcop":"<a class='alink'>47</a>",
+						"peppeg":"<a class='alink'>75</a>"
+					}
+				]
+			},{
+				"id":"file006004",
+				"text":"G5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006004",
+				"nodep":"006",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>284</a>",
+				"elebit":"<a class='alink'>426G</a>",
+				"pepcop":"<a class='alink'>284</a>",
+				"peppeg":"<a class='alink'>482</a>",
+				"children":[
+					{
+						"id":"file006004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006004000",
+						"nodep":"006004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>44</a>",
+						"elebit":"<a class='alink'>79.2G</a>",
+						"pepcop":"<a class='alink'>44</a>",
+						"peppeg":"<a class='alink'>66</a>"
+					},{
+						"id":"file006004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006004001",
+						"nodep":"006004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>73</a>",
+						"elebit":"<a class='alink'>124.1G</a>",
+						"pepcop":"<a class='alink'>138</a>",
+						"peppeg":"<a class='alink'>179</a>"
+					}
+				]
+			},{
+				"id":"file006005",
+				"text":"G6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006005",
+				"nodep":"006",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>157</a>",
+				"elebit":"<a class='alink'>157G</a>",
+				"pepcop":"<a class='alink'>282</a>",
+				"peppeg":"<a class='alink'>366</a>",
+				"children":[
+					{
+						"id":"file006005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006005000",
+						"nodep":"006005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>34</a>",
+						"elebit":"<a class='alink'>44.2G</a>",
+						"pepcop":"<a class='alink'>47</a>",
+						"peppeg":"<a class='alink'>84</a>"
+					},{
+						"id":"file006005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006005001",
+						"nodep":"006005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>36</a>",
+						"elebit":"<a class='alink'>64.8G</a>",
+						"pepcop":"<a class='alink'>61</a>",
+						"peppeg":"<a class='alink'>85</a>"
+					}
+				]
+			},{
+				"id":"file006006",
+				"text":"G8 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006006",
+				"nodep":"006",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>807</a>",
+				"elebit":"<a class='alink'>1533.3G</a>",
+				"pepcop":"<a class='alink'>968</a>",
+				"peppeg":"<a class='alink'>1645</a>",
+				"children":[
+					{
+						"id":"file006006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006006000",
+						"nodep":"006006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>65G</a>",
+						"pepcop":"<a class='alink'>90</a>",
+						"peppeg":"<a class='alink'>171</a>"
+					},{
+						"id":"file006006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006006001",
+						"nodep":"006006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>107.8G</a>",
+						"pepcop":"<a class='alink'>107</a>",
+						"peppeg":"<a class='alink'>139</a>"
+					}
+				]
+			},{
+				"id":"file006007",
+				"text":"G9 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006007",
+				"nodep":"006",
+				"nodeodr":7,
+				"elecop":"<a class='alink'>700</a>",
+				"elebit":"<a class='alink'>910G</a>",
+				"pepcop":"<a class='alink'>1120</a>",
+				"peppeg":"<a class='alink'>1344</a>",
+				"children":[
+					{
+						"id":"file006007000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006007000",
+						"nodep":"006007",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>37</a>",
+						"elebit":"<a class='alink'>37G</a>",
+						"pepcop":"<a class='alink'>44</a>",
+						"peppeg":"<a class='alink'>74</a>"
+					},{
+						"id":"file006007001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006007001",
+						"nodep":"006007",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>58</a>",
+						"elebit":"<a class='alink'>92.8G</a>",
+						"pepcop":"<a class='alink'>63</a>",
+						"peppeg":"<a class='alink'>113</a>"
+					}
+				]
+			},{
+				"id":"file006008",
+				"text":"G10 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006008",
+				"nodep":"006",
+				"nodeodr":8,
+				"elecop":"<a class='alink'>722</a>",
+				"elebit":"<a class='alink'>866.4G</a>",
+				"pepcop":"<a class='alink'>1155</a>",
+				"peppeg":"<a class='alink'>1848</a>",
+				"children":[
+					{
+						"id":"file006008000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006008000",
+						"nodep":"006008",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>80</a>",
+						"elebit":"<a class='alink'>104G</a>",
+						"pepcop":"<a class='alink'>144</a>",
+						"peppeg":"<a class='alink'>273</a>"
+					},{
+						"id":"file006008001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006008001",
+						"nodep":"006008",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>51</a>",
+						"elebit":"<a class='alink'>51G</a>",
+						"pepcop":"<a class='alink'>76</a>",
+						"peppeg":"<a class='alink'>83</a>"
+					}
+				]
+			},{
+				"id":"file006009",
+				"text":"G11 项目前期文件",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006009",
+				"nodep":"006",
+				"nodeodr":9,
+				"elecop":"<a class='alink'>662</a>",
+				"elebit":"<a class='alink'>1125.3G</a>",
+				"pepcop":"<a class='alink'>728</a>",
+				"peppeg":"<a class='alink'>1019</a>",
+				"children":[
+					{
+						"id":"file006009000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006009000",
+						"nodep":"006009",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>95</a>",
+						"elebit":"<a class='alink'>104.5G</a>",
+						"pepcop":"<a class='alink'>142</a>",
+						"peppeg":"<a class='alink'>142</a>"
+					},{
+						"id":"file006009001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006009001",
+						"nodep":"006009",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>7</a>",
+						"elebit":"<a class='alink'>13.3G</a>",
+						"pepcop":"<a class='alink'>8</a>",
+						"peppeg":"<a class='alink'>13</a>"
+					}
+				]
+			},{
+				"id":"file006010",
+				"text":"JJ1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006010",
+				"nodep":"006",
+				"nodeodr":10,
+				"elecop":"<a class='alink'>303</a>",
+				"elebit":"<a class='alink'>454.5G</a>",
+				"pepcop":"<a class='alink'>484</a>",
+				"peppeg":"<a class='alink'>822</a>",
+				"children":[
+					{
+						"id":"file006010000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006010000",
+						"nodep":"006010",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>4</a>",
+						"elebit":"<a class='alink'>6.4G</a>",
+						"pepcop":"<a class='alink'>4</a>",
+						"peppeg":"<a class='alink'>6</a>"
+					},{
+						"id":"file006010001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006010001",
+						"nodep":"006010",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>15</a>",
+						"elebit":"<a class='alink'>24G</a>",
+						"pepcop":"<a class='alink'>22</a>",
+						"peppeg":"<a class='alink'>26</a>"
+					}
+				]
+			},{
+				"id":"file006011",
+				"text":"JJ2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006011",
+				"nodep":"006",
+				"nodeodr":11,
+				"elecop":"<a class='alink'>551</a>",
+				"elebit":"<a class='alink'>991.8G</a>",
+				"pepcop":"<a class='alink'>881</a>",
+				"peppeg":"<a class='alink'>1673</a>",
+				"children":[
+					{
+						"id":"file006011000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006011000",
+						"nodep":"006011",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>14</a>",
+						"elebit":"<a class='alink'>18.2G</a>",
+						"pepcop":"<a class='alink'>21</a>",
+						"peppeg":"<a class='alink'>29</a>"
+					},{
+						"id":"file006011001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006011001",
+						"nodep":"006011",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>5</a>",
+						"elebit":"<a class='alink'>9.5G</a>",
+						"pepcop":"<a class='alink'>6</a>",
+						"peppeg":"<a class='alink'>6</a>"
+					}
+				]
+			},{
+				"id":"file006012",
+				"text":"JJ3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006012",
+				"nodep":"006",
+				"nodeodr":12,
+				"elecop":"<a class='alink'>765</a>",
+				"elebit":"<a class='alink'>1224G</a>",
+				"pepcop":"<a class='alink'>841</a>",
+				"peppeg":"<a class='alink'>1009</a>",
+				"children":[
+					{
+						"id":"file006012000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006012000",
+						"nodep":"006012",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>20</a>",
+						"elebit":"<a class='alink'>32G</a>",
+						"pepcop":"<a class='alink'>38</a>",
+						"peppeg":"<a class='alink'>53</a>"
+					},{
+						"id":"file006012001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006012001",
+						"nodep":"006012",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>65.8G</a>",
+						"pepcop":"<a class='alink'>56</a>",
+						"peppeg":"<a class='alink'>72</a>"
+					}
+				]
+			},{
+				"id":"file006013",
+				"text":"JJ4 大宇铁路工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006013",
+				"nodep":"006",
+				"nodeodr":13,
+				"elecop":"<a class='alink'>672</a>",
+				"elebit":"<a class='alink'>806.4G</a>",
+				"pepcop":"<a class='alink'>1142</a>",
+				"peppeg":"<a class='alink'>1827</a>",
+				"children":[
+					{
+						"id":"file006013000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006013000",
+						"nodep":"006013",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>14</a>",
+						"elebit":"<a class='alink'>23.8G</a>",
+						"pepcop":"<a class='alink'>15</a>",
+						"peppeg":"<a class='alink'>21</a>"
+					},{
+						"id":"file006013001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006013001",
+						"nodep":"006013",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>123.5G</a>",
+						"pepcop":"<a class='alink'>65</a>",
+						"peppeg":"<a class='alink'>104</a>"
+					}
+				]
+			},{
+				"id":"file006014",
+				"text":"JJ5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006014",
+				"nodep":"006",
+				"nodeodr":14,
+				"elecop":"<a class='alink'>870</a>",
+				"elebit":"<a class='alink'>1131G</a>",
+				"pepcop":"<a class='alink'>1392</a>",
+				"peppeg":"<a class='alink'>2644</a>",
+				"children":[
+					{
+						"id":"file006014000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006014000",
+						"nodep":"006014",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>26</a>",
+						"elebit":"<a class='alink'>46.8G</a>",
+						"pepcop":"<a class='alink'>33</a>",
+						"peppeg":"<a class='alink'>62</a>"
+					},{
+						"id":"file006014001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006014001",
+						"nodep":"006014",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>35</a>",
+						"elebit":"<a class='alink'>56G</a>",
+						"pepcop":"<a class='alink'>49</a>",
+						"peppeg":"<a class='alink'>63</a>"
+					}
+				]
+			},{
+				"id":"file006015",
+				"text":"JJ6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006015",
+				"nodep":"006",
+				"nodeodr":15,
+				"elecop":"<a class='alink'>133</a>",
+				"elebit":"<a class='alink'>252.7G</a>",
+				"pepcop":"<a class='alink'>159</a>",
+				"peppeg":"<a class='alink'>159</a>",
+				"children":[
+					{
+						"id":"file006015000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006015000",
+						"nodep":"006015",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>90</a>",
+						"elebit":"<a class='alink'>108G</a>",
+						"pepcop":"<a class='alink'>108</a>",
+						"peppeg":"<a class='alink'>140</a>"
+					},{
+						"id":"file006015001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006015001",
+						"nodep":"006015",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>46.8G</a>",
+						"pepcop":"<a class='alink'>54</a>",
+						"peppeg":"<a class='alink'>70</a>"
+					}
+				]
+			},{
+				"id":"file006016",
+				"text":"HB 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006016",
+				"nodep":"006",
+				"nodeodr":16,
+				"elecop":"<a class='alink'>872</a>",
+				"elebit":"<a class='alink'>959.2G</a>",
+				"pepcop":"<a class='alink'>1046</a>",
+				"peppeg":"<a class='alink'>1255</a>",
+				"children":[
+					{
+						"id":"file006016000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006016000",
+						"nodep":"006016",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>75G</a>",
+						"pepcop":"<a class='alink'>70</a>",
+						"peppeg":"<a class='alink'>105</a>"
+					},{
+						"id":"file006016001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006016001",
+						"nodep":"006016",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>80</a>",
+						"elebit":"<a class='alink'>120G</a>",
+						"pepcop":"<a class='alink'>120</a>",
+						"peppeg":"<a class='alink'>228</a>"
+					}
+				]
+			},{
+				"id":"file006017",
+				"text":"HD1 水文、气象",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006017",
+				"nodep":"006",
+				"nodeodr":17,
+				"elecop":"<a class='alink'>103</a>",
+				"elebit":"<a class='alink'>195.7G</a>",
+				"pepcop":"<a class='alink'>103</a>",
+				"peppeg":"<a class='alink'>103</a>",
+				"children":[
+					{
+						"id":"file006017000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006017000",
+						"nodep":"006017",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>89</a>",
+						"elebit":"<a class='alink'>142.4G</a>",
+						"pepcop":"<a class='alink'>97</a>",
+						"peppeg":"<a class='alink'>106</a>"
+					},{
+						"id":"file006017001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006017001",
+						"nodep":"006017",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>78</a>",
+						"elebit":"<a class='alink'>93.6G</a>",
+						"pepcop":"<a class='alink'>101</a>",
+						"peppeg":"<a class='alink'>161</a>"
+					}
+				]
+			},{
+				"id":"file006018",
+				"text":"HD2 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006018",
+				"nodep":"006",
+				"nodeodr":18,
+				"elecop":"<a class='alink'>120</a>",
+				"elebit":"<a class='alink'>228G</a>",
+				"pepcop":"<a class='alink'>168</a>",
+				"peppeg":"<a class='alink'>285</a>",
+				"children":[
+					{
+						"id":"file006018000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006018000",
+						"nodep":"006018",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>87.3G</a>",
+						"pepcop":"<a class='alink'>46</a>",
+						"peppeg":"<a class='alink'>50</a>"
+					},{
+						"id":"file006018001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006018001",
+						"nodep":"006018",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>4</a>",
+						"elebit":"<a class='alink'>4G</a>",
+						"pepcop":"<a class='alink'>7</a>",
+						"peppeg":"<a class='alink'>12</a>"
+					}
+				]
+			},{
+				"id":"file006019",
+				"text":"HD3 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006019",
+				"nodep":"006",
+				"nodeodr":19,
+				"elecop":"<a class='alink'>760</a>",
+				"elebit":"<a class='alink'>988G</a>",
+				"pepcop":"<a class='alink'>1140</a>",
+				"peppeg":"<a class='alink'>1824</a>",
+				"children":[
+					{
+						"id":"file006019000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006019000",
+						"nodep":"006019",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>54.6G</a>",
+						"pepcop":"<a class='alink'>42</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					},{
+						"id":"file006019001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006019001",
+						"nodep":"006019",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>19</a>",
+						"elebit":"<a class='alink'>26.6G</a>",
+						"pepcop":"<a class='alink'>30</a>",
+						"peppeg":"<a class='alink'>30</a>"
+					}
+				]
+			},{
+				"id":"file006020",
+				"text":"ZH 综合类",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006020",
+				"nodep":"006",
+				"nodeodr":20,
+				"elecop":"<a class='alink'>706</a>",
+				"elebit":"<a class='alink'>1341.3G</a>",
+				"pepcop":"<a class='alink'>988</a>",
+				"peppeg":"<a class='alink'>1086</a>",
+				"children":[
+					{
+						"id":"file006020000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006020000",
+						"nodep":"006020",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>68</a>",
+						"elebit":"<a class='alink'>74.8G</a>",
+						"pepcop":"<a class='alink'>102</a>",
+						"peppeg":"<a class='alink'>122</a>"
+					},{
+						"id":"file006020001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006020001",
+						"nodep":"006020",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>48G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					}
+				]
+			},{
+				"id":"file006021",
+				"text":"QT 其他",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006021",
+				"nodep":"006",
+				"nodeodr":21,
+				"elecop":"<a class='alink'>499</a>",
+				"elebit":"<a class='alink'>648.7G</a>",
+				"pepcop":"<a class='alink'>848</a>",
+				"peppeg":"<a class='alink'>1017</a>",
+				"children":[
+					{
+						"id":"file006021000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006021000",
+						"nodep":"006021",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>11</a>",
+						"elebit":"<a class='alink'>11G</a>",
+						"pepcop":"<a class='alink'>19</a>",
+						"peppeg":"<a class='alink'>26</a>"
+					},{
+						"id":"file006021001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006021001",
+						"nodep":"006021",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>55</a>",
+						"elebit":"<a class='alink'>60.5G</a>",
+						"pepcop":"<a class='alink'>104</a>",
+						"peppeg":"<a class='alink'>135</a>"
+					}
+				]
+			},{
+				"id":"file006022",
+				"text":"GG 基建类光盘",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006022",
+				"nodep":"006",
+				"nodeodr":22,
+				"elecop":"<a class='alink'>564</a>",
+				"elebit":"<a class='alink'>1015.2G</a>",
+				"pepcop":"<a class='alink'>1071</a>",
+				"peppeg":"<a class='alink'>1606</a>",
+				"children":[
+					{
+						"id":"file006022000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006022000",
+						"nodep":"006022",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>98</a>",
+						"elebit":"<a class='alink'>107.8G</a>",
+						"pepcop":"<a class='alink'>147</a>",
+						"peppeg":"<a class='alink'>161</a>"
+					},{
+						"id":"file006022001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006022001",
+						"nodep":"006022",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>92</a>",
+						"elebit":"<a class='alink'>128.7G</a>",
+						"pepcop":"<a class='alink'>147</a>",
+						"peppeg":"<a class='alink'>161</a>"
+					}
+				]
+			},{
+				"id":"file006023",
+				"text":"JY 经营",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"006023",
+				"nodep":"006",
+				"nodeodr":23,
+				"elecop":"<a class='alink'>504</a>",
+				"elebit":"<a class='alink'>655.2G</a>",
+				"pepcop":"<a class='alink'>655</a>",
+				"peppeg":"<a class='alink'>851</a>",
+				"children":[
+					{
+						"id":"file006023000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"006023000",
+						"nodep":"006023",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>98</a>",
+						"elebit":"<a class='alink'>176.4G</a>",
+						"pepcop":"<a class='alink'>117</a>",
+						"peppeg":"<a class='alink'>175</a>"
+					},{
+						"id":"file006023001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"006023001",
+						"nodep":"006023",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>85</a>",
+						"elebit":"<a class='alink'>93.5G</a>",
+						"pepcop":"<a class='alink'>118</a>",
+						"peppeg":"<a class='alink'>188</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file007",
+		"text":"科学技术研究类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"007",
+		"nodep":0,
+		"nodeodr":7,
+		"elecop":"<a class='alink'>8706</a>",
+		"elebit":"<a class='alink'>9576.6G</a>",
+		"pepcop":"<a class='alink'>9576</a>",
+		"peppeg":"<a class='alink'>15321</a>",
+		"children":[
+			{
+				"id":"file007000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007000",
+				"nodep":"007",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>13</a>",
+				"elebit":"<a class='alink'>24.7G</a>",
+				"pepcop":"<a class='alink'>23</a>",
+				"peppeg":"<a class='alink'>27</a>",
+				"children":[
+					{
+						"id":"file007000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007000000",
+						"nodep":"007000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>55</a>",
+						"elebit":"<a class='alink'>77G</a>",
+						"pepcop":"<a class='alink'>60</a>",
+						"peppeg":"<a class='alink'>66</a>"
+					},{
+						"id":"file007000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007000001",
+						"nodep":"007000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>2</a>",
+						"elebit":"<a class='alink'>2.4G</a>",
+						"pepcop":"<a class='alink'>2</a>",
+						"peppeg":"<a class='alink'>2</a>"
+					}
+				]
+			},{
+				"id":"file007001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007001",
+				"nodep":"007",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>906</a>",
+				"elebit":"<a class='alink'>1721.4G</a>",
+				"pepcop":"<a class='alink'>1087</a>",
+				"peppeg":"<a class='alink'>1413</a>",
+				"children":[
+					{
+						"id":"file007001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007001000",
+						"nodep":"007001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>57</a>",
+						"elebit":"<a class='alink'>74.1G</a>",
+						"pepcop":"<a class='alink'>68</a>",
+						"peppeg":"<a class='alink'>129</a>"
+					},{
+						"id":"file007001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007001001",
+						"nodep":"007001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>96</a>",
+						"elebit":"<a class='alink'>163.2G</a>",
+						"pepcop":"<a class='alink'>172</a>",
+						"peppeg":"<a class='alink'>292</a>"
+					}
+				]
+			},{
+				"id":"file007002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007002",
+				"nodep":"007",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>844</a>",
+				"elebit":"<a class='alink'>928.4G</a>",
+				"pepcop":"<a class='alink'>928</a>",
+				"peppeg":"<a class='alink'>1299</a>",
+				"children":[
+					{
+						"id":"file007002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007002000",
+						"nodep":"007002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>57</a>",
+						"elebit":"<a class='alink'>85.5G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>105</a>"
+					},{
+						"id":"file007002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007002001",
+						"nodep":"007002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>69</a>",
+						"elebit":"<a class='alink'>124.2G</a>",
+						"pepcop":"<a class='alink'>89</a>",
+						"peppeg":"<a class='alink'>124</a>"
+					}
+				]
+			},{
+				"id":"file007003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007003",
+				"nodep":"007",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>455</a>",
+				"elebit":"<a class='alink'>500.5G</a>",
+				"pepcop":"<a class='alink'>591</a>",
+				"peppeg":"<a class='alink'>827</a>",
+				"children":[
+					{
+						"id":"file007003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007003000",
+						"nodep":"007003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>58.5G</a>",
+						"pepcop":"<a class='alink'>46</a>",
+						"peppeg":"<a class='alink'>59</a>"
+					},{
+						"id":"file007003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007003001",
+						"nodep":"007003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>74</a>",
+						"elebit":"<a class='alink'>88.8G</a>",
+						"pepcop":"<a class='alink'>111</a>",
+						"peppeg":"<a class='alink'>199</a>"
+					}
+				]
+			},{
+				"id":"file007004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007004",
+				"nodep":"007",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>8</a>",
+				"elebit":"<a class='alink'>12.8G</a>",
+				"pepcop":"<a class='alink'>10</a>",
+				"peppeg":"<a class='alink'>13</a>",
+				"children":[
+					{
+						"id":"file007004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007004000",
+						"nodep":"007004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>84</a>",
+						"elebit":"<a class='alink'>126G</a>",
+						"pepcop":"<a class='alink'>151</a>",
+						"peppeg":"<a class='alink'>241</a>"
+					},{
+						"id":"file007004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007004001",
+						"nodep":"007004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>53</a>",
+						"elebit":"<a class='alink'>95.4G</a>",
+						"pepcop":"<a class='alink'>63</a>",
+						"peppeg":"<a class='alink'>94</a>"
+					}
+				]
+			},{
+				"id":"file007005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007005",
+				"nodep":"007",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>730</a>",
+				"elebit":"<a class='alink'>1241G</a>",
+				"pepcop":"<a class='alink'>1168</a>",
+				"peppeg":"<a class='alink'>2219</a>",
+				"children":[
+					{
+						"id":"file007005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007005000",
+						"nodep":"007005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>71G</a>",
+						"pepcop":"<a class='alink'>71</a>",
+						"peppeg":"<a class='alink'>120</a>"
+					},{
+						"id":"file007005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007005001",
+						"nodep":"007005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>68</a>",
+						"elebit":"<a class='alink'>129.2G</a>",
+						"pepcop":"<a class='alink'>88</a>",
+						"peppeg":"<a class='alink'>88</a>"
+					}
+				]
+			},{
+				"id":"file007006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"007006",
+				"nodep":"007",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>121</a>",
+				"elebit":"<a class='alink'>169.3G</a>",
+				"pepcop":"<a class='alink'>169</a>",
+				"peppeg":"<a class='alink'>185</a>",
+				"children":[
+					{
+						"id":"file007006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"007006000",
+						"nodep":"007006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>48G</a>",
+						"pepcop":"<a class='alink'>57</a>",
+						"peppeg":"<a class='alink'>57</a>"
+					},{
+						"id":"file007006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"007006001",
+						"nodep":"007006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>39G</a>",
+						"pepcop":"<a class='alink'>42</a>",
+						"peppeg":"<a class='alink'>75</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file008",
+		"text":"基本建设类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"008",
+		"nodep":0,
+		"nodeodr":8,
+		"elecop":"<a class='alink'>2306</a>",
+		"elebit":"<a class='alink'>2997.8G</a>",
+		"pepcop":"<a class='alink'>2997</a>",
+		"peppeg":"<a class='alink'>3596</a>",
+		"children":[
+			{
+				"id":"file008000",
+				"text":"2010",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008000",
+				"nodep":"008",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>617</a>",
+				"elebit":"<a class='alink'>987.2G</a>",
+				"pepcop":"<a class='alink'>1172</a>",
+				"peppeg":"<a class='alink'>1992</a>",
+				"children":[
+					{
+						"id":"file008000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008000000",
+						"nodep":"008000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>146.2G</a>",
+						"pepcop":"<a class='alink'>100</a>",
+						"peppeg":"<a class='alink'>110</a>"
+					},{
+						"id":"file008000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008000001",
+						"nodep":"008000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>36</a>",
+						"elebit":"<a class='alink'>43.1G</a>",
+						"pepcop":"<a class='alink'>50</a>",
+						"peppeg":"<a class='alink'>75</a>"
+					}
+				]
+			},{
+				"id":"file008001",
+				"text":"2011",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008001",
+				"nodep":"008",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>705</a>",
+				"elebit":"<a class='alink'>775.5G</a>",
+				"pepcop":"<a class='alink'>775</a>",
+				"peppeg":"<a class='alink'>775</a>",
+				"children":[
+					{
+						"id":"file008001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008001000",
+						"nodep":"008001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>19</a>",
+						"elebit":"<a class='alink'>34.2G</a>",
+						"pepcop":"<a class='alink'>19</a>",
+						"peppeg":"<a class='alink'>34</a>"
+					},{
+						"id":"file008001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008001001",
+						"nodep":"008001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>81</a>",
+						"elebit":"<a class='alink'>129.6G</a>",
+						"pepcop":"<a class='alink'>137</a>",
+						"peppeg":"<a class='alink'>205</a>"
+					}
+				]
+			},{
+				"id":"file008002",
+				"text":"2012",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008002",
+				"nodep":"008",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>811</a>",
+				"elebit":"<a class='alink'>1378.7G</a>",
+				"pepcop":"<a class='alink'>973</a>",
+				"peppeg":"<a class='alink'>1751</a>",
+				"children":[
+					{
+						"id":"file008002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008002000",
+						"nodep":"008002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>93</a>",
+						"elebit":"<a class='alink'>139.5G</a>",
+						"pepcop":"<a class='alink'>111</a>",
+						"peppeg":"<a class='alink'>166</a>"
+					},{
+						"id":"file008002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008002001",
+						"nodep":"008002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>42.5G</a>",
+						"pepcop":"<a class='alink'>45</a>",
+						"peppeg":"<a class='alink'>49</a>"
+					}
+				]
+			},{
+				"id":"file008003",
+				"text":"2013",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008003",
+				"nodep":"008",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>242</a>",
+				"elebit":"<a class='alink'>242G</a>",
+				"pepcop":"<a class='alink'>459</a>",
+				"peppeg":"<a class='alink'>734</a>",
+				"children":[
+					{
+						"id":"file008003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008003000",
+						"nodep":"008003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>146.2G</a>",
+						"pepcop":"<a class='alink'>77</a>",
+						"peppeg":"<a class='alink'>100</a>"
+					},{
+						"id":"file008003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008003001",
+						"nodep":"008003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>18</a>",
+						"elebit":"<a class='alink'>28.8G</a>",
+						"pepcop":"<a class='alink'>19</a>",
+						"peppeg":"<a class='alink'>22</a>"
+					}
+				]
+			},{
+				"id":"file008004",
+				"text":"2014",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008004",
+				"nodep":"008",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>310</a>",
+				"elebit":"<a class='alink'>403G</a>",
+				"pepcop":"<a class='alink'>434</a>",
+				"peppeg":"<a class='alink'>781</a>",
+				"children":[
+					{
+						"id":"file008004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008004000",
+						"nodep":"008004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>107.8G</a>",
+						"pepcop":"<a class='alink'>115</a>",
+						"peppeg":"<a class='alink'>138</a>"
+					},{
+						"id":"file008004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008004001",
+						"nodep":"008004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>21</a>",
+						"elebit":"<a class='alink'>37.8G</a>",
+						"pepcop":"<a class='alink'>27</a>",
+						"peppeg":"<a class='alink'>40</a>"
+					}
+				]
+			},{
+				"id":"file008005",
+				"text":"2015",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008005",
+				"nodep":"008",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>795</a>",
+				"elebit":"<a class='alink'>1431G</a>",
+				"pepcop":"<a class='alink'>954</a>",
+				"peppeg":"<a class='alink'>1526</a>",
+				"children":[
+					{
+						"id":"file008005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008005000",
+						"nodep":"008005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>1</a>",
+						"elebit":"<a class='alink'>1.6G</a>",
+						"pepcop":"<a class='alink'>1</a>",
+						"peppeg":"<a class='alink'>1</a>"
+					},{
+						"id":"file008005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008005001",
+						"nodep":"008005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>0</a>",
+						"elebit":"<a class='alink'>0G</a>",
+						"pepcop":"<a class='alink'>0</a>",
+						"peppeg":"<a class='alink'>0</a>"
+					}
+				]
+			},{
+				"id":"file008006",
+				"text":"2016",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"008006",
+				"nodep":"008",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>779</a>",
+				"elebit":"<a class='alink'>1324.3G</a>",
+				"pepcop":"<a class='alink'>1402</a>",
+				"peppeg":"<a class='alink'>1542</a>",
+				"children":[
+					{
+						"id":"file008006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"008006000",
+						"nodep":"008006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>28</a>",
+						"elebit":"<a class='alink'>30.8G</a>",
+						"pepcop":"<a class='alink'>44</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					},{
+						"id":"file008006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"008006001",
+						"nodep":"008006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>36</a>",
+						"elebit":"<a class='alink'>61.2G</a>",
+						"pepcop":"<a class='alink'>43</a>",
+						"peppeg":"<a class='alink'>47</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file009",
+		"text":"设备仪器类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"009",
+		"nodep":0,
+		"nodeodr":9,
+		"elecop":"<a class='alink'>571</a>",
+		"elebit":"<a class='alink'>799.4G</a>",
+		"pepcop":"<a class='alink'>628</a>",
+		"peppeg":"<a class='alink'>1067</a>",
+		"children":[
+			{
+				"id":"file009000",
+				"text":"G1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009000",
+				"nodep":"009",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>879</a>",
+				"elebit":"<a class='alink'>1582.2G</a>",
+				"pepcop":"<a class='alink'>1318</a>",
+				"peppeg":"<a class='alink'>1713</a>",
+				"children":[
+					{
+						"id":"file009000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009000000",
+						"nodep":"009000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>67</a>",
+						"elebit":"<a class='alink'>93.8G</a>",
+						"pepcop":"<a class='alink'>100</a>",
+						"peppeg":"<a class='alink'>160</a>"
+					},{
+						"id":"file009000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009000001",
+						"nodep":"009000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>90</a>",
+						"elebit":"<a class='alink'>135G</a>",
+						"pepcop":"<a class='alink'>90</a>",
+						"peppeg":"<a class='alink'>117</a>"
+					}
+				]
+			},{
+				"id":"file009001",
+				"text":"G2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009001",
+				"nodep":"009",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>174</a>",
+				"elebit":"<a class='alink'>174G</a>",
+				"pepcop":"<a class='alink'>261</a>",
+				"peppeg":"<a class='alink'>495</a>",
+				"children":[
+					{
+						"id":"file009001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009001000",
+						"nodep":"009001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>33</a>",
+						"elebit":"<a class='alink'>39.6G</a>",
+						"pepcop":"<a class='alink'>46</a>",
+						"peppeg":"<a class='alink'>50</a>"
+					},{
+						"id":"file009001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009001001",
+						"nodep":"009001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>12</a>",
+						"elebit":"<a class='alink'>12G</a>",
+						"pepcop":"<a class='alink'>15</a>",
+						"peppeg":"<a class='alink'>18</a>"
+					}
+				]
+			},{
+				"id":"file009002",
+				"text":"G3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009002",
+				"nodep":"009",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>548</a>",
+				"elebit":"<a class='alink'>602.8G</a>",
+				"pepcop":"<a class='alink'>876</a>",
+				"peppeg":"<a class='alink'>963</a>",
+				"children":[
+					{
+						"id":"file009002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009002000",
+						"nodep":"009002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>84</a>",
+						"elebit":"<a class='alink'>100.8G</a>",
+						"pepcop":"<a class='alink'>159</a>",
+						"peppeg":"<a class='alink'>159</a>"
+					},{
+						"id":"file009002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009002001",
+						"nodep":"009002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>17</a>",
+						"elebit":"<a class='alink'>25.5G</a>",
+						"pepcop":"<a class='alink'>27</a>",
+						"peppeg":"<a class='alink'>43</a>"
+					}
+				]
+			},{
+				"id":"file009003",
+				"text":"G4 专用工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009003",
+				"nodep":"009",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>993</a>",
+				"elebit":"<a class='alink'>1191.6G</a>",
+				"pepcop":"<a class='alink'>1588</a>",
+				"peppeg":"<a class='alink'>1746</a>",
+				"children":[
+					{
+						"id":"file009003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009003000",
+						"nodep":"009003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>68</a>",
+						"elebit":"<a class='alink'>81.6G</a>",
+						"pepcop":"<a class='alink'>129</a>",
+						"peppeg":"<a class='alink'>141</a>"
+					},{
+						"id":"file009003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009003001",
+						"nodep":"009003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>85.2G</a>",
+						"pepcop":"<a class='alink'>120</a>",
+						"peppeg":"<a class='alink'>180</a>"
+					}
+				]
+			},{
+				"id":"file009004",
+				"text":"G5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009004",
+				"nodep":"009",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>980</a>",
+				"elebit":"<a class='alink'>1568G</a>",
+				"pepcop":"<a class='alink'>1372</a>",
+				"peppeg":"<a class='alink'>2469</a>",
+				"children":[
+					{
+						"id":"file009004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009004000",
+						"nodep":"009004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>86</a>",
+						"elebit":"<a class='alink'>103.2G</a>",
+						"pepcop":"<a class='alink'>86</a>",
+						"peppeg":"<a class='alink'>146</a>"
+					},{
+						"id":"file009004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009004001",
+						"nodep":"009004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>27</a>",
+						"elebit":"<a class='alink'>37.8G</a>",
+						"pepcop":"<a class='alink'>43</a>",
+						"peppeg":"<a class='alink'>60</a>"
+					}
+				]
+			},{
+				"id":"file009005",
+				"text":"G6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009005",
+				"nodep":"009",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>82</a>",
+				"elebit":"<a class='alink'>114.8G</a>",
+				"pepcop":"<a class='alink'>155</a>",
+				"peppeg":"<a class='alink'>201</a>",
+				"children":[
+					{
+						"id":"file009005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009005000",
+						"nodep":"009005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>88</a>",
+						"elebit":"<a class='alink'>88G</a>",
+						"pepcop":"<a class='alink'>105</a>",
+						"peppeg":"<a class='alink'>105</a>"
+					},{
+						"id":"file009005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009005001",
+						"nodep":"009005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>6</a>",
+						"elebit":"<a class='alink'>10.8G</a>",
+						"pepcop":"<a class='alink'>7</a>",
+						"peppeg":"<a class='alink'>13</a>"
+					}
+				]
+			},{
+				"id":"file009006",
+				"text":"G8 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009006",
+				"nodep":"009",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>437</a>",
+				"elebit":"<a class='alink'>699.2G</a>",
+				"pepcop":"<a class='alink'>786</a>",
+				"peppeg":"<a class='alink'>1100</a>",
+				"children":[
+					{
+						"id":"file009006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009006000",
+						"nodep":"009006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>89.3G</a>",
+						"pepcop":"<a class='alink'>61</a>",
+						"peppeg":"<a class='alink'>73</a>"
+					},{
+						"id":"file009006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009006001",
+						"nodep":"009006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>127.8G</a>",
+						"pepcop":"<a class='alink'>71</a>",
+						"peppeg":"<a class='alink'>92</a>"
+					}
+				]
+			},{
+				"id":"file009007",
+				"text":"G9 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009007",
+				"nodep":"009",
+				"nodeodr":7,
+				"elecop":"<a class='alink'>413</a>",
+				"elebit":"<a class='alink'>413G</a>",
+				"pepcop":"<a class='alink'>454</a>",
+				"peppeg":"<a class='alink'>499</a>",
+				"children":[
+					{
+						"id":"file009007000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009007000",
+						"nodep":"009007",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>90</a>",
+						"elebit":"<a class='alink'>108G</a>",
+						"pepcop":"<a class='alink'>90</a>",
+						"peppeg":"<a class='alink'>99</a>"
+					},{
+						"id":"file009007001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009007001",
+						"nodep":"009007",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>60</a>",
+						"elebit":"<a class='alink'>72G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>115</a>"
+					}
+				]
+			},{
+				"id":"file009008",
+				"text":"G10 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009008",
+				"nodep":"009",
+				"nodeodr":8,
+				"elecop":"<a class='alink'>627</a>",
+				"elebit":"<a class='alink'>1128.6G</a>",
+				"pepcop":"<a class='alink'>1065</a>",
+				"peppeg":"<a class='alink'>1171</a>",
+				"children":[
+					{
+						"id":"file009008000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009008000",
+						"nodep":"009008",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>4</a>",
+						"elebit":"<a class='alink'>4G</a>",
+						"pepcop":"<a class='alink'>7</a>",
+						"peppeg":"<a class='alink'>9</a>"
+					},{
+						"id":"file009008001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009008001",
+						"nodep":"009008",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>87</a>",
+						"elebit":"<a class='alink'>121.8G</a>",
+						"pepcop":"<a class='alink'>139</a>",
+						"peppeg":"<a class='alink'>152</a>"
+					}
+				]
+			},{
+				"id":"file009009",
+				"text":"G11 项目前期文件",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009009",
+				"nodep":"009",
+				"nodeodr":9,
+				"elecop":"<a class='alink'>217</a>",
+				"elebit":"<a class='alink'>368.9G</a>",
+				"pepcop":"<a class='alink'>303</a>",
+				"peppeg":"<a class='alink'>484</a>",
+				"children":[
+					{
+						"id":"file009009000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009009000",
+						"nodep":"009009",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>14</a>",
+						"elebit":"<a class='alink'>26.6G</a>",
+						"pepcop":"<a class='alink'>23</a>",
+						"peppeg":"<a class='alink'>25</a>"
+					},{
+						"id":"file009009001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009009001",
+						"nodep":"009009",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>20</a>",
+						"elebit":"<a class='alink'>34G</a>",
+						"pepcop":"<a class='alink'>26</a>",
+						"peppeg":"<a class='alink'>46</a>"
+					}
+				]
+			},{
+				"id":"file009010",
+				"text":"JJ1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009010",
+				"nodep":"009",
+				"nodeodr":10,
+				"elecop":"<a class='alink'>843</a>",
+				"elebit":"<a class='alink'>1264.5G</a>",
+				"pepcop":"<a class='alink'>1264</a>",
+				"peppeg":"<a class='alink'>2275</a>",
+				"children":[
+					{
+						"id":"file009010000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009010000",
+						"nodep":"009010",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>98</a>",
+						"elebit":"<a class='alink'>166.6G</a>",
+						"pepcop":"<a class='alink'>186</a>",
+						"peppeg":"<a class='alink'>223</a>"
+					},{
+						"id":"file009010001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009010001",
+						"nodep":"009010",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>38</a>",
+						"elebit":"<a class='alink'>53.2G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>115</a>"
+					}
+				]
+			},{
+				"id":"file009011",
+				"text":"JJ2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009011",
+				"nodep":"009",
+				"nodeodr":11,
+				"elecop":"<a class='alink'>121</a>",
+				"elebit":"<a class='alink'>133.1G</a>",
+				"pepcop":"<a class='alink'>181</a>",
+				"peppeg":"<a class='alink'>307</a>",
+				"children":[
+					{
+						"id":"file009011000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009011000",
+						"nodep":"009011",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>86</a>",
+						"elebit":"<a class='alink'>146.2G</a>",
+						"pepcop":"<a class='alink'>146</a>",
+						"peppeg":"<a class='alink'>277</a>"
+					},{
+						"id":"file009011001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009011001",
+						"nodep":"009011",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>33</a>",
+						"elebit":"<a class='alink'>33G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>111</a>"
+					}
+				]
+			},{
+				"id":"file009012",
+				"text":"JJ3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009012",
+				"nodep":"009",
+				"nodeodr":12,
+				"elecop":"<a class='alink'>696</a>",
+				"elebit":"<a class='alink'>974.4G</a>",
+				"pepcop":"<a class='alink'>1044</a>",
+				"peppeg":"<a class='alink'>1879</a>",
+				"children":[
+					{
+						"id":"file009012000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009012000",
+						"nodep":"009012",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>41</a>",
+						"elebit":"<a class='alink'>45.1G</a>",
+						"pepcop":"<a class='alink'>41</a>",
+						"peppeg":"<a class='alink'>65</a>"
+					},{
+						"id":"file009012001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009012001",
+						"nodep":"009012",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>35G</a>",
+						"pepcop":"<a class='alink'>45</a>",
+						"peppeg":"<a class='alink'>81</a>"
+					}
+				]
+			},{
+				"id":"file009013",
+				"text":"JJ4 大宇铁路工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009013",
+				"nodep":"009",
+				"nodeodr":13,
+				"elecop":"<a class='alink'>463</a>",
+				"elebit":"<a class='alink'>555.6G</a>",
+				"pepcop":"<a class='alink'>463</a>",
+				"peppeg":"<a class='alink'>463</a>",
+				"children":[
+					{
+						"id":"file009013000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009013000",
+						"nodep":"009013",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>35G</a>",
+						"pepcop":"<a class='alink'>47</a>",
+						"peppeg":"<a class='alink'>65</a>"
+					},{
+						"id":"file009013001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009013001",
+						"nodep":"009013",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>84</a>",
+						"elebit":"<a class='alink'>117.6G</a>",
+						"pepcop":"<a class='alink'>134</a>",
+						"peppeg":"<a class='alink'>227</a>"
+					}
+				]
+			},{
+				"id":"file009014",
+				"text":"JJ5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009014",
+				"nodep":"009",
+				"nodeodr":14,
+				"elecop":"<a class='alink'>288</a>",
+				"elebit":"<a class='alink'>345.5G</a>",
+				"pepcop":"<a class='alink'>489</a>",
+				"peppeg":"<a class='alink'>880</a>",
+				"children":[
+					{
+						"id":"file009014000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009014000",
+						"nodep":"009014",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>76</a>",
+						"elebit":"<a class='alink'>144.4G</a>",
+						"pepcop":"<a class='alink'>114</a>",
+						"peppeg":"<a class='alink'>193</a>"
+					},{
+						"id":"file009014001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009014001",
+						"nodep":"009014",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>32</a>",
+						"elebit":"<a class='alink'>35.2G</a>",
+						"pepcop":"<a class='alink'>35</a>",
+						"peppeg":"<a class='alink'>63</a>"
+					}
+				]
+			},{
+				"id":"file009015",
+				"text":"JJ6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009015",
+				"nodep":"009",
+				"nodeodr":15,
+				"elecop":"<a class='alink'>766</a>",
+				"elebit":"<a class='alink'>919.2G</a>",
+				"pepcop":"<a class='alink'>1072</a>",
+				"peppeg":"<a class='alink'>1608</a>",
+				"children":[
+					{
+						"id":"file009015000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009015000",
+						"nodep":"009015",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>18</a>",
+						"elebit":"<a class='alink'>25.2G</a>",
+						"pepcop":"<a class='alink'>23</a>",
+						"peppeg":"<a class='alink'>43</a>"
+					},{
+						"id":"file009015001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009015001",
+						"nodep":"009015",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>61</a>",
+						"elebit":"<a class='alink'>73.2G</a>",
+						"pepcop":"<a class='alink'>115</a>",
+						"peppeg":"<a class='alink'>115</a>"
+					}
+				]
+			},{
+				"id":"file009016",
+				"text":"HB 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009016",
+				"nodep":"009",
+				"nodeodr":16,
+				"elecop":"<a class='alink'>266</a>",
+				"elebit":"<a class='alink'>345.8G</a>",
+				"pepcop":"<a class='alink'>478</a>",
+				"peppeg":"<a class='alink'>717</a>",
+				"children":[
+					{
+						"id":"file009016000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009016000",
+						"nodep":"009016",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>33</a>",
+						"elebit":"<a class='alink'>49.5G</a>",
+						"pepcop":"<a class='alink'>49</a>",
+						"peppeg":"<a class='alink'>78</a>"
+					},{
+						"id":"file009016001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009016001",
+						"nodep":"009016",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>21</a>",
+						"elebit":"<a class='alink'>39.9G</a>",
+						"pepcop":"<a class='alink'>23</a>",
+						"peppeg":"<a class='alink'>23</a>"
+					}
+				]
+			},{
+				"id":"file009017",
+				"text":"HD1 水文、气象",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009017",
+				"nodep":"009",
+				"nodeodr":17,
+				"elecop":"<a class='alink'>141</a>",
+				"elebit":"<a class='alink'>267.9G</a>",
+				"pepcop":"<a class='alink'>169</a>",
+				"peppeg":"<a class='alink'>169</a>",
+				"children":[
+					{
+						"id":"file009017000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009017000",
+						"nodep":"009017",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>0</a>",
+						"elebit":"<a class='alink'>0G</a>",
+						"pepcop":"<a class='alink'>0</a>",
+						"peppeg":"<a class='alink'>0</a>"
+					},{
+						"id":"file009017001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009017001",
+						"nodep":"009017",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>8</a>",
+						"elebit":"<a class='alink'>8.8G</a>",
+						"pepcop":"<a class='alink'>13</a>",
+						"peppeg":"<a class='alink'>14</a>"
+					}
+				]
+			},{
+				"id":"file009018",
+				"text":"HD2 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009018",
+				"nodep":"009",
+				"nodeodr":18,
+				"elecop":"<a class='alink'>857</a>",
+				"elebit":"<a class='alink'>1028.3G</a>",
+				"pepcop":"<a class='alink'>1371</a>",
+				"peppeg":"<a class='alink'>1371</a>",
+				"children":[
+					{
+						"id":"file009018000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009018000",
+						"nodep":"009018",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>76</a>",
+						"elebit":"<a class='alink'>144.4G</a>",
+						"pepcop":"<a class='alink'>76</a>",
+						"peppeg":"<a class='alink'>129</a>"
+					},{
+						"id":"file009018001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009018001",
+						"nodep":"009018",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>62.4G</a>",
+						"pepcop":"<a class='alink'>86</a>",
+						"peppeg":"<a class='alink'>111</a>"
+					}
+				]
+			},{
+				"id":"file009019",
+				"text":"HD3 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009019",
+				"nodep":"009",
+				"nodeodr":19,
+				"elecop":"<a class='alink'>846</a>",
+				"elebit":"<a class='alink'>1522.8G</a>",
+				"pepcop":"<a class='alink'>1015</a>",
+				"peppeg":"<a class='alink'>1522</a>",
+				"children":[
+					{
+						"id":"file009019000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009019000",
+						"nodep":"009019",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>123.5G</a>",
+						"pepcop":"<a class='alink'>110</a>",
+						"peppeg":"<a class='alink'>187</a>"
+					},{
+						"id":"file009019001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009019001",
+						"nodep":"009019",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>12</a>",
+						"elebit":"<a class='alink'>16.7G</a>",
+						"pepcop":"<a class='alink'>18</a>",
+						"peppeg":"<a class='alink'>19</a>"
+					}
+				]
+			},{
+				"id":"file009020",
+				"text":"ZH 综合类",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009020",
+				"nodep":"009",
+				"nodeodr":20,
+				"elecop":"<a class='alink'>752</a>",
+				"elebit":"<a class='alink'>1428.8G</a>",
+				"pepcop":"<a class='alink'>1203</a>",
+				"peppeg":"<a class='alink'>2285</a>",
+				"children":[
+					{
+						"id":"file009020000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009020000",
+						"nodep":"009020",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>39</a>",
+						"elebit":"<a class='alink'>39G</a>",
+						"pepcop":"<a class='alink'>74</a>",
+						"peppeg":"<a class='alink'>140</a>"
+					},{
+						"id":"file009020001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009020001",
+						"nodep":"009020",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>0</a>",
+						"elebit":"<a class='alink'>0G</a>",
+						"pepcop":"<a class='alink'>0</a>",
+						"peppeg":"<a class='alink'>0</a>"
+					}
+				]
+			},{
+				"id":"file009021",
+				"text":"QT 其他",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009021",
+				"nodep":"009",
+				"nodeodr":21,
+				"elecop":"<a class='alink'>32</a>",
+				"elebit":"<a class='alink'>41.6G</a>",
+				"pepcop":"<a class='alink'>57</a>",
+				"peppeg":"<a class='alink'>85</a>",
+				"children":[
+					{
+						"id":"file009021000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009021000",
+						"nodep":"009021",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>86</a>",
+						"elebit":"<a class='alink'>163.4G</a>",
+						"pepcop":"<a class='alink'>86</a>",
+						"peppeg":"<a class='alink'>163</a>"
+					},{
+						"id":"file009021001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009021001",
+						"nodep":"009021",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>67.1G</a>",
+						"pepcop":"<a class='alink'>76</a>",
+						"peppeg":"<a class='alink'>91</a>"
+					}
+				]
+			},{
+				"id":"file009022",
+				"text":"GG 基建类光盘",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009022",
+				"nodep":"009",
+				"nodeodr":22,
+				"elecop":"<a class='alink'>359</a>",
+				"elebit":"<a class='alink'>430.8G</a>",
+				"pepcop":"<a class='alink'>646</a>",
+				"peppeg":"<a class='alink'>1162</a>",
+				"children":[
+					{
+						"id":"file009022000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009022000",
+						"nodep":"009022",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>52</a>",
+						"elebit":"<a class='alink'>72.8G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>62</a>"
+					},{
+						"id":"file009022001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009022001",
+						"nodep":"009022",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>88</a>",
+						"elebit":"<a class='alink'>88G</a>",
+						"pepcop":"<a class='alink'>167</a>",
+						"peppeg":"<a class='alink'>317</a>"
+					}
+				]
+			},{
+				"id":"file009023",
+				"text":"JY 经营",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"009023",
+				"nodep":"009",
+				"nodeodr":23,
+				"elecop":"<a class='alink'>985</a>",
+				"elebit":"<a class='alink'>985G</a>",
+				"pepcop":"<a class='alink'>1477</a>",
+				"peppeg":"<a class='alink'>1624</a>",
+				"children":[
+					{
+						"id":"file009023000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"009023000",
+						"nodep":"009023",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>64.3G</a>",
+						"pepcop":"<a class='alink'>59</a>",
+						"peppeg":"<a class='alink'>59</a>"
+					},{
+						"id":"file009023001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"009023001",
+						"nodep":"009023",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>123.2G</a>",
+						"pepcop":"<a class='alink'>146</a>",
+						"peppeg":"<a class='alink'>262</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file010",
+		"text":"干部职工档案类",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"010",
+		"nodep":0,
+		"nodeodr":10,
+		"elecop":"<a class='alink'>5108</a>",
+		"elebit":"<a class='alink'>9194.4G</a>",
+		"pepcop":"<a class='alink'>8172</a>",
+		"peppeg":"<a class='alink'>13075</a>",
+		"children":[
+			{
+				"id":"file010000",
+				"text":"G1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010000",
+				"nodep":"010",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>597</a>",
+				"elebit":"<a class='alink'>1134.3G</a>",
+				"pepcop":"<a class='alink'>776</a>",
+				"peppeg":"<a class='alink'>1086</a>",
+				"children":[
+					{
+						"id":"file010000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010000000",
+						"nodep":"010000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>33</a>",
+						"elebit":"<a class='alink'>42.9G</a>",
+						"pepcop":"<a class='alink'>39</a>",
+						"peppeg":"<a class='alink'>58</a>"
+					},{
+						"id":"file010000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010000001",
+						"nodep":"010000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>69</a>",
+						"elebit":"<a class='alink'>96.6G</a>",
+						"pepcop":"<a class='alink'>117</a>",
+						"peppeg":"<a class='alink'>175</a>"
+					}
+				]
+			},{
+				"id":"file010001",
+				"text":"G2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010001",
+				"nodep":"010",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>463</a>",
+				"elebit":"<a class='alink'>463G</a>",
+				"pepcop":"<a class='alink'>555</a>",
+				"peppeg":"<a class='alink'>777</a>",
+				"children":[
+					{
+						"id":"file010001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010001000",
+						"nodep":"010001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>52</a>",
+						"elebit":"<a class='alink'>52G</a>",
+						"pepcop":"<a class='alink'>78</a>",
+						"peppeg":"<a class='alink'>93</a>"
+					},{
+						"id":"file010001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010001001",
+						"nodep":"010001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>63</a>",
+						"elebit":"<a class='alink'>88.1G</a>",
+						"pepcop":"<a class='alink'>113</a>",
+						"peppeg":"<a class='alink'>124</a>"
+					}
+				]
+			},{
+				"id":"file010002",
+				"text":"G3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010002",
+				"nodep":"010",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>485</a>",
+				"elebit":"<a class='alink'>679G</a>",
+				"pepcop":"<a class='alink'>921</a>",
+				"peppeg":"<a class='alink'>1197</a>",
+				"children":[
+					{
+						"id":"file010002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010002000",
+						"nodep":"010002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>1</a>",
+						"elebit":"<a class='alink'>1.3G</a>",
+						"pepcop":"<a class='alink'>1</a>",
+						"peppeg":"<a class='alink'>1</a>"
+					},{
+						"id":"file010002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010002001",
+						"nodep":"010002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>78</a>",
+						"elebit":"<a class='alink'>124.8G</a>",
+						"pepcop":"<a class='alink'>140</a>",
+						"peppeg":"<a class='alink'>210</a>"
+					}
+				]
+			},{
+				"id":"file010003",
+				"text":"G4 专用工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010003",
+				"nodep":"010",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>936</a>",
+				"elebit":"<a class='alink'>936G</a>",
+				"pepcop":"<a class='alink'>1216</a>",
+				"peppeg":"<a class='alink'>1945</a>",
+				"children":[
+					{
+						"id":"file010003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010003000",
+						"nodep":"010003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>61</a>",
+						"elebit":"<a class='alink'>67.1G</a>",
+						"pepcop":"<a class='alink'>115</a>",
+						"peppeg":"<a class='alink'>149</a>"
+					},{
+						"id":"file010003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010003001",
+						"nodep":"010003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>106.5G</a>",
+						"pepcop":"<a class='alink'>120</a>",
+						"peppeg":"<a class='alink'>228</a>"
+					}
+				]
+			},{
+				"id":"file010004",
+				"text":"G5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010004",
+				"nodep":"010",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>202</a>",
+				"elebit":"<a class='alink'>363.6G</a>",
+				"pepcop":"<a class='alink'>262</a>",
+				"peppeg":"<a class='alink'>419</a>",
+				"children":[
+					{
+						"id":"file010004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010004000",
+						"nodep":"010004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>19</a>",
+						"elebit":"<a class='alink'>19G</a>",
+						"pepcop":"<a class='alink'>26</a>",
+						"peppeg":"<a class='alink'>41</a>"
+					},{
+						"id":"file010004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010004001",
+						"nodep":"010004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>49</a>",
+						"elebit":"<a class='alink'>93.1G</a>",
+						"pepcop":"<a class='alink'>63</a>",
+						"peppeg":"<a class='alink'>119</a>"
+					}
+				]
+			},{
+				"id":"file010005",
+				"text":"G6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010005",
+				"nodep":"010",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>78</a>",
+				"elebit":"<a class='alink'>101.4G</a>",
+				"pepcop":"<a class='alink'>101</a>",
+				"peppeg":"<a class='alink'>181</a>",
+				"children":[
+					{
+						"id":"file010005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010005000",
+						"nodep":"010005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>1</a>",
+						"elebit":"<a class='alink'>1.4G</a>",
+						"pepcop":"<a class='alink'>1</a>",
+						"peppeg":"<a class='alink'>1</a>"
+					},{
+						"id":"file010005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010005001",
+						"nodep":"010005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>71</a>",
+						"elebit":"<a class='alink'>92.3G</a>",
+						"pepcop":"<a class='alink'>92</a>",
+						"peppeg":"<a class='alink'>119</a>"
+					}
+				]
+			},{
+				"id":"file010006",
+				"text":"G8 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010006",
+				"nodep":"010",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>614</a>",
+				"elebit":"<a class='alink'>798.2G</a>",
+				"pepcop":"<a class='alink'>1166</a>",
+				"peppeg":"<a class='alink'>1166</a>",
+				"children":[
+					{
+						"id":"file010006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010006000",
+						"nodep":"010006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>4</a>",
+						"elebit":"<a class='alink'>6.8G</a>",
+						"pepcop":"<a class='alink'>4</a>",
+						"peppeg":"<a class='alink'>6</a>"
+					},{
+						"id":"file010006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010006001",
+						"nodep":"010006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>63</a>",
+						"elebit":"<a class='alink'>63G</a>",
+						"pepcop":"<a class='alink'>81</a>",
+						"peppeg":"<a class='alink'>145</a>"
+					}
+				]
+			},{
+				"id":"file010007",
+				"text":"G9 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010007",
+				"nodep":"010",
+				"nodeodr":7,
+				"elecop":"<a class='alink'>52</a>",
+				"elebit":"<a class='alink'>62.4G</a>",
+				"pepcop":"<a class='alink'>62</a>",
+				"peppeg":"<a class='alink'>117</a>",
+				"children":[
+					{
+						"id":"file010007000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010007000",
+						"nodep":"010007",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>29</a>",
+						"elebit":"<a class='alink'>40.5G</a>",
+						"pepcop":"<a class='alink'>29</a>",
+						"peppeg":"<a class='alink'>55</a>"
+					},{
+						"id":"file010007001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010007001",
+						"nodep":"010007",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>36</a>",
+						"elebit":"<a class='alink'>39.6G</a>",
+						"pepcop":"<a class='alink'>54</a>",
+						"peppeg":"<a class='alink'>64</a>"
+					}
+				]
+			},{
+				"id":"file010008",
+				"text":"G10 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010008",
+				"nodep":"010",
+				"nodeodr":8,
+				"elecop":"<a class='alink'>668</a>",
+				"elebit":"<a class='alink'>1135.6G</a>",
+				"pepcop":"<a class='alink'>1068</a>",
+				"peppeg":"<a class='alink'>1281</a>",
+				"children":[
+					{
+						"id":"file010008000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010008000",
+						"nodep":"010008",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>30G</a>",
+						"pepcop":"<a class='alink'>30</a>",
+						"peppeg":"<a class='alink'>42</a>"
+					},{
+						"id":"file010008001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010008001",
+						"nodep":"010008",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>52.8G</a>",
+						"pepcop":"<a class='alink'>48</a>",
+						"peppeg":"<a class='alink'>91</a>"
+					}
+				]
+			},{
+				"id":"file010009",
+				"text":"G11 项目前期文件",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010009",
+				"nodep":"010",
+				"nodeodr":9,
+				"elecop":"<a class='alink'>930</a>",
+				"elebit":"<a class='alink'>1023G</a>",
+				"pepcop":"<a class='alink'>1209</a>",
+				"peppeg":"<a class='alink'>1450</a>",
+				"children":[
+					{
+						"id":"file010009000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010009000",
+						"nodep":"010009",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>79</a>",
+						"elebit":"<a class='alink'>79G</a>",
+						"pepcop":"<a class='alink'>94</a>",
+						"peppeg":"<a class='alink'>131</a>"
+					},{
+						"id":"file010009001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010009001",
+						"nodep":"010009",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>37</a>",
+						"elebit":"<a class='alink'>51.8G</a>",
+						"pepcop":"<a class='alink'>59</a>",
+						"peppeg":"<a class='alink'>94</a>"
+					}
+				]
+			},{
+				"id":"file010010",
+				"text":"JJ1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010010",
+				"nodep":"010",
+				"nodeodr":10,
+				"elecop":"<a class='alink'>491</a>",
+				"elebit":"<a class='alink'>687.4G</a>",
+				"pepcop":"<a class='alink'>491</a>",
+				"peppeg":"<a class='alink'>785</a>",
+				"children":[
+					{
+						"id":"file010010000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010010000",
+						"nodep":"010010",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>12</a>",
+						"elebit":"<a class='alink'>21.6G</a>",
+						"pepcop":"<a class='alink'>21</a>",
+						"peppeg":"<a class='alink'>37</a>"
+					},{
+						"id":"file010010001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010010001",
+						"nodep":"010010",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>52</a>",
+						"elebit":"<a class='alink'>88.3G</a>",
+						"pepcop":"<a class='alink'>52</a>",
+						"peppeg":"<a class='alink'>83</a>"
+					}
+				]
+			},{
+				"id":"file010011",
+				"text":"JJ2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010011",
+				"nodep":"010",
+				"nodeodr":11,
+				"elecop":"<a class='alink'>591</a>",
+				"elebit":"<a class='alink'>886.5G</a>",
+				"pepcop":"<a class='alink'>591</a>",
+				"peppeg":"<a class='alink'>1004</a>",
+				"children":[
+					{
+						"id":"file010011000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010011000",
+						"nodep":"010011",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>74</a>",
+						"elebit":"<a class='alink'>74G</a>",
+						"pepcop":"<a class='alink'>81</a>",
+						"peppeg":"<a class='alink'>129</a>"
+					},{
+						"id":"file010011001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010011001",
+						"nodep":"010011",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>70</a>",
+						"elebit":"<a class='alink'>98G</a>",
+						"pepcop":"<a class='alink'>91</a>",
+						"peppeg":"<a class='alink'>109</a>"
+					}
+				]
+			},{
+				"id":"file010012",
+				"text":"JJ3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010012",
+				"nodep":"010",
+				"nodeodr":12,
+				"elecop":"<a class='alink'>628</a>",
+				"elebit":"<a class='alink'>942G</a>",
+				"pepcop":"<a class='alink'>1067</a>",
+				"peppeg":"<a class='alink'>1813</a>",
+				"children":[
+					{
+						"id":"file010012000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010012000",
+						"nodep":"010012",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>68</a>",
+						"elebit":"<a class='alink'>68G</a>",
+						"pepcop":"<a class='alink'>122</a>",
+						"peppeg":"<a class='alink'>231</a>"
+					},{
+						"id":"file010012001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010012001",
+						"nodep":"010012",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>89.3G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>81</a>"
+					}
+				]
+			},{
+				"id":"file010013",
+				"text":"JJ4 大宇铁路工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010013",
+				"nodep":"010",
+				"nodeodr":13,
+				"elecop":"<a class='alink'>83</a>",
+				"elebit":"<a class='alink'>124.5G</a>",
+				"pepcop":"<a class='alink'>91</a>",
+				"peppeg":"<a class='alink'>163</a>",
+				"children":[
+					{
+						"id":"file010013000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010013000",
+						"nodep":"010013",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>27</a>",
+						"elebit":"<a class='alink'>51.3G</a>",
+						"pepcop":"<a class='alink'>35</a>",
+						"peppeg":"<a class='alink'>35</a>"
+					},{
+						"id":"file010013001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010013001",
+						"nodep":"010013",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>42</a>",
+						"elebit":"<a class='alink'>63G</a>",
+						"pepcop":"<a class='alink'>46</a>",
+						"peppeg":"<a class='alink'>69</a>"
+					}
+				]
+			},{
+				"id":"file010014",
+				"text":"JJ5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010014",
+				"nodep":"010",
+				"nodeodr":14,
+				"elecop":"<a class='alink'>159</a>",
+				"elebit":"<a class='alink'>270.3G</a>",
+				"pepcop":"<a class='alink'>302</a>",
+				"peppeg":"<a class='alink'>362</a>",
+				"children":[
+					{
+						"id":"file010014000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010014000",
+						"nodep":"010014",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>48</a>",
+						"elebit":"<a class='alink'>91.1G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>74</a>"
+					},{
+						"id":"file010014001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010014001",
+						"nodep":"010014",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>8</a>",
+						"elebit":"<a class='alink'>11.2G</a>",
+						"pepcop":"<a class='alink'>13</a>",
+						"peppeg":"<a class='alink'>13</a>"
+					}
+				]
+			},{
+				"id":"file010015",
+				"text":"JJ6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010015",
+				"nodep":"010",
+				"nodeodr":15,
+				"elecop":"<a class='alink'>238</a>",
+				"elebit":"<a class='alink'>285.5G</a>",
+				"pepcop":"<a class='alink'>380</a>",
+				"peppeg":"<a class='alink'>684</a>",
+				"children":[
+					{
+						"id":"file010015000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010015000",
+						"nodep":"010015",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>53</a>",
+						"elebit":"<a class='alink'>53G</a>",
+						"pepcop":"<a class='alink'>74</a>",
+						"peppeg":"<a class='alink'>125</a>"
+					},{
+						"id":"file010015001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010015001",
+						"nodep":"010015",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>24</a>",
+						"elebit":"<a class='alink'>43.2G</a>",
+						"pepcop":"<a class='alink'>33</a>",
+						"peppeg":"<a class='alink'>59</a>"
+					}
+				]
+			},{
+				"id":"file010016",
+				"text":"HB 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010016",
+				"nodep":"010",
+				"nodeodr":16,
+				"elecop":"<a class='alink'>464</a>",
+				"elebit":"<a class='alink'>881.6G</a>",
+				"pepcop":"<a class='alink'>556</a>",
+				"peppeg":"<a class='alink'>834</a>",
+				"children":[
+					{
+						"id":"file010016000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010016000",
+						"nodep":"010016",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>5</a>",
+						"elebit":"<a class='alink'>7.5G</a>",
+						"pepcop":"<a class='alink'>9</a>",
+						"peppeg":"<a class='alink'>11</a>"
+					},{
+						"id":"file010016001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010016001",
+						"nodep":"010016",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>88</a>",
+						"elebit":"<a class='alink'>96.8G</a>",
+						"pepcop":"<a class='alink'>105</a>",
+						"peppeg":"<a class='alink'>147</a>"
+					}
+				]
+			},{
+				"id":"file010017",
+				"text":"HD1 水文、气象",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010017",
+				"nodep":"010",
+				"nodeodr":17,
+				"elecop":"<a class='alink'>789</a>",
+				"elebit":"<a class='alink'>1499.1G</a>",
+				"pepcop":"<a class='alink'>946</a>",
+				"peppeg":"<a class='alink'>1324</a>",
+				"children":[
+					{
+						"id":"file010017000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010017000",
+						"nodep":"010017",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>63</a>",
+						"elebit":"<a class='alink'>94.5G</a>",
+						"pepcop":"<a class='alink'>107</a>",
+						"peppeg":"<a class='alink'>171</a>"
+					},{
+						"id":"file010017001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010017001",
+						"nodep":"010017",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>91</a>",
+						"elebit":"<a class='alink'>145.6G</a>",
+						"pepcop":"<a class='alink'>127</a>",
+						"peppeg":"<a class='alink'>127</a>"
+					}
+				]
+			},{
+				"id":"file010018",
+				"text":"HD2 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010018",
+				"nodep":"010",
+				"nodeodr":18,
+				"elecop":"<a class='alink'>663</a>",
+				"elebit":"<a class='alink'>1193.4G</a>",
+				"pepcop":"<a class='alink'>729</a>",
+				"peppeg":"<a class='alink'>947</a>",
+				"children":[
+					{
+						"id":"file010018000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010018000",
+						"nodep":"010018",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>28</a>",
+						"elebit":"<a class='alink'>47.6G</a>",
+						"pepcop":"<a class='alink'>28</a>",
+						"peppeg":"<a class='alink'>53</a>"
+					},{
+						"id":"file010018001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010018001",
+						"nodep":"010018",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>21</a>",
+						"elebit":"<a class='alink'>33.6G</a>",
+						"pepcop":"<a class='alink'>21</a>",
+						"peppeg":"<a class='alink'>37</a>"
+					}
+				]
+			},{
+				"id":"file010019",
+				"text":"HD3 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010019",
+				"nodep":"010",
+				"nodeodr":19,
+				"elecop":"<a class='alink'>769</a>",
+				"elebit":"<a class='alink'>922.8G</a>",
+				"pepcop":"<a class='alink'>1153</a>",
+				"peppeg":"<a class='alink'>1268</a>",
+				"children":[
+					{
+						"id":"file010019000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010019000",
+						"nodep":"010019",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>43</a>",
+						"elebit":"<a class='alink'>43G</a>",
+						"pepcop":"<a class='alink'>47</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					},{
+						"id":"file010019001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010019001",
+						"nodep":"010019",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>104G</a>",
+						"pepcop":"<a class='alink'>65</a>",
+						"peppeg":"<a class='alink'>65</a>"
+					}
+				]
+			},{
+				"id":"file010020",
+				"text":"ZH 综合类",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010020",
+				"nodep":"010",
+				"nodeodr":20,
+				"elecop":"<a class='alink'>769</a>",
+				"elebit":"<a class='alink'>1076.6G</a>",
+				"pepcop":"<a class='alink'>1153</a>",
+				"peppeg":"<a class='alink'>1498</a>",
+				"children":[
+					{
+						"id":"file010020000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010020000",
+						"nodep":"010020",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>50</a>",
+						"elebit":"<a class='alink'>95G</a>",
+						"pepcop":"<a class='alink'>60</a>",
+						"peppeg":"<a class='alink'>72</a>"
+					},{
+						"id":"file010020001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010020001",
+						"nodep":"010020",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>56</a>",
+						"elebit":"<a class='alink'>100.8G</a>",
+						"pepcop":"<a class='alink'>95</a>",
+						"peppeg":"<a class='alink'>180</a>"
+					}
+				]
+			},{
+				"id":"file010021",
+				"text":"QT 其他",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010021",
+				"nodep":"010",
+				"nodeodr":21,
+				"elecop":"<a class='alink'>16</a>",
+				"elebit":"<a class='alink'>17.6G</a>",
+				"pepcop":"<a class='alink'>24</a>",
+				"peppeg":"<a class='alink'>31</a>",
+				"children":[
+					{
+						"id":"file010021000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010021000",
+						"nodep":"010021",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>62</a>",
+						"elebit":"<a class='alink'>99.2G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>117</a>"
+					},{
+						"id":"file010021001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010021001",
+						"nodep":"010021",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>1</a>",
+						"elebit":"<a class='alink'>1.6G</a>",
+						"pepcop":"<a class='alink'>1</a>",
+						"peppeg":"<a class='alink'>1</a>"
+					}
+				]
+			},{
+				"id":"file010022",
+				"text":"GG 基建类光盘",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010022",
+				"nodep":"010",
+				"nodeodr":22,
+				"elecop":"<a class='alink'>272</a>",
+				"elebit":"<a class='alink'>353.6G</a>",
+				"pepcop":"<a class='alink'>353</a>",
+				"peppeg":"<a class='alink'>600</a>",
+				"children":[
+					{
+						"id":"file010022000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010022000",
+						"nodep":"010022",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>45G</a>",
+						"pepcop":"<a class='alink'>30</a>",
+						"peppeg":"<a class='alink'>54</a>"
+					},{
+						"id":"file010022001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010022001",
+						"nodep":"010022",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>56</a>",
+						"elebit":"<a class='alink'>95.2G</a>",
+						"pepcop":"<a class='alink'>78</a>",
+						"peppeg":"<a class='alink'>101</a>"
+					}
+				]
+			},{
+				"id":"file010023",
+				"text":"JY 经营",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"010023",
+				"nodep":"010",
+				"nodeodr":23,
+				"elecop":"<a class='alink'>369</a>",
+				"elebit":"<a class='alink'>627.3G</a>",
+				"pepcop":"<a class='alink'>442</a>",
+				"peppeg":"<a class='alink'>530</a>",
+				"children":[
+					{
+						"id":"file010023000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"010023000",
+						"nodep":"010023",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>82</a>",
+						"elebit":"<a class='alink'>106.6G</a>",
+						"pepcop":"<a class='alink'>147</a>",
+						"peppeg":"<a class='alink'>176</a>"
+					},{
+						"id":"file010023001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"010023001",
+						"nodep":"010023",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>41</a>",
+						"elebit":"<a class='alink'>61.5G</a>",
+						"pepcop":"<a class='alink'>45</a>",
+						"peppeg":"<a class='alink'>76</a>"
+					}
+				]
+			}
+		]
+	},{
+		"id":"file011",
+		"text":"声像档案",
+		"iconCls":"ti_folder",
+		"state":"closed",
+		"node":"011",
+		"nodep":0,
+		"nodeodr":11,
+		"elecop":"<a class='alink'>5846</a>",
+		"elebit":"<a class='alink'>7599.8G</a>",
+		"pepcop":"<a class='alink'>10522</a>",
+		"peppeg":"<a class='alink'>13678</a>",
+		"children":[
+			{
+				"id":"file011000",
+				"text":"G1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011000",
+				"nodep":"011",
+				"nodeodr":0,
+				"elecop":"<a class='alink'>638</a>",
+				"elebit":"<a class='alink'>893.2G</a>",
+				"pepcop":"<a class='alink'>638</a>",
+				"peppeg":"<a class='alink'>1020</a>",
+				"children":[
+					{
+						"id":"file011000000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011000000",
+						"nodep":"011000",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>45</a>",
+						"elebit":"<a class='alink'>54G</a>",
+						"pepcop":"<a class='alink'>49</a>",
+						"peppeg":"<a class='alink'>63</a>"
+					},{
+						"id":"file011000001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011000001",
+						"nodep":"011000",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>104G</a>",
+						"pepcop":"<a class='alink'>84</a>",
+						"peppeg":"<a class='alink'>126</a>"
+					}
+				]
+			},{
+				"id":"file011001",
+				"text":"G2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011001",
+				"nodep":"011",
+				"nodeodr":1,
+				"elecop":"<a class='alink'>537</a>",
+				"elebit":"<a class='alink'>698.1G</a>",
+				"pepcop":"<a class='alink'>537</a>",
+				"peppeg":"<a class='alink'>859</a>",
+				"children":[
+					{
+						"id":"file011001000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011001000",
+						"nodep":"011001",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>37.5G</a>",
+						"pepcop":"<a class='alink'>32</a>",
+						"peppeg":"<a class='alink'>60</a>"
+					},{
+						"id":"file011001001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011001001",
+						"nodep":"011001",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>5</a>",
+						"elebit":"<a class='alink'>7G</a>",
+						"pepcop":"<a class='alink'>8</a>",
+						"peppeg":"<a class='alink'>10</a>"
+					}
+				]
+			},{
+				"id":"file011002",
+				"text":"G3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011002",
+				"nodep":"011",
+				"nodeodr":2,
+				"elecop":"<a class='alink'>73</a>",
+				"elebit":"<a class='alink'>109.5G</a>",
+				"pepcop":"<a class='alink'>102</a>",
+				"peppeg":"<a class='alink'>193</a>",
+				"children":[
+					{
+						"id":"file011002000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011002000",
+						"nodep":"011002",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>33</a>",
+						"elebit":"<a class='alink'>59.4G</a>",
+						"pepcop":"<a class='alink'>62</a>",
+						"peppeg":"<a class='alink'>111</a>"
+					},{
+						"id":"file011002001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011002001",
+						"nodep":"011002",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>77</a>",
+						"elebit":"<a class='alink'>92.3G</a>",
+						"pepcop":"<a class='alink'>107</a>",
+						"peppeg":"<a class='alink'>107</a>"
+					}
+				]
+			},{
+				"id":"file011003",
+				"text":"G4 专用工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011003",
+				"nodep":"011",
+				"nodeodr":3,
+				"elecop":"<a class='alink'>868</a>",
+				"elebit":"<a class='alink'>1388.8G</a>",
+				"pepcop":"<a class='alink'>1475</a>",
+				"peppeg":"<a class='alink'>2360</a>",
+				"children":[
+					{
+						"id":"file011003000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011003000",
+						"nodep":"011003",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>89</a>",
+						"elebit":"<a class='alink'>133.5G</a>",
+						"pepcop":"<a class='alink'>106</a>",
+						"peppeg":"<a class='alink'>148</a>"
+					},{
+						"id":"file011003001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011003001",
+						"nodep":"011003",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>27.5G</a>",
+						"pepcop":"<a class='alink'>42</a>",
+						"peppeg":"<a class='alink'>54</a>"
+					}
+				]
+			},{
+				"id":"file011004",
+				"text":"G5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011004",
+				"nodep":"011",
+				"nodeodr":4,
+				"elecop":"<a class='alink'>688</a>",
+				"elebit":"<a class='alink'>894.4G</a>",
+				"pepcop":"<a class='alink'>1307</a>",
+				"peppeg":"<a class='alink'>2352</a>",
+				"children":[
+					{
+						"id":"file011004000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011004000",
+						"nodep":"011004",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>21</a>",
+						"elebit":"<a class='alink'>39.9G</a>",
+						"pepcop":"<a class='alink'>35</a>",
+						"peppeg":"<a class='alink'>56</a>"
+					},{
+						"id":"file011004001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011004001",
+						"nodep":"011004",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>94</a>",
+						"elebit":"<a class='alink'>131.6G</a>",
+						"pepcop":"<a class='alink'>131</a>",
+						"peppeg":"<a class='alink'>209</a>"
+					}
+				]
+			},{
+				"id":"file011005",
+				"text":"G6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011005",
+				"nodep":"011",
+				"nodeodr":5,
+				"elecop":"<a class='alink'>735</a>",
+				"elebit":"<a class='alink'>1323G</a>",
+				"pepcop":"<a class='alink'>955</a>",
+				"peppeg":"<a class='alink'>1528</a>",
+				"children":[
+					{
+						"id":"file011005000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011005000",
+						"nodep":"011005",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>21</a>",
+						"elebit":"<a class='alink'>25.2G</a>",
+						"pepcop":"<a class='alink'>33</a>",
+						"peppeg":"<a class='alink'>56</a>"
+					},{
+						"id":"file011005001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011005001",
+						"nodep":"011005",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>91</a>",
+						"elebit":"<a class='alink'>127.4G</a>",
+						"pepcop":"<a class='alink'>109</a>",
+						"peppeg":"<a class='alink'>152</a>"
+					}
+				]
+			},{
+				"id":"file011006",
+				"text":"G8 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011006",
+				"nodep":"011",
+				"nodeodr":6,
+				"elecop":"<a class='alink'>719</a>",
+				"elebit":"<a class='alink'>1150.4G</a>",
+				"pepcop":"<a class='alink'>1294</a>",
+				"peppeg":"<a class='alink'>1941</a>",
+				"children":[
+					{
+						"id":"file011006000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011006000",
+						"nodep":"011006",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>50.6G</a>",
+						"pepcop":"<a class='alink'>64</a>",
+						"peppeg":"<a class='alink'>115</a>"
+					},{
+						"id":"file011006001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011006001",
+						"nodep":"011006",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>80</a>",
+						"elebit":"<a class='alink'>88G</a>",
+						"pepcop":"<a class='alink'>88</a>",
+						"peppeg":"<a class='alink'>88</a>"
+					}
+				]
+			},{
+				"id":"file011007",
+				"text":"G9 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011007",
+				"nodep":"011",
+				"nodeodr":7,
+				"elecop":"<a class='alink'>804</a>",
+				"elebit":"<a class='alink'>804G</a>",
+				"pepcop":"<a class='alink'>1045</a>",
+				"peppeg":"<a class='alink'>1254</a>",
+				"children":[
+					{
+						"id":"file011007000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011007000",
+						"nodep":"011007",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>94</a>",
+						"elebit":"<a class='alink'>150.4G</a>",
+						"pepcop":"<a class='alink'>150</a>",
+						"peppeg":"<a class='alink'>270</a>"
+					},{
+						"id":"file011007001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011007001",
+						"nodep":"011007",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>16</a>",
+						"elebit":"<a class='alink'>20.8G</a>",
+						"pepcop":"<a class='alink'>25</a>",
+						"peppeg":"<a class='alink'>35</a>"
+					}
+				]
+			},{
+				"id":"file011008",
+				"text":"G10 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011008",
+				"nodep":"011",
+				"nodeodr":8,
+				"elecop":"<a class='alink'>234</a>",
+				"elebit":"<a class='alink'>421.2G</a>",
+				"pepcop":"<a class='alink'>234</a>",
+				"peppeg":"<a class='alink'>351</a>",
+				"children":[
+					{
+						"id":"file011008000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011008000",
+						"nodep":"011008",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>30</a>",
+						"elebit":"<a class='alink'>54G</a>",
+						"pepcop":"<a class='alink'>57</a>",
+						"peppeg":"<a class='alink'>68</a>"
+					},{
+						"id":"file011008001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011008001",
+						"nodep":"011008",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>27</a>",
+						"elebit":"<a class='alink'>27G</a>",
+						"pepcop":"<a class='alink'>35</a>",
+						"peppeg":"<a class='alink'>49</a>"
+					}
+				]
+			},{
+				"id":"file011009",
+				"text":"G11 项目前期文件",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011009",
+				"nodep":"011",
+				"nodeodr":9,
+				"elecop":"<a class='alink'>634</a>",
+				"elebit":"<a class='alink'>1014.4G</a>",
+				"pepcop":"<a class='alink'>1014</a>",
+				"peppeg":"<a class='alink'>1419</a>",
+				"children":[
+					{
+						"id":"file011009000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011009000",
+						"nodep":"011009",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>0</a>",
+						"elebit":"<a class='alink'>0G</a>",
+						"pepcop":"<a class='alink'>0</a>",
+						"peppeg":"<a class='alink'>0</a>"
+					},{
+						"id":"file011009001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011009001",
+						"nodep":"011009",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>35</a>",
+						"elebit":"<a class='alink'>38.5G</a>",
+						"pepcop":"<a class='alink'>45</a>",
+						"peppeg":"<a class='alink'>45</a>"
+					}
+				]
+			},{
+				"id":"file011010",
+				"text":"JJ1 生产及辅助生产性项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011010",
+				"nodep":"011",
+				"nodeodr":10,
+				"elecop":"<a class='alink'>279</a>",
+				"elebit":"<a class='alink'>390.5G</a>",
+				"pepcop":"<a class='alink'>334</a>",
+				"peppeg":"<a class='alink'>334</a>",
+				"children":[
+					{
+						"id":"file011010000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011010000",
+						"nodep":"011010",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>55</a>",
+						"elebit":"<a class='alink'>55G</a>",
+						"pepcop":"<a class='alink'>82</a>",
+						"peppeg":"<a class='alink'>123</a>"
+					},{
+						"id":"file011010001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011010001",
+						"nodep":"011010",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>53</a>",
+						"elebit":"<a class='alink'>90.1G</a>",
+						"pepcop":"<a class='alink'>100</a>",
+						"peppeg":"<a class='alink'>190</a>"
+					}
+				]
+			},{
+				"id":"file011011",
+				"text":"JJ2 公共福利建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011011",
+				"nodep":"011",
+				"nodeodr":11,
+				"elecop":"<a class='alink'>813</a>",
+				"elebit":"<a class='alink'>1300.8G</a>",
+				"pepcop":"<a class='alink'>975</a>",
+				"peppeg":"<a class='alink'>1560</a>",
+				"children":[
+					{
+						"id":"file011011000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011011000",
+						"nodep":"011011",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>65</a>",
+						"elebit":"<a class='alink'>110.5G</a>",
+						"pepcop":"<a class='alink'>110</a>",
+						"peppeg":"<a class='alink'>132</a>"
+					},{
+						"id":"file011011001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011011001",
+						"nodep":"011011",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>47</a>",
+						"elebit":"<a class='alink'>56.4G</a>",
+						"pepcop":"<a class='alink'>51</a>",
+						"peppeg":"<a class='alink'>66</a>"
+					}
+				]
+			},{
+				"id":"file011012",
+				"text":"JJ3 住宅建设项目",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011012",
+				"nodep":"011",
+				"nodeodr":12,
+				"elecop":"<a class='alink'>437</a>",
+				"elebit":"<a class='alink'>480.7G</a>",
+				"pepcop":"<a class='alink'>611</a>",
+				"peppeg":"<a class='alink'>794</a>",
+				"children":[
+					{
+						"id":"file011012000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011012000",
+						"nodep":"011012",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>13</a>",
+						"elebit":"<a class='alink'>22G</a>",
+						"pepcop":"<a class='alink'>16</a>",
+						"peppeg":"<a class='alink'>19</a>"
+					},{
+						"id":"file011012001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011012001",
+						"nodep":"011012",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>25</a>",
+						"elebit":"<a class='alink'>40G</a>",
+						"pepcop":"<a class='alink'>25</a>",
+						"peppeg":"<a class='alink'>32</a>"
+					}
+				]
+			},{
+				"id":"file011013",
+				"text":"JJ4 大宇铁路工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011013",
+				"nodep":"011",
+				"nodeodr":13,
+				"elecop":"<a class='alink'>517</a>",
+				"elebit":"<a class='alink'>672.1G</a>",
+				"pepcop":"<a class='alink'>827</a>",
+				"peppeg":"<a class='alink'>1240</a>",
+				"children":[
+					{
+						"id":"file011013000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011013000",
+						"nodep":"011013",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>64</a>",
+						"elebit":"<a class='alink'>96G</a>",
+						"pepcop":"<a class='alink'>121</a>",
+						"peppeg":"<a class='alink'>181</a>"
+					},{
+						"id":"file011013001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011013001",
+						"nodep":"011013",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>30</a>",
+						"elebit":"<a class='alink'>45G</a>",
+						"pepcop":"<a class='alink'>45</a>",
+						"peppeg":"<a class='alink'>81</a>"
+					}
+				]
+			},{
+				"id":"file011014",
+				"text":"JJ5 外部工程",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011014",
+				"nodep":"011",
+				"nodeodr":14,
+				"elecop":"<a class='alink'>409</a>",
+				"elebit":"<a class='alink'>531.7G</a>",
+				"pepcop":"<a class='alink'>654</a>",
+				"peppeg":"<a class='alink'>1177</a>",
+				"children":[
+					{
+						"id":"file011014000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011014000",
+						"nodep":"011014",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>61</a>",
+						"elebit":"<a class='alink'>79.3G</a>",
+						"pepcop":"<a class='alink'>79</a>",
+						"peppeg":"<a class='alink'>150</a>"
+					},{
+						"id":"file011014001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011014001",
+						"nodep":"011014",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>64.3G</a>",
+						"pepcop":"<a class='alink'>78</a>",
+						"peppeg":"<a class='alink'>148</a>"
+					}
+				]
+			},{
+				"id":"file011015",
+				"text":"JJ6 征地材料",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011015",
+				"nodep":"011",
+				"nodeodr":15,
+				"elecop":"<a class='alink'>216</a>",
+				"elebit":"<a class='alink'>388.8G</a>",
+				"pepcop":"<a class='alink'>259</a>",
+				"peppeg":"<a class='alink'>284</a>",
+				"children":[
+					{
+						"id":"file011015000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011015000",
+						"nodep":"011015",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>42</a>",
+						"elebit":"<a class='alink'>42G</a>",
+						"pepcop":"<a class='alink'>67</a>",
+						"peppeg":"<a class='alink'>120</a>"
+					},{
+						"id":"file011015001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011015001",
+						"nodep":"011015",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>67</a>",
+						"elebit":"<a class='alink'>107.2G</a>",
+						"pepcop":"<a class='alink'>127</a>",
+						"peppeg":"<a class='alink'>177</a>"
+					}
+				]
+			},{
+				"id":"file011016",
+				"text":"HB 环保",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011016",
+				"nodep":"011",
+				"nodeodr":16,
+				"elecop":"<a class='alink'>217</a>",
+				"elebit":"<a class='alink'>238.7G</a>",
+				"pepcop":"<a class='alink'>217</a>",
+				"peppeg":"<a class='alink'>217</a>",
+				"children":[
+					{
+						"id":"file011016000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011016000",
+						"nodep":"011016",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>46</a>",
+						"elebit":"<a class='alink'>73.6G</a>",
+						"pepcop":"<a class='alink'>55</a>",
+						"peppeg":"<a class='alink'>82</a>"
+					},{
+						"id":"file011016001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011016001",
+						"nodep":"011016",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>13</a>",
+						"elebit":"<a class='alink'>15.6G</a>",
+						"pepcop":"<a class='alink'>14</a>",
+						"peppeg":"<a class='alink'>25</a>"
+					}
+				]
+			},{
+				"id":"file011017",
+				"text":"HD1 水文、气象",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011017",
+				"nodep":"011",
+				"nodeodr":17,
+				"elecop":"<a class='alink'>945</a>",
+				"elebit":"<a class='alink'>1323G</a>",
+				"pepcop":"<a class='alink'>945</a>",
+				"peppeg":"<a class='alink'>1606</a>",
+				"children":[
+					{
+						"id":"file011017000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011017000",
+						"nodep":"011017",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>12</a>",
+						"elebit":"<a class='alink'>15.6G</a>",
+						"pepcop":"<a class='alink'>18</a>",
+						"peppeg":"<a class='alink'>19</a>"
+					},{
+						"id":"file011017001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011017001",
+						"nodep":"011017",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>89</a>",
+						"elebit":"<a class='alink'>97.9G</a>",
+						"pepcop":"<a class='alink'>169</a>",
+						"peppeg":"<a class='alink'>321</a>"
+					}
+				]
+			},{
+				"id":"file011018",
+				"text":"HD2 地质",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011018",
+				"nodep":"011",
+				"nodeodr":18,
+				"elecop":"<a class='alink'>27</a>",
+				"elebit":"<a class='alink'>43.2G</a>",
+				"pepcop":"<a class='alink'>45</a>",
+				"peppeg":"<a class='alink'>72</a>",
+				"children":[
+					{
+						"id":"file011018000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011018000",
+						"nodep":"011018",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>64</a>",
+						"elebit":"<a class='alink'>96G</a>",
+						"pepcop":"<a class='alink'>121</a>",
+						"peppeg":"<a class='alink'>133</a>"
+					},{
+						"id":"file011018001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011018001",
+						"nodep":"011018",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>70</a>",
+						"elebit":"<a class='alink'>105G</a>",
+						"pepcop":"<a class='alink'>112</a>",
+						"peppeg":"<a class='alink'>123</a>"
+					}
+				]
+			},{
+				"id":"file011019",
+				"text":"HD3 航道",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011019",
+				"nodep":"011",
+				"nodeodr":19,
+				"elecop":"<a class='alink'>586</a>",
+				"elebit":"<a class='alink'>1054.8G</a>",
+				"pepcop":"<a class='alink'>937</a>",
+				"peppeg":"<a class='alink'>1686</a>",
+				"children":[
+					{
+						"id":"file011019000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011019000",
+						"nodep":"011019",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>66</a>",
+						"elebit":"<a class='alink'>66G</a>",
+						"pepcop":"<a class='alink'>79</a>",
+						"peppeg":"<a class='alink'>79</a>"
+					},{
+						"id":"file011019001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011019001",
+						"nodep":"011019",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>74</a>",
+						"elebit":"<a class='alink'>140.6G</a>",
+						"pepcop":"<a class='alink'>111</a>",
+						"peppeg":"<a class='alink'>122</a>"
+					}
+				]
+			},{
+				"id":"file011020",
+				"text":"ZH 综合类",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011020",
+				"nodep":"011",
+				"nodeodr":20,
+				"elecop":"<a class='alink'>264</a>",
+				"elebit":"<a class='alink'>448.8G</a>",
+				"pepcop":"<a class='alink'>501</a>",
+				"peppeg":"<a class='alink'>501</a>",
+				"children":[
+					{
+						"id":"file011020000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011020000",
+						"nodep":"011020",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>58</a>",
+						"elebit":"<a class='alink'>75.4G</a>",
+						"pepcop":"<a class='alink'>87</a>",
+						"peppeg":"<a class='alink'>95</a>"
+					},{
+						"id":"file011020001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011020001",
+						"nodep":"011020",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>40</a>",
+						"elebit":"<a class='alink'>52G</a>",
+						"pepcop":"<a class='alink'>72</a>",
+						"peppeg":"<a class='alink'>100</a>"
+					}
+				]
+			},{
+				"id":"file011021",
+				"text":"QT 其他",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011021",
+				"nodep":"011",
+				"nodeodr":21,
+				"elecop":"<a class='alink'>649</a>",
+				"elebit":"<a class='alink'>778.8G</a>",
+				"pepcop":"<a class='alink'>778</a>",
+				"peppeg":"<a class='alink'>855</a>",
+				"children":[
+					{
+						"id":"file011021000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011021000",
+						"nodep":"011021",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>16</a>",
+						"elebit":"<a class='alink'>30.4G</a>",
+						"pepcop":"<a class='alink'>17</a>",
+						"peppeg":"<a class='alink'>27</a>"
+					},{
+						"id":"file011021001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011021001",
+						"nodep":"011021",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>0</a>",
+						"elebit":"<a class='alink'>0G</a>",
+						"pepcop":"<a class='alink'>0</a>",
+						"peppeg":"<a class='alink'>0</a>"
+					}
+				]
+			},{
+				"id":"file011022",
+				"text":"GG 基建类光盘",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011022",
+				"nodep":"011",
+				"nodeodr":22,
+				"elecop":"<a class='alink'>478</a>",
+				"elebit":"<a class='alink'>573.6G</a>",
+				"pepcop":"<a class='alink'>717</a>",
+				"peppeg":"<a class='alink'>1218</a>",
+				"children":[
+					{
+						"id":"file011022000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011022000",
+						"nodep":"011022",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>22</a>",
+						"elebit":"<a class='alink'>30.8G</a>",
+						"pepcop":"<a class='alink'>22</a>",
+						"peppeg":"<a class='alink'>28</a>"
+					},{
+						"id":"file011022001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011022001",
+						"nodep":"011022",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>78</a>",
+						"elebit":"<a class='alink'>124.8G</a>",
+						"pepcop":"<a class='alink'>148</a>",
+						"peppeg":"<a class='alink'>251</a>"
+					}
+				]
+			},{
+				"id":"file011023",
+				"text":"JY 经营",
+				"iconCls":"ti_folder",
+				"state":"closed",
+				"node":"011023",
+				"nodep":"011",
+				"nodeodr":23,
+				"elecop":"<a class='alink'>89</a>",
+				"elebit":"<a class='alink'>160.2G</a>",
+				"pepcop":"<a class='alink'>133</a>",
+				"peppeg":"<a class='alink'>239</a>",
+				"children":[
+					{
+						"id":"file011023000",
+						"text":"永久",
+						"iconCls":"ti_file",
+						"node":"011023000",
+						"nodep":"011023",
+						"nodeodr":0,
+						"elecop":"<a class='alink'>92</a>",
+						"elebit":"<a class='alink'>110.4G</a>",
+						"pepcop":"<a class='alink'>174</a>",
+						"peppeg":"<a class='alink'>191</a>"
+					},{
+						"id":"file011023001",
+						"text":"定期",
+						"iconCls":"ti_file",
+						"node":"011023001",
+						"nodep":"011023",
+						"nodeodr":1,
+						"elecop":"<a class='alink'>57</a>",
+						"elebit":"<a class='alink'>85.5G</a>",
+						"pepcop":"<a class='alink'>91</a>",
+						"peppeg":"<a class='alink'>109</a>"
+					}
+				]
+			}
+		]
+}
+]
