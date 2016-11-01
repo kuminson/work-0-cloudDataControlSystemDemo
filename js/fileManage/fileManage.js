@@ -469,8 +469,7 @@ $(function(){
 
 	// 加载元数据统计 按数据库统计
 	$("#mco_library").datagrid({
-		url: rooturl + "html/fileManage/usernamelog.json",
-		toolbar:"#mcn_ltb",
+		url: rooturl + "html/fileManage/librarystatdata.json",
 		fitColumns: true,
 		striped: true,
 		pagination: true,
@@ -479,9 +478,9 @@ $(function(){
 		pageSize:20,
 		pageList:[20,40,60],
 		columns:[[
-			{field:"address",title:"数据库文件",width:100},
-			{field:"opmode",title:"来源",width:100},
-			{field:"opdescribe",title:"备注",width:100}
+			{field:"library",title:"数据库文件",width:100},
+			{field:"source",title:"来源",width:100},
+			{field:"remark",title:"备注",width:100}
 		]]
 	});
 
