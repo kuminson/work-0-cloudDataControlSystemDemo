@@ -14,3 +14,18 @@
 	background-size: 16px 16px;
 	background-position: 0 0;
 }
+
+/*组卷按钮*/
+.groupfile{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.groupfile:hover{
+	text-decoration: underline;
+	color: red;
+}
+.groupicon{
+	position: relative;
+	padding: 0 20px 0 0;
+}
