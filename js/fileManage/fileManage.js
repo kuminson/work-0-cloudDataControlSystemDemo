@@ -145,7 +145,7 @@ $(function(){
 			]],
 		onClickRow:function(index,row){
 			$("#mcd_file").datagrid({
-				method: "get",
+		method: "get",
 				url: rooturl + "html/fileManage/filedata"+(index%4)+".json"
 			});
 		},
@@ -285,13 +285,7 @@ $(function(){
 	$("#mc_original").tabs({
 		onSelect:function(title,index){
 			if(index == 1){
-				// 加载area表格
-				addhighchart();
-				// 加载gauges表格
-				addgaugesleft();
-				addgaugesright();
-				// 加载bar表格
-				addhighchartbar();
+				
 				// 主动触发resize事件 修复显示问题
 				$(window).triggerHandler("resize");
 			}
@@ -402,63 +396,102 @@ $(function(){
 		]]
 	});
 
-	// 加载列表格
-	var dirdata = {
-		title:[
-			"项目",
-			"数量"
-		],
-		content:[
-			{
-				header:"案卷级目录数：",
-				body:[8241]
-			},{
-				header:"文件级目录数：",
-				body:[29121]
-			},{
-				header:"有电子原文的目录总数：",
-				body:[10666]
-			},{
-				header:"无电子原文的目录总数：",
-				body:[18455]
-			},{
-				header:"有原文目录文件总页数：",
-				body:[43849]
-			},{
-				header:"日照港档案案卷级目录总数：",
-				body:[139235]
-			},{
-				header:"日照港档案文件级目录总数：",
-				body:[583187]
-			}
-		]
-	};
-	coldatagrid("#mcod_grid",dirdata,2);
-	var stodata = {
-		title:[
-			"项目",
-			"数量"
-		],
-		content:[
-			{
-				header:"库存档案总数量：",
-				body:[8241]
-			},{
-				header:"按卷管理数量：",
-				body:[8241]
-			},{
-				header:"按件管理数量：",
-				body:[0]
-			},{
-				header:"盒数：",
-				body:[0]
-			},{
-				header:"文字总页数：",
-				body:[43849]
-			}
-		]
-	};
-	coldatagrid("#mcos_grid",stodata,2);
+	// 加载元数据统计 按分类统计表格
+	$("#mco_type").treegrid({
+		method: "get",
+		url:rooturl +"html/fileManage/classTree.json",
+		idField:"id",
+		treeField: "text",
+		fitColumns: true,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60],
+		columns:[[
+		    {field:'text',title:'档案树',rowspan:2,width:300},
+		    {field:'',title:'电子文件',colspan:2,width:200},
+		    {field:'',title:'纸质文件',colspan:2,width:200}
+		],[
+		    {field:'elecop',title:'份数',width:100},
+		    {field:'elebit',title:'容量',width:100},
+		    {field:'pepcop',title:'份数',width:100},
+		    {field:'peppeg',title:'页数',width:100},
+
+		]]
+	});
+	
+	// 加载元数据统计 按格式统计表格
+	var coldata = [[
+		{text:"项目",col:2,row:2},
+		{text:"1998年前",col:2,row:1},
+		{text:"1998-2003",col:2,row:1},
+		{text:"2003-2007",col:2,row:1},
+		{text:"2007至今",col:2,row:1}
+	],[
+		{text:"份数",col:1,row:1},
+		{text:"容量",col:1,row:1},
+		{text:"份数",col:1,row:1},
+		{text:"容量",col:1,row:1},
+		{text:"份数",col:1,row:1},
+		{text:"容量",col:1,row:1},
+		{text:"份数",col:1,row:1},
+		{text:"容量",col:1,row:1}
+	]];
+	var rowdata = [
+		{text:"文件",col:1,row:7,children:[
+			{text:"PDF",col:1,row:1},
+			{text:"XLS",col:1,row:1},
+			{text:"TXT",col:1,row:1},
+			{text:"DOC",col:1,row:1},
+			{text:"RTF",col:1,row:1},
+			{text:"PPT",col:1,row:1},
+			{text:"PPS",col:1,row:1}
+		]},
+		{text:"图片",col:1,row:6,children:[
+			{text:"BMP",col:1,row:1},
+			{text:"GIF",col:1,row:1},
+			{text:"JPG",col:1,row:1},
+			{text:"PIC",col:1,row:1},
+			{text:"PNG",col:1,row:1},
+			{text:"TIF",col:1,row:1}
+		]},
+		{text:"音视频",col:1,row:10,children:[
+			{text:"WAV",col:1,row:1},
+			{text:"AIF",col:1,row:1},
+			{text:"MP3",col:1,row:1},
+			{text:"WMA",col:1,row:1},
+			{text:"MMF",col:1,row:1},
+			{text:"AVI",col:1,row:1},
+			{text:"MPG",col:1,row:1},
+			{text:"MOV",col:1,row:1},
+			{text:"MP4",col:1,row:1},
+			{text:"SWF",col:1,row:1}
+		]}
+	];
+	creategrid("#mcof_grid",coldata,rowdata);
+
+	// 加载元数据统计 按数据库统计
+	$("#mco_library").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/librarystatdata.json",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"library",title:"数据库文件",width:100},
+			{field:"source",title:"来源",width:100},
+			{field:"remark",title:"备注",width:100}
+		]]
+	});
 
 	// 绑定点击弹出窗口事件
 	$("#m_content").on("click",".alink",function(){
@@ -579,252 +612,6 @@ function addDate(dadd) {
 	return a;
 }
 
-// 加载area表格
-function addhighchart(){
-	var now = addDate(-60);
-	var year = now.getFullYear();
-	var month = now.getMonth();
-	var date = now.getDate();
-	$("#mcob_area").highcharts({
-		chart: {
-            type: 'area'
-        },
-        credits: {
-            enabled: false
-        },
-        title: {
-            text: '<p style="font-size:12px;font-family: \'微软雅黑\'">档案数据目录增长曲线</p>'
-        },
-        subtitle: {
-            text: null
-        },
-        xAxis: {
-            type: 'datetime',
-            labels: {
-                step: 1,
-                formatter: function () {
-                    return Highcharts.dateFormat('%Y-%m-%d', this.value);
-                }
-            }
-        },
-        yAxis: {
-            title: {
-                text: null
-            },
-            tickPositions: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] // 指定竖轴坐标点的值
-        },
-        tooltip: {
-            pointFormat: '{series.name} 为 <b>{point.y:,.0f}</b>'
-        },
-        plotOptions: {
-            area: {
-                pointStart: Date.UTC(year, month, date),
-                pointInterval: 24 * 3600 * 1000, // one day
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 2,
-                    states: {
-                        hover: {
-                            enabled: true
-                        }
-                    }
-                }
-            }
-        },
-        series: [{
-            name: '档案数据目录量*100',
-            data: [0, 0, 0,
-                0, 1, 1, 1.20, 1.50, 2.00, 4.26, 6.60, 8.69, 10.60, 14.05, 14.71, 13.22,
-                12.38, 12.21, 11.29, 10.89, 13.39, 13.99, 12.38, 13.43, 13.92, 14.78,
-                16.15, 17.85, 19.55, 21.05, 22.44, 23.93, 23.35, 23.62, 24.49,
-                23.52, 25.84, 27.31, 31.97, 32.10, 30.67, 30.99, 32.11, 32.20,
-                33.10, 33.45, 32.99, 31.90, 32.30, 33.12, 34.45, 33.68, 34.09,
-                33.90, 33.12, 74.55, 85.78, 86.19, 97.20, 98.10]
-        }]
-	});
-}
-
-// 加载bar表格
-function addhighchartbar(){
-	$("#mcos_bar").highcharts({
-		chart:{
-			type:"bar"
-		},
-		title:{
-			text:null
-		},
-		xAxis:{
-			categories:["文书","基建","设备"],
-			title:{
-				text:null
-			}
-		},
-		yAxis:{
-			min:0,
-			title:{
-				text:null
-			},
-			labels:{
-				enabled:false
-			}
-		},
-		tooltip:{
-			valueSuffix:"份"
-		},
-		plotOptions:{
-			bar:{
-				dataLabels:{
-					enabled:true
-				}
-			}
-		},
-		credits:{
-			enabled:false
-		},
-		series:[{
-			name:"标准目录",
-			color:"#7CB5ED",
-			data:[12321,3761,7866]
-		},{
-			name:"已收集",
-			color:"#3FD0D5",
-			data:[8637,2560,6332]
-		}]
-	});
-}
-
-// 加载gauges left 表格
-function addgaugesleft(){
-	$("#mcob_fufure").highcharts({
-		chart:{
-			type:"solidgauge"
-		},
-		title:{
-			text:"文档收集",
-			y:200,
-			margin:-40
-		},
-		pane:{
-			startAngle: 0,
-			endAngle: 360,
-			background:{
-				backgroundColor:"#EFEFEF",
-				innerRadius: 0,
-				outerRadius: "100%",
-				shape:"arc",
-				borderWidth:0
-			}
-		},
-		tooltip:{
-			enabled: false
-		},
-		yAxis:{
-			stops:[
-				[0.1,"#11E6AC"]
-			],
-			min:0,
-			max:100,
-			title:{
-				text:"文档收集",
-				y:110
-			},
-			tickAmount:0,
-			tickPositions: []
-		},
-		credits:{
-			enabled:false
-		},
-		plotOptions:{
-			solidgauge:{
-				dataLabels:{
-					y: -12,
-					borderWidth:0,
-
-				}
-			}
-		},
-		series:[{
-			data:[{
-				y:60,
-				radius: '100%',
-				innerRadius: '80%'
-			}],
-			useHTML:true,
-			dataLabels:{
-				format:'<div style="text-align:center"><span style="font-size:24px;color:#5E5E5E'
-						+ '">{point.y}%</span>'
-						+'</div>'
-			}
-		}]
-	});
-}
-
-// 加载gauges right 表格
-function addgaugesright(){
-	$("#mcob_cash").highcharts({
-		chart:{
-			type:"solidgauge"
-		},
-		title:{
-			text:"错误率",
-			y:200,
-			margin:-40
-		},
-		pane:{
-			startAngle: 0,
-			endAngle: 360,
-			background:{
-				backgroundColor:"#EFEFEF",
-				innerRadius: 0,
-				outerRadius: "100%",
-				shape:"arc",
-				borderWidth:0
-			}
-		},
-		tooltip:{
-			enabled: false
-		},
-		yAxis:{
-			stops:[
-				[0.1,"#60A9DD"]
-			],
-			min:0,
-			max:100,
-			title:{
-				text:"错误率",
-				y:110
-			},
-			tickAmount:0,
-			tickPositions: []
-		},
-		credits:{
-			enabled:false
-		},
-		plotOptions:{
-			solidgauge:{
-				dataLabels:{
-					y: -12,
-					borderWidth:0,
-
-				}
-			}
-		},
-		series:[{
-			data:[{
-				y:5,
-				radius: '100%',
-				innerRadius: '80%'
-			}],
-			useHTML:true,
-			dataLabels:{
-				format:'<div style="text-align:center"><span style="font-size:24px;color:#5E5E5E'
-						+ '">{point.y}%</span>'
-						+'</div>'
-			}
-		}]
-	});
-}
 
 // 加载列表格函数
 function coldatagrid(id,data,colnbr){
@@ -867,4 +654,51 @@ function coldatagrid(id,data,colnbr){
 	// 计算列宽
 	var colw = Math.floor(100/(colnbr*(1+data.content[i].body.length)));
 	$(id+" tr").css("width",colw+"%");
+}
+
+// 生成表格数据
+function creategrid(id,col,row){
+	// 生成表格
+	var mtable = $(id);
+	var colnum = 0; //列数
+	// 生成列标题
+	for(var i=0; i<col.length; i++){
+		mtable.append('<tr></tr>');
+		for(var j=0; j<col[i].length; j++){
+			mtable.find("tr").last().append('<th colspan="'+col[i][j].col
+												+'" rowspan="'+col[i][j].row+'">'
+												+col[i][j].text+'</th>');
+		}
+	}
+	for(var i=0; i<col[0].length; i++){
+		colnum+= col[0][i].col;
+	}
+	console.log(colnum);
+	// 生成行标题
+	for(var i=0; i<row.length; i++){
+		mtable.append('<tr></tr>');
+		mtable.find("tr").last().append('<th colspan="'+row[i].col
+												+'" rowspan="'+row[i].row+'">'
+												+row[i].text+'</th>');
+		for(var j=0; j<row[i].children.length; j++){
+			if(j != 0){
+				mtable.append('<tr></tr>');
+			}
+			mtable.find("tr").last().append('<th colspan="'+row[i].children[j].col
+												+'" rowspan="'+row[i].children[j].row+'">'
+												+row[i].children[j].text+'</th>');
+			// 加载数据
+			for(var k=0; k<colnum-2; k++){
+				var filepage = Math.floor(Math.random()*1000);
+				var filebit = Math.floor((1+Math.floor(Math.random()*10)/10)*filepage*10)/10 + "G";
+				if(k%2 == 0){
+					mtable.find("tr").last().append('<td colspan="1" rowspan="1"><a class="alink">'+
+													filepage+'</a></td>');
+				}else{
+					mtable.find("tr").last().append('<td colspan="1" rowspan="1"><a class="alink">'+
+													filebit+'</a></td>');
+				}
+			}
+		}
+	}
 }

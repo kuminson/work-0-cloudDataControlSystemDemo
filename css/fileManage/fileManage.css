@@ -30,81 +30,51 @@ td[field] div{
 
 /*元数据*/
 /*统计*/
-/*今日*/
-.mcot_list{
+/*列表格*/
+.yg_grid{
 	width: 100%;
-	overflow: hidden;
-	height: 50px;
-	padding: 10px 0;
+	text-indent: 5px;
 }
-.mcotl_item{
-	position: relative;
-	display: block;
-	float: left;
-	width: 20%;
-	height: 100%;
+.yg_grid tr{
+	height: 25px;
+}
+.yg_grid th{
+	/*border-collapse:collapse;*/
+	border: 1px solid #CCC;
+	background:rgba(0, 0, 0, 0) linear-gradient(to bottom, #f9f9f9 0px, #efefef 100%) repeat-x scroll 0 0;
+	width: 10%;
+}
+.yg_grid td{
+	/*border-collapse:collapse;*/
+	border: 1px dotted #CCC;
+	width: 10%;
+}
+/*.yg_grid tr:first-of-type td{
+	border-top: 1px solid #CCC;
+}
+.yg_grid tr:first-of-type td:last-of-type{
 	border-right: 1px solid #CCC;
-	margin-left: -1px;
 }
-.mcotl_item:last-child{
-	border-right: none;
-	margin-left: 0;
+.yg_grid tr td:last-of-type{
+	border-right: 1px solid #CCC;
 }
-.mcotli_content{
-	display: block;
-	text-align: center;
-	font-size: 22px;
-	color: #0ebcee;
+.yg_grid tr:last-of-type td{
+	border-bottom: 1px solid #CCC;
 }
-.mcotli_title{
-	display: block;
-	text-align: center;
-	font-size: 16px;
+.yg_grid tr:last-of-type td:last-of-type{
+	border-right: 1px solid #CCC;
+}*/
+.yg_grid tr:nth-of-type(even) td{
+	background-color: #fafafa;
 }
-/*浏览量*/
-.mcob_area{
-	height: 98%;
-	width: 98%;
+.alink{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
 }
-/*成交量*/
-.mcob_fufure{
-	width: 45%;
-	height: 60%;
-	float: left;
-}
-.mcob_cash{
-	width: 45%;
-	height: 60%;
-	float: right;
-}
-.mcob_ul{
-	height: 30%;
-	width: 100%;
-	clear: both;
-	text-align: center;
-	font-size: 16px;
-	padding-top: 10px;
-}
-.mcob_list{
-	list-style-type: disc;
-	height: 30px;
-}
-.mcob_list:nth-of-type(1){
-	color: #0FE4AA;
-}
-.mcob_list:nth-of-type(2){
-	color: #60A9DD;
-}
-.mcob_list:nth-of-type(3){
-	color: #CCC;
-}
-.mcob_list span{
-	color:#414141;
-}
-/*库存量*/
-.mcos_bar{
-	height: 98%;
-	width: 98%;
+.alink:hover{
+	text-decoration: underline;
+	color: red;
 }
 
 /*资源库tabs*/
@@ -151,48 +121,3 @@ td[field] div{
 	/*background-color: yellow;*/
 }
 
-/*列表格*/
-.yg_grid{
-	width: 100%;
-	text-indent: 5px;
-}
-.yg_grid tr{
-	height: 25px;
-}
-.yg_grid th{
-	/*border-collapse:collapse;*/
-	border: 1px solid #CCC;
-	background:rgba(0, 0, 0, 0) linear-gradient(to bottom, #f9f9f9 0px, #efefef 100%) repeat-x scroll 0 0;
-	width: 25%;
-}
-.yg_grid td{
-	/*border-collapse:collapse;*/
-	border: 1px dotted #CCC;
-	width: 25%;
-}
-.yg_grid tr:first-of-type td{
-	border-top: 1px solid #CCC;
-}
-.yg_grid tr:first-of-type td:last-of-type{
-	border-right: 1px solid #CCC;
-}
-.yg_grid tr td:last-of-type{
-	border-right: 1px solid #CCC;
-}
-.yg_grid tr:last-of-type td{
-	border-bottom: 1px solid #CCC;
-}
-.yg_grid tr:last-of-type td:last-of-type{
-	border-right: 1px solid #CCC;
-}
-.yg_grid tr:nth-of-type(even) td{
-	background-color: #fafafa;
-}
-.alink{
-	color: blue;
-	text-decoration: underline;
-	cursor: pointer;
-}
-.alink:active{
-	color: red;
-}
