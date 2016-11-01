@@ -123,6 +123,12 @@
 					<div title="统计" data-options="">
 					</div>
 					<div title="备份" data-options="">
+						<table id="mcl_backup" fit="true" data-options="title:'备份'"></table>
+						<div id="mcl_tb">
+							<a id="mclt_add" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="增量备份">增量备份</a>
+							<a id="mclt_all" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload"  title="完全备份">完全备份</a>
+							<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
+						</div>
 					</div>
 				</div>
 				<!-- 权限人名库tabs -->
@@ -148,6 +154,9 @@
 	<!-- 弹出框 -->
 	<div id="frame_details" class="easyui-window" data-options="title:'详情',closed:'true'"  style="height:80%;width:80%;">
 		<table id="fd_grid" fit="true"></table>
+	</div>
+	<div id="frame_progress" class="easyui-window" data-options="title:'详情',closed:'true'" style="height:100px;width:300px;">
+		<div id="fp_bar" class="fp_bar easyui-progressbar" data-options="text:'备份中...{value}%'"></div>
 	</div>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
