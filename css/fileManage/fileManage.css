@@ -121,3 +121,8 @@ td[field] div{
 	/*background-color: yellow;*/
 }
 
+/*进度条弹出框*/
+.fp_bar{
+	height: 30px;
+	margin:20px;
+}

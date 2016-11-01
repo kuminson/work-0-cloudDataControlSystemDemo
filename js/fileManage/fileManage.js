@@ -4,6 +4,7 @@ var pageminwidth = 1000;          // 页面最小宽度
 var pageminheight = 610;          // 页面最小高度
 var yg_secondcache = {};          // 二级目录数据缓存
 var yg_nowrowid;                  // 当前选中的行id
+var yg_timeout;                   // 计时器
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -484,6 +485,51 @@ $(function(){
 		]]
 	});
 
+	// 绑定元数据备份 按钮点击事件
+	$("body").on("click","#mcot_library",function(){
+		// 显示弹出框
+		$("#frame_progress").window("open");
+		// 初始化进度条
+		$("#fp_bar").progressbar({
+			text:"备份中...{value}%",
+			value:0
+		});
+		// 加载进度条
+		clearTimeout(yg_timeout);
+		addprogressbar("#fp_bar");
+		// 显示备份完成
+	});
+	$("body").on("click","#mcot_isome",function(){
+		$("#mcot_library").trigger("click");
+	});
+
+	// 加载资源库备份表格
+	$("#mcl_backup").datagrid({
+		url: rooturl + "html/fileManage/librydatabackup.json",
+		toolbar:"#mcl_tb",
+		fitColumns: true,
+		striped: true,
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageSize:20,
+		pageList:[20,40,60],
+		columns:[[
+			{field:"bptime",title:"备份时间",width:100},
+			{field:"bpmode",title:"备份方式",width:100},
+			{field:"bpuser",title:"备份人",width:100},
+			{field:"bpresult",title:"备份结果",width:100}
+		]]
+	});
+
+	// 绑定资源库备份 按钮点击事件
+	$("body").on("click","#mclt_add",function(){
+		$("#mcot_library").trigger("click");
+	});
+	$("body").on("click","#mclt_all",function(){
+		$("#mcot_library").trigger("click");
+	});
+	
 	// 绑定点击弹出窗口事件
 	$("#m_content").on("click",".alink",function(){
 		$("#frame_details").window("open");
@@ -663,7 +709,6 @@ function creategrid(id,col,row){
 	for(var i=0; i<col[0].length; i++){
 		colnum+= col[0][i].col;
 	}
-	console.log(colnum);
 	// 生成行标题
 	for(var i=0; i<row.length; i++){
 		mtable.append('<tr></tr>');
@@ -691,4 +736,18 @@ function creategrid(id,col,row){
 			}
 		}
 	}
+}
+
+// 进度条加载
+function addprogressbar(id){
+	yg_timeout = setTimeout(function(){
+		var pro = $(id).progressbar("getValue");
+		if(pro < 100){
+			pro += Math.floor(Math.random()*10%3)+1;
+			$(id).progressbar("setValue",pro);
+			addprogressbar(id);
+		}else{
+			$(id).progressbar({text:"备份成功！"});
+		}
+	},200);
 }
