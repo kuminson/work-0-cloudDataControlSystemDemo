@@ -15,8 +15,31 @@ $(function(){
 	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
-		url: rooturl + "html/dataConfirm/rollTree.json"
+		url: rooturl + "html/dataConfirm/rollTree.json",
+		onClick:function(node){
+			if(node.id == "1432358627578491"){
+				$("#mcd_datagrid").datagrid({
+					url:rooturl + "html/dataConfirm/datagridclick1.json"
+				});
+			}
+			if(node.id == "143235862759341"){
+				$("#mcd_datagrid").datagrid("loadData",{rows:[]});
+			}
+		}
 	});
+
+	// 绑定刷新按钮事件
+	$("body").on("click","#uploadFile_refresh",function(){
+		$("#mcd_datagrid").datagrid({
+			url:rooturl + "html/dataConfirm/datagridclick2.json"
+		});
+	});
+
+	// 绑定点击原文事件
+	$("body").on("click",".f_r_b",function(){
+		window.open(rooturl + "resource/pdf/12100AR-M.pdf")
+	});
+
 	// 加载datagrid数据
 	var datacolumn = [[
 			{
