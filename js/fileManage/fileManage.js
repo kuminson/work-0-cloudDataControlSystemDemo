@@ -447,11 +447,11 @@ $(function(){
 		{text:"文件",col:1,row:7,children:[
 			{text:"PDF",col:1,row:1},
 			{text:"XLS",col:1,row:1},
+			{text:"XLSX",col:1,row:1},
 			{text:"TXT",col:1,row:1},
 			{text:"DOC",col:1,row:1},
-			{text:"RTF",col:1,row:1},
-			{text:"PPT",col:1,row:1},
-			{text:"PPS",col:1,row:1}
+			{text:"DOCX",col:1,row:1},
+			{text:"PPT",col:1,row:1}
 		]},
 		{text:"图片",col:1,row:6,children:[
 			{text:"BMP",col:1,row:1},
@@ -489,6 +489,7 @@ $(function(){
 		pageList:[20,40,60],
 		columns:[[
 			{field:"library",title:"数据库文件",width:100},
+			{field:"bit",title:"容量",width:100},
 			{field:"source",title:"来源",width:100},
 			{field:"remark",title:"备注",width:100}
 		]]
@@ -539,7 +540,7 @@ $(function(){
 	$("body").on("click","#mclt_all",function(){
 		$("#mcot_library").trigger("click");
 	});
-
+	
 	// 绑定点击弹出窗口事件
 	$("#m_content").on("click",".alink",function(){
 		$("#frame_details").window("open");
