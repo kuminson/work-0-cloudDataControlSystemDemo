@@ -18,11 +18,7 @@ $(function(){
 		url: rooturl + "html/dataConfirm/rollTree.json"
 	});
 	// 加载datagrid数据
-	$("#mcd_datagrid").datagrid({
-		toolbar: "#mc_tb",
-		url: rooturl + "html/dataConfirm/datagrid.json",
-		fitColumns: true,
-		columns:[[
+	var datacolumn = [[
 			{
 				"field":"",
 				"checkbox":true
@@ -67,7 +63,12 @@ $(function(){
 				"width":100,
 				"iscp":0
 			}
-			]],
+			]];
+	$("#mcd_datagrid").datagrid({
+		toolbar: "#mc_tb",
+		url: rooturl + "html/dataConfirm/datagrid.json",
+		fitColumns: true,
+		columns:datacolumn,
 		resizeHandle: "both",
 		striped: true,
 		loadMsg: "请稍后...",
@@ -129,6 +130,66 @@ $(function(){
 		$(this).removeClass("groupfile");
 		$(this).addClass("groupicon");
 	});
+	// 生成没有组卷的列标题
+	var fcgridcol =[];
+	fcgridcol[0] = datacolumn[0].slice();
+	fcgridcol[0].splice(-2,1);
+	// 配置表格信息
+	$("#fc_grid").datagrid({
+		fitColumns: true,
+		columns:fcgridcol,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60]
+	});
+
+	// 绑定组卷icon点击弹出窗口事件
+	$("body").on("click",".groupicon",function(){
+		// 显示弹窗
+		$("#frame_composition").window("open");
+		$("#frame_composition").triggerHandler("resize");
+		// 初始化案卷信息
+		var prodata = {
+			"columnno":0,
+			"sjid":"140791339904614a00",
+			"allnbr":"002",
+			"fstclass":"011",
+			"scdclass":"0111",
+			"indexnbr":"01",
+			"deadline":"永久",
+			"order":"54",
+			"filenbr":"002-WS-01-YJ-0054",
+			"user":"党办",
+			"filename":"石臼港务管理局党委一九八七年会议记录",
+			"pagenbr":"53",
+			"year":"1987",
+			"unit":""
+		};
+		var prokey = ["order","filenbr","deadline","filename","pagenbr","user"];
+		adddataforinfo(prodata,prokey);
+		// 初始化表格数据
+		$("#fc_grid").datagrid("loadData",{rows:[]});
+		// 加载表格数据
+		// 获取点击图标所在行号
+		var rowindex = $(this).closest("tr").attr("datagrid-row-index");
+		// 获取所有数据
+		var rowdata = $("#mcd_datagrid").datagrid("getRows");
+		// 加载图标所在行数据
+		$("#fc_grid").datagrid("appendRow",rowdata[rowindex]);
+		// 加载图标上面行数据
+		for(var i=rowindex-1; i>=0; i--){
+			var over =$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupicon").length;
+			if(over != 0){
+				break;
+			}
+			$("#fc_grid").datagrid("appendRow",rowdata[i]);
+		}
+	});
 });
 
 
@@ -142,4 +203,15 @@ function popuploadiframe(){
 		idend: "lala",
 		scroll: true
 	});
+}
+
+// 加载案卷信息函数
+function adddataforinfo(data,key){
+	for(var i=0; i<key.length; i++){
+		if(data[key[i]] == undefined){
+			$(".fcii_text").eq(i).textbox("setValue","");
+		}else{
+			$(".fcii_text").eq(i).textbox("setValue",data[key[i]]);
+		}
+	}
 }

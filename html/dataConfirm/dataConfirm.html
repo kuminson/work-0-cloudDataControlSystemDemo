@@ -89,7 +89,26 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- 组卷弹出框 -->
+	<div id="frame_composition" class="frame_composition easyui-window"  data-options="closed:'true',title:'详细信息'" style="width:800px;">
+		<div id="fc_info" class="easyui-panel" style="height:125px;" title="案卷信息">
+			<dl class="fci_box">
+				<dt class="fci_title">案卷序号：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">卷宗档号：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">保管期限：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">案卷题名：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">页数：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">责任者：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+			</dl>
+		</div>
+		<table id="fc_grid" class="easyui-datagrid" style="height:300px" title="案卷"></table>
+	</div>
 </body>
 
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
