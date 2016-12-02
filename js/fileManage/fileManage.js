@@ -543,6 +543,20 @@ $(function(){
 	
 	// 绑定点击弹出窗口事件
 	$("#m_content").on("click",".alink",function(){
+		// 判定DOC下的数据连接
+		if($(this).closest("tr").children("th").html() == "DOC"){
+			// 修改数据
+			$("#fdi_open").html("office word 2007");
+			$("#fdi_server").html("office word 2007");
+			$("#fdi_could").html("能");
+			$("#fdi_handle").html("无");
+		}else{
+			// 修改数据
+			$("#fdi_open").html("Adobe Reader 11");
+			$("#fdi_server").html("Adobe Reader 10");
+			$("#fdi_could").html("不能");
+			$("#fdi_handle").html("升级Adobe Reader到最新版本");
+		}
 		$("#frame_details").window("open");
 	});
 	// 绑定表格数据
