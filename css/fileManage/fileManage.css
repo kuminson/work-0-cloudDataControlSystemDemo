@@ -126,3 +126,35 @@ td[field] div{
 	height: 30px;
 	margin:20px;
 }
+
+/*详情弹出框*/
+.fd_box{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.fd_info{
+	width: 80%;
+	font-size: 18px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.fd_info li{
+	overflow: hidden;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.fd_info li.last{
+	margin-bottom: 0;
+}
+.fd_info strong{
+	width: 40%;
+	float: left;
+	text-align: right;
+}
+.fd_info span{
+	width: 58%;
+	float: right;
+}

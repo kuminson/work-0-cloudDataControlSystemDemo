@@ -153,7 +153,17 @@
 	
 	<!-- 弹出框 -->
 	<div id="frame_details" class="easyui-window" data-options="title:'详情',closed:'true'"  style="height:80%;width:80%;">
-		<table id="fd_grid" fit="true"></table>
+		<table id="fd_grid" height="70%"></table>
+		<div class="easyui-panel" height="30%">
+			<div class="fd_box">
+				<ul class="fd_info">
+					<li><strong>打开方式：</strong><span id="fdi_open">Adobe Reader 11</span></li>
+					<li><strong>服务器版本：</strong><span id="fdi_server">Adobe Reader 10</span></li>
+					<li><strong>能否适用最新文件：</strong><span id="fdi_could">不能</span></li>
+					<li class="last"><strong>处理方式：</strong><span id="fdi_handle">升级Adobe Reader到最新版本</span></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div id="frame_progress" class="easyui-window" data-options="title:'详情',closed:'true'" style="height:100px;width:300px;">
 		<div id="fp_bar" class="fp_bar easyui-progressbar" data-options="text:'备份中...{value}%'"></div>
