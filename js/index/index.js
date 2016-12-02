@@ -54,6 +54,10 @@ $(function(){
 	$("#off_submit").on("click",function(){
 		$("#o_frame").window("close");
 	});
+	// 绑定资源列表弹出窗口事件
+	$("#off_list").on("click",function(){
+		$("#g_frame").window("open");
+	});
 	// 绑定登录页面跳转
 	$("#hir_btn").on("click",function(){
 		// window.location.href = "/cxy-web/login.jsp";
@@ -231,6 +235,9 @@ $(function(){
 		}]
 	});
 
+	// 加载资源列表
+	adddatalist("#gf_grid");
+
 });
 
 // 加载当前日期
@@ -271,4 +278,53 @@ function getnowtime(id,mode){
 		var modetime = timedate.year +"-"+ timedate.month +"-"+ timedate.date;
 		return  modetime;
 	}
+}
+
+// 生成列式表格
+function creategrid(obj){
+	var tbody = "";
+	$.each(obj.data, function(key, val) {
+		// 获取行数
+		var rownbr = obj.data[key].length;
+		var tr = "";
+		// 将行标题压入
+		for(var i=0; i<rownbr; i++){
+			if(i == 0){
+			var th = "<th colspan='1' rowspan='"+rownbr+"' width='"+obj.hw+"'>"+key+"</th>";
+			var td = "<td colspan='1' rowspan='1' width='"+obj.dw+"'>"+obj.data[key][i]+"</td>";
+				td = "<tr>"+th + td+"</tr>";
+			}else{
+			var td = "<td colspan='1' rowspan='1' width='"+obj.dw+"'>"+obj.data[key][i]+"</td>";
+				td = "<tr>"+ td+"</tr>";
+			}
+			// 将行数据压入
+			tr = tr + td;
+		}
+		// 将整体多行压入
+		tbody = tbody + tr ;
+	});
+	tbody = "<tbody>"+tbody+"</tbody>";
+	// console.log(tbody);
+	$(obj.id).html(tbody);
+}
+
+// 加载资源列表
+function adddatalist(id){
+	$.ajax({
+		url: "resource.json",
+		type: "GET",
+		dataType: "json",
+		success:function(data){
+			// 生成表格
+			creategrid({
+				data:data, //json格式数据
+				hw:"20%",  //行标题宽度
+				dw:"80%",  //行内容宽度
+				id:id      //容器id(jquery选择器格式)
+			});
+		},
+		error:function(){
+			alert("服务器链接失败");
+		}
+	});
 }
