@@ -32,6 +32,11 @@ $(function(){
 				// url: rooturl + "html/fileManage/rolldata.json",
 				fitColumns: true,
 				columns:data.columns,
+				onClickRow:function(index,row){
+					// $("#mcd_file").datagrid({
+					// 	url: rooturl + "html/fileManage/filedata"+(index%4)+".json"
+					// });
+				},
 				resizeHandle: "both",
 				striped: true,
 				loadMsg: "请稍后...",
@@ -55,9 +60,9 @@ $(function(){
 		success:function(data){
 			// 加载文件数据
 			$("#mcd_file").datagrid({
-				method: "get",
 				toolbar:"#mcdf_tb",
 				columns:data.columns,
+		method: "get",
 				url: rooturl + "html/clearPaper/rollData.json",
 				fitColumns: true,
 				resizeHandle: "both",
@@ -92,7 +97,10 @@ $(function(){
 	});
 	$(window).triggerHandler("resize");
 
-	
+	// 加载案卷表格
+	addrollgrid();
+	// 加载文件表格
+	addfilegrid();
 });
 
 // 自动组卷函数
@@ -154,4 +162,66 @@ function yg_timenow(){
 	timedate.date = timedate.now.getDate();
 	var timenow = timedate.year + "-" + timedate.month + "-" + timedate.date;
 	return timenow;
+}
+
+// 加载案卷表格
+function addrollgrid(){
+	$.ajax({
+		url: rooturl + "html/clearPaper/rollcolumn.json",
+		type: "GET",
+		dataType: "json",
+		success:function(data){
+			$("#mc_roll").datagrid({
+		method: "get",
+				url: rooturl + "html/clearPaper/rollofdata.json",
+				fitColumns: true,
+				columns:data.columns,
+				onClickRow:function(index,row){
+					$("#mc_file").datagrid({
+		method: "get",
+						url: rooturl + "html/clearPaper/filedata"+(index%4)+".json"
+					});
+				},
+				resizeHandle: "both",
+				striped: true,
+				loadMsg: "请稍后...",
+				pagination: true,
+				rownumbers: true,
+				singleSelect: true,
+				pageNumber: 1,
+				pageSize: 20,
+				pageList: [20,40,60]
+			});
+		},
+		error:function(data){
+			alert("服务器链接失败");
+		}
+	});
+	
+}
+
+// 加载文件表格
+function addfilegrid(){
+	$.ajax({
+		url: rooturl +"/html/clearPaper/filecolumn.json",
+		type: "GET",
+		dataType: "json",
+		success:function(data){
+			$("#mc_file").datagrid({
+				fitColumns: true,
+				columns:data.columns,
+				resizeHandle: "both",
+				striped: true,
+				loadMsg: "请稍后...",
+				pagination: true,
+				rownumbers: true,
+				pageNumber: 1,
+				pageSize: 20,
+				pageList: [20,40,60]
+			});
+		},
+		error:function(data){
+			alert("服务器链接失败");
+		}
+	});
 }

@@ -31,7 +31,7 @@
 	<!-- 导航条 -->
 	<div class="navbar">
 		<img src="/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
-		<h1 class="navbar_title">CDAS<span>云数字档案馆管理系统</h1>
+		<h1 class="navbar_title">CDAS<span>云数字档案馆管理系统</span></h1>
 		<div class="flright">
 			<ul class="navbar_nav_list" id="navbar_nav_list">
 				<li class="navbar_nav_li">
@@ -72,48 +72,58 @@
 			<div id="m_tree" data-options="region:'west',title:'档案树',split:true" style="width:200px">
 				<ul id="mtb_tree"></ul>
 			</div>
-			<!-- 数据表格 -->
-			<div id="m_content"  data-options="region:'center',title:'管理平台'" style="width:610px;">
-				<div class="mc_databox">
-					<table id="mcd_roll" fit="true"></table>
-					<div id="mcdr_tb">
-						<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
-						<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="打散">打散</a>
-						<a id="mcdrt_audit" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="提交审核">提交审核</a>
-						<a id="mcdrt_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
-						<a id="mcdrt_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
-						<a id="mcdrt_gzpz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-gzpz" onclick="" title="打印模板配置">打印模板配置</a>
-						<a id="mcdrt_print" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-print'" 
-							style="" title="打印">打印</a>
-						<div id="mm_exportm_staDir" style="width:50px;">
-							<div id="excelExport_staDir" data-options="iconCls:'icon-print'" onclick="" title="文件交接清单">文件交接清单</div>
-							<div id="exportAndEle_staDir" data-options="iconCls:'icon-print'" onclick="" title="卷内目录">卷内目录</div>
+			<!-- 主体内容 -->
+			<div id="m_content"  data-options="region:'center'" style="width:610px;">
+				<div class="easyui-tabs" fit="true">
+					<!-- 未组卷文卷 -->
+					<div title="未组卷文卷">
+						<div class="mc_databox">
+							<table id="mcd_roll" fit="true"></table>
+							<div id="mcdr_tb">
+								<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
+								<a id="mcdrt_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="打散">打散</a>
+								<a id="mcdrt_audit" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="提交审核">提交审核</a>
+								<a id="mcdrt_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
+								<a id="mcdrt_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
+								<a id="mcdrt_gzpz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-gzpz" onclick="" title="打印模板配置">打印模板配置</a>
+								<a id="mcdrt_print" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-print'" 
+									style="" title="打印">打印</a>
+								<div id="mm_exportm_staDir" style="width:50px;">
+									<div id="excelExport_staDir" data-options="iconCls:'icon-print'" onclick="" title="文件交接清单">文件交接清单</div>
+									<div id="exportAndEle_staDir" data-options="iconCls:'icon-print'" onclick="" title="卷内目录">卷内目录</div>
+								</div>
+							</div>
+						</div>
+						<div class="mc_databox">
+							<table id="mcd_file" fit="true"></table>
+							<div id="mcdf_tb">
+								<a id="mcdft_jrj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_jrj" onclick="" title="加入卷">加入卷</a>
+								<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="手动组卷">手动组卷</a>
+								<a id="mcdft_zdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_zdzj" onclick="yg_consistroll();" title="自动组卷">自动组卷</a>
+								<a id="mcdft_gzpz" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-gzpz" onclick="" title="规则配置">规则配置</a>
+								<a id="mcdft_wjz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_wjz" onclick="" title="未组卷">未组卷</a>
+								<a id="mcdft_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="拆卷">拆卷</a>
+								<a id="mcdft_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
+								<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
+								<select id="mcdft_ply" class="easyui-combobox" name="mcdft_ply" >
+								    <option value="1CM">1CM</option>
+								    <option value="2CM">2CM</option>
+								    <option value="3CM">3CM</option>
+								    <option value="4CM">4CM</option>
+								    <option value="5CM">5CM</option>
+								    <option value="6CM">6CM</option>
+								</select>
+								<select id="mcdft_print" class="easyui-combobox" name="mcdft_print">
+								    <option value="aa">单面打印</option>
+								    <option>双面打印</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="mc_databox">
-					<table id="mcd_file" fit="true"></table>
-					<div id="mcdf_tb">
-						<a id="mcdft_jrj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_jrj" onclick="" title="加入卷">加入卷</a>
-						<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="手动组卷">手动组卷</a>
-						<a id="mcdft_zdzj" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-xnzj_zdzj" onclick="yg_consistroll();" title="自动组卷">自动组卷</a>
-						<a id="mcdft_gzpz" class="easyui-linkbutton easyui-tooltip isShow groll" plain="true" iconcls="icon-gzpz" onclick="" title="规则配置">规则配置</a>
-						<a id="mcdft_wjz" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_wjz" onclick="" title="未组卷">未组卷</a>
-						<a id="mcdft_remove" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-remove" onclick="" title="拆卷">拆卷</a>
-						<a id="mcdft_search" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-search" onclick="" title="高级检索">高级检索</a>
-						<a id="mcdft_sdzj" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-xnzj_sdzj" onclick="" title="Excel导出">Excel导出</a>
-						<select id="mcdft_ply" class="easyui-combobox" name="mcdft_ply" >
-						    <option value="1CM">1CM</option>
-						    <option value="2CM">2CM</option>
-						    <option value="3CM">3CM</option>
-						    <option value="4CM">4CM</option>
-						    <option value="5CM">5CM</option>
-						    <option value="6CM">6CM</option>
-						</select>
-						<select id="mcdft_print" class="easyui-combobox" name="mcdft_print">
-						    <option value="aa">单面打印</option>
-						    <option>双面打印</option>
-						</select>
+					<!-- 馆藏档案 -->
+					<div title="馆藏档案">
+						<table id="mc_roll"  data-options="title:'案卷'" height="50%" width="100%"></table>
+						<table id="mc_file" data-options="title:'文件'" height="50%" width="100%"></table>
 					</div>
 				</div>
 			</div>
