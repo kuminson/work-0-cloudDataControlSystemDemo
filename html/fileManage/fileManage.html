@@ -90,11 +90,18 @@
 				<!-- 元数据tabs -->
 				<div id="mc_original" class="easyui-tabs mc_tab" fit="true">
 					<div title="数据">
-						<div class="mc_databox">
-							<table id="mcd_roll" fit="true" data-options="title:'案卷'"></table>
-						</div>
-						<div class="mc_databox">
-							<table id="mcd_file" fit="true" data-options="title:'文件'"></table>
+						<table id="mcd_datagrid" fit="true"></table>
+						<div id="mc_tb">
+							<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存数据">保存</a>
+							<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="popuploadiframe()" title="上传一条或者多条新纪录">上传</a>
+							<a id="uploadFile_refresh" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-reload" onclick="" title="刷新">刷新</a>
+							<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 
+								style="" title="导出">导出</a>
+							<div id="mm_exportm_staDir" style="width:50px;">
+								<div id="excelExport_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录导出">目录导出</div>
+								<div id="exportAndEle_staDir" data-options="iconCls:'icon-xnzj_sdzj'" onclick="" title="目录加原文导出">目录加原文导出</div>
+							</div>
+							<input class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入文件编号、文件题名、图号'" />
 						</div>
 					</div>
 					<div title="统计" data-options="">
@@ -168,6 +175,28 @@
 	<div id="frame_progress" class="easyui-window" data-options="title:'详情',closed:'true'" style="height:100px;width:300px;">
 		<div id="fp_bar" class="fp_bar easyui-progressbar" data-options="text:'备份中...{value}%'"></div>
 	</div>
+
+	<!-- 组卷弹出框 -->
+	<div id="frame_composition" class="frame_composition easyui-window"  data-options="closed:'true',title:'详细信息'" style="width:800px;">
+		<div id="fc_info" class="easyui-panel" style="height:125px;" title="案卷信息">
+			<dl class="fci_box">
+				<dt class="fci_title">案卷序号：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">卷宗档号：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">保管期限：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">案卷题名：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">页数：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+				<dt class="fci_title">责任者：</dt>
+				<dd class="fci_input"><input type="text" readonly="true" class="fcii_text easyui-textbox" style="width:150px;"></dd>
+			</dl>
+		</div>
+		<table id="fc_grid" class="easyui-datagrid" style="height:300px" title="案卷"></table>
+	</div>
+	
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
