@@ -72,179 +72,7 @@ $(function(){
 			$("#mta_ltree").tree("expand",node.target);
 		}
 	});
-	// 加载案卷数据
-	$("#mcd_roll").datagrid({
-		method: "get",
-		url: rooturl + "html/fileManage/rolldata.json",
-		fitColumns: true,
-		columns:[[
-			{
-				"field":"",
-				"checkbox":true,
-				"width":50
-			},{
-				"field":"allnbr",
-				"title":"全综号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"fstclass",
-				"title":"一级类目",
-				"align":"left",
-				"width":50
-			},{
-				"field":"scdclass",
-				"title":"二级类目",
-				"align":"left",
-				"width":50
-			},{
-				"field":"indexnbr",
-				"title":"目录号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"deadline",
-				"title":"保管期限",
-				"align":"left",
-				"width":50
-			},{
-				"field":"order",
-				"title":"案卷序号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"filenbr",
-				"title":"案卷档号",
-				"align":"left",
-				"width":110
-			},{
-				"field":"user",
-				"title":"责任者",
-				"align":"left",
-				"width":110
-			},{
-				"field":"filename",
-				"title":"案卷题名",
-				"align":"left",
-				"width":220
-			},{
-				"field":"pagenbr",
-				"title":"页数",
-				"align":"left",
-				"width":50
-			},{
-				"field":"year",
-				"title":"年度",
-				"align":"left",
-				"width":50
-			},{
-				"field":"unit",
-				"title":"单位",
-				"align":"left",
-				"width":110
-			}
-			]],
-		onClickRow:function(index,row){
-			$("#mcd_file").datagrid({
-		method: "get",
-				url: rooturl + "html/fileManage/filedata"+(index%4)+".json"
-			});
-		},
-		resizeHandle: "both",
-		striped: true,
-		loadMsg: "请稍后...",
-		pagination: true,
-		rownumbers: true,
-		singleSelect: true,
-		pageNumber: 1,
-		pageSize: 20,
-		pageList: [20,40,60]
-	});
-	// 加载文件数据
-	$("#mcd_file").datagrid({
-		// url: rooturl + "html/fileManage/filedata3.json",
-		fitColumns: true,
-		columns:[[
-			{
-				"field":"",
-				"checkbox":true,
-				"width":50
-			},{
-				"field":"ori",
-				"title":"原件",
-				"align":"left",
-				"width":50
-			},{
-				"field":"allnbr",
-				"title":"全综号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"fstclass",
-				"title":"一级类目",
-				"align":"left",
-				"width":50
-			},{
-				"field":"scdclass",
-				"title":"二级类目",
-				"align":"left",
-				"width":50
-			},{
-				"field":"indexnbr",
-				"title":"目录号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"deadline",
-				"title":"保管期限",
-				"align":"left",
-				"width":50
-			},{
-				"field":"order",
-				"title":"案卷序号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"orderfile",
-				"title":"文件序号",
-				"align":"left",
-				"width":50
-			},{
-				"field":"filenbr",
-				"title":"案卷档号",
-				"align":"left",
-				"width":110
-			},{
-				"field":"filename",
-				"title":"文件题名",
-				"align":"left",
-				"width":220
-			},{
-				"field":"year",
-				"title":"年度",
-				"align":"left",
-				"width":50
-			},{
-				"field":"user",
-				"title":"责任者",
-				"align":"left",
-				"width":110
-			},{
-				"field":"essaynbr",
-				"title":"文号",
-				"align":"left",
-				"width":110
-			}
-			]],
-		resizeHandle: "both",
-		striped: true,
-		loadMsg: "请稍后...",
-		pagination: true,
-		rownumbers: true,
-		pageNumber: 1,
-		pageSize: 20,
-		pageList: [20,40,60]
-	});
+	
 	// 宽高弹性
 	$(window).resize(function(){
 		if($(window).width() > pageminwidth){
@@ -642,6 +470,157 @@ $(function(){
 		pageList: [20,40,60]
 	});
 
+	// 绑定刷新按钮事件
+		$("body").on("click","#uploadFile_refresh",function(){
+			$("#mcd_datagrid").datagrid({
+				url:rooturl + "html/fileManage/datagridclick2.json"
+			});
+		});
+	// 绑定点击原文事件
+		$("body").on("click",".f_r_b",function(){
+			window.open(rooturl + "resource/pdf/12100AR-M.pdf")
+		});
+
+	// 加载datagrid数据
+		var datacolumn = [[
+				{
+					"field":"",
+					"checkbox":true
+				},{
+					"field":"yw",
+					"title":"原文",
+					"align":"center",
+					"width":30
+				},{
+					"field":"wjbh",
+					"title":"文件编号",
+					"align":"left",
+					"width":100,
+					"iscp":1
+				},{
+					"field":"wjmc",
+					"title":"文件名称",
+					"align":"left",
+					"width":290,
+					"iscp":1
+				},{
+					"field":"fs",
+					"title":"份数",
+					"align":"left",
+					"width":60,
+					"iscp":0
+				},{
+					"field":"zzs",
+					"title":"纸张数",
+					"align":"left",
+					"width":60,
+					"iscp":0
+				},{
+					"field":"zj",
+					"title":"组卷",
+					"align":"left",
+					"width":60
+				},{
+					"field":"bzh",
+					"title":"备注",
+					"align":"left",
+					"width":100,
+					"iscp":0
+				}
+				]];
+		$("#mcd_datagrid").datagrid({
+			toolbar: "#mc_tb",
+		method: "get",
+			url: rooturl + "html/fileManage/datagrid.json",
+			fitColumns: true,
+			columns:datacolumn,
+			resizeHandle: "both",
+			striped: true,
+			loadMsg: "请稍后...",
+			pagination: true,
+			rownumbers: true,
+			pageNumber: 1,
+			pageSize: 20,
+			pageList: [20,40,60],
+			onLoadSuccess:function(data){
+				// 自动组卷
+				autogroupfile();
+			}
+		});
+	// 绑定组卷链接按钮点击事件
+		$("body").on("click",".groupfile",function(){
+			var rowindex = $(this).closest("tr").attr("datagrid-row-index");
+			$(this).html("");
+			$(this).prepend('<span class="l-btn-icon icon-xnzj_wjz"></span>');
+			for(var i=rowindex-1; i>=0; i--){
+				var over =$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupicon").length;
+				if(over != 0){
+					break;
+				}
+				$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupfile").find(".groupfile").remove();
+			}
+			$(this).removeClass("groupfile");
+			$(this).addClass("groupicon");
+		});
+		// 生成没有组卷的列标题
+		var fcgridcol =[];
+		fcgridcol[0] = datacolumn[0].slice();
+		fcgridcol[0].splice(-2,1);
+		// 配置表格信息
+		$("#fc_grid").datagrid({
+			fitColumns: true,
+			columns:fcgridcol,
+			resizeHandle: "both",
+			striped: true,
+			loadMsg: "请稍后...",
+			pagination: true,
+			rownumbers: true,
+			pageNumber: 1,
+			pageSize: 20,
+			pageList: [20,40,60]
+		});
+	// 绑定组卷icon点击弹出窗口事件
+		$("body").on("click",".groupicon",function(){
+			// 显示弹窗
+			$("#frame_composition").window("open");
+			$("#frame_composition").triggerHandler("resize");
+			// 初始化案卷信息
+			var prodata = {
+				"columnno":0,
+				"sjid":"140791339904614a00",
+				"allnbr":"002",
+				"fstclass":"011",
+				"scdclass":"0111",
+				"indexnbr":"01",
+				"deadline":"永久",
+				"order":"54",
+				"filenbr":"002-WS-01-YJ-0054",
+				"user":"党办",
+				"filename":"石臼港务管理局党委一九八七年会议记录",
+				"pagenbr":"53",
+				"year":"1987",
+				"unit":""
+			};
+			var prokey = ["order","filenbr","deadline","filename","pagenbr","user"];
+			adddataforinfo(prodata,prokey);
+			// 初始化表格数据
+			$("#fc_grid").datagrid("loadData",{rows:[]});
+			// 加载表格数据
+			// 获取点击图标所在行号
+			var rowindex = $(this).closest("tr").attr("datagrid-row-index");
+			// 获取所有数据
+			var rowdata = $("#mcd_datagrid").datagrid("getRows");
+			// 加载图标所在行数据
+			$("#fc_grid").datagrid("appendRow",rowdata[rowindex]);
+			// 加载图标上面行数据
+			for(var i=rowindex-1; i>=0; i--){
+				var over =$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupicon").length;
+				if(over != 0){
+					break;
+				}
+				$("#fc_grid").datagrid("appendRow",rowdata[i]);
+			}
+		});
 });
 
 
@@ -776,4 +755,47 @@ function addprogressbar(id){
 			$(id).progressbar({text:"备份成功！"});
 		}
 	},200);
+}
+
+// 加载案卷信息函数
+function adddataforinfo(data,key){
+	for(var i=0; i<key.length; i++){
+		if(data[key[i]] == undefined){
+			$(".fcii_text").eq(i).textbox("setValue","");
+		}else{
+			$(".fcii_text").eq(i).textbox("setValue",data[key[i]]);
+		}
+	}
+}
+
+// 自动组卷
+function autogroupfile(){
+	// 获取所有行数
+	var rownum = $("#mcd_datagrid").datagrid("getRows");
+	// 随机5个行号
+	var row = [];
+	for(var i=0; i<5; i++){
+		row.push(Math.floor(Math.random()*100)%(rownum.length-2));
+	}
+	row.push(rownum.length-1);
+	// 排序行号
+	row.sort(compareforsort);
+	console.log(row);
+	// 选中随机行号和最后一个行号
+	for(var i=0; i<row.length; i++){
+		// 找到行里的组卷标签
+		var zjbutton = $("#mcd_datagrid").datagrid("getPanel")
+		.find("tr[datagrid-row-index='"+row[i]+"']")
+		.has("td[field='zj']")
+		.find(".groupfile");
+		// 触发选中行的组卷click事件
+		zjbutton.trigger("click");
+	}
+	// 取消所有选中
+	$("#mcd_datagrid").datagrid("unselectAll");
+
+}
+
+function compareforsort(a,b){
+	return a - b;
 }
