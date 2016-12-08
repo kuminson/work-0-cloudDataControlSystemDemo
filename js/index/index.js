@@ -422,13 +422,8 @@ function refreshbtns(num,data){
   var list = [];   //显示用列表
   if(allnum<=4){
     // 总页数少于5时
-    for(var i=0; i<5; i++){
-      if(i<allnum){
-        list.push(i+1);
-      }else{
-        // 不足部分用空字符串补足
-        list.push('');
-      }
+    for(var i=0; i<allnum; i++){
+      list.push(i+1);
     }
   }else{
     // 总页数大于5时
@@ -450,10 +445,18 @@ function refreshbtns(num,data){
       }
     }
   }
+  // 清除按钮
+  $(".ip_list").has(".ipl_btn[val]").remove();
   // 插入页数按钮
-  for(var i=0; i<5; i++){
-    $(".ipl_btn").eq(i+1).html(list[i]);
-    $(".ipl_btn").eq(i+1).attr("val",list[i]);
+  for(var i=0; i<list.length; i++){
+    // $(".ipl_btn").eq(i+1).html(list[i]);
+    // $(".ipl_btn").eq(i+1).attr("val",list[i]);
+    // 添加按钮
+    var listbtn = '<li class="ip_list">'
+                   +'<a class="ipl_btn" href="#" val="'+list[i]+'">'+list[i]+'</a>'
+                 +'</li>';
+    $(".ip_list").has(".ipl_btn[cont='next']").before(listbtn);
+
   }
   // 清除当前样式
   $(".ipl_btn").removeClass("action");

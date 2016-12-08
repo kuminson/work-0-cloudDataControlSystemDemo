@@ -626,12 +626,16 @@
 	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
+	display: table;
 }
 .ip_list{
 	float: left;
 	margin-left: 10px;
 	height: 30px;
 	line-height: 30px;
+}
+.ip_list.first{
+	margin-left: 0;
 }
 .ip_list a{
 	padding: 2px 4px;
