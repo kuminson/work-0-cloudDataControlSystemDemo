@@ -591,7 +591,7 @@
 	width: 0;
 	border-width: 0 12px 12px;
 	border-style: solid;
-	border-color: transparent transparent #FFF;
+	border-color: transparent transparent #d2e9ff;
 
 }
 .infoalert{
@@ -601,16 +601,18 @@
 	top: 38px;
 	left: 0;
 	width: 250px;
-	background-color: #FFF;
-	color: #000;
+	background-color: #d2e9ff;
+	color: #444;
 	border: 1px solid #CCC;
+	border-radius: 10px;
+	font-size: 12px;
 }
 .i_infolist{
 	width: 100%;
 }
 .ii_info{
 	height: 30px;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px dashed #0366bb;
 	line-height: 30px;
 	text-indent: 4px;
 	white-space: nowrap;
@@ -619,18 +621,21 @@
 	cursor: pointer;
 }
 .ii_info:hover{
-	background-color: #CCC;
+	background-color: #0366bb;
+	color: #FFF;
+}
+.i_pagingbox{
+	overflow: hidden;
 }
 .i_paging{
-	overflow: hidden;
 	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	display: table;
+	float: right;
 }
 .ip_list{
 	float: left;
-	margin-left: 10px;
+	margin-left: 5px;
 	height: 30px;
 	line-height: 30px;
 }
@@ -638,15 +643,15 @@
 	margin-left: 0;
 }
 .ip_list a{
-	padding: 2px 4px;
+	padding: 2px 3px;
 	color: blue;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	display: block;
 	width: 16px;
 	text-align: center;
 }
 .ip_list a:hover{
-	color: red;
+	color: #fb9e01;
 }
 .ip_list a.action{
 	color: #000;
