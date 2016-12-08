@@ -1,3 +1,7 @@
+/*通用*/
+.hide{
+	display: none;
+}
 /*头部*/
 .header{
 	min-width: 1350px;
@@ -11,7 +15,7 @@
 .h_info{
 	width: 1200px;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	line-height: 38px;
 	color: #FFF;
 }
@@ -23,10 +27,19 @@
 }
 .hi_right{
 	float: right;
+	position: relative;
 }
 .hir_user{
 	float: left;
 	margin-right: 10px;
+}
+.hi_clear{
+	clear: both;
+}
+.hir_box{
+	float: left;
+	margin-right: 10px;
+	height: 38px;
 }
 .hir_btn{
 	float: left;
@@ -41,7 +54,16 @@
 	display: none;
 }
 .hirb_nbr{
-	color: #FB9E01;
+	display: block;
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	height: 16px;
+	background-color: red;
+	margin-left: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 .hir_btn:hover{
 	color: red;
@@ -557,4 +579,73 @@
 .alink:hover{
 	text-decoration: underline;
 	color: red;
+}
+
+/*消息通知下拉框*/
+.infotriangle{
+	position: absolute;
+	z-index: 7;
+	top: 27px;
+	left: 150px;
+	height: 0;
+	width: 0;
+	border-width: 0 12px 12px;
+	border-style: solid;
+	border-color: transparent transparent #FFF;
+
+}
+.infoalert{
+	position: absolute;
+	padding: 3px 3px 0;
+	z-index: 6;
+	top: 38px;
+	left: 0;
+	width: 250px;
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #CCC;
+}
+.i_infolist{
+	width: 100%;
+}
+.ii_info{
+	height: 30px;
+	border-bottom: 1px solid #CCC;
+	line-height: 30px;
+	text-indent: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.ii_info:hover{
+	background-color: #CCC;
+}
+.i_paging{
+	overflow: hidden;
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ip_list{
+	float: left;
+	margin-left: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.ip_list a{
+	padding: 2px 4px;
+	color: blue;
+	text-decoration: underline;
+	display: block;
+	width: 16px;
+	text-align: center;
+}
+.ip_list a:hover{
+	color: red;
+}
+.ip_list a.action{
+	color: #000;
+	text-decoration: none;
+	cursor: auto;
 }

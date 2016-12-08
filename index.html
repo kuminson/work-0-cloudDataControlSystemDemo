@@ -27,9 +27,37 @@
 				</div>
 				<div class="hi_right">
 					<div class="hir_user" id="hir_user">您好 请先登录</div>
-					<a href="#" class="hir_btn">消息通知(<span class="hirb_nbr">5</span>)</a>
-					<a href="#" class="hir_btn" id="hir_btnexit">退出</a>
-					<a href="#" class="hir_btn" id="hir_btn">登录</a>
+					<div class="hir_box" id="hir_box_info">
+						<a href="#" class="hir_btn" id="hir_info">消息通知<span class="hirb_nbr" id="hirb_nbr">99+</span></a>
+					</div>
+					<div class="hir_box" id="hir_box_btnexit">
+						<a href="#" class="hir_btn" id="hir_btnexit">退出</a>
+					</div>
+					<div class="hir_box" id="hir_box_login">
+						<a href="#" class="hir_btn" id="hir_btn">登录</a>
+					</div>
+					<!-- 消息通知下拉框 -->
+					<div id="infotriangle" class="infotriangle hide"></div>
+					<div id="infoalert" class="infoalert hide">
+						<ul class="i_infolist" id="i_infolist">
+							<li class="ii_info">第一条消息第一条消息第一条消息第一条消息</li>
+							<li class="ii_info">第二条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+						</ul>
+						<ul class="i_paging">
+							<li class="ip_list"><a class="ipl_btn" cont="last" href="#">&lt;</a></li>
+							<li class="ip_list"><a class="ipl_btn action" href="#">1</a></li>
+							<li class="ip_list"><a class="ipl_btn" href="#">2</a></li>
+							<li class="ip_list"><a class="ipl_btn" href="#">3</a></li>
+							<li class="ip_list"><a class="ipl_btn" href="#">4</a></li>
+							<li class="ip_list"><a class="ipl_btn" href="#">5</a></li>
+							<li class="ip_list"><a class="ipl_btn" cont="next" href="#">&gt;</a></li>
+						</ul>
+					</div>
+					<div class="hi_clear"></div>
 				</div>
 			</div>
 		</div>
