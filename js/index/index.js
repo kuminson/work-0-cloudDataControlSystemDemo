@@ -238,6 +238,66 @@ $(function(){
 	// 加载资源列表
 	adddatalist("#gf_grid");
 
+	// 消息通知 下拉列表
+	// 绑定移入hir_info 显示下拉列表
+	$("#hir_info").on("mouseenter",function(){
+	  $("#infotriangle").removeClass("hide");
+	  $("#infoalert").removeClass("hide");
+	});
+	// 绑定移出hi_right 隐藏下拉列表
+	$(".hi_right").on("mouseleave",function(e){
+	  $("#infotriangle").addClass("hide");
+	  $("#infoalert").addClass("hide");
+	});
+
+	// 加载列表数据
+	// 异步加载数据
+	var menulist =[]; //下拉列表数据
+	  $.ajax({
+	    url: rooturl + "/menulist.json",
+	    type: "POST",
+	    dataType: "json",
+	    data: {param1: 'value1'},
+	    success:function(data){
+	      // 缓存数据
+	      menulist = data;
+	      // 改变数字
+	      changemenulistnum(menulist.length);
+	      // 插入数据
+	      createlistfromdata(menulist,0);
+	      // 刷新按钮
+	      refreshbtns(1,menulist);
+	    },
+	    error:function(data){
+	      console.log("服务器链接失败");
+	    }
+
+	  });
+	
+
+	// 分页操作
+	// 绑定按钮点击事件
+	$("body").on("click",".ipl_btn",function(){
+	  // 获取当前页
+	  var pagenum = parseInt($(".ipl_btn.action").html());
+	  // 判定跳转页
+	  if($(this).attr("cont") != undefined && $(this).attr("cont") == "last"){
+	    if(pagenum > 1){
+	      pagenum -- ;
+	    }
+	  }else if($(this).attr("cont") != undefined && $(this).attr("cont") == "next"){
+	    if(pagenum < Math.ceil(menulist.length / 6)){
+	      pagenum ++;
+	    }
+	  }else{
+	    pagenum = parseInt($(this).html());
+	  }
+	  // 刷新按钮
+	  refreshbtns(pagenum,menulist);
+	  // 刷新列表
+	  createlistfromdata(menulist,(pagenum-1)*6);
+	});
+
 });
 
 // 加载当前日期
@@ -327,4 +387,75 @@ function adddatalist(id){
 			alert("服务器链接失败");
 		}
 	});
+}
+
+// 改变列表数字
+function changemenulistnum(num){
+  if(num>99){
+    $("#hirb_nbr").html("99+");
+  }else{
+    $("#hirb_nbr").html(num);
+  }
+}
+
+// 刷新列表
+function createlistfromdata(data,num){
+  // 清除原有标签
+  $(".ii_info").remove();
+  var tabs ="";
+  for(var i=0; i<6; i++){
+    // 生成标签
+    if(data[num+i] == undefined){
+      tabs += '<li class="ii_info"></li>';
+    }else{
+      tabs += '<li class="ii_info">'+data[num+i]+'</li>';
+    }
+  }
+    // 插入标签
+    $("#i_infolist").append(tabs);
+}
+
+// 刷新按钮组
+function refreshbtns(num,data){
+  // 获取数据总页数
+  var allnum = Math.ceil(data.length / 6);
+  var list = [];   //显示用列表
+  if(allnum<=4){
+    // 总页数少于5时
+    for(var i=0; i<5; i++){
+      if(i<allnum){
+        list.push(i+1);
+      }else{
+        // 不足部分用空字符串补足
+        list.push('');
+      }
+    }
+  }else{
+    // 总页数大于5时
+    if(num<=2){
+      // 当前页在前三时
+      for(var i=0; i<5; i++){
+        list.push(i+1);
+      }
+    }else if(num>=allnum-2){
+      // 当前页在后三时
+      for(var i=allnum-5; i<allnum; i++){
+        list.push(i+1);
+      }
+
+    }else{
+      // 当前页在中间时
+      for(var i=num-3; i<num+2; i++){
+        list.push(i+1);
+      }
+    }
+  }
+  // 插入页数按钮
+  for(var i=0; i<5; i++){
+    $(".ipl_btn").eq(i+1).html(list[i]);
+    $(".ipl_btn").eq(i+1).attr("val",list[i]);
+  }
+  // 清除当前样式
+  $(".ipl_btn").removeClass("action");
+  $(".ipl_btn[val='"+num+"']").addClass("action");
 }
