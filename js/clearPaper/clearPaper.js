@@ -10,10 +10,6 @@ var grouprolldata = {};           // 分组后的卷数据
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $(function(){
-	// 加载时间
-	getnowtime("#header_date");
-	// 绑定一级菜单跳转
-	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
 		method: "get",

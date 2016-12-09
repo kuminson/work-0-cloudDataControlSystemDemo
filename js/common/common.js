@@ -24,7 +24,6 @@ var yg_cache = {};
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>> over  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
 /*
  * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  * global_windowOpen(obj)  生成弹出型iframe窗口
@@ -530,13 +529,47 @@ function getnowtime(id){
  */
 // >>>>>>>>>>>>>>>>>>>>>>>>>>> start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function firstmenuhref(classname,hrefs){
-	var menu = $(classname);
-	for(var i=0; i<menu.length; i++){
-		!function(i){
-			menu.eq(i).on("click",function(){
-				window.location.href = rooturl + hrefs[i];
-			});
-		}(i);
-	}
+	// var menu = $(classname);
+	// for(var i=0; i<menu.length; i++){
+	// 	!function(i){
+	// 		menu.eq(i).on("click",function(){
+	// 			window.location.href = rooturl + hrefs[i];
+	// 		});
+	// 	}(i);
+	// }
+	$("body").on("click",classname,function(){
+		var index = $(this).index();
+		window.location.href = rooturl + hrefs[index];
+	});
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>> over  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>> start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/*
+ * refer  string
+ * url    string
+ * id     string
+ * func   function
+ */
+// 异步加载标签
+function asyncaddtab(refer,url,id,func){
+	// 新建容器
+	var nowtime = new Date;
+	var tempname = "tempdiv"+ nowtime.getTime();
+	var temptab = '<div id="'+tempname+'"></div>';
+	// 加载容器
+	$(refer).before(temptab);
+	// 加载标签
+	$("#"+tempname).load(rooturl+url+" "+id,function(){
+		// 标签移出容器
+		$(id).insertBefore(refer);
+		// 删除容器
+		$("#"+tempname).remove();
+		// 重新调整弹性宽高
+		$(window).triggerHandler("resize");
+		// 运行回调函数
+		if(func != undefined){
+			func();
+		}
+	});
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>> over  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

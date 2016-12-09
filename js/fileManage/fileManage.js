@@ -9,10 +9,6 @@ var yg_timeout;                   // 计时器
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $(function(){
-	// 加载时间
-	getnowtime("#header_date");
-	// 绑定一级菜单跳转
-	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mta_otree").tree({
 		method: "get",
