@@ -11,7 +11,7 @@ $(function(){
 		// 异步加载数据
 		  $.ajax({
 		    url: rooturl + "menulist.json",
-		    type: "POST",
+		    type: "GET",
 		    dataType: "json",
 		    success:function(data){
 		      // 缓存数据
