@@ -6,11 +6,6 @@ var pageminheight = 610;          // 页面最小高度
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $(function(){
-	// 加载时间
-	getnowtime("#header_date");
-	// 绑定一级菜单跳转
-	firstmenuhref(".navbar_nav_li",fstmenuurl);
-
 	// 宽高弹性
 	$(window).resize(function(){
 		if($(window).width() > pageminwidth){

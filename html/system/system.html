@@ -16,57 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/css/system/system.css">
 </head>
 <body>
-	<!-- 头部 -->
-	<div class="head">
-		<div class="header">
-			<span class="wel">欢迎进入云数字档案管理系统</span>
-			<span class="wel" id="header_date">今天是</span>
-			<div class="flright">
-				<span class="header_control" id="header_weluser">您好，系统管理员</span>
-				<a href="#" class="header_control" id="header_notyet">待办信息</a>
-				<a href="#" class="header_control" id="quit">安全退出</a>
-			</div>
-		</div>
-	</div>
-	<!-- 导航条 -->
-	<div class="navbar">
-		<img src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/images/common/logo.png" alt="logo" class="navbar_logo">
-		<h1 class="navbar_title">CDAS<span>云数字档案馆管理系统</span></h1>
-		<div class="flright">
-			<ul class="navbar_nav_list" id="navbar_nav_list">
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">首页</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">数据采集</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">数据管理</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">浏览查询</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">整理组卷</h2>
-				</li>
-				<li class="navbar_nav_li">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">数据应用服务</h2>
-				</li>
-				<li class="navbar_nav_li active">
-					<span class="navbar_nav_icon"></span>
-					<h2 class="navbar_nav_title">系统管理</h2>
-				</li>
-			</ul>
-		</div>
-	</div>
 	<!-- 主体内容 -->
-	<div class="main">
+	<div class="main" id="main" index="6">
 		<div id="datagrid_content" class="easyui-layout" data-options="fit:'true'">
 			<!-- 档案树 -->
 			<div id="md_secmenu" data-options="region:'west'" style="width:200px;background-color:#CDD9E5;">
@@ -150,5 +101,6 @@
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common.js"></script>
+	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/common/common_header.js"></script>
 	<script type="text/javascript" src="/E:/kuminson/project/8CloudDataControlSystem/work-0-cloudDataControlSystemDemo/js/system/system.js"></script>
 </html>

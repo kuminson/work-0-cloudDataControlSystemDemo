@@ -9,10 +9,6 @@ var yg_timeout;                   // 计时器
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $(function(){
-	// 加载时间
-	getnowtime("#header_date");
-	// 绑定一级菜单跳转
-	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mta_otree").tree({
 		url: rooturl + "html/fileManage/rollTree.json"
@@ -770,7 +766,6 @@ function autogroupfile(){
 	row.push(rownum.length-1);
 	// 排序行号
 	row.sort(compareforsort);
-	console.log(row);
 	// 选中随机行号和最后一个行号
 	for(var i=0; i<row.length; i++){
 		// 找到行里的组卷标签

@@ -9,10 +9,6 @@ var yg_nowrowid;                  // 当前选中的行id
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $(function(){
-	// 加载时间
-	getnowtime("#header_date");
-	// 绑定一级菜单跳转
-	firstmenuhref(".navbar_nav_li",fstmenuurl);
 	// 加载树数据
 	$("#mtb_tree").tree({
 		url: rooturl + "html/dataConfirm/rollTree.json",
