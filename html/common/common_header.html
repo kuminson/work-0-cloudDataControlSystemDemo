@@ -13,10 +13,35 @@
 			<div class="header">
 				<span class="wel">欢迎进入云数字档案管理系统</span>
 				<span class="wel" id="header_date">今天是</span>
-				<div class="flright">
+				<div class="flright" id="hh_flright">
 					<span class="header_control" id="header_weluser">您好，系统管理员</span>
-					<a href="#" class="header_control" id="header_notyet">待办信息</a>
+					<!-- <a href="#" class="header_control" id="header_notyet">待办信息</a> -->
+					<a href="#" class="header_control" id="header_notyet">消息通知<span class="hirb_nbr" id="hirb_nbr">99+</span></a>
 					<a href="#" class="header_control" id="quit">安全退出</a>
+					<!-- 消息通知下拉框 -->
+					<div id="infotriangle" class="infotriangle hide"></div>
+					<div id="infoback" class="infoback hide"></div>
+					<div id="infoalert" class="infoalert hide">
+						<ul class="i_infolist" id="i_infolist">
+							<li class="ii_info">第一条消息第一条消息第一条消息第一条消息</li>
+							<li class="ii_info">第二条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+							<li class="ii_info">第三条消息</li>
+						</ul>
+			            <div class="i_pagingbox">
+							<ul class="i_paging">
+								<li class="ip_list first"><a class="ipl_btn" cont="last" href="#">&lt;</a></li>
+								<!-- <li class="ip_list"><a class="ipl_btn action" href="#">1</a></li>
+								<li class="ip_list"><a class="ipl_btn" href="#">2</a></li>
+								<li class="ip_list"><a class="ipl_btn" href="#">3</a></li>
+								<li class="ip_list"><a class="ipl_btn" href="#">4</a></li>
+								<li class="ip_list"><a class="ipl_btn" href="#">5</a></li> -->
+								<li class="ip_list"><a class="ipl_btn" cont="next" href="#">&gt;</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

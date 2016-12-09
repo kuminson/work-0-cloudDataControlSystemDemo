@@ -2,6 +2,9 @@
 *{
 	font-family: "微软雅黑",Microsoft YaHei;
 }
+.hide{
+	display: none;
+}
 /*头部*/
 .header{
 	height: 24px;
@@ -19,11 +22,24 @@
 }
 .flright{
 	float: right;
+	position: relative;
 }
 .header_control{
 	color: #FFF;
 	margin-right: 30px;
 	line-height: 24px;
+}
+.hirb_nbr{
+	/*display: block;*/
+	/*float: right;*/
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	height: 16px;
+	background-color: red;
+	margin-left: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 #header_notyet:hover{
 	color: red;
@@ -113,4 +129,89 @@
 	margin-top: 12px;
 	cursor: pointer;
 	font-family: "微软雅黑",Microsoft YaHei;
+}
+
+/*消息通知下拉框*/
+.infotriangle{
+	position: absolute;
+	z-index: 6;
+	top: 20px;
+	left: 150px;
+	height: 0;
+	width: 0;
+	border-width: 0 12px 12px;
+	border-style: solid;
+	border-color: transparent transparent #d2e9ff;
+}
+.infoalert{
+	position: absolute;
+	padding: 3px 3px 0;
+	z-index: 5;
+	top: 31px;
+	left: 0;
+	width: 250px;
+	background-color: #d2e9ff;
+	color: #444;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	font-size: 12px;
+}
+.infoback{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 256px;
+	height: 15px;
+	z-index: 4;
+}
+.i_infolist{
+	width: 100%;
+}
+.ii_info{
+	height: 30px;
+	border-bottom: 1px dashed #0366bb;
+	line-height: 30px;
+	text-indent: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.ii_info:hover{
+	background-color: #0366bb;
+	color: #FFF;
+}
+.i_pagingbox{
+	overflow: hidden;
+}
+.i_paging{
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+}
+.ip_list{
+	float: left;
+	margin-left: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.ip_list.first{
+	margin-left: 0;
+}
+.ip_list a{
+	padding: 2px 3px;
+	color: blue;
+	/*text-decoration: underline;*/
+	display: block;
+	width: 16px;
+	text-align: center;
+}
+.ip_list a:hover{
+	color: #fb9e01;
+}
+.ip_list a.action{
+	color: #000;
+	text-decoration: none;
+	cursor: auto;
 }
