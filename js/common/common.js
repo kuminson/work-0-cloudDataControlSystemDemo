@@ -547,11 +547,12 @@ function firstmenuhref(classname,hrefs){
 /*
  * refer  string
  * url    string
+ * cont   string
  * id     string
  * func   function
  */
 // 异步加载标签
-function asyncaddtab(refer,url,id,func){
+function asyncaddtab(refer,url,cont,id,func){
 	// 新建容器
 	var nowtime = new Date;
 	var tempname = "tempdiv"+ nowtime.getTime();
@@ -559,11 +560,9 @@ function asyncaddtab(refer,url,id,func){
 	// 加载容器
 	$(refer).before(temptab);
 	// 加载标签
-	$("#"+tempname).load(rooturl+url+" "+id,function(){
-		// 标签移出容器
-		$(id).insertBefore(refer);
-		// 删除容器
-		$("#"+tempname).remove();
+	$("#"+tempname).load(rooturl+url+" "+cont,function(){
+		// 删除box及临时父容器
+		$(id).unwrap().unwrap();
 		// 重新调整弹性宽高
 		$(window).triggerHandler("resize");
 		// 运行回调函数
