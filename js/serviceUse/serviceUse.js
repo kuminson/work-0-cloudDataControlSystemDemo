@@ -2,6 +2,8 @@
 var bottomheight = 10;            // 预留页面底部高度
 var pageminwidth = 1000;          // 页面最小宽度
 var pageminheight = 610;          // 页面最小高度
+var filedata1;                    // filedata1.json 数据缓存
+var dragcache;                    // 拖拽缓存
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -97,12 +99,16 @@ $(function(){
 					type: "GET",
 					dataType: "json",
 					success:function(data){
-						for(var i=0; i<data.rows.length; i++){
-							$("#dcf_files").append('<li class="mcb_list">'
-											+'<span class="mcbl_icon mcbl_file"></span>'
-											+'<h3 class="mcbl_name">' + data.rows[i].filename + '</h3>'
-										+'</li>');
-						}
+						// 加载文件
+						addfiledetails(data,"");
+						// 缓存数据
+						filedata1 = data;
+						// 在标题处初始化面包屑
+						$("#d_content").layout("panel","center")
+										.panel("header")
+										.children(".panel-title")
+										.html('<span class="p_title" pstion="">专题</span>');
+
 					},
 					error:function(){
 						alert("服务器链接失败！")
@@ -130,6 +136,21 @@ $(function(){
 		}
 	});
 
+	// 绑定双击文件夹进入事件
+	$("#dcf_files").on("dblclick",".mcb_list",function(){
+		// 判定是文件夹
+		if($(this).attr("pstion") != ""){
+			// 获取位置
+			var pstion = $(this).attr("pstion");
+			// 清除列表
+			$("#dcf_files .mcb_list").remove();
+			// 加载文件
+			addfiledetails(filedata1,pstion);
+			// 在标题处添加面包屑
+			addcrumbstodetails(filedata1,pstion);
+		}
+	});
+
 	// 绑定点击penal title跳转事件
 	$("#datagrid_content").on("click",".p_title",function(){
 		var easyid = $(this).attr("easyid");
@@ -150,6 +171,18 @@ $(function(){
 				$("#mtb_tree").tree("expand",treenode.target);
 			}
 		}
+	});
+
+	// 绑定点击详情窗口penal title跳转事件
+	$("#detailswin").on("click",".p_title",function(){
+		// 获取位置
+		var pstion = $(this).attr("pstion");
+		// 清除列表
+		$("#dcf_files .mcb_list").remove();
+		// 加载列表
+		addfiledetails(filedata1,pstion);
+		// 清除之后面包屑
+		$(this).nextAll().remove();
 	});
 
 	// 绑定单击文件列表 触发选中状态
@@ -455,6 +488,63 @@ $(function(){
 			});
 		}
 	});
+
+	// 拖拽开始事件
+	$("#dcf_files").on("dragstart",".mcb_list",function(e){
+		// 获取位置
+		dragcache = $(this).attr("findex");
+	});
+	// 拖拽进入事件
+	$("#dcf_files").on("dragover",".mcb_list",function(e){
+		console.log("dragover");
+		// 判定是文件夹
+		if($(this).attr("pstion") != ""){
+			// 添加外边框高亮样式
+			$(this).addClass("dragenter");
+		}
+		// 取消默认操作
+		e.preventDefault();
+	});
+	// 拖拽离开事件
+	$("#dcf_files").on("dragleave",".mcb_list",function(e){
+		console.log("dragleave");
+		// 判定是文件夹
+		if($(this).attr("pstion") != ""){
+			// 移除外边框高亮样式
+			$(this).removeClass("dragenter");
+		}
+	});
+	// 拖拽结束事件
+	$("#dcf_files").on("drop",".mcb_list",function(e){
+		console.log("drop");
+		// 判定是文件夹
+		if($(this).attr("pstion") != ""){
+			// 移除外边框高亮样式
+			$(this).removeClass("dragenter");
+			// 修改缓存的filedata1
+			// 获取文件夹位置
+			var pstion = $(this).attr("pstion");
+			// 获取当前页面位置
+			var filepstion = pstion.match(/^\.(.*)(?=\[)/);
+			// 获取文件夹index
+			// var fileindex = pstion.match(/\[(.*?)\]$/);
+			// 取出文件
+			var file = filedata1[filepstion[1]].splice(dragcache,1);
+			// 插入文件
+			// eval("filedata1"+pstion+".children");
+			console.log(file);
+			console.log(eval("filedata1"+pstion+".children.push(file[0])"));
+			// 刷新页面 触发面包屑最后一个点击事件
+			$("#d_content").layout("panel","center")
+							.panel("header")
+							.children(".panel-title")
+							.children()
+							.last()
+							.trigger("click");
+		}
+		// 取消默认操作
+		e.preventDefault();
+	});
 });
 
 // 当前日期
@@ -588,4 +678,39 @@ function selectbuttontogrid(btn,grid,col){
 		// 关闭悬浮框
 		$("#frame").window("close");
 	});
+}
+
+// 加载专题详情文件
+function addfiledetails(data,pstion){
+	// 确定加载数据位置
+	var list = eval('data'+pstion+".children");
+	for(var i=0; i<list.length; i++){
+		// 判断是文件夹
+		var pst; //位置
+		var fclass; //class类别
+		if(list[i].filekind == "folder"){
+			pst = pstion +".children" + "[" + i + "]";
+			fclass = "mcbl_folder";
+		// 判断是文件
+		}else{
+			pst = "";
+			fclass = "mcbl_file";
+		}
+		var tab = '<li class="mcb_list" pstion="'+pst+'" draggable="true" findex="'+i+'">'
+						+'<span class="mcbl_icon '+fclass+'"></span>'
+						+'<h3 class="mcbl_name">' + list[i].filename + '</h3>'
+					+'</li>'
+		$("#dcf_files").append(tab);
+	}
+}
+
+// 在专题标题上加面包屑
+function addcrumbstodetails(data,pstion){
+	// 获取标题元素
+	var title = $("#d_content").layout("panel","center").panel("header").children(".panel-title");
+	// 添加面包屑
+	var tab = '<span class="p_title" pstion="'+ pstion +'">&nbsp;&gt;'
+				+ eval("data"+pstion+".filename").slice(0,5)
+			+'...</span>';
+	title.append(tab);
 }
