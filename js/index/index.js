@@ -255,7 +255,7 @@ $(function(){
 	// 异步加载数据
 	var menulist =[]; //下拉列表数据
 	  $.ajax({
-	    url: rooturl + "/menulist.json",
+	    url: rooturl + "menulist.json",
 	    type: "GET",
 	    dataType: "json",
 	    data: {param1: 'value1'},
@@ -372,7 +372,7 @@ function creategrid(obj){
 // 加载资源列表
 function adddatalist(id){
 	$.ajax({
-		url: "resource.json",
+		url:  rooturl + "resource.json",
 		type: "GET",
 		dataType: "json",
 		success:function(data){
@@ -409,7 +409,7 @@ function createlistfromdata(data,num){
     if(data[num+i] == undefined){
       tabs += '<li class="ii_info"></li>';
     }else{
-      tabs += '<li class="ii_info">'+data[num+i]+'</li>';
+      tabs += '<li class="ii_info">'+data[num+i].XXNR+'</li>';
     }
   }
     // 插入标签
