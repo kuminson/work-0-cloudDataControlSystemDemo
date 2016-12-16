@@ -99,6 +99,8 @@ $(function(){
 					type: "GET",
 					dataType: "json",
 					success:function(data){
+						// 清除文件
+						$("#dcf_files .mcb_list").remove();
 						// 加载文件
 						addfiledetails(data,"");
 						// 缓存数据
@@ -690,7 +692,7 @@ function addfiledetails(data,pstion){
 		var fclass; //class类别
 		if(list[i].filekind == "folder"){
 			pst = pstion +".children" + "[" + i + "]";
-			fclass = "mcbl_folder";
+			fclass = "mcbl_folder2";
 		// 判断是文件
 		}else{
 			pst = "";
