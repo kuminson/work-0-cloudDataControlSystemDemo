@@ -2,8 +2,9 @@
 var bottomheight = 10;            // 预留页面底部高度
 var pageminwidth = 1000;          // 页面最小宽度
 var pageminheight = 610;          // 页面最小高度
-var filedata1;                    // filedata1.json 数据缓存
+var filedata1 = {children:[]};    // filedata1.json 数据缓存
 var dragcache;                    // 拖拽缓存
+var $rightclickdom;               // 右键选中元素
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -205,6 +206,19 @@ $(function(){
 		$(this).addClass("active");
 	});
 
+	// 绑定右键点击文件 触发选项栏事件
+	$("#dcf_files").on("contextmenu",".mcb_list",function(e){
+		// 消除浏览器默认操作
+		e.preventDefault();
+		// 缓存目标元素
+		$rightclickdom = $(this);
+		// 显示菜单栏
+		$("#rightmenu").menu("show",{
+			left: e.pageX,
+			top: e.pageY
+		});
+	});
+
 	// 绑定制作专题事件
 	$("#mcdrt_add").on("click",function(){
 		// 弹出窗口
@@ -213,6 +227,11 @@ $(function(){
 		$("#dcf_files .mcb_list").remove();
 		// 隐藏表格列表
 		$("#dcf_databox").addClass('hide');
+		// 在标题处初始化面包屑
+		$("#d_content").layout("panel","center")
+						.panel("header")
+						.children(".panel-title")
+						.html('<span class="p_title" pstion="">专题</span>');
 		// 清空属性
 		setframeattr({
 			title: "新建专题",
@@ -379,7 +398,7 @@ $(function(){
 	});
 
 	// 绑定选择专题文件事件
-	$("#dc_files").on("click","#mcdrt_ok",function(){
+	$("body").on("click","#dcftom_file",function(){
 		// 显示悬浮窗
 		$("#frame").window("open");
 		// 加载树
@@ -415,6 +434,35 @@ $(function(){
 				});
 			}
 		});
+	});
+
+	// 绑定文件点击事件
+	// $("#dc_files").on("click","#dcfom_file",function(){
+	// 	// 触发选择专题文件事件
+	// 	$("#mcdrt_ok").trigger("click");
+	// });
+
+	// 绑定文件夹点击事件
+	$("body").on("click","#dcftom_folder",function(){
+		// 获取当前位置
+		var title = $("#d_content").layout("panel","center")
+									.panel("header")
+									.children(".panel-title")
+									.children()
+									.last();
+		var pstion = title.attr("pstion");
+		console.log(pstion);
+		// 新建文件夹对象
+		var newfolder = {
+			filename:"新建文件夹",
+			filekind:"folder",
+			children:[]
+		};
+		console.log(newfolder);
+		// 插入缓存数据
+		eval("filedata1"+pstion+".children.push(newfolder)");
+		// 刷新页面
+		title.trigger("click");
 	});
 
 	// 加载业务系统数据 树
@@ -498,7 +546,6 @@ $(function(){
 	});
 	// 拖拽进入事件
 	$("#dcf_files").on("dragover",".mcb_list",function(e){
-		console.log("dragover");
 		// 判定是文件夹
 		if($(this).attr("pstion") != ""){
 			// 添加外边框高亮样式
@@ -509,7 +556,6 @@ $(function(){
 	});
 	// 拖拽离开事件
 	$("#dcf_files").on("dragleave",".mcb_list",function(e){
-		console.log("dragleave");
 		// 判定是文件夹
 		if($(this).attr("pstion") != ""){
 			// 移除外边框高亮样式
@@ -518,7 +564,6 @@ $(function(){
 	});
 	// 拖拽结束事件
 	$("#dcf_files").on("drop",".mcb_list",function(e){
-		console.log("drop");
 		// 判定是文件夹
 		if($(this).attr("pstion") != ""){
 			// 移除外边框高亮样式
@@ -534,8 +579,6 @@ $(function(){
 			var file = filedata1[filepstion[1]].splice(dragcache,1);
 			// 插入文件
 			// eval("filedata1"+pstion+".children");
-			console.log(file);
-			console.log(eval("filedata1"+pstion+".children.push(file[0])"));
 			// 刷新页面 触发面包屑最后一个点击事件
 			$("#d_content").layout("panel","center")
 							.panel("header")
@@ -546,6 +589,17 @@ $(function(){
 		}
 		// 取消默认操作
 		e.preventDefault();
+	});
+
+	// 绑定重命名文本框失去焦点事件
+	$("#dcf_files").on("blur","#renamebox",function(){
+		// 获取文本内容
+		var textval = $("#renametext").val();
+		// 插入名字标签
+		var tab = '<h3 class="mcbl_name">' + textval + '</h3>';
+		$rightclickdom.append(tab);
+		// 移除多行文本框
+		$(this).remove();
 	});
 });
 
@@ -715,4 +769,29 @@ function addcrumbstodetails(data,pstion){
 				+ eval("data"+pstion+".filename").slice(0,5)
 			+'...</span>';
 	title.append(tab);
+}
+
+// 文件重命名
+function itemrename(){
+	console.log($rightclickdom);
+	// 获取目标元素
+	var $file = $rightclickdom;
+	// 获取标题名
+	var filename = $file.children(".mcbl_name").html();
+	// 获取标题位置
+	var namepstion = $file.children(".mcbl_name").position();
+	// 隐藏标题
+	$file.children(".mcbl_name").remove();
+	// 插入input
+	var tab = '<div id="renamebox" style="overflow:hidden;width:100px;margin:5px;position:absolute;top:'
+				+namepstion.top+'px;left:'+namepstion.left+'px;">'
+				+'<textarea id="renametext" style="resize:none;width:100px;height:40px;text-align:center;line-height:20px;background-color:#d2e9ff;">'+filename+'</textarea>'
+			+'</div>';
+	$file.closest("#dcf_files").append(tab);
+	// 调整宽度
+	if($("#renametext")[0].scrollHeight > 40){
+		$("#renametext").css("width", "117px");
+	}
+	// 获取焦点
+	$("#renametext").focus().select();
 }

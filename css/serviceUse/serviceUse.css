@@ -26,10 +26,11 @@
 	cursor: pointer;
 }
 .mcb_list{
-	width: 110px;
+	width: 112px;
 	height: 135px;
 	margin: 3px;
 	float: left;
+	overflow: hidden;
 	/*background-color: green;*/
 	-webkit-user-select:none;
 	-moz-user-select:none;
@@ -129,6 +130,7 @@
 .dcf_files{
 	width: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 /*弹出框*/

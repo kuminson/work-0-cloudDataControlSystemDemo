@@ -188,7 +188,11 @@
 					<div id="dc_files" title="专题"  data-options="region:'center'">
 						<!-- 按钮栏 -->
 						<div id="dcf_tb" class="datagrid-toolbar">
-							<a id="mcdrt_ok" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-ok" onclick="" title="选择专题文件">选择专题文件</a>
+							<a id="dcft_ok" class="easyui-menubutton easyui-tooltip" title="选择专题文件" data-options="menu:'#dcfto_menu',iconCls:'icon-ok'">选择专题文件</a>
+							<div id="dcfto_menu" style="width:50px;">
+								<div id="dcftom_file" data-options="iconCls:'icon-xnzj_sdzj'"  title="文件">文件</div>
+								<div id="dcftom_folder" data-options="iconCls:'icon-xnzj_sdzj'" title="文件夹">文件夹</div>
+							</div>
 							<a id="mcdrt_delete" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-remove" onclick="" title="删除">删除</a>
 							<a id="mcdrt_zxcj" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-zxcj" onclick="" title="在线创建">在线创建</a>
 							<a id="mcdrt_save" class="easyui-linkbutton easyui-tooltip" plain="true" iconcls="icon-save" onclick="" title="保存">保存</a>
@@ -254,7 +258,12 @@
 		</div>
 	</div>
 
-	
+	<div id="rightmenu" class="easyui-menu" style="width:120px;">
+		<div data-options="iconCls:'icon-cancel'">删除</div>
+		<div data-options="iconCls:'icon-xnzj_sdzj'" onclick="itemrename()">重命名</div>
+		<div class="menu-sep"></div>
+		<div data-options="iconCls:'icon-dyyl'">文件信息</div>
+	</div>
 
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="/work-0-cloudDataControlSystemDemo/resource/easyui/jquery.easyui.min.js"></script>
