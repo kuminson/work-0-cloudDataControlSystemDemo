@@ -227,6 +227,8 @@ $(function(){
 		$("#dcf_files .mcb_list").remove();
 		// 隐藏表格列表
 		$("#dcf_databox").addClass('hide');
+		// 初始化缓存数据
+		filedata1 = {children:[]};
 		// 在标题处初始化面包屑
 		$("#d_content").layout("panel","center")
 						.panel("header")
