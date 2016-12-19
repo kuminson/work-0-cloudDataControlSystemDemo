@@ -527,7 +527,7 @@ $(function(){
 		$("#mcd_datagrid").datagrid({
 			toolbar: "#mc_tb",
 		method: "get",
-			url: rooturl + "html/fileManage/datagrid.json",
+			url: rooturl + "html/dataConfirm/datagrid.json",
 			fitColumns: true,
 			columns:datacolumn,
 			resizeHandle: "both",
