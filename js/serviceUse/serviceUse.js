@@ -567,7 +567,7 @@ $(function(){
 	// 拖拽结束事件
 	$("#dcf_files").on("drop",".mcb_list",function(e){
 		// 判定是文件夹
-		if($(this).attr("pstion") != ""){
+		if($(this).attr("pstion") != "" && !$(this).is($dragdom)){
 			// 移除外边框高亮样式
 			$(this).removeClass("dragenter");
 			// 修改缓存的filedata1
