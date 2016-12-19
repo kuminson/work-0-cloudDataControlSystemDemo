@@ -453,14 +453,12 @@ $(function(){
 									.children()
 									.last();
 		var pstion = title.attr("pstion");
-		console.log(pstion);
 		// 新建文件夹对象
 		var newfolder = {
 			filename:"新建文件夹",
 			filekind:"folder",
 			children:[]
 		};
-		console.log(newfolder);
 		// 插入缓存数据
 		eval("filedata1"+pstion+".children.push(newfolder)");
 		// 刷新页面
@@ -578,9 +576,10 @@ $(function(){
 			// 获取文件夹index
 			// var fileindex = pstion.match(/\[(.*?)\]$/);
 			// 取出文件
+			console.log(file);
 			var file = filedata1[filepstion[1]].splice(dragcache,1);
 			// 插入文件
-			// eval("filedata1"+pstion+".children");
+			eval("filedata1"+pstion+".children.push(file[0])");
 			// 刷新页面 触发面包屑最后一个点击事件
 			$("#d_content").layout("panel","center")
 							.panel("header")
@@ -597,9 +596,23 @@ $(function(){
 	$("#dcf_files").on("blur","#renamebox",function(){
 		// 获取文本内容
 		var textval = $("#renametext").val();
-		// 插入名字标签
-		var tab = '<h3 class="mcbl_name">' + textval + '</h3>';
-		$rightclickdom.append(tab);
+		// 获取位置
+		var pstion = $("#d_content").layout("panel","center")
+						.panel("header")
+						.children(".panel-title")
+						.children()
+						.last()
+						.attr("pstion");
+		var index = $rightclickdom.index();
+		// 修改数据
+		eval("filedata1"+pstion+".children["+index+"].filename='"+textval+"'");
+		// 刷新页面 触发面包屑最后一个点击事件
+		$("#d_content").layout("panel","center")
+						.panel("header")
+						.children(".panel-title")
+						.children()
+						.last()
+						.trigger("click");
 		// 移除多行文本框
 		$(this).remove();
 	});
@@ -775,7 +788,6 @@ function addcrumbstodetails(data,pstion){
 
 // 文件重命名
 function itemrename(){
-	console.log($rightclickdom);
 	// 获取目标元素
 	var $file = $rightclickdom;
 	// 获取标题名
@@ -783,7 +795,7 @@ function itemrename(){
 	// 获取标题位置
 	var namepstion = $file.children(".mcbl_name").position();
 	// 隐藏标题
-	$file.children(".mcbl_name").remove();
+	// $file.children(".mcbl_name").remove();
 	// 插入input
 	var tab = '<div id="renamebox" style="overflow:hidden;width:100px;margin:5px;position:absolute;top:'
 				+namepstion.top+'px;left:'+namepstion.left+'px;">'
