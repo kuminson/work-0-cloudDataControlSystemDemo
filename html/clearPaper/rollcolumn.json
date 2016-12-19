@@ -6,32 +6,7 @@
 		"width":50
 	},{
 		"field":"allnbr",
-		"title":"全综号",
-		"align":"left",
-		"width":50
-	},{
-		"field":"fstclass",
-		"title":"一级类目",
-		"align":"left",
-		"width":50
-	},{
-		"field":"scdclass",
-		"title":"二级类目",
-		"align":"left",
-		"width":50
-	},{
-		"field":"indexnbr",
-		"title":"目录号",
-		"align":"left",
-		"width":50
-	},{
-		"field":"deadline",
-		"title":"保管期限",
-		"align":"left",
-		"width":50
-	},{
-		"field":"order",
-		"title":"案卷序号",
+		"title":"全宗号",
 		"align":"left",
 		"width":50
 	},{
@@ -57,6 +32,16 @@
 	},{
 		"field":"year",
 		"title":"年度",
+		"align":"left",
+		"width":50
+	},{
+		"field":"deadline",
+		"title":"保管期限",
+		"align":"left",
+		"width":50
+	},{
+		"field":"order",
+		"title":"案卷序号",
 		"align":"left",
 		"width":50
 	},{

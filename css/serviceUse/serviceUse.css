@@ -175,3 +175,13 @@
 .dragsuccess{
 	outline: 3px dotted green;
 }
+
+/*icon图标*/
+.icon-yg_file{
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/wenjian.svg");
+	background-size: 16px 16px;
+}
+.icon-yg_folder{
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/folder2.svg");
+	background-size: 16px 16px;
+}

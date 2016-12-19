@@ -4,6 +4,7 @@ var pageminwidth = 1000;          // 页面最小宽度
 var pageminheight = 610;          // 页面最小高度
 var filedata1 = {children:[]};    // filedata1.json 数据缓存
 var dragcache;                    // 拖拽缓存
+var $dragdom;                     // 拖拽元素
 var $rightclickdom;               // 右键选中元素
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -543,6 +544,7 @@ $(function(){
 	$("#dcf_files").on("dragstart",".mcb_list",function(e){
 		// 获取位置
 		dragcache = parseInt($(this).attr("findex"));
+		$dragdom = $(this);
 	});
 	// 拖拽进入事件
 	$("#dcf_files").on("dragover",".mcb_list",function(e){
@@ -576,20 +578,21 @@ $(function(){
 			// 获取文件夹index
 			// var fileindex = pstion.match(/\[(.*?)\]$/);
 			// 复制文件
-			var file = filedata1[filepstion[1]].slice(dragcache,dragcache+1);
-			console.log("filedata1"+pstion);
+			// var file = filedata1[filepstion[1]].slice(dragcache,dragcache+1);
+			eval('var file = filedata1.'+filepstion[1]+'.slice('+dragcache+','+(dragcache+1)+')')
 			// 插入文件
 			eval("filedata1"+pstion+".children.push(file[0])");
 			// 删除文件 
-			filedata1[filepstion[1]].splice(dragcache,1);
-			// 刷新页面 触发面包屑最后一个点击事件
-			$("#d_content").layout("panel","center")
-							.panel("header")
-							.children(".panel-title")
-							.children()
-							.last()
-							.trigger("click");
+			// filedata1[filepstion[1]].splice(dragcache,1);
+			eval('filedata1.'+filepstion[1]+'.splice('+dragcache+',1)');
 		}
+		// 刷新页面 触发面包屑最后一个点击事件
+		$("#d_content").layout("panel","center")
+						.panel("header")
+						.children(".panel-title")
+						.children()
+						.last()
+						.trigger("click");
 		// 取消默认操作
 		e.preventDefault();
 	});
