@@ -542,7 +542,7 @@ $(function(){
 	// 拖拽开始事件
 	$("#dcf_files").on("dragstart",".mcb_list",function(e){
 		// 获取位置
-		dragcache = $(this).attr("findex");
+		dragcache = parseInt($(this).attr("findex"));
 	});
 	// 拖拽进入事件
 	$("#dcf_files").on("dragover",".mcb_list",function(e){
@@ -575,11 +575,13 @@ $(function(){
 			var filepstion = pstion.match(/^\.(.*)(?=\[)/);
 			// 获取文件夹index
 			// var fileindex = pstion.match(/\[(.*?)\]$/);
-			// 取出文件
-			console.log(file);
-			var file = filedata1[filepstion[1]].splice(dragcache,1);
+			// 复制文件
+			var file = filedata1[filepstion[1]].slice(dragcache,dragcache+1);
+			console.log("filedata1"+pstion);
 			// 插入文件
 			eval("filedata1"+pstion+".children.push(file[0])");
+			// 删除文件 
+			filedata1[filepstion[1]].splice(dragcache,1);
 			// 刷新页面 触发面包屑最后一个点击事件
 			$("#d_content").layout("panel","center")
 							.panel("header")
@@ -593,7 +595,7 @@ $(function(){
 	});
 
 	// 绑定重命名文本框失去焦点事件
-	$("#dcf_files").on("blur","#renamebox",function(){
+	$("body").on("blur","#renamebox",function(){
 		// 获取文本内容
 		var textval = $("#renametext").val();
 		// 获取位置
@@ -694,12 +696,29 @@ function selectbutton(btn,grid,kid,kname){
 			alert("请至少选择一条数据");
 			return 0;
 		}
+		// 获取当前位置
+		var pstion = $("#d_content").layout("panel","center")
+									.panel("header")
+									.children(".panel-title")
+									.children()
+									.last()
+									.attr("pstion");
+		// 获取缓存数据起始位置
+		eval("var stari = filedata1"+pstion+".children.length");
 		// 加载文件数据
 		for(var i=0; i<seldata.length; i++){
-			$("#dcf_files").append('<li class="mcb_list" easyid="'+seldata[i][kid]+'">'
+			$("#dcf_files").append('<li class="mcb_list" pstion="'+pstion+'.children['+(parseInt(stari)+i)+']" draggable="true" easyid="'+seldata[i][kid]+'">'
 							+'<span class="mcbl_icon mcbl_file"></span>'
 							+'<h3 class="mcbl_name">' + seldata[i][kname] + '</h3>'
 						+'</li>');
+			// 新建文件对象
+			var newfile = {
+				filename:seldata[i][kname],
+				filekind:"file",
+				children:[]
+			};
+			// 插入缓存数据
+			eval("filedata1"+pstion+".children.push(newfile)");
 		}
 		// 关闭悬浮框
 		$("#frame").window("close");
@@ -757,14 +776,12 @@ function addfiledetails(data,pstion){
 	var list = eval('data'+pstion+".children");
 	for(var i=0; i<list.length; i++){
 		// 判断是文件夹
-		var pst; //位置
+		var pst = pstion +".children" + "[" + i + "]"; //位置
 		var fclass; //class类别
 		if(list[i].filekind == "folder"){
-			pst = pstion +".children" + "[" + i + "]";
 			fclass = "mcbl_folder2";
 		// 判断是文件
 		}else{
-			pst = "";
 			fclass = "mcbl_file";
 		}
 		var tab = '<li class="mcb_list" pstion="'+pst+'" draggable="true" findex="'+i+'">'
