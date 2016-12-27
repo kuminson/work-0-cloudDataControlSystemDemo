@@ -35,8 +35,8 @@ $(function(){
 	});
 
 	// 绑定点击原文事件
-	$("body").on("click",".f_r_b",function(){
-		window.open(rooturl + "resource/pdf/12100AR-M.pdf")
+	$("body").on("click",".frsfile",function(){
+		window.open(rooturl + "resource/pdf/12100AR-M.pdf");
 	});
 
 	// 加载datagrid数据
@@ -73,12 +73,14 @@ $(function(){
 				"align":"left",
 				"width":60,
 				"iscp":0
-			},{
-				"field":"zj",
-				"title":"组卷",
-				"align":"left",
-				"width":60
-			},{
+			}
+			// ,{
+			// 	"field":"zj",
+			// 	"title":"组卷",
+			// 	"align":"left",
+			// 	"width":60
+			// }
+			,{
 				"field":"bzh",
 				"title":"备注",
 				"align":"left",
