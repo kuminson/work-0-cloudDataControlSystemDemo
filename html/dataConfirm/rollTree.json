@@ -611,116 +611,48 @@
 		"children":[
 			{
 				"id":"bala0600",
-				"text":"2010",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060000",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060001",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2006",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0601",
-				"text":"2011",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060100",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060101",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2007",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0602",
-				"text":"2012",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060200",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060201",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2008",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0603",
-				"text":"2013",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060300",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060301",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2009",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0604",
-				"text":"2014",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060400",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060401",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2010",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0605",
-				"text":"2015",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060500",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060501",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"text":"2011",
+				"iconCls": "ti_file"
 			},{
 				"id":"bala0606",
+				"text":"2012",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0607",
+				"text":"2013",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0608",
+				"text":"2014",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0609",
+				"text":"2015",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala0610",
 				"text":"2016",
-				"iconCls": "ti_folder",
-				"state": "closed",
-				"children":[
-					{
-						"id":"bala060600",
-						"text":"永久",
-						"iconCls": "ti_file"
-					},{
-						"id":"bala060601",
-						"text":"定期",
-						"iconCls": "ti_file"
-					}
-				]
+				"iconCls": "ti_file"
 			}
 		]
 	},{

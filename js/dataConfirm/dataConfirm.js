@@ -14,6 +14,7 @@ $(function(){
 		method: "get",
 		url: rooturl + "html/dataConfirm/rollTree.json",
 		onClick:function(node){
+			// 点击121-1000万吨/年常减压蒸馏（Ⅱ）装置 加载新数据
 			if(node.id == "1432358627578491"){
 				$("#mcd_datagrid").datagrid({
 					method: "get",
@@ -21,6 +22,11 @@ $(function(){
 					url:rooturl + "html/dataConfirm/datagridclick1.json"
 				});
 			}
+			// 点击 122-200万吨/年轻烃回收装置 加载空数据
+			if(node.id == "143235862759341"){
+				$("#mcd_datagrid").datagrid("loadData",{rows:[]});
+			}
+			// 点击 设备安装 综合册 加载新数据
 			if(node.id == "bala08030200"){
 				$("#mcd_datagrid").datagrid({
 					method: "get",
@@ -28,6 +34,7 @@ $(function(){
 					url:rooturl + "html/dataConfirm/datagridclick3.json"
 				});
 			}
+			// 点击 竣工图 综合册 加载新数据
 			if(node.id == "bala08030700"){
 				$("#mcd_datagrid").datagrid({
 					method: "get",
@@ -35,8 +42,13 @@ $(function(){
 					url:rooturl + "html/dataConfirm/datagridclick4.json"
 				});
 			}
-			if(node.id == "143235862759341"){
-				$("#mcd_datagrid").datagrid("loadData",{rows:[]});
+			// 点击 会计档案类 下节点 加载新数据
+			if(node.id.search(/^bala06\d\d$/) != -1){
+				$("#mcd_datagrid").datagrid({
+					method: "get",
+					columns:datacolumn,
+					url:rooturl + "html/dataConfirm/datagridclick5.json"
+				});
 			}
 		}
 	});

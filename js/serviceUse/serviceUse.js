@@ -91,13 +91,21 @@ $(function(){
 	$("#mcd_files").on("dblclick",".mcb_list",function(e){
 		if($(this).attr("easyid") != undefined){
 			var treenode = $("#mtb_tree").tree("find",$(this).attr("easyid"));
+			console.log(treenode);
 			// 判定是否是叶子节点
 			if(treenode.children == undefined){
 				// 弹出窗口
 				$("#detailswin").window("open");
+				var fileurl  //加载文件地址
+				// 判断是特殊子节点 更改特殊地址
+				if(treenode.id == "143235862759341"){
+					fileurl = "html/serviceUse/filedata2.json";
+				}else{
+					fileurl = "html/serviceUse/filedata1.json";
+				}
 				// 加载文件列表
 				$.ajax({
-					url: rooturl + "html/serviceUse/filedata1.json",
+					url: rooturl + fileurl,
 					type: "GET",
 					dataType: "json",
 					success:function(data){

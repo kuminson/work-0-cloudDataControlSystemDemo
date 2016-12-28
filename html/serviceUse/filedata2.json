@@ -1,0 +1,66 @@
+{
+    "children":[
+        {
+            "filekind": "folder",
+            "filename":"随机文件",
+            "children":[
+                {
+                    "filekind": "file",
+                    "filename":"干式电力变压器SCB11-1250/10/0.4合格证"
+                },{
+                    "filekind": "file",
+                    "filename":"400万吨/年渣油加氢装置 加氢反应器 材质单"
+                },{
+                    "filekind": "file",
+                    "filename":"400万吨/年渣油加氢装置 加氢反应器 设计计算书"
+                },{
+                    "filekind": "file",
+                    "filename":"惠炼二期项目调度交换系统(炼油部分) 产品证书"
+                },{
+                    "filekind": "file",
+                    "filename":"220KV惠化站 220KV高效油浸式变压器出厂资料（150406D）"
+                },{
+                    "filekind": "file",
+                    "filename":"公用工程区雨水监控池及事故水池反捞式格栅除污机出厂资料"
+                },{
+                    "filekind": "file",
+                    "filename":"1250KVA/6KV预装式变电站质量证明文件"
+                },{
+                    "filekind": "file",
+                    "filename":"公用工程区雨水监控池及事故水池事故水传输泵"
+                }
+            ]
+        },{
+            "filekind": "folder",
+            "filename":"竣工图",
+            "children":[
+                {
+                    "filekind": "file",
+                    "filename":"给水排水图纸目录"
+                },{
+                    "filekind": "file",
+                    "filename":"设计总说明及图例"
+                },{
+                    "filekind": "file",
+                    "filename":"给水排水管道平面布置图"
+                },{
+                    "filekind": "file",
+                    "filename":"给水排水管道纵断面图（9）"
+                },{
+                    "filekind": "file",
+                    "filename":"材料表"
+                }
+            ]
+        },{
+            "filekind": "folder",
+            "filename":"安装调试文件",
+            "children":[
+            ]
+        },{
+            "filekind": "folder",
+            "filename":"运行记录",
+            "children":[
+            ]
+        }
+    ]
+}

@@ -115,103 +115,23 @@
         "children":[
             {
                 "id":"143235862759341",
-                "iconCls": "ti_folder",
-                "state":"closed",
-                "text":"122-200万吨/年轻烃回收装置",
-                "children":[
-                    {
-                        "id":"1432358627593522",
-                        "iconCls": "ti_folder",
-                        "state":"closed",
-                        "text":"随机文件",
-                        "children":[
-                            {
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"干式电力变压器SCB11-1250/10/0.4合格证"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"400万吨/年渣油加氢装置 加氢反应器 材质单"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"400万吨/年渣油加氢装置 加氢反应器 设计计算书"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"惠炼二期项目调度交换系统(炼油部分) 产品证书"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"220KV惠化站 220KV高效油浸式变压器出厂资料（150406D）"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"公用工程区雨水监控池及事故水池反捞式格栅除污机出厂资料"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"1250KVA/6KV预装式变电站质量证明文件"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"公用工程区雨水监控池及事故水池事故水传输泵"
-                            }
-                        ]
-                    },{
-                        "id":"1432358627593522",
-                        "iconCls": "ti_folder",
-                        "state":"closed",
-                        "text":"竣工图",
-                        "children":[
-                            {
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"给水排水图纸目录"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"设计总说明及图例"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"给水排水管道平面布置图"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"给水排水管道纵断面图（9）"
-                            },{
-                                "id":"1432358627593522",
-                                "iconCls": "ti_file",
-                                "text":"材料表"
-                            }
-                        ]
-                    },{
-                        "id":"1432358627593522",
-                        "iconCls": "ti_folder",
-                        "text":"安装调试文件"
-                    },{
-                        "id":"1432358627593522",
-                        "iconCls": "ti_folder",
-                        "text":"运行记录"
-                    }
-                ]
+                "iconCls": "ti_file",
+                "text":"122-200万吨/年轻烃回收装置"
             },{
                 "id":"1432358627593522",
-                "iconCls": "ti_folder",
+                "iconCls": "ti_file",
                 "text":"123-480万吨/年催化裂化（Ⅱ）装置"
             },{
                 "id":"1432358627687231",
-                "iconCls": "ti_folder",
+                "iconCls": "ti_file",
                 "text":"124-双脱（Ⅱ）装置"
             },{
                 "id":"1432358627687576",
-                "iconCls": "ti_folder",
+                "iconCls": "ti_file",
                 "text":"125-70万吨/年气体分馏（Ⅱ）装置"
             },{
                 "id":"1432358627625360",
-                "iconCls": "ti_folder",
+                "iconCls": "ti_file",
                 "text":"126-10万吨/年MTBE（Ⅱ）装置"
             }
         ]

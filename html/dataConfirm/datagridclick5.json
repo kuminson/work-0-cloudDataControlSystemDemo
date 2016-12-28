@@ -1,0 +1,27 @@
+{
+	"page":1,
+	"total":19,
+	"rows":[
+		{
+			"zzs":"329",
+			"zj":"<a class='groupfile'>组卷</a>",
+			"bzh":"",
+			"fs":"1",
+			"wjbh":"YX-SJ-49 WK-138",
+			"yw":"\u003cimg class\u003d\u0027f_r_b\u0027 src\u003d\u0027/work-0-cloudDataControlSystemDemo/images/common/search.png\u0027 style\u003d\u0027cursor:pointer\u0027/\u003e",
+			"wjzt":"\u003cdiv\u003e拟稿\u003c/div\u003e",
+			"wjmc":"成本报表",
+			"columnno":1
+		},{
+			"zzs":"253",
+			"zj":"<a class='groupfile'>组卷</a>",
+			"bzh":"",
+			"fs":"1",
+			"wjbh":"YX-SJ-49 WK-138",
+			"yw":"\u003cimg class\u003d\u0027f_r_b\u0027 src\u003d\u0027/work-0-cloudDataControlSystemDemo/images/common/search.png\u0027 style\u003d\u0027cursor:pointer\u0027/\u003e",
+			"wjzt":"\u003cdiv\u003e拟稿\u003c/div\u003e",
+			"wjmc":"会计总账报表",
+			"columnno":2
+		}
+	]
+}
