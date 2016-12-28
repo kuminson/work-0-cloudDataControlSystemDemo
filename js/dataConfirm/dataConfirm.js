@@ -16,8 +16,23 @@ $(function(){
 		onClick:function(node){
 			if(node.id == "1432358627578491"){
 				$("#mcd_datagrid").datagrid({
-		method: "get",
+					method: "get",
+					columns:datacolumn,
 					url:rooturl + "html/dataConfirm/datagridclick1.json"
+				});
+			}
+			if(node.id == "bala08030200"){
+				$("#mcd_datagrid").datagrid({
+					method: "get",
+					columns:datacolumn2,
+					url:rooturl + "html/dataConfirm/datagridclick3.json"
+				});
+			}
+			if(node.id == "bala08030700"){
+				$("#mcd_datagrid").datagrid({
+					method: "get",
+					columns:datacolumn2,
+					url:rooturl + "html/dataConfirm/datagridclick4.json"
 				});
 			}
 			if(node.id == "143235862759341"){
@@ -85,6 +100,59 @@ $(function(){
 				"title":"备注",
 				"align":"left",
 				"width":100,
+				"iscp":0
+			}
+			]];
+	var datacolumn2 = [[
+			{
+				"field":"",
+				"checkbox":true
+			},{
+				"field":"yw",
+				"title":"原文",
+				"align":"center",
+				"width":30
+			},{
+				"field":"wjbh",
+				"title":"文件编号",
+				"align":"left",
+				"width":100,
+				"iscp":1
+			},{
+				"field":"wjmc",
+				"title":"文件名称",
+				"align":"left",
+				"width":290,
+				"iscp":1
+			},{
+				"field":"fs",
+				"title":"份数",
+				"align":"left",
+				"width":40,
+				"iscp":0
+			},{
+				"field":"zzs",
+				"title":"纸张数",
+				"align":"left",
+				"width":40,
+				"iscp":0
+			},{
+				"field":"sbwh",
+				"title":"设备位号",
+				"align":"left",
+				"width":60,
+				"iscp":0
+			},{
+				"field":"sbxh",
+				"title":"设备型号",
+				"align":"left",
+				"width":60,
+				"iscp":0
+			},{
+				"field":"bzh",
+				"title":"备注",
+				"align":"left",
+				"width":60,
 				"iscp":0
 			}
 			]];

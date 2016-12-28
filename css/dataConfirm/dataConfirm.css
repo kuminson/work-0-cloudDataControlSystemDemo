@@ -14,6 +14,11 @@
 	background-size: 16px 16px;
 	background-position: 0 0;
 }
+td[field] div{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
 
 /*组卷按钮*/
 .groupfile{

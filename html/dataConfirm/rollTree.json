@@ -989,12 +989,128 @@
 				"children":[
 					{
 						"id":"bala080300",
-						"text":"永久",
-						"iconCls": "ti_file"
+						"text":"综合",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030000",
+								"text":"综合卷",
+								"iconCls": "ti_file"
+							}
+						]
 					},{
 						"id":"bala080301",
-						"text":"定期",
-						"iconCls": "ti_file"
+						"text":"建筑工程",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030100",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030101",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080302",
+						"text":"设备安装",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030200",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030201",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080303",
+						"text":"管道安装",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030300",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030301",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080304",
+						"text":"电气安装",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030400",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030401",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080305",
+						"text":"仪表安装",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030500",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030501",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080306",
+						"text":"材料质量证明文件卷",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030600",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030601",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
+					},{
+						"id":"bala080307",
+						"text":"竣工图",
+						"iconCls": "ti_folder",
+						"state": "closed",
+						"children":[
+							{
+								"id":"bala08030700",
+								"text":"综合册",
+								"iconCls": "ti_file"
+							},{
+								"id":"bala08030701",
+								"text":"交工技术文件册",
+								"iconCls": "ti_file"
+							}
+						]
 					}
 				]
 			},{
