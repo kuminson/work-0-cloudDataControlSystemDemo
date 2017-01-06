@@ -4,27 +4,27 @@
 	"rows":[
 		{
 			"library":"oracle 9i 数据文件",
-			"bit":"8.7G",
+			"bit":"8.7",
 			"source":"ERP数据归档",
 			"remark":""
 		},{
 			"library":"oracle 10g 数据文件",
-			"bit":"9.1G",
+			"bit":"9.1",
 			"source":"ERP数据归档",
 			"remark":""
 		},{
 			"library":"oracle 11g 数据文件",
-			"bit":"12.8G",
+			"bit":"12.8",
 			"source":"ERP数据归档",
 			"remark":""
 		},{
 			"library":"sql server 2008数据文件",
-			"bit":"11.5G",
+			"bit":"11.5",
 			"source":"OA数据归档",
 			"remark":""
 		},{
 			"library":"mysql 数据文件",
-			"bit":"6.1G ",
+			"bit":"6.1",
 			"source":"OA数据归档",
 			"remark":""
 		}
