@@ -1,0 +1,40 @@
+{
+	"page":1,
+	"total":10,
+	"rows":[
+		{
+		    "filekind": "doc",
+		    "filename":"需求计划数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"采购申请数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"采购计划数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"采购合同数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"采购入库单数据库"
+		},{
+		    "filekind": "xml",
+		    "filename":"库存管理辅助表"
+		},{
+		    "filekind": "doc",
+		    "filename":"验配单数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"转港物资验配单数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"客户结算单数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"物资结算单数据库"
+		},{
+		    "filekind": "doc",
+		    "filename":"记账凭证数据库"
+		}
+	]
+}

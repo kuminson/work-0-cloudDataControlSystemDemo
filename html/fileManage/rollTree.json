@@ -1391,5 +1391,53 @@
 				]
 			}
 		]
+	},{
+		"id":"bala12",
+		"text":"ERP系统资源",
+		"iconCls": "ti_folder",
+		"state": "closed",
+		"children":[
+			{
+				"id":"bala1200",
+				"text":"物资采购",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1201",
+				"text":"销售分销",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1202",
+				"text":"质量",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1203",
+				"text":"生产",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1204",
+				"text":"设备管理",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1205",
+				"text":"项目管理",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1206",
+				"text":"人力",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1207",
+				"text":"财务会计",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1208",
+				"text":"基础字典数据库",
+				"iconCls": "ti_file"
+			},{
+				"id":"bala1209",
+				"text":"关联信息数据库",
+				"iconCls": "ti_file"
+			}
+		]
 	}
 ]

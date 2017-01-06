@@ -76,6 +76,15 @@ td[field] div{
 	text-decoration: underline;
 	color: red;
 }
+.blink{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.blink:hover{
+	text-decoration: underline;
+	color: red;
+}
 
 /*资源库tabs*/
 .p_title{
@@ -95,11 +104,11 @@ td[field] div{
 }
 .mcbl_icon{
 	display: block;
-	width: 100px;
-	height: 100px;
-	margin: 10px auto;
+	width: 80px;
+	height: 80px;
+	margin: 5px auto;
 	background-position: 0 0;
-	background-size: 100px 100px;
+	background-size: 80px 80px;
 	/*background-color: red;*/
 }
 .mcbl_file{
@@ -108,16 +117,25 @@ td[field] div{
 .mcbl_folder{
 	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/wenjianjia.svg");
 }
+.mcbl_doc{
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/files/doc.png");
+}
+.mcbl_xml{
+	background-image: url("/work-0-cloudDataControlSystemDemo/images/common/files/xml.png");
+}
 .mcbl_name{
-	height: 20px;
+	height: 40px;
 	width: 100px;
 	line-height: 20px;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	overflow: hidden;
 	text-overflow:ellipsis;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	margin: 5px auto;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
 	/*background-color: yellow;*/
 }
 

@@ -4,6 +4,7 @@
 	"rows":[
 		{
 			"columnno":0,
+			"filekind":"file",
 			"sjid":"140791339904614b00",
 			"ori":"有",
 			"allnbr":"002",
@@ -20,6 +21,7 @@
 			"essaynbr":"政组二（87）437"
 		},{
 			"columnno":1,
+			"filekind":"file",
 			"sjid":"140791339904614b01",
 			"ori":"有",
 			"allnbr":"002",
@@ -36,6 +38,7 @@
 			"essaynbr":"交政组二 (87) 331"
 		},{
 			"columnno":2,
+			"filekind":"file",
 			"sjid":"140791339904614b02",
 			"ori":"有",
 			"allnbr":"002",
@@ -52,6 +55,7 @@
 			"essaynbr":"政组二（87）436"
 		},{
 			"columnno":3,
+			"filekind":"file",
 			"sjid":"140791339904614b03",
 			"ori":"有",
 			"allnbr":"002",
@@ -68,6 +72,7 @@
 			"essaynbr":"交政组 (87) 332"
 		},{
 			"columnno":4,
+			"filekind":"file",
 			"sjid":"140791339904614b04",
 			"ori":"有",
 			"allnbr":"002",
@@ -84,6 +89,7 @@
 			"essaynbr":"政组一 (87) 425"
 		},{
 			"columnno":5,
+			"filekind":"file",
 			"sjid":"140791339904614b05",
 			"ori":"有",
 			"allnbr":"002",
@@ -100,6 +106,7 @@
 			"essaynbr":"交石党组（87）6"
 		},{
 			"columnno":6,
+			"filekind":"file",
 			"sjid":"140791339904614b06",
 			"ori":"有",
 			"allnbr":"002",
@@ -116,6 +123,7 @@
 			"essaynbr":"交石党组（87）9"
 		},{
 			"columnno":7,
+			"filekind":"file",
 			"sjid":"140791339904614b07",
 			"ori":"有",
 			"allnbr":"002",
@@ -132,6 +140,7 @@
 			"essaynbr":"交石党组（87）10"
 		},{
 			"columnno":8,
+			"filekind":"file",
 			"sjid":"140791339904614b08",
 			"ori":"有",
 			"allnbr":"002",
@@ -148,6 +157,7 @@
 			"essaynbr":"交石党组（87）11"
 		},{
 			"columnno":9,
+			"filekind":"file",
 			"sjid":"140791339904614b09",
 			"ori":"有",
 			"allnbr":"002",
@@ -164,6 +174,7 @@
 			"essaynbr":"交石港党办（87）4"
 		},{
 			"columnno":0,
+			"filekind":"file",
 			"sjid":"140791339904614b00",
 			"ori":"无",
 			"allnbr":"002",
@@ -180,6 +191,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":1,
+			"filekind":"file",
 			"sjid":"140791339904614b01",
 			"ori":"无",
 			"allnbr":"002",
@@ -196,6 +208,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":2,
+			"filekind":"file",
 			"sjid":"140791339904614b02",
 			"ori":"无",
 			"allnbr":"002",
@@ -212,6 +225,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":3,
+			"filekind":"file",
 			"sjid":"140791339904614b03",
 			"ori":"无",
 			"allnbr":"002",
@@ -228,6 +242,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":4,
+			"filekind":"file",
 			"sjid":"140791339904614b04",
 			"ori":"无",
 			"allnbr":"002",
@@ -244,6 +259,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":5,
+			"filekind":"file",
 			"sjid":"140791339904614b05",
 			"ori":"无",
 			"allnbr":"002",
@@ -260,6 +276,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":6,
+			"filekind":"file",
 			"sjid":"140791339904614b06",
 			"ori":"无",
 			"allnbr":"002",
@@ -276,6 +293,7 @@
 			"essaynbr":"记录"
 		},{
 			"columnno":0,
+			"filekind":"file",
 			"sjid":"140791339904614c00",
 			"ori":"无",
 			"allnbr":"002",
@@ -292,6 +310,7 @@
 			"essaynbr":""
 		},{
 			"columnno":1,
+			"filekind":"file",
 			"sjid":"140791339904614c01",
 			"ori":"无",
 			"allnbr":"002",
@@ -308,6 +327,7 @@
 			"essaynbr":""
 		},{
 			"columnno":2,
+			"filekind":"file",
 			"sjid":"140791339904614c02",
 			"ori":"无",
 			"allnbr":"002",
@@ -324,6 +344,7 @@
 			"essaynbr":""
 		},{
 			"columnno":3,
+			"filekind":"file",
 			"sjid":"140791339904614c03",
 			"ori":"无",
 			"allnbr":"002",
@@ -340,6 +361,7 @@
 			"essaynbr":""
 		},{
 			"columnno":4,
+			"filekind":"file",
 			"sjid":"140791339904614c04",
 			"ori":"无",
 			"allnbr":"002",
@@ -356,6 +378,7 @@
 			"essaynbr":""
 		},{
 			"columnno":5,
+			"filekind":"file",
 			"sjid":"140791339904614c05",
 			"ori":"无",
 			"allnbr":"002",
@@ -372,6 +395,7 @@
 			"essaynbr":""
 		},{
 			"columnno":6,
+			"filekind":"file",
 			"sjid":"140791339904614c06",
 			"ori":"无",
 			"allnbr":"002",
@@ -388,6 +412,7 @@
 			"essaynbr":""
 		},{
 			"columnno":0,
+			"filekind":"file",
 			"sjid":"140791339904614d00",
 			"ori":"有",
 			"allnbr":"002",
@@ -404,6 +429,7 @@
 			"essaynbr":""
 		},{
 			"columnno":1,
+			"filekind":"file",
 			"sjid":"140791339904614d01",
 			"ori":"有",
 			"allnbr":"002",
@@ -420,6 +446,7 @@
 			"essaynbr":"石港（87）1号"
 		},{
 			"columnno":2,
+			"filekind":"file",
 			"sjid":"140791339904614d02",
 			"ori":"有",
 			"allnbr":"002",

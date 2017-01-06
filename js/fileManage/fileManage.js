@@ -36,14 +36,22 @@ $(function(){
 			$(".mcb_list").remove();
 			// 加载文件列表
 			if(node.children == undefined){
+				console.log(node.id);
+				console.log(node.id.search(/bala12/));
+				var jsonName;
+				if(node.id.search(/bala12/) != -1){
+					jsonName = "filerootdata2.json";
+				}else{
+					jsonName = "filerootdata.json";
+				}
 				$.ajax({
-					url: rooturl + "html/fileManage/filerootdata.json",
+					url: rooturl + "html/fileManage/" +jsonName,
 					type: "GET",
 					dataType: "json",
 					success:function(data){
 						for(var i=0; i<data.rows.length; i++){
 							$("#mco_fimana").append('<li class="mcb_list">'
-											+'<span class="mcbl_icon mcbl_file"></span>'
+											+'<span class="mcbl_icon mcbl_'+data.rows[i].filekind+'"></span>'
 											+'<h3 class="mcbl_name">' + data.rows[i].filename + '</h3>'
 										+'</li>');
 						}
@@ -253,7 +261,7 @@ $(function(){
 		    {field:'',title:'纸质文件',colspan:2,width:200}
 		],[
 		    {field:'elecop',title:'份数',width:100},
-		    {field:'elebit',title:'容量',width:100},
+		    {field:'elebit',title:'容量(G)',width:100},
 		    {field:'pepcop',title:'份数',width:100},
 		    {field:'peppeg',title:'页数',width:100},
 
@@ -269,13 +277,13 @@ $(function(){
 		{text:"2007至今",col:2,row:1}
 	],[
 		{text:"份数",col:1,row:1},
-		{text:"容量",col:1,row:1},
+		{text:"容量(G)",col:1,row:1},
 		{text:"份数",col:1,row:1},
-		{text:"容量",col:1,row:1},
+		{text:"容量(G)",col:1,row:1},
 		{text:"份数",col:1,row:1},
-		{text:"容量",col:1,row:1},
+		{text:"容量(G)",col:1,row:1},
 		{text:"份数",col:1,row:1},
-		{text:"容量",col:1,row:1}
+		{text:"容量(G)",col:1,row:1}
 	]];
 	var rowdata = [
 		{text:"文件",col:1,row:7,children:[
@@ -323,7 +331,7 @@ $(function(){
 		pageList:[20,40,60],
 		columns:[[
 			{field:"library",title:"数据库文件",width:100},
-			{field:"bit",title:"容量",width:100},
+			{field:"bit",title:"容量(G)",width:100},
 			{field:"source",title:"来源",width:100},
 			{field:"remark",title:"备注",width:100}
 		]]
@@ -393,12 +401,13 @@ $(function(){
 		}
 		$("#frame_details").window("open");
 	});
+
+	$("body").on("click",".blink",function(){
+		$("#frame_details2").window("open");
+	});
+
 	// 绑定表格数据
-	$("#fd_grid").datagrid({
-		method: "get",
-		url: rooturl + "html/fileManage/rolldata.json",
-		fitColumns: true,
-		columns:[[
+	var column_fd_grid =[[
 			{
 				"field":"",
 				"checkbox":true,
@@ -464,7 +473,27 @@ $(function(){
 				"align":"left",
 				"width":110
 			}
-			]],
+			]];
+	$("#fd_grid").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/rolldata.json",
+		fitColumns: true,
+		columns:column_fd_grid,
+		resizeHandle: "both",
+		striped: true,
+		loadMsg: "请稍后...",
+		pagination: true,
+		rownumbers: true,
+		singleSelect: true,
+		pageNumber: 1,
+		pageSize: 20,
+		pageList: [20,40,60]
+	});
+	$("#fd_grid2").datagrid({
+		method: "get",
+		url: rooturl + "html/fileManage/rolldata.json",
+		fitColumns: true,
+		columns:column_fd_grid,
 		resizeHandle: "both",
 		striped: true,
 		loadMsg: "请稍后...",
@@ -765,7 +794,7 @@ function creategrid(id,col,row){
 			// 加载数据
 			for(var k=0; k<colnum-2; k++){
 				var filepage = Math.floor(Math.random()*1000);
-				var filebit = Math.floor((1+Math.floor(Math.random()*10)/10)*filepage*10)/10 + "G";
+				var filebit = Math.floor((1+Math.floor(Math.random()*10)/10)*filepage*10)/10;
 				if(k%2 == 0){
 					mtable.find("tr").last().append('<td colspan="1" rowspan="1"><a class="alink">'+
 													filepage+'</a></td>');

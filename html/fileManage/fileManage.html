@@ -39,8 +39,8 @@
 				    <div title="资源库" data-options="" >
 						<ul id="mta_ltree"></ul>
 				    </div>
-				    <!-- 人名库 -->
-				    <div title="权限人名库">
+				    <!-- 系统日志 -->
+				    <div title="系统日志">
 				        
 				    </div>
 				</div>
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- 权限人名库tabs -->
+				<!-- 系统日志tabs -->
 				<div id="mc_name" class="easyui-tabs mc_tab hide" fit="true">
 					<div title="日志">
 						<table id="mcn_log" fit="true" data-options="title:'日志'"></table>
@@ -151,6 +151,10 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div id="frame_details2" class="easyui-window" data-options="title:'详情',closed:'true'"  style="height:80%;width:80%;">
+		<table id="fd_grid2" fit="true"></table>
 	</div>
 	<div id="frame_progress" class="easyui-window" data-options="title:'详情',closed:'true'" style="height:100px;width:300px;">
 		<div id="fp_bar" class="fp_bar easyui-progressbar" data-options="text:'备份中...{value}%'"></div>
