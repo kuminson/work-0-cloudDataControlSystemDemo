@@ -25,6 +25,15 @@
 					<!-- 元数据树 -->
 				    <div title="元数据" data-options="selected:true" >
 						<ul id="mta_otree"></ul>
+						<!-- 右键菜单栏 -->
+						<div id="mta_menu" class="easyui-menu" style="width:120px;">
+							<div data-options="iconCls:'icon-gzpz'">修改</div>
+							<div data-options="iconCls:'icon-cancel'">删除</div>
+							<div id="mtam_rename" data-options="iconCls:'icon-xnzj_guidang'">重命名</div>
+							<div class="menu-sep"></div>
+							<div data-options="iconCls:'icon-upload'">上移</div>
+							<div data-options="iconCls:'icon-xz'">下移</div>
+						</div>
 				    </div>
 				    <!-- 资源库树 -->
 				    <div title="资源库" data-options="" >
@@ -43,7 +52,7 @@
 					<div title="数据">
 						<table id="mcd_datagrid" fit="true"></table>
 						<div id="mc_tb">
-							<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="" title="保存数据">保存</a>
+							<a id="save_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-save" onclick="closeAllRowEditor('#mcd_datagrid')" title="保存数据">保存</a>
 							<a id="uploadFile_staDir" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-upload" onclick="popuploadiframe()" title="上传一条或者多条新纪录">上传</a>
 							<a id="uploadFile_refresh" class="easyui-linkbutton easyui-tooltip isShow" plain="true" iconcls="icon-reload" onclick="" title="刷新">刷新</a>
 							<a id="btn_export_comb_staDir" class="easyui-menubutton isShow2" data-options="menu:'#mm_exportm_staDir',iconCls:'icon-xnzj_sdzj'" 

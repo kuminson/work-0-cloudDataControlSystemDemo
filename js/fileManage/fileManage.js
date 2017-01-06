@@ -12,7 +12,17 @@ $(function(){
 	// 加载树数据
 	$("#mta_otree").tree({
 		method: "get",
-		url: rooturl + "html/fileManage/rollTree.json"
+		url: rooturl + "html/fileManage/rollTree.json",
+		onContextMenu:function(e,node){
+			e.preventDefault();
+			// 选择节点
+			$("#mta_otree").tree("select",node.target);
+			// 显示菜单
+			$("#mta_menu").menu("show",{
+				left:e.pageX,
+				top:e.pageY
+			});
+		}
 	});
 	$("#mta_ltree").tree({
 		method: "get",
@@ -467,15 +477,25 @@ $(function(){
 	});
 
 	// 绑定刷新按钮事件
-		$("body").on("click","#uploadFile_refresh",function(){
-			$("#mcd_datagrid").datagrid({
-				url:rooturl + "html/fileManage/datagridclick2.json"
-			});
+	$("body").on("click","#uploadFile_refresh",function(){
+		$("#mcd_datagrid").datagrid({
+			url:rooturl + "html/fileManage/datagridclick2.json"
 		});
+	});
 	// 绑定点击原文事件
-		$("body").on("click",".f_r_b",function(){
-			window.open(rooturl + "resource/pdf/12100AR-M.pdf")
-		});
+	$("body").on("click",".f_r_b",function(){
+		window.open(rooturl + "resource/pdf/12100AR-M.pdf")
+	});
+
+	// 绑定菜单重命名点击事件
+	$("body").on("click","#mtam_rename",function(){
+		// 获取选中树节点
+		var treenode = $("#mta_otree").tree("getSelected");
+		if(treenode != null){
+			// 修改名字
+			$("#mta_otree").tree("beginEdit",treenode.target);
+		}
+	});
 
 	// 加载datagrid数据
 		var datacolumn = [[
@@ -492,24 +512,28 @@ $(function(){
 					"title":"文件编号",
 					"align":"left",
 					"width":100,
+					"editor":"text",
 					"iscp":1
 				},{
 					"field":"wjmc",
 					"title":"文件名称",
 					"align":"left",
 					"width":290,
+					"editor":"text",
 					"iscp":1
 				},{
 					"field":"fs",
 					"title":"份数",
 					"align":"left",
 					"width":60,
+					"editor":"text",
 					"iscp":0
 				},{
 					"field":"zzs",
 					"title":"纸张数",
 					"align":"left",
 					"width":60,
+					"editor":"text",
 					"iscp":0
 				},{
 					"field":"zj",
@@ -521,6 +545,7 @@ $(function(){
 					"title":"备注",
 					"align":"left",
 					"width":100,
+					"editor":"text",
 					"iscp":0
 				}
 				]];
@@ -541,22 +566,36 @@ $(function(){
 			onLoadSuccess:function(data){
 				// 自动组卷
 				autogroupfile();
+			},
+			onDblClickRow:function(index,row){
+				// 关闭所有编辑行
+				closeAllRowEditor(this);
+				// 清除所有选中项
+				$(this).datagrid("unselectAll");
+				// 选中当前项 编辑状态
+				$(this).datagrid("beginEdit",index);
 			}
 		});
 	// 绑定组卷链接按钮点击事件
 		$("body").on("click",".groupfile",function(){
+			// 找到行号
 			var rowindex = $(this).closest("tr").attr("datagrid-row-index");
-			$(this).html("");
-			$(this).prepend('<span class="l-btn-icon icon-xnzj_wjz"></span>');
+			var gridobj = $("#mcd_datagrid");
+			// 替换组卷数据
+			gridobj.datagrid("getData").rows[rowindex].zj="<a class='groupicon'><span class='l-btn-icon icon-xnzj_wjz'></span></a>";
+			// 替换其他组卷数据
 			for(var i=rowindex-1; i>=0; i--){
-				var over =$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupicon").length;
+				var over =gridobj.datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupicon").length;
 				if(over != 0){
 					break;
 				}
-				$("#mcd_datagrid").datagrid("getPanel").find("tr[datagrid-row-index='"+i+"']").has(".groupfile").find(".groupfile").remove();
+				gridobj.datagrid("getData").rows[i].zj="";
 			}
-			$(this).removeClass("groupfile");
-			$(this).addClass("groupicon");
+			// 刷新row
+			var rownum = gridobj.datagrid("getData").rows.length;
+			for(var i=0; i<rownum; i++){
+				gridobj.datagrid("refreshRow",i);
+			}
 		});
 		// 生成没有组卷的列标题
 		var fcgridcol =[];
@@ -776,7 +815,6 @@ function autogroupfile(){
 	row.push(rownum.length-1);
 	// 排序行号
 	row.sort(compareforsort);
-	console.log(row);
 	// 选中随机行号和最后一个行号
 	for(var i=0; i<row.length; i++){
 		// 找到行里的组卷标签
@@ -794,4 +832,11 @@ function autogroupfile(){
 
 function compareforsort(a,b){
 	return a - b;
+}
+
+function closeAllRowEditor(obj){
+	var rowlength = $(obj).datagrid("getRows").length;
+	for(var i=0; i<rowlength; i++){
+		$(obj).datagrid("endEdit",i);
+	}
 }
